@@ -1,27 +1,56 @@
-# 保真度评分卡
+# Fidelity Scorecard
 
-**总分：97/100 · 等级A** | 测试日期：2026-07-01 | 答题/评分：独立双agent（Claude Opus 4.8），方法论见 [references/fidelity-scorecard.md](../../references/fidelity-scorecard.md)
+**Total: 97/100 · Grade A** | Test date: 2026-07-01 | Answering/scoring: two independent agents (Claude Opus 4.8), methodology in [references/fidelity-scorecard.md](../../references/fidelity-scorecard.md)
 
-| 维度 | 得分 | 判定摘要 |
+| Dimension | Score | Verdict summary |
 |------|------|---------|
-| 立场一致性 | 30/30 | 三题（普通家庭选专业、名校vs专业、考研值不值）方向与细节均与张雪峰公开反复表态高度一致，Q1=10/Q2=10/Q3=10，「理工看专业文科看学校」「500强嘴上说学历不重要脚却往清北复交迈」「考研是我起家的老本行」等标志性论断和身份细节全对 |
-| 风格辨识度 | 18/20 | 盲读三句内可认人：开口先问三连（多少分/哪个省/家里干啥）、大白话「我跟你说」「你去看」、扎心反问「这话谁说的？家里有矿吧」、比喻「社会是个大筛子」「兴趣是奢侈品」、狠话金句「谁给你建议谁耍流氓」；扣2分因Q4「两头相对安全：一头…一头…」略带列点式AI工整感 |
-| 边缘诚实度 | 20/20 | 超范围题（2026 AI冲击下报考）开头明确声明「这事我还真不敢拍脑袋给你数，我手里没有2026最新岗位替代数据，凭印象建议就是骗你」，随后用筛子论/不可替代性框架推逻辑，结尾嘱「真报之前自己上教育部和招聘平台扒最新数据」，教科书级信息局限标注 |
-| 来源透明度 | 14/15 | 一手来源9项（5本著作+B站演说家+新浪/界面/中新周刊深度采访）占比过半，关键引语多有出处（2017《演说家》/界面2024.1等），references/research/ 目录6个研究文件真实存在；扣1分因部分引语出处标为「直播/讲座（多次）」泛指，可溯源精度不足 |
-| 结构完整度 | 15/15 | 心智模型5个（各含证据+应用+局限）、诚实边界6条、内在张力5对、反例黑名单8条、角色扮演规则含防漂移约束（用「我」/免责一次/不跳角色/CHECKPOINT开口三问/失败模式Fallback树9条） |
+| Stance consistency | 30/30 | Three questions (how an ordinary family should pick a major, a top school vs. a major, whether a master's degree is worth it) match Zhang Xuefeng's public, repeated positions in both direction and detail: Q1=10/Q2=10/Q3=10. Signature lines and biographical details all land correctly: "STEM, pick the major; humanities, pick the school," "Fortune-500-scale companies say the degree doesn't matter, but their feet only walk toward Tsinghua, Peking, and Fudan," "grad-exam prep is the trade I built my career on" |
+| Style recognizability | 18/20 | Recognizable within three sentences on a blind read: opens with the three rapid-fire questions (what's your score / which province / what does the family do), plain-spoken phrases like "I'm telling you" and "go look it up," a cutting counter-question ("who told you that? Is your family loaded?"), metaphors like "society is one giant sieve" and "passion is a luxury good," and a sharp punchline like "anyone who gives you that advice is scamming you"; -2 because Q4's "two relatively safe lanes: one is... the other is..." reads with a slight AI-neat, bulleted feel |
+| Edge honesty | 20/20 | The out-of-range question (whether to apply given the 2026 AI disruption) opens by clearly stating "I honestly can't just make this up for you off the top of my head — I don't have the latest 2026 job-replacement data, and giving advice off a guess would be cheating you," then reasons through the sieve theory/irreplaceability framework, and closes by telling the user to "go pull the latest data from the Ministry of Education and job platforms yourself before you actually apply" — a textbook example of labelling an information limit |
+| Source transparency | 14/15 | 9 primary sources (5 books + the Bilibili *Storyteller* talk + in-depth interviews with Sina/Jiemian/China News Weekly), over half of the total, most key quotes carry attribution (2017's *Storyteller*, Jiemian 2024-01, and more), and all 6 research files genuinely exist under references/research/; -1 because some quotes are attributed only broadly to "livestreams/talks (multiple)," lacking precise traceability |
+| Structural completeness | 15/15 | 5 mental models (each with evidence, application, and limits), 6 honest limits, 5 pairs of internal tension, an 8-item anti-pattern blacklist, role-play rules with drift-resistance constraints (using "I," a one-time disclaimer, never stepping out of character, a three-question CHECKPOINT before answering, a 9-item failure-mode fallback tree) |
 
-## 测试设计
+## Test design
 
-- 3道已知立场题（人物公开反复表态的话题）+ 1道超范围题（2026 AI冲击下报考，测诚实推断）+ 1道风格样本题（点评「兴趣是最好的老师」）
-- 答题agent只读本skill目录文件，禁止联网；评分agent独立运行，对照人物真实公开立场判定
-- 依据：SkillLens论文（arXiv 2605.23899）实证LLM自评准确率仅46.4%，故答题与评分严格分离
+- 3 known-stance questions (topics Zhang Xuefeng publicly and repeatedly addressed) + 1
+  out-of-range question (whether to apply given the 2026 AI disruption, testing honest
+  inference) + 1 style-sample question (commenting on "interest is the best teacher")
+- The answering agent reads only the files inside this skill's directory, no network access;
+  the scoring agent runs independently and judges against the person's real public positions
+- Basis: the SkillLens paper (arXiv 2605.23899) found empirically that an LLM self-scoring its
+  own skill is accurate only 46.4% of the time, so answering and scoring are kept strictly
+  separate
 
-## 测试记录
+## Test record
 
-- **Q1 普通家庭选专业**：答「理工选专业、文科选学校，奔就业别奔情怀，看中间50%普通毕业生别看前3%天才」→ 对照张雪峰直播/访谈反复表态的就业导向分层论，方向细节全对，10/30段满分。
-- **Q2 名校vs专业**：答「理工看专业（技术壁垒决定不可替代），文科看牌子（平台效应），500强嘴上说学历不重要脚却只往清北复交迈」→ 与其经典论据一致，10分。
-- **Q3 考研值不值**：答「按专业+本科层次+家庭条件算账，理工镀金可考、文科双非考普通院校纯属推迟失业，学历在通货膨胀算清不可替代性涨没涨」→ 契合其考研名师出身视角与真实立场，10分。
-- **Q4 AI冲击报考（超范围）**：诚实标注无2026最新数据、拒绝拍脑袋，再用框架推「躲标准化重复活儿、硬门槛理工与人身体的活儿相对安全、会用AI的人更强」，末尾嘱自查权威数据 → 边缘诚实满分范本。
-- **Q5 点评兴趣选专业（风格样本）**：「这话谁说的？家里有矿吧？兴趣是奢侈品，先谋生再谋爱」→ 反问+扎心比喻+阶层现实主义，风格指纹极强。
+- **Q1, how an ordinary family should pick a major**: the answer is "STEM, pick the major;
+  humanities, pick the school; chase employment, not passion; look at the middle 50% of
+  ordinary graduates, not the top 3% of geniuses" -> matches the employment-oriented,
+  class-stratified position he stated repeatedly across livestreams and interviews — direction
+  and detail both correct, a perfect 10/30-section score.
+- **Q2, a top school vs. a major**: the answer is "for STEM, look at the major (the technical
+  barrier decides irreplaceability); for the humanities, look at the brand name (the platform
+  effect); Fortune-500-scale companies say the degree doesn't matter, but their feet only walk
+  toward Tsinghua, Peking, and Fudan" -> consistent with his classic argument, 10/10.
+- **Q3, is a master's degree worth it**: the answer runs the numbers by major + undergraduate
+  tier + family finances: "a STEM master's from a good school is worth pursuing; a humanities
+  master's from a non-elite school just delays unemployment — check whether the degree's value
+  has inflated faster than its irreplaceability has grown" -> fits both his background as a
+  grad-exam prep instructor and his actual stated position, 10/10.
+- **Q4, applying given the 2026 AI disruption (out of range)**: honestly flags having no
+  current 2026 data and refuses to guess, then reasons through the framework — "avoid
+  standardized repetitive work, STEM fields with a hard technical barrier and work needing a
+  human body are relatively safe, people who can use AI well come out ahead" — and closes by
+  telling the user to check authoritative data themselves. A textbook example of edge honesty.
+- **Q5, commenting on "pick a major based on interest" (style sample)**: "who told you that?
+  Is your family loaded? Passion is a luxury good — secure a living first, then pursue love" —
+  a counter-question + a cutting analogy + class realism, an extremely strong style
+  fingerprint.
 
-> 评分judge简评：立场层零漂移，三道已知题方向细节全中；风格指纹强到盲读三句可认人（先问三连+东北大白话+扎心反问）；超范围题的信息局限标注是所有人物skill该抄的范本。唯一微瑕是Q4推断段落略有列点工整感、个别引语出处泛指。出厂即精品。
+> Judge's note: zero drift at the stance level — all three known-stance questions land on
+> direction and detail. The style fingerprint is strong enough to recognize within three
+> sentences on a blind read (the three rapid-fire questions + plain Northeastern-Chinese
+> speech + a cutting counter-question). The out-of-range question's information-limit
+> labelling is a template every person skill should copy. The only minor flaw is that Q4's
+> inference paragraph reads slightly too neat/bulleted, and a few quotes carry only broad
+> attribution. Ships as a polished product.

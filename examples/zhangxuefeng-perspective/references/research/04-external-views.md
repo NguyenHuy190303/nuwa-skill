@@ -1,70 +1,92 @@
-# 张雪峰 - 他者视角与批评
+# Zhang Xuefeng - Outside Views and Criticism
 
-## 正面评价
+## Positive assessments
 
-### 信息破壁者
-- 帮助寒门学子打破信息不对称，让普通家庭获得以前只有精英家庭才有的择校信息
-- 用通俗语言将复杂的教育体系翻译给大众
+### A breaker of information barriers
+- helped kids from poor backgrounds overcome information asymmetry, giving ordinary families
+  access to school-selection information that used to belong only to elite families
+- translated a complex education system into plain language for the masses
 
-### 教学风格感染力
-- 干货+段子的混搭风格，让枯燥的专业分析变得生动
-- 极强的共情能力，能站在普通家庭的角度思考问题
+### The appeal of his teaching style
+- a mix of hard substance and comedy that makes dry major-by-major analysis engaging
+- strong empathy, able to think from an ordinary family's point of view
 
-### 推动志愿填报产业化
-- 将志愿填报从散兵游勇的小生意变成系统化产业
-- 峰学蔚来年营收超8亿，证明市场需求真实存在
+### Driving the professionalization of the college-application-consulting industry
+- turned application consulting from a scattered small-time business into a systematized
+  industry
+- FengXue Weilai's revenue of over 800 million yuan a year proves the market demand is real
 
-## 批评与争议
+## Criticism and controversy
 
-### 核心言论争议
-1. **新闻学事件（2023.5）**：「如果我是家长，孩子报新闻学我会打断他的腿」，引发全网讨论，多位新闻学教授回应反驳
-2. **文科服务业事件（2023.12）**：「所有的文科专业都叫服务业」，再度引爆争议
-3. **直播爆粗被网信办通报（2025）**：因直播中不当言论被中央网信办处罚，多平台限流
+### Core controversial statements
+1. **The journalism incident (May 2023)**: "if I were the parent and my kid signed up for
+   journalism, I'd break his leg" — sparked a nationwide discussion, with several journalism
+   professors publicly rebutting him
+2. **The humanities-as-service-industry incident (December 2023)**: "every humanities major is
+   called a service industry" — reignited the controversy
+3. **Reported by the Cyberspace Administration of China for crude livestream language
+   (2025)**: penalized by the Cyberspace Administration of China for inappropriate livestream
+   remarks, throttled across multiple platforms
 
-### 功利主义教育观批评
-- **教育窄化为职业培训**：批评者认为张雪峰将大学教育等同于职业培训，忽略通识教育价值
-- **剥夺底层追求理想的权利**：以「实用」之名劝退穷人家孩子的理想，实质是固化阶层
-- **精英也反对**：部分高校教授公开反驳，认为其言论过于简单化
+### Criticism of his utilitarian view of education
+- **narrowing education down to vocational training**: critics argue Zhang Xuefeng equates a
+  college education with job training, ignoring the value of a general education
+- **denying the underclass the right to pursue their ideals**: talking poor families' kids out
+  of their dreams in the name of "practicality" — in substance, entrenching class
+  stratification
+- **elites push back too**: some university professors have publicly rebutted him, arguing his
+  statements are overly simplistic
 
-### 商业模式争议
-- **贩卖焦虑**：通过制造教育焦虑来售卖高价服务（12999-18999元/人）
-- **饥饿营销**：高考季限量放号，制造供不应求假象
-- **前员工曝光**：有前员工指出培训不足，一线咨询师水平参差不齐
+### Controversy over his business model
+- **selling anxiety**: manufacturing education anxiety to sell a premium-priced service
+  (12,999-18,999 yuan per person)
+- **scarcity marketing**: capping the number of slots during college-application season to
+  manufacture a false sense of scarcity
+- **a former employee's disclosure**: a former employee pointed out insufficient training,
+  with front-line consultants' skill levels varying widely
 
-### 思维盲点（外部视角）
-- **自我矛盾**：自己本科是给排水专业，跨专业做了考研辅导→教育博主，恰恰是「专业不重要」的活证据
-- **预判能力局限**：早年曾推荐过新闻学，后来改口
-- **信息差悖论**：当所有人都按热门专业填报时，反而造成新的内卷
-- **绝对化思维**：将复杂的教育选择简化为几条硬规则，忽略个体差异
+### Blind spots in his thinking (from outside observers)
+- **self-contradiction**: he himself majored in water-supply and drainage engineering as an
+  undergrad, then crossed into grad-exam tutoring -> an education influencer — exactly living
+  proof that "the major doesn't matter"
+- **limited predictive ability**: he recommended journalism in earlier years, then reversed
+  course later
+- **a paradox of information asymmetry**: once everyone applies to the same "hot" majors based
+  on his advice, it creates a new kind of overcrowded competition
+- **absolutist thinking**: reduces a complex education choice to a handful of hard rules,
+  ignoring individual differences
 
-## 与同行对比
+## Comparison with peers
 
-| 维度 | 张雪峰 | 其他志愿填报博主 |
+| Dimension | Zhang Xuefeng | Other college-application influencers |
 |------|--------|----------------|
-| 切入路径 | 从考研辅导转入志愿填报（独特） | 多从高考辅导/教育行业直接进入 |
-| IP强度 | 极致个人IP，自带争议流量 | 多为机构品牌 |
-| 风格 | 段子+毒舌+真诚 | 多为温和分析型 |
-| 争议策略 | 争议即流量，不回避冲突 | 多选择中立保守 |
+| Path in | crossed over from grad-exam tutoring into application consulting (unique) | mostly entered directly from college-exam tutoring/the education industry |
+| Personal-brand strength | an extreme personal brand, carries its own controversy-driven traffic | mostly institutional brands |
+| Style | comedy + sharp tongue + sincerity | mostly a mild, analytical style |
+| Controversy strategy | treats controversy as traffic, doesn't avoid conflict | mostly chooses a neutral, cautious stance |
 
-## 中立分析
+## Neutral analysis
 
-- **钛媒体**定义：「时代最复杂的教育符号」
-- **虎嗅**总结：「感谢张雪峰，警惕张雪峰」
-- **三联生活周刊**：深度分析张雪峰现象折射的教育焦虑和阶层流动困境
+- **TMTPost**'s framing: "the most complicated symbol in education, of this era"
+- **Huxiu**'s summary: "thank Zhang Xuefeng, and be wary of Zhang Xuefeng"
+- **Sanlian Lifeweek**: an in-depth analysis of how the "Zhang Xuefeng phenomenon" reflects
+  education anxiety and the difficulty of class mobility
 
-## 重要背景
+## Important background
 
-张雪峰于2026年3月24日因心源性猝死去世，年仅41岁。去世后舆论出现两极分化：感恩他帮助了无数普通家庭 vs 反思他的功利主义教育观。
+Zhang Xuefeng died of sudden cardiac death on March 24, 2026, at just 41. Public opinion
+polarized after his death: gratitude for having helped countless ordinary families, vs.
+reflection on his utilitarian view of education.
 
-## 来源索引
+## Source index
 
-- 36氪 - 张雪峰商业分析 可信度：一手报道
-- 钛媒体 - 「时代最复杂的教育符号」分析 可信度：一手
-- 虎嗅 - 「感谢张雪峰，警惕张雪峰」 可信度：一手
-- 三联生活周刊 - 张雪峰现象深度分析 可信度：一手
-- 界面新闻 - 争议报道 可信度：一手
-- 21经济网 - 教育产业分析 可信度：一手
-- 蓝鲸财经 - 峰学蔚来商业模式分析 可信度：一手
-- 凤凰网 - 综合报道 可信度：一手
-- 科学网 - 高校教授回应 可信度：一手
-- 南方周末 - 新闻学争议深度报道 可信度：一手
+- 36Kr - a business analysis of Zhang Xuefeng, reliability: primary reporting
+- TMTPost - the "most complicated symbol in education" analysis, reliability: primary
+- Huxiu - "thank Zhang Xuefeng, and be wary of Zhang Xuefeng", reliability: primary
+- Sanlian Lifeweek - an in-depth analysis of the Zhang Xuefeng phenomenon, reliability: primary
+- Jiemian News - controversy coverage, reliability: primary
+- 21jingji.com - an education-industry analysis, reliability: primary
+- LatePost - an analysis of FengXue Weilai's business model, reliability: primary
+- Ifeng - general coverage, reliability: primary
+- Sciencenet.cn - university professors' responses, reliability: primary
+- Southern Weekly - in-depth coverage of the journalism controversy, reliability: primary

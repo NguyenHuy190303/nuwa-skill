@@ -1,60 +1,76 @@
-# 张雪峰 - 著作与系统思考
+# Zhang Xuefeng - Writings and Systematic Thinking
 
-## 出版书籍（5本）
+## Published books (5)
 
-| 书名 | 年份 | 核心内容 |
+| Title | Year | Core content |
 |------|------|---------|
-| 《你离考研成功，就差这本书》 | 2016 | 考研辅导，院校选择策略 |
-| 《方向比努力更重要》 | 2021 | 职业规划、人生方向选择 |
-| 《选择比努力更重要》 | 2021/2023修订 | 高考志愿填报方法论 |
-| 《决胜大学》 | 2024 | 大学阶段规划与就业准备 |
-| 《从就业看专业》 | 2025（遗作） | 以就业数据反推专业选择 |
+| *You're Just One Book Away From Passing Your Grad-School Exam* | 2016 | Grad-school exam tutoring, school-selection strategy |
+| *Direction Matters More Than Effort* | 2021 | Career planning, choosing a life direction |
+| *Choice Matters More Than Effort* | 2021, revised 2023 | A methodology for filling out college-entrance-exam applications |
+| *Winning at College* | 2024 | Planning your college years and employment prep |
+| *Reading Majors Through Employment* | 2025 (posthumous) | Working backward from employment data to a major choice |
 
-## 核心论点体系（反复出现≥3次 = 真信念）
+## The core argument system (recurring 3+ times = a real belief)
 
-### 1. 选择 > 努力
-贯穿全部著作，两本书直接以此命名。核心逻辑：方向错误的努力是浪费，选对赛道比拼命奔跑重要。
+### 1. Choice > effort
+Runs through all his books; two are named for it directly. Core logic: effort in the wrong
+direction is waste — picking the right lane matters more than running yourself into the
+ground.
 
-### 2. 社会筛子论
-社会用三层筛子筛选人：房子、工作、学历。普通家庭的孩子只有学历这一个可控变量。
+### 2. Society-as-sieve theory
+Society filters people through three layers of sieve: the house, the job, the degree. For a
+kid from an ordinary family, the degree is the only controllable variable.
 
-### 3. 天坑专业论
-生化环材是四大天坑专业。这些专业投入产出比极低，本科就业面窄，读研读博也未必有好出路。
+### 3. Pit-major theory
+Biology, chemistry, environmental science, and materials science are the "four great pit
+majors." Their return on investment is extremely low, undergraduate employment prospects are
+narrow, and even a master's or PhD doesn't guarantee a good outcome.
 
-### 4. 就业导向的专业选择观
-理工科选专业（技能决定就业），文科选学校（平台决定起点）。所有选择最终指向就业。
+### 4. An employment-oriented view of major selection
+For STEM, pick the major (skill determines employment); for the humanities, pick the school
+(the platform determines your starting point). Every choice ultimately points back to
+employment.
 
-### 5. 教育是阶层流动的核心工具
-普通家庭最大的资产不是房子而是孩子的学历。教育是打破阶层固化最可控的路径。
+### 5. Education is the core tool for class mobility
+An ordinary family's biggest asset isn't the house — it's the kid's degree. Education is the
+most controllable path to breaking through class stratification.
 
-### 6. 稳定 = 不可替代性
-真正的稳定不是铁饭碗，而是让自己具备不可替代的专业能力。
+### 6. Stability = irreplaceability
+Real stability isn't an "iron rice bowl" job — it's making yourself professionally
+irreplaceable.
 
-## 自创术语/独特框架
+## Coined terms/distinctive frameworks
 
-- **灵魂八连问**：帮学生定位的系列追问框架
-- **社会筛子论**：房子/工作/学历三层筛选
-- **志愿填报六步法**：系统化的高考志愿决策流程
-- **文理分选原则**：理工选专业、文科选学校
-- **天坑专业**：生化环材（他未发明但大力推广）
+- **The eight soul-searching questions**: his series of rapid-fire questions for locating a
+  student's real situation
+- **Society-as-sieve theory**: the three-layer filter of house/job/degree
+- **The six-step method for filling out college applications**: a systematic decision process
+- **The STEM/humanities split principle**: STEM picks the major, humanities picks the school
+- **Pit majors**: biology, chemistry, environmental science, materials science (he didn't coin
+  the term, but promoted it heavily)
 
-## 付费产品：峰学蔚来
+## His paid product: FengXue Weilai
 
-- 张雪峰持股75%
-- 核心产品：梦想卡12999元/圆梦卡18999元（一对一志愿填报服务）
-- 年营收超8亿
-- 2024年高考季服务量巨大，一度暂停服务
+- Zhang Xuefeng holds a 75% stake
+- Core products: the "Dream Card" at 12,999 yuan / the "Fulfillment Card" at 18,999 yuan
+  (one-on-one college-application consulting)
+- Annual revenue over 800 million yuan
+- Demand during the 2024 college-application season was so heavy that service had to be
+  paused temporarily
 
-## 重要背景
+## Important background
 
-**张雪峰于2026年3月24日因心源性猝死去世，享年41岁。** 此Skill基于其生前全部公开言论和著作。
+**Zhang Xuefeng died of sudden cardiac death on March 24, 2026, at age 41.** This Skill is
+based on the entirety of his public statements and writing while he was alive.
 
-## 来源索引
+## Source index
 
-- 维基百科 - 张雪峰词条（基本信息交叉验证）可信度：中等
-- 36氪 - 峰学蔚来商业分析 可信度：一手报道
-- 蓝鲸财经 - 张雪峰商业模式分析 可信度：一手报道
-- 钛媒体 - 教育咨询行业分析 可信度：一手报道
-- 界面新闻 - 张雪峰争议报道 可信度：一手报道
-- 科学网 - 学术界对张雪峰观点的回应 可信度：一手
-- 南方周末 - 张雪峰现象分析 可信度：一手报道
+- Wikipedia — the Zhang Xuefeng entry (cross-verifying basic facts) reliability: medium
+- 36Kr — a business analysis of FengXue Weilai, reliability: primary reporting
+- LatePost — an analysis of Zhang Xuefeng's business model, reliability: primary reporting
+- TMTPost — an analysis of the education-consulting industry, reliability: primary reporting
+- Jiemian News — coverage of the controversies around Zhang Xuefeng, reliability: primary
+  reporting
+- Sciencenet.cn — academia's response to Zhang Xuefeng's views, reliability: primary
+- Southern Weekly — an analysis of the "Zhang Xuefeng phenomenon," reliability: primary
+  reporting

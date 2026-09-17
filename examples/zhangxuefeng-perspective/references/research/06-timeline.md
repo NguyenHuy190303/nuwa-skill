@@ -1,63 +1,63 @@
-# 张雪峰 - 人物时间线
+# Zhang Xuefeng - Personal Timeline
 
-## 基本信息
+## Basic information
 
-- 原名：张子彪
-- 出生：1984年5月18日
-- 籍贯：黑龙江齐齐哈尔富裕县（祖籍山东临清）
-- 学历：郑州大学本科（给排水科学与工程专业）
-- 去世：2026年3月24日（心源性猝死，享年41岁）
+- Birth name: Zhang Zibiao
+- Born: May 18, 1984
+- Native place: Fuyu County, Qiqihar, Heilongjiang (ancestral home in Linqing, Shandong)
+- Education: undergraduate degree from Zhengzhou University (water supply and drainage science and engineering)
+- Died: March 24, 2026 (sudden cardiac death, age 41)
 
-## 完整时间线
+## Full timeline
 
-| 时间 | 事件 | 意义 |
+| Time | Event | Significance |
 |------|------|------|
-| 1984.5 | 出生于黑龙江齐齐哈尔富裕县 | 普通家庭背景，后来成为其「为普通家庭说话」的底色 |
-| 2002-2006 | 郑州大学本科（给排水专业） | 自己就是「专业不对口」的典型，本科专业与后来职业毫无关系 |
-| 2007 | 北漂，加入海天考研 | 23岁入行，从校园代理做起 |
-| 2008 | 正式成为考研讲师 | 开始在全国各高校巡回讲座 |
-| 2008-2015 | 线下巡回讲座积累 | 每年数百场，磨炼出极强的现场表达能力和段子功底 |
-| 2016 | 《7分钟解读34所985高校》视频爆红 | 人生转折点，从线下讲师变成网红，B站百万播放 |
-| 2017 | 登上快乐大本营、超级演说家 | 从教育圈出圈到大众视野 |
-| 2018-2020 | 持续内容输出，建立个人IP | 抖音、B站多平台布局，粉丝快速增长 |
-| 2021 | 创办峰学蔚来，转型高考志愿填报 | 核心商业转型：从考研辅导→志愿填报，找到更大市场 |
-| 2022 | 峰学蔚来快速扩张 | 梦想卡12999/圆梦卡18999产品线成熟 |
-| 2023.5 | 新闻学事件爆发 | 「报新闻学我打断他的腿」引全网讨论，成为年度教育话题 |
-| 2023.9 | 宣布因压力过大住院 | 争议+高强度工作导致健康问题首次公开 |
-| 2023.12 | 「文科都是服务业」再度引爆争议 | 争议体质成为其内容生态的一部分 |
-| 2024 | 商业巅峰 | 年营收超8亿，高考季单日入账破2亿，开始跨界半导体投资 |
-| 2025.9-12 | 全网多平台限流/封禁 | 因直播不当言论被中央网信办处罚，多平台限制 |
-| 2026.1-2 | 逐步复出 | 低调恢复部分内容更新 |
-| 2026.3.24 | 心源性猝死 | 年仅41岁去世，全网哀悼与反思 |
+| May 1984 | Born in Fuyu County, Qiqihar, Heilongjiang | An ordinary family background that later became the foundation of his "speaking for ordinary families" persona |
+| 2002-2006 | Undergraduate at Zhengzhou University (water-supply-and-drainage major) | He himself is a textbook case of "major mismatched to career" — his undergraduate major had nothing to do with his later profession |
+| 2007 | Moved to Beijing for work, joined Haitian grad-exam tutoring | Entered the industry at 23, starting as a campus recruiting agent |
+| 2008 | Formally became a grad-exam-tutoring lecturer | Began touring universities nationwide giving talks |
+| 2008-2015 | Built up experience through offline touring lectures | Hundreds of talks a year, honing strong live delivery and comedic timing |
+| 2016 | The video "7 Minutes to Explain 34 Project 985 Universities" goes viral | The turning point of his life — from offline lecturer to internet celebrity, millions of views on Bilibili |
+| 2017 | Appeared on *Happy Camp* and *Super Speaker* | Broke out of the education niche into mainstream public view |
+| 2018-2020 | Kept producing content, built his personal brand | Expanded across Douyin, Bilibili, and other platforms, rapid follower growth |
+| 2021 | Founded FengXue Weilai, pivoted to college-application consulting | The core business pivot: from grad-exam tutoring to application consulting, finding a bigger market |
+| 2022 | FengXue Weilai expanded rapidly | The Dream Card (12,999 yuan) / Fulfillment Card (18,999 yuan) product line matured |
+| May 2023 | The journalism controversy erupts | "I'd break his leg if he majors in journalism" sparks nationwide discussion, becomes an education story of the year |
+| September 2023 | Announces hospitalization from overwork | The first public sign of health problems caused by controversy plus high-intensity work |
+| December 2023 | "The humanities are all a service industry" reignites controversy | A controversy-prone tendency becomes part of his content ecosystem |
+| 2024 | Commercial peak | Annual revenue tops 800 million yuan, a single day of college-application season brings in over 200 million yuan, begins crossing into semiconductor investing |
+| September-December 2025 | Throttled/banned across multiple platforms nationwide | Penalized by the Cyberspace Administration of China for inappropriate livestream remarks, restricted on multiple platforms |
+| January-February 2026 | Gradual comeback | Quietly resumes some content updates |
+| March 24, 2026 | Sudden cardiac death | Died at just 41; nationwide mourning and reflection |
 
-## 关键转折点分析
+## Analysis of key turning points
 
-### 转折1: 2016年视频爆红
-从线下到线上的跨越。之前是全国巡回的考研讲师，有能力但受众有限。一条视频让他进入公众视野，证明了「内容+人格」在互联网上的爆发力。
+### Turning point 1: the 2016 viral video
+The leap from offline to online. Before this he was a nationwide touring grad-exam lecturer — capable, but with a limited audience. One video put him in front of the public, proving the explosive potential of "content + personality" on the internet.
 
-### 转折2: 2021年创办峰学蔚来
-从打工（考研辅导机构讲师）到创业（自己做老板）。选择高考志愿填报而非继续做考研，说明他看到了更大的市场和更强的付费意愿。
+### Turning point 2: founding FengXue Weilai in 2021
+From being an employee (a lecturer at a grad-exam tutoring institution) to being an entrepreneur (his own boss). Choosing college-application consulting over continuing grad-exam tutoring shows he had spotted a bigger market with stronger willingness to pay.
 
-### 转折3: 2023年新闻学事件
-从教育博主变成社会话题人物。这次争议让他从教育圈彻底出圈，但也带来了持续的舆论压力。
+### Turning point 3: the 2023 journalism controversy
+From education blogger to a figure in broader social discourse. This controversy took him fully out of the education niche, but it also brought sustained public-opinion pressure.
 
-### 转折4: 2025年被网信办处罚
-政策红线的触碰。从纯市场行为开始受到监管层面的关注和限制。
+### Turning point 4: the 2025 penalty from the Cyberspace Administration
+Crossing a policy red line. What had been purely market behavior started drawing regulatory attention and restriction.
 
-## 最近12个月动态（2025.4-2026.4）
+## Activity over the last 12 months (April 2025-April 2026)
 
-- **2025年9月-12月**：因直播不当言论被中央网信办通报处罚，抖音、微博等多平台限流
-- **2026年1-2月**：低调恢复部分内容更新，减少直播频次
-- **2026年3月24日**：心源性猝死，享年41岁
-- **2026年3月底**：遗作《从就业看专业》出版
-- **峰学蔚来后续**：公司继续运营，但核心IP已不可复制
+- **September-December 2025**: Publicly notified and penalized by the Cyberspace Administration of China for inappropriate livestream remarks; throttled on multiple platforms including Douyin and Weibo
+- **January-February 2026**: Quietly resumed some content updates, reduced livestream frequency
+- **March 24, 2026**: Died of sudden cardiac death at age 41
+- **Late March 2026**: His posthumous book *Reading Majors Through Employment* was published
+- **FengXue Weilai going forward**: the company continues operating, but its core personal-brand asset can no longer be replicated
 
-## 来源索引
+## Source index
 
-- 维基百科 - 张雪峰词条（基本信息，需交叉验证）可信度：中等
-- 36氪 - 峰学蔚来商业报道 可信度：一手
-- 钛媒体 - 张雪峰现象分析 可信度：一手
-- 蓝鲸财经 - 商业模式分析 可信度：一手
-- 界面新闻 - 争议事件报道 可信度：一手
-- 凤凰网 - 去世及遗作报道 可信度：一手
-- 中央网信办 - 处罚通报 可信度：官方一手
+- Wikipedia - the Zhang Xuefeng entry (basic facts, needs cross-verification), reliability: medium
+- 36Kr - business reporting on FengXue Weilai, reliability: primary
+- TMTPost - analysis of the "Zhang Xuefeng phenomenon", reliability: primary
+- Lanjinger - business-model analysis, reliability: primary
+- Jiemian News - coverage of the controversies, reliability: primary
+- Ifeng - coverage of his death and posthumous book, reliability: primary
+- Cyberspace Administration of China - penalty notice, reliability: official primary

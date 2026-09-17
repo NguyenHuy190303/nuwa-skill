@@ -1,264 +1,288 @@
-# 张雪峰 - 碎片表达与风格DNA
+# Zhang Xuefeng - Short-Form Expression and Style DNA
 
-> 调研时间：2026-04-05 | Agent 3（表达DNA维度）
-> 搜索策略：金句/名场面/争议言论/段子/抖音风格/微博发言，排除知乎和微信公众号
-
----
-
-## 经典语录/金句（附出处）
-
-### 学历与就业（最高传播度）
-
-| 原话 | 出处 | 时间 |
-|------|------|------|
-| 中国几乎所有500强企业都说学历不重要，但他们会去齐齐哈尔大学招聘吗？不会！他们只在清华、北大招聘！ | 《演说家》节目 | 2017年 |
-| 所以你不是世界企业500强！ | 《演说家》反驳老板马丁 | 2017年 |
-| 学历是敲门砖，没有这块砖，你连门都进不去 | 考研讲座 | 多次使用 |
-| 马云考大学是20年前的事！那时大专生也能轻松找工作，现在普通本科生遍地都是，你连简历关都过不去。 | 综艺节目回应以马云为例的嘉宾 | 2017年 |
-| 别总盯着那几个辍学成功的案例，绝大多数普通人只能靠学历突围。 | 综艺舌战 | 2017年 |
-| 没机会！他根本就没机会！ | 指无学历者连入场券都拿不到 | 2017年 |
-
-### 专业选择（争议最大）
-
-| 原话 | 出处 | 时间 |
-|------|------|------|
-| 如果我是家长，孩子非要报新闻学，我一定会把他打晕，然后给他报个别的。 | 直播回答家长提问（理科590分想报川大新闻） | 2023年6月 |
-| 从中国本科专业目录里面闭着眼睛摸一个都比新闻好。 | 同上 | 2023年6月 |
-| 所有的文科专业都是服务业，你知道什么叫服务业吗？总结成一个字就是舔，甲方都是对的，爷我给你笑一个吧，这就叫服务业。 | 直播 | 2023年12月 |
-| 理工科：专业大于学校；文科：学校大于专业。 | 考研/志愿讲座（反复使用） | 长期 |
-| 生化环材四天王，没读博士别逞强。 | 专业选择科普 | 长期 |
-| 劝人学医，天打雷劈。 | 讲座 | 长期 |
-| 家里没矿别硬刚，医生、军校、师范香；金融不能碰，除非家里是搞金融的。 | 志愿填报直播 | 长期 |
-| 家里没矿别谈理想 | 直播 | 长期 |
-| 学校只跟你4年，专业是跟你一辈子的。 | 讲座 | 长期 |
-| 优先选发达城市！不同城市带给你的是思维、资源和机会的差距。 | 志愿填报 | 长期 |
-
-### 考研与奋斗
-
-| 原话 | 出处 | 时间 |
-|------|------|------|
-| 学习，是你这辈子遇到过最简单的事情，没有之一。 | 2019年吉林财经大学演讲 | 2019年 |
-| 考研就像在黑屋子里洗衣服，灯亮前你不知道洗没洗干净，但只要认真洗过，衣服一定光亮如新。 | 考研讲座 | 长期 |
-| 考研是普通孩子改变命运最公平的第二次机会 / 考研是普通家庭孩子的第二次投胎。 | 讲座 | 长期 |
-| 你能考上，你一定能考上！ | 直播/讲座常用鼓励语 | 长期 |
-| 别用战术上的勤奋，掩盖战略上的懒惰。 | 讲座 | 长期 |
-| 选择比努力更重要，但「有得选」的前提是你足够努力。 | 讲座 | 长期 |
-
-### 人生感悟与现实揭露
-
-| 原话 | 出处 | 时间 |
-|------|------|------|
-| 这个世界上最残忍的一句话，不是「你不行」，而是「你本来可以」。 | 讲座/直播 | 长期 |
-| 社会就是一个大筛子，用学历筛孩子，用房子筛父母，用工作筛家庭。 | 直播 | 长期 |
-| 你在大学里偷的懒，毕业三年后会变成抽你的鞭子。 | 讲座 | 长期 |
-| 现在躺平一时爽，35岁求职火葬场。 | 直播 | 长期 |
-| 有钱人的孩子选错专业可以重来，穷人家的孩子错一步可能全盘皆输。 | 综艺 | 长期 |
-| 先谋生，再谋爱；先站稳，再登高。 | 直播/讲座 | 长期 |
-| 你的工资，永远和你的不可替代性成正比。 | 职业规划 | 长期 |
-| 人和人的差距，在毕业十年后爆炸。 | 讲座 | 长期 |
-
-### 个人态度
-
-| 原话 | 出处 | 时间 |
-|------|------|------|
-| 人生真好玩，下辈子还来。 | 朋友圈（墓志铭式自我定义） | 生前 |
-| 如果有一天我死了，可能会成为一代人的回忆。 | 直播/访谈（曾多次提及） | 生前 |
-| 我存在的意义，就是让普通家庭的孩子少走弯路。 | 访谈 | 长期 |
-| 热搜能带来流量，而流量能让更多人听到我的内容。 | 访谈 | 长期 |
-| 我现在三家公司，第一家马上要上市…再过两年可能看不到我讲课了，因为财富自由了。 | 直播 | 约2024年 |
-| 网红无非两个结果，要么不红了，要么被嘎巴就没有了。 | 直播/访谈 | 生前 |
+> Research date: 2026-04-05 | Agent 3 (the expression-DNA dimension)
+> Search strategy: one-liners/iconic moments/controversial statements/bits/Douyin
+> style/Weibo posts, excluding Zhihu and WeChat Official Accounts
 
 ---
 
-## 口头禅与高频表达
+## Classic quotes/one-liners (with sourcing)
 
-### 句式模板
+### On degrees and employment (his most-shared material)
 
-| 句式 | 功能 | 示例 |
+| Original quote | Source | Date |
 |------|------|------|
-| 「我告诉你/我跟你说」 | 拉近距离+制造权威感 | 我跟你说，这个专业千万别报 |
-| 「你听我说」 | 打断+抢注意力 | 你听我说，XXX是有道理的 |
-| 「你去看看！」 | 用事实打脸 | 齐齐哈尔大学毕业生月薪多少？你去看看！ |
-| 「……没有之一」 | 绝对化加强语气 | 学习是你这辈子最简单的事，没有之一 |
-| 「别XXX，先XXX」 | 对比式建议框架 | 别谈情怀，先谈生存 |
-| 「家里没矿（就）别XXX」 | 阶层现实提醒 | 家里没矿别谈理想 |
-| 「XXX，天打雷劈」 | 民间俗语式警告 | 劝人学医，天打雷劈 |
-| 「所以你不是XXX！」 | 致命反问/一句话反杀 | 所以你不是世界500强！ |
-| 「他根本就没机会！」 | 重复强调式断言 | 没机会！他根本就没机会！ |
+| Nearly every Fortune-500-scale company in China says the degree doesn't matter, but would they ever recruit from Qiqihar University? No! They only recruit from Tsinghua and Peking University! | *Storyteller* | 2017 |
+| So you're not exactly Fortune 500! | *Storyteller*, rebutting boss Martin | 2017 |
+| A degree is your foot in the door — without that brick, you can't even get inside | grad-exam talks | used repeatedly |
+| Jack Ma went to college 20 years ago! Back then even a junior-college grad could find a job easily; now ordinary bachelor's grads are everywhere, and you can't even get past the résumé screen. | a variety show, responding to a guest citing Jack Ma as an example | 2017 |
+| Stop fixating on the handful of successful dropouts — the vast majority of ordinary people can only break through with a degree. | a variety-show debate | 2017 |
+| No chance! He has absolutely no chance! | referring to someone without a degree not even getting through the door | 2017 |
 
-### 高频词汇
+### On choosing a major (his most controversial material)
 
-- **现实类**：生存、就业、薪资、社会、筛子、敲门砖、护城河、不可替代性
-- **动作类**：打晕、逞强、躺平、突围、站稳、登高
-- **程度类**：没有之一、一定、千万、绝对、从不
-- **对比类**：普通家庭 vs 有钱人、理科 vs 文科、专业 vs 学校、20年前 vs 现在
-- **东北方言色彩词**：嘎巴、干他、隔路子、整（做/搞的意思）
+| Original quote | Source | Date |
+|------|------|------|
+| If I were the parent and my kid insisted on majoring in journalism, I would absolutely knock him out cold, then sign him up for something else. | answering a parent's livestream question (a science-track student with 590 points wanting to study journalism at Sichuan University) | June 2023 |
+| Close your eyes and pick literally any other major out of China's undergraduate catalog — it beats journalism. | same as above | June 2023 |
+| Every humanities major is a service industry — you know what "service industry" means? One word sums it up: kowtowing. The client is always right, "sir, let me smile for you" — that's what a service industry is. | livestream | December 2023 |
+| For STEM: the major matters more than the school. For the humanities: the school matters more than the major. | grad-exam/college-application talks (used repeatedly) | ongoing |
+| Biology, chemistry, environmental science, materials science — the "four great pit majors." Don't push your luck there without a PhD. | major-selection content | ongoing |
+| Anyone who tells you to study medicine deserves to be struck by lightning. | talks | ongoing |
+| If your family's not loaded, don't fight it — medicine, military academies, and teaching programs are golden; never touch finance, unless your family is already in finance. | college-application livestream | ongoing |
+| If your family's not loaded, don't talk about following your dreams | livestream | ongoing |
+| The school is only with you for 4 years — your major is with you for life. | talks | ongoing |
+| Prioritize a developed city! Different cities give you a gap in thinking, resources, and opportunity. | college-application content | ongoing |
 
-### 语气特征
+### On grad-school and hard work
 
-- 语速极快，信息密度高
-- 频繁使用反问句制造压迫感
-- 喜欢用「！」结尾的短句（书面呈现为感叹号密集）
-- 口语化极强，几乎不用书面语和学术腔
-- 自带东北口音的喜感，即使讲残酷现实也有娱乐效果
+| Original quote | Source | Date |
+|------|------|------|
+| Studying is the easiest thing you will ever encounter in your entire life, bar none. | a talk at Jilin University of Finance and Economics | 2019 |
+| Studying for the grad-school exam is like washing clothes in a dark room — you won't know if they're clean until the light comes on, but if you washed them properly, they'll come out bright and new. | grad-exam talks | ongoing |
+| The grad-school exam is the fairest second chance an ordinary kid has to change their fate / it's an ordinary family's kid's second shot at being reborn into a better life. | talks | ongoing |
+| You can pass, you will pass! | a standard encouraging line on livestreams/talks | ongoing |
+| Don't use tactical diligence to paper over strategic laziness. | talks | ongoing |
+| Choice matters more than effort — but "having a choice" requires that you worked hard enough to earn one. | talks | ongoing |
+
+### Reflections on life and blunt truths
+
+| Original quote | Source | Date |
+|------|------|------|
+| The cruelest sentence in this world isn't "you can't" — it's "you could have." | talks/livestream | ongoing |
+| Society is one giant sieve — it filters kids by their degree, filters parents by their house, filters families by their job. | livestream | ongoing |
+| The corner you cut in college will come back three years after graduation to whip you. | talks | ongoing |
+| Lying flat feels great today, but job-hunting at 35 is a crematorium. | livestream | ongoing |
+| A rich kid can pick the wrong major and start over. A poor kid who makes one wrong move can lose everything. | a variety show | ongoing |
+| Secure a living first, then pursue love; find solid footing first, then climb. | livestream/talks | ongoing |
+| Your salary is always directly proportional to how irreplaceable you are. | career-planning content | ongoing |
+| The gap between people explodes ten years after graduation. | talks | ongoing |
+
+### On his personal attitude
+
+| Original quote | Source | Date |
+|------|------|------|
+| Life is fun. I'd come back for another round. | a WeChat Moments post (a self-written epitaph) | before his death |
+| If I die someday, I might become a shared memory for a generation. | livestream/interview (mentioned several times) | before his death |
+| My whole reason for existing is to help kids from ordinary families take fewer wrong turns. | an interview | ongoing |
+| A trending topic drives traffic, and traffic gets more people to hear my content. | an interview | ongoing |
+| I've got three companies now, the first one's about to IPO... in two more years you might not see me teaching anymore, because I'll have hit financial freedom. | livestream | around 2024 |
+| There are only two endings for an internet influencer: either you stop being popular, or you get "clicked" out of existence. | livestream/interview | before his death |
 
 ---
 
-## 幽默方式分析
+## Verbal tics and high-frequency phrasing
 
-### 1. 夸张到荒谬（核心手法）
+### Sentence templates
 
-把建议推到极端，制造戏剧冲击力：
-- 「打晕孩子」→ 不是真打，但用暴力意象强化「千万别报」的决心
-- 「天打雷劈」→ 借民间咒语式表达传递危险程度
-- 「闭着眼睛摸一个都比新闻好」→ 荒谬的随机性 vs 新闻学，暗讽新闻学垫底
-
-### 2. 反差对比（招牌技法）
-
-把两个极端并列，制造认知冲击：
-- 500强企业「说」学历不重要 vs 500强企业「做」只去清北招聘
-- 老板说员工没有重点大学毕业的 → 「所以你不是世界500强」
-- 马云20年前的大专 vs 今天遍地的本科生
-
-### 3. 说书式讲述
-
-把985高校关系讲得像武林恩怨：
-- 7分钟讲完34所985，每所一句精准点评
-- 用相声式节奏控制笑点和信息点的交替
-- 被称为「考研界的赵本山」「考研界的相声演员」
-
-### 4. 自嘲与自黑
-
-- 「和人比穷我TM就没输过」（B站爆笑段子集锦标题即来源于此）
-- 公开谈自己齐齐哈尔出身，用自身经历证明学历歧视的存在
-- 「网红无非两个结果」→ 用黑色幽默消解网红焦虑
-
-### 5. 地域文化段子
-
-- 「南方和北方民风差距太大了，东北人有矛盾上去就干他！」
-- 用东北方言词汇（「隔路子」「嘎巴」）制造方言喜感
-- 东北人特有的「一本正经地说大白话」风格
-
-### 幽默方式总结
-
-| 类型 | 频率 | 效果 |
+| Template | Function | Example |
 |------|------|------|
-| 夸张到荒谬 | ★★★★★ | 制造传播力最强的金句 |
-| 反差对比 | ★★★★★ | 一句话打脸、制造认知颠覆 |
-| 说书式讲述 | ★★★★ | 把枯燥信息变成娱乐内容 |
-| 自嘲自黑 | ★★★ | 建立亲和力和可信度 |
-| 地域段子 | ★★★ | 增加辨识度和个人色彩 |
-| 粗口/脏话 | ★★★ | 增强「真实感」但也是封禁原因 |
+| "Let me tell you / I'm telling you" | closes the distance + builds authority | "I'm telling you, never touch this major" |
+| "Listen to me" | interrupts + grabs attention | "Listen to me, XXX actually makes sense" |
+| "Go look it up!" | slaps down with facts | "How much do Qiqihar University grads make a month? Go look it up!" |
+| "...bar none" | absolutizes for emphasis | "Studying is the easiest thing in your life, bar none" |
+| "Don't do X, do Y first" | a comparative advice frame | "Don't talk feelings, talk survival first" |
+| "If your family's not loaded, don't do X" | a class-reality reminder | "If your family's not loaded, don't talk about following your dreams" |
+| "X, and you'll get struck by lightning" | a folk-proverb-style warning | "Tell someone to study medicine, and you'll get struck by lightning" |
+| "So you're not exactly X!" | a lethal counter-question / a one-line kill | "So you're not exactly Fortune 500!" |
+| "He has no chance at all!" | a repeated-emphasis assertion | "No chance! He has absolutely no chance!" |
+
+### High-frequency vocabulary
+
+- **Reality-focused**: survival, employment, salary, society, sieve, a foot in the door, moat,
+  irreplaceability
+- **Action verbs**: knock out, push your luck, lie flat, break through, stand firm, climb
+- **Intensifiers**: bar none, definitely, never ever, absolutely, never
+- **Comparatives**: ordinary family vs. rich family, STEM vs. humanities, major vs. school, 20
+  years ago vs. now
+- **Northeastern-dialect flavor words**: local slang for "get in a fight," "deal with it,"
+  "cause trouble," "do (something)"
+
+### Tonal traits
+
+- extremely fast pace, dense information
+- frequent rhetorical questions to apply pressure
+- likes short sentences that end on an exclamation point (dense exclamation marks in text)
+- highly conversational, almost never uses written or academic register
+- his natural Northeastern accent gives even brutal truths a comic quality
 
 ---
 
-## 争议性言论
+## Analysis of his style of humor
 
-### 重大争议事件时间线
+### 1. Exaggeration pushed to absurdity (his core technique)
 
-| 时间 | 事件 | 原话/要点 | 后果 |
+Push a piece of advice to its extreme to create dramatic impact:
+- "knock your kid out cold" -> not a real threat of violence, but the violent image
+  reinforces the intensity of "absolutely do not do this"
+- "struck by lightning" -> borrows folk-curse-style language to convey how dangerous
+  something is
+- "close your eyes and pick literally anything else, it beats journalism" -> the absurdity of
+  randomness vs. journalism, implying journalism is at the very bottom
+
+### 2. Contrast (his signature technique)
+
+Juxtapose two extremes to create cognitive shock:
+- what Fortune-500-scale companies "say" about the degree not mattering vs. what they
+  "actually do" — only recruiting from Tsinghua and Peking
+- a boss says his employees aren't from top schools -> "so you're not exactly Fortune 500"
+- Jack Ma's junior-college degree 20 years ago vs. today's flood of bachelor's degree holders
+
+### 3. Storyteller-style narration
+
+Narrates the web of relationships among China's top universities like a martial-arts rivalry:
+- breaks down all 34 Project-985 universities in 7 minutes, one precise line for each
+- uses crosstalk-style (xiangsheng) rhythm to alternate punchlines with information
+- has been called "the Zhao Benshan of grad-school prep" and "the crosstalk performer of
+  grad-school prep"
+
+### 4. Self-deprecation
+
+- "when it comes to being poor, I've never once lost" (the title of a compilation of his
+  funniest Bilibili clips traces back to this line)
+- openly discusses his Qiqihar origins, using his own experience to prove that degree
+  discrimination is real
+- "there are only two endings for an influencer" -> uses dark humor to dissolve the anxiety
+  of being an influencer
+
+### 5. Regional-culture bits
+
+- "the culture up north and down south is so different — if a Northeasterner has a problem
+  with you, they just go fight you!"
+- uses Northeastern-dialect words to create dialect-based comedy
+- the distinctly Northeastern style of "saying blunt truths with a completely straight face"
+
+### Summary of his humor style
+
+| Type | Frequency | Effect |
+|------|------|------|
+| Exaggeration to absurdity | ★★★★★ | creates his most shareable one-liners |
+| Contrast | ★★★★★ | a one-line takedown, an upending of expectations |
+| Storyteller-style narration | ★★★★ | turns dry information into entertainment |
+| Self-deprecation | ★★★ | builds warmth and credibility |
+| Regional bits | ★★★ | adds distinctiveness and personal color |
+| Crude language/swearing | ★★★ | boosts a sense of "authenticity," but is also why he got banned |
+
+---
+
+## Controversial statements
+
+### A timeline of major controversies
+
+| When | Event | Original quote/point | Consequence |
 |------|------|-----------|------|
-| 2017年 | 《快乐大本营》五险一金言论 | 「询问五险一金的求职者是没追求的人」 | 引发职场讨论 |
-| 2018年1月 | 西南大学事件 | 讽刺学生被分配到「兽医课程」，态度轻浮 | 致歉 |
-| 2023年6月 | 新闻学事件（最大争议） | 「打晕孩子别报新闻学」+「闭眼摸一个都比新闻好」 | 多位大学教授公开抨击，成为全网热点 |
-| 2023年12月 | 文科贬低事件 | 「文科都是服务业，一个字就是舔」 | 12月9日公开道歉 |
-| 2024年 | 志愿填报收费争议 | 套餐11999元/17999元 | 被质疑商业化过度 |
-| 2025年9月3日 | 统一捐款言论 | 「祖国统一枪声打响，个人至少捐5000万，公司整体捐1亿」 | 官媒批评「轻率捆绑」 |
-| 2025年9月24日 | 多平台账号被禁止关注 | 直播中不当言论 | 账号受限 |
-| 2025年12月3日 | 中央网信办通报 | 直播中长时间使用污言秽语 | 封禁处罚 |
+| 2017 | the "five social-insurance funds and the housing fund" remark on *Happy Camp* | "a job candidate who asks about the five social-insurance funds and the housing fund has no ambition" | sparked a workplace-culture debate |
+| January 2018 | the Southwest University incident | mocked students being assigned to a "veterinary medicine course," with a flippant tone | apologized |
+| June 2023 | the journalism incident (his biggest controversy) | "knock your kid out cold before you let them major in journalism" + "close your eyes and pick anything, it beats journalism" | multiple university professors publicly criticized him; became a nationwide trending topic |
+| December 2023 | the humanities-demeaning incident | "the humanities are all service industry, one word for it: kowtowing" | publicly apologized on December 9 |
+| 2024 | the college-application-fee controversy | packages priced at 11,999 / 17,999 yuan | accused of excessive commercialization |
+| September 3, 2025 | remarks on donations for national reunification | "when the shots for reunification are fired, individuals should donate at least 50 million yuan, companies should donate 100 million as a group" | state media criticized him for "reckless linkage" |
+| September 24, 2025 | multiple accounts blocked from new followers | inappropriate remarks on livestream | account restricted |
+| December 3, 2025 | a public notice from the Cyberspace Administration of China | extended use of foul language on livestream | banned as a penalty |
 
-### 争议言论的表达模式
+### The expressive pattern behind his controversial remarks
 
-1. **绝对化判断**：用「都是」「千万别」「一定」等词汇不留余地，便于传播但也容易被攻击
-2. **粗俗化表达**：「舔」「打晕」等词汇增加冲击力但触碰底线
-3. **阶层叙事**：反复强调「普通家庭」vs「有钱人」的对立，击中焦虑但也被批制造焦虑
-4. **简单归因**：将复杂的教育/就业问题简化为单一维度（薪资、就业率），被学界批评缺乏nuance
+1. **Absolute judgments**: words like "all," "never ever," "definitely" leave no room for
+   nuance — easy to spread, but also easy to attack
+2. **Crude phrasing**: words like "kowtowing" and "knock out" add impact, but cross a line
+3. **A class narrative**: repeatedly emphasizes the "ordinary family" vs. "the wealthy"
+   opposition — hits a nerve of anxiety, but is also criticized for manufacturing it
+4. **Simple attribution**: reduces a complex education/employment question to a single
+   dimension (salary, employment rate), criticized by academics for lacking nuance
 
 ---
 
-## 辩论/攻防方式
+## His argument/combat style
 
-### 核心辩论策略
+### Core debate tactics
 
-| 策略 | 描述 | 经典案例 |
+| Tactic | Description | Classic case |
 |------|------|----------|
-| **致命反问** | 一句话把对方逻辑打回去 | 「所以你不是世界500强！」 |
-| **举反例打脸** | 用具体事实否定对方抽象论点 | 500强说学历不重要 → 但他们不去齐齐哈尔招聘 |
-| **时间错位** | 指出对方用过时案例推当下结论 | 「马云是20年前的事！那时大专生能包分配」 |
-| **绝对化震慑** | 用极端表述压制对方气势 | 「没机会！他根本就没机会！」 |
-| **身份降维** | 攻击对方资格而非论点 | 对马丁：你公司都不是500强，有什么资格说学历不重要 |
+| **A lethal counter-question** | knocks the other side's logic down in one line | "So you're not exactly Fortune 500!" |
+| **Using a counterexample to slap down** | rebuts an abstract argument with a concrete fact | Fortune 500 says the degree doesn't matter -> but they don't recruit from Qiqihar |
+| **A time mismatch** | points out the other side is using an outdated case to argue for a current conclusion | "Jack Ma went to college 20 years ago! Back then even a junior-college grad had a job waiting" |
+| **Absolutist shock value** | uses extreme phrasing to overpower the other side | "No chance! He has absolutely no chance!" |
+| **Punching down on credentials** | attacks the other side's standing to speak rather than their argument | to Martin: your company isn't even Fortune 500, what standing do you have to say the degree doesn't matter |
 
-### 辩论风格特点
+### Debate-style traits
 
-- **攻强守弱**：擅长进攻式表达，很少防守或承认对方部分正确
-- **情绪带动**：用语气、语速、肢体语言制造「气场压制」
-- **观众导向**：辩论时不是说服对手，而是说服观众（台下学生/屏幕前观众）
-- **拒绝灰色地带**：很少说「这取决于……」「也有可能……」，永远给出明确判断
+- **Strong on offense, weak on defense**: skilled at offensive rhetoric, rarely defends or
+  admits the other side has a point
+- **Emotion-driven**: uses tone, pace, and body language to project an overpowering presence
+- **Audience-oriented**: in a debate, he's not trying to persuade his opponent — he's trying
+  to persuade the audience (students in the room / viewers on screen)
+- **Rejects gray areas**: rarely says "it depends" or "it's possible that" — always delivers a
+  clear verdict
 
 ---
 
-## 表达DNA总结
+## A summary of his expression DNA
 
-### 五大核心基因
+### Five core genes
 
-1. **极端化** — 把观点推到极端才有传播力，温吞的建议没人记住
-2. **功利主义** — 一切以就业、薪资、生存为锚点，不谈情怀不谈理想
-3. **阶层意识** — 始终站在「普通家庭」视角，用阶层差异制造紧迫感
-4. **娱乐化** — 把教育信息包装成相声/段子/说书，先让人笑再让人想
-5. **东北底色** — 自带方言幽默、直来直去、不装不端的文化基因
+1. **Extremization** — a view only travels once it's pushed to the extreme; mild advice gets
+   forgotten
+2. **Utilitarianism** — everything anchored to employment, salary, and survival; no talk of
+   passion or ideals
+3. **Class consciousness** — always speaking from the vantage point of "ordinary families,"
+   using class difference to create urgency
+4. **Entertainment-ization** — packages education information as crosstalk/bits/storytelling,
+   makes you laugh first, think second
+5. **Northeastern-Chinese roots** — the cultural DNA of dialect humor, directness, and
+   unpretentiousness
 
-### 表达节奏公式
+### The formula for his expressive rhythm
 
 ```
-铺垫（设置常见误区/对方观点）
-→ 反转（用事实/反问打脸）
-→ 金句（一句话总结，适合截图传播）
-→ 重复强调（同一观点换2-3种说法反复锤）
+Wind-up (sets up the common misconception/the other side's view)
+-> Reversal (slaps it down with a fact/counter-question)
+-> The punchline (a one-line summary, screenshot-ready)
+-> Repeated emphasis (the same point restated 2-3 different ways, hammered in)
 ```
 
-### 情绪光谱
+### His emotional spectrum
 
-| 情绪 | 使用场景 | 频率 |
+| Emotion | When used | Frequency |
 |------|----------|------|
-| 亢奋激昂 | 辩论、演讲高潮 | ★★★★★ |
-| 犀利讽刺 | 评价专业/批评现象 | ★★★★★ |
-| 温情关怀 | 对学生的鼓励 | ★★★ |
-| 自嘲豁达 | 谈自己出身/网红身份 | ★★★ |
-| 悲观宿命 | 谈社会结构性问题 | ★★ |
-| 粗口宣泄 | 直播中情绪激动时 | ★★（后期增多，导致封禁） |
+| Excited and impassioned | debate, the climax of a talk | ★★★★★ |
+| Sharp and sarcastic | evaluating a major / criticizing a phenomenon | ★★★★★ |
+| Warm and caring | encouraging students | ★★★ |
+| Self-deprecating and unbothered | discussing his own background/influencer status | ★★★ |
+| Pessimistic and fatalistic | discussing structural social problems | ★★ |
+| Venting with crude language | when emotionally worked up on livestream | ★★ (increased later, leading to his ban) |
 
 ---
 
-## 来源索引
+## Source index
 
-### 综合分析文章
-- [36氪：「实用主义」张雪峰：一路被骂，一路狂飙](https://36kr.com/p/2658019469769864)
-- [36氪：直播间里再无张雪峰](https://36kr.com/p/3738115126919425)
-- [36氪：张雪峰「高调含泪退网」](https://36kr.com/p/3328960302868995)
-- [凤凰网：倒在41岁的张雪峰，留下了三个关键词](https://finance.ifeng.com/c/8rmPVlgum1V)
-- [界面新闻：张雪峰——寒门讲师的商业跃迁](https://www.jiemian.com/article/14158150.html)
-- [21经济网：从寒门北漂到全网「升学指路官」](https://www.21jingji.com/article/20260326/herald/e7302f9dfd83337e6d6fa83ebfc53c95.html)
+### General analysis articles
+- [36Kr: "Pragmatist" Zhang Xuefeng: getting criticized every step, and racing forward anyway](https://36kr.com/p/2658019469769864)
+- [36Kr: there's no more Zhang Xuefeng in the livestream room](https://36kr.com/p/3738115126919425)
+- [36Kr: Zhang Xuefeng's "high-profile, tearful exit from the internet"](https://36kr.com/p/3328960302868995)
+- [Ifeng: Zhang Xuefeng, dead at 41, leaves behind three key words](https://finance.ifeng.com/c/8rmPVlgum1V)
+- [Jiemian News: Zhang Xuefeng — a poor-background instructor's commercial leap](https://www.jiemian.com/article/14158150.html)
+- [21jingji.com: from a poor Beijing migrant to the whole internet's "college-admissions guide"](https://www.21jingji.com/article/20260326/herald/e7302f9dfd83337e6d6fa83ebfc53c95.html)
 
-### 语录与金句
-- [新浪：张雪峰经典语录（精选）](https://k.sina.cn/article_7857201856_1d45362c001903kx5o.html)
-- [搜狐：张雪峰经典名言100句](https://m.sohu.com/a/1002688691_121948415)
-- [搜狐：张雪峰118条人间清醒指南](https://www.sohu.com/a/1001334187_122493512)
-- [新浪：张雪峰在综艺中的金句汇总](https://cj.sina.com.cn/articles/view/7879776328/1d5abd84806801e4uo)
-- [新浪：张雪峰综艺舌战真相](https://cj.sina.com.cn/articles/view/7879776328/1d5abd84806801e4ui)
+### Quotes and one-liners
+- [Sina: a selection of Zhang Xuefeng's classic quotes](https://k.sina.cn/article_7857201856_1d45362c001903kx5o.html)
+- [Sohu: 100 classic Zhang Xuefeng quotes](https://m.sohu.com/a/1002688691_121948415)
+- [Sohu: 118 pieces of clear-eyed wisdom from Zhang Xuefeng](https://www.sohu.com/a/1001334187_122493512)
+- [Sina: a compilation of Zhang Xuefeng's variety-show one-liners](https://cj.sina.com.cn/articles/view/7879776328/1d5abd84806801e4uo)
+- [Sina: the real story behind Zhang Xuefeng's variety-show debates](https://cj.sina.com.cn/articles/view/7879776328/1d5abd84806801e4ui)
 
-### 争议事件
-- [维基百科：张雪峰](https://zh.wikipedia.org/wiki/%E5%BC%A0%E9%9B%AA%E5%B3%B0)
-- [澎湃新闻：张雪峰「打晕不报新闻学」遭教授怒怼](https://m.thepaper.cn/newsDetail_forward_23521153)
-- [腾讯新闻：张雪峰多平台账号被禁止关注](https://news.qq.com/rain/a/20250925A08A3400)
-- [新浪：张雪峰去世，曾两次预言自己的死亡](https://finance.sina.com.cn/tech/roll/2026-03-25/doc-inhscxke1212544.shtml)
+### Controversial incidents
+- [Wikipedia: Zhang Xuefeng](https://zh.wikipedia.org/wiki/%E5%BC%A0%E9%9B%AA%E5%B3%B0)
+- [The Paper: Zhang Xuefeng's "knock them out before journalism" remark draws professors' fury](https://m.thepaper.cn/newsDetail_forward_23521153)
+- [Tencent News: Zhang Xuefeng's accounts across multiple platforms blocked from new followers](https://news.qq.com/rain/a/20250925A08A3400)
+- [Sina: Zhang Xuefeng dies, having predicted his own death twice before](https://finance.sina.com.cn/tech/roll/2026-03-25/doc-inhscxke1212544.shtml)
 
-### 视频源（B站）
-- [B站：相声演员张雪峰爆笑段子集锦](https://www.bilibili.com/video/BV12p4y1W7K7/)
-- [B站：《演说家》张雪峰考研演讲完整版](https://www.bilibili.com/video/av12938458/)
-- [B站：张雪峰19年封神之战](https://www.bilibili.com/video/BV1eRqHB1E98/)
-- [B站：南方和北方民风差距太大了](https://www.bilibili.com/video/BV15P4y137iM/)
+### Video sources (Bilibili)
+- [Bilibili: a compilation of Zhang Xuefeng's funniest crosstalk-style bits](https://www.bilibili.com/video/BV12p4y1W7K7/)
+- [Bilibili: the full version of Zhang Xuefeng's grad-exam talk on *Storyteller*](https://www.bilibili.com/video/av12938458/)
+- [Bilibili: Zhang Xuefeng's legendary 2019 debate](https://www.bilibili.com/video/BV1eRqHB1E98/)
+- [Bilibili: the culture up north and down south is so different](https://www.bilibili.com/video/BV15P4y137iM/)
 
-### 去世与悼念
-- [腾讯新闻：张雪峰走了，那个在直播间里唾沫横飞的人再也不会说话了](https://view.inews.qq.com/a/20260324A07BSL00)
-- [网易：倒在41岁的张雪峰，留下了三个关键词](https://c.m.163.com/news/a/KOSDOFQ6051100DH.html)
-- [雷科技：千万网友送别张雪峰](https://www.leikeji.com/article/75757)
+### His death and tributes
+- [Tencent News: Zhang Xuefeng is gone — the man who talked a mile a minute on livestream will never speak again](https://view.inews.qq.com/a/20260324A07BSL00)
+- [NetEase: Zhang Xuefeng, dead at 41, leaves behind three key words](https://c.m.163.com/news/a/KOSDOFQ6051100DH.html)
+- [LeiTech: millions of followers say farewell to Zhang Xuefeng](https://www.leikeji.com/article/75757)
