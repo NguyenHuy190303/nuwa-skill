@@ -1,22 +1,28 @@
 #!/usr/bin/env python3
-"""COMMUNITY.md 收录PR的半自动检查。
+"""Semi-automated check for a COMMUNITY.md listing PR.
 
-机器检查（本脚本）：
-1. PR只改动 COMMUNITY.md（动了SKILL.md等核心文件直接判❌）
-2. 新增行里的GitHub仓库真实存在且公开
-3. 若目标仓库含SKILL.md（人物/主题skill类）→ 额外要求：
-   - FIDELITY.md 存在且总分≥70（B级）
-   - FIDELITY.md 关键字段行（测试日期/总分/各维评分）不得为占位或预估
-     （待跑、预估、TBD、YYYY-MM-DD等——分数须为独立双agent实测结果；
-     只扫字段行不扫全文，诚实边界等正文表述不会触发）
-   - SKILL.md 含「诚实边界」章节
-   - 有 references/ 目录；references/research/ 子目录缺失仅记⚠️请人工确认
-   若不含SKILL.md（合集/工具类）→ 仅存在性检查，标注请人工确认类别
-4. 结果贴成PR评论
+Machine checks (this script):
+1. The PR touches only COMMUNITY.md (touching SKILL.md or other core files is an
+   automatic ❌)
+2. The GitHub repo linked in the added line actually exists and is public
+3. If the target repo has a root SKILL.md (a person or topic skill) -> extra
+   requirements:
+   - FIDELITY.md exists with a total score >= 70 (grade B)
+   - FIDELITY.md's key field lines (test date / total score / per-dimension
+     scores) are not placeholders or estimates (pending, estimated, TBD,
+     YYYY-MM-DD, and so on — scores must come from an independent dual-agent
+     test; only the field lines are scanned, not the whole document, so prose
+     like "honest limits" never triggers it)
+   - SKILL.md has an "Honest limits" section
+   - Has a references/ directory; a missing references/research/ subdirectory
+     is only logged as a ⚠️ for manual review
+   If it has no SKILL.md (a collection or tooling repo) -> existence check
+   only, flagged for the maintainer to classify by hand
+4. Post the result as a PR comment
 
-人工检查（维护者）：伦理红线 + 内容质量抽查 + 合并。
+Manual check (maintainer): ethics red lines + a content-quality spot check + merge.
 
-本地测试：python3 community_check.py --check-repo owner/repo
+Local testing: python3 community_check.py --check-repo owner/repo
 """
 import json
 import os
@@ -26,46 +32,63 @@ import urllib.request
 
 API = "https://api.github.com"
 
-# FIDELITY.md 占位/预估检测：结构化字段扫描，命中即判❌。
-# 依据：保真度分数必须来自独立双agent实测（见 references/fidelity-scorecard.md），
-# 「预填模板+补一行总分」不算跑过测试（先例：PR #70）。
-# 设计约束（2026-07-26对抗审查 P1-22/P1-23）：
-# 1. 只扫「关键字段行」（测试日期/总分/各维评分等），绝不全文搜词——
-#    「诚实边界：xx未实测」是项目自己要求写的内容，不能被判成造假；
-# 2. 否定语境免疫：「不是自评分」「NOT a self-assessment」不算命中；
-# 3. 英文词绑定分数上下文（estimated score），不拦 "Estimated reading time"。
-# 宁可漏判交给人工，也不让守规矩的投稿被机器误拒。
+# FIDELITY.md placeholder/estimate detection: a structured scan of key field
+# lines; a hit is an automatic ❌.
+# Rationale: fidelity scores must come from an independent dual-agent test (see
+# references/fidelity-scorecard.md); "prefilled template + one line of total
+# score" does not count as a real test (precedent: PR #70).
+# Design constraints (from the 2026-07-26 adversarial review, P1-22/P1-23):
+# 1. Only scan "key field lines" (test date / total score / per-dimension
+#    scores, etc.), never the whole document — "Honest limits: X was not
+#    tested" is prose the project itself requires and must not be flagged as
+#    fabrication;
+# 2. Negation-context immunity: "NOT a self-assessment" does not count as a hit;
+# 3. English words are bound to a score context ("estimated score"), so this
+#    does not block "Estimated reading time".
+# Better to miss a case and leave it to manual review than to machine-reject a
+# submission that actually followed the rules.
+#
+# The field names are matched in both Chinese and English: existing community
+# entries (and future non-English submissions) still use the Chinese scorecard
+# terms from before this repo's translation, and rejecting those outright would
+# be a regression, not a fix.
 
-# 关键字段行：行首（允许 >、#、*、-、| 等markdown前缀）出现「字段名 + 冒号/表格分隔符」。
-# 「评分日期格式统一为YYYY-MM-DD」这类叙述句因字段名后无分隔符，不会被当成字段行。
+# A key field line: a field name followed by a colon or table separator, at the
+# start of a line (a markdown prefix like >, #, *, -, | is allowed before it).
+# A narrative sentence like "score dates are always formatted YYYY-MM-DD" has no
+# separator right after the field name, so it is not treated as a field line.
 FIDELITY_KEY_FIELD_RE = re.compile(
     r"^[\s>#*\-|]*(?:测试日期|评分日期|测试时间|测试模型|总分|综合得分|最终得分|得分|评分"
     r"|维度\s*\d+|立场一致性|风格辨识度|边缘诚实度|来源透明度|结构完整度"
-    r"|total(?:\s+score)?|overall(?:\s+score)?|final\s+score|test\s+date|score|date)"
+    r"|total(?:\s+score)?|overall(?:\s+score)?|final\s+score|test\s+date|score|date"
+    r"|stance\s+consistency|style\s+recognizability|edge\s+honesty"
+    r"|source\s+transparency|structural\s+completeness)"
     r"[\s*]*[:：|]",
     re.IGNORECASE,
 )
-# 占位/预估标记（仅在关键字段行内查找）
+# Placeholder/estimate markers (only searched for within key field lines)
 FIDELITY_PLACEHOLDER_PATTERNS = [
-    (r"预估", "预估"),
-    (r"待跑", "待跑"),
-    (r"待测", "待测"),
-    (r"待补", "待补"),
-    (r"待定", "待定"),
-    (r"待填", "待填"),
-    (r"占位", "占位"),
-    (r"未实测", "未实测"),
-    (r"未测试", "未测试"),
-    (r"自评分", "自评分"),   # 区别于论文引用里的「自评准确率」，裸「自评」不收
-    (r"YYYY[-/年]?\s*MM", "YYYY-MM-DD（模板日期没填）"),
+    (r"预估", "预估 (estimated)"),
+    (r"待跑", "待跑 (pending run)"),
+    (r"待测", "待测 (pending test)"),
+    (r"待补", "待补 (to be filled in)"),
+    (r"待定", "待定 (TBD)"),
+    (r"待填", "待填 (to be filled in)"),
+    (r"占位", "占位 (placeholder)"),
+    (r"未实测", "未实测 (not actually tested)"),
+    (r"未测试", "未测试 (not tested)"),
+    (r"自评分", "自评分 (self-scored)"),   # distinct from a paper citation's "self-assessment accuracy"; bare "self-scored" is not accepted
+    (r"YYYY[-/年]?\s*MM", "YYYY-MM-DD (template date left unfilled)"),
     (r"\bTBD\b", "TBD"),
     (r"\bTODO\b", "TODO"),
+    (r"pending\s+(?:test|run)", "pending test/run"),
     (r"self[- ]assess\w*", "self-assessed"),
     (r"\bestimated\s+(?:score|total|rating|grade)", "estimated score"),
     (r"\bplaceholder\b", "placeholder"),
-    (r"\bNN\s*/\s*\d+", "NN/100（模板分数没填）"),
+    (r"\bNN\s*/\s*\d+", "NN/100 (template score left unfilled)"),
 ]
-# 否定语境：命中词紧邻的前文若是否定表达，视为主动澄清而非占位
+# Negation context: if the text right before a hit is a negation, treat it as
+# the author deliberately clarifying rather than an actual placeholder
 FIDELITY_NEGATION_RE = re.compile(
     r"(?:不是|并非|绝不|从不|不算|不做|没有|不存在|未使用|无"
     r"|not(?:\s+an?)?|isn'?t(?:\s+an?)?|never|no)[\s*'\"「」（(]*$",
@@ -74,9 +97,12 @@ FIDELITY_NEGATION_RE = re.compile(
 
 
 def find_fidelity_red_flags(text):
-    """结构化字段扫描FIDELITY.md：只检查关键字段行是否为占位/预估。
+    """Structured field scan of FIDELITY.md: check only whether the key field
+    lines are placeholders or estimates.
 
-    返回命中标记列表（去重、保持顺序）。非字段行（诚实边界、局限说明等正文）不扫描。
+    Returns the list of hit labels (deduplicated, order preserved). Non-field
+    lines (honest limits, statements of limitation, and other prose) are never
+    scanned.
     """
     hits = []
     for line in text.splitlines():
@@ -107,56 +133,56 @@ def gh(path, token, raw=False):
 
 
 def check_target_repo(slug, token):
-    """检查被收录的仓库，返回 (是否通过, 检查项列表)。"""
+    """Check the repo being listed. Returns (passed, list of check items)."""
     items = []
     repo = gh(f"/repos/{slug}", token)
     if not repo:
-        return False, [("❌", f"`{slug}` 仓库不存在或不可访问")]
-    items.append(("✅", f"[`{slug}`](https://github.com/{slug}) 存在（★{repo.get('stargazers_count', 0)}）"))
+        return False, [("❌", f"`{slug}` repo does not exist or is not accessible")]
+    items.append(("✅", f"[`{slug}`](https://github.com/{slug}) exists (★{repo.get('stargazers_count', 0)})"))
 
     skill_md = gh(f"/repos/{slug}/contents/SKILL.md", token, raw=True)
     if skill_md is None:
-        items.append(("ℹ️", "无根目录SKILL.md → 按「合集/工具类」处理，请人工确认类别与内容"))
+        items.append(("ℹ️", "No root SKILL.md -> treated as a collection/tooling repo; please confirm category and content by hand"))
         return True, items
-    items.append(("✅", "含 SKILL.md（按skill类审核）"))
+    items.append(("✅", "Has SKILL.md (reviewed as a skill repo)"))
 
     if "诚实边界" in skill_md or "Honest" in skill_md or "honest-limits" in skill_md.lower():
-        items.append(("✅", "SKILL.md 含诚实边界章节"))
+        items.append(("✅", "SKILL.md has an Honest limits section"))
     else:
-        items.append(("❌", "SKILL.md 缺「诚实边界」章节（收录门槛之一）"))
+        items.append(("❌", "SKILL.md is missing the \"Honest limits\" section (one of the listing requirements)"))
 
     refs = gh(f"/repos/{slug}/contents/references", token)
     if isinstance(refs, list) and refs:
-        items.append(("✅", "含 references/ 目录"))
+        items.append(("✅", "Has a references/ directory"))
         research = gh(f"/repos/{slug}/contents/references/research", token)
         if isinstance(research, list) and research:
-            items.append(("✅", "含 references/research/ 调研底稿目录"))
+            items.append(("✅", "Has a references/research/ raw-research directory"))
         else:
-            items.append(("⚠️", "未见 references/research/ 子目录（CONTRIBUTING期望的调研底稿结构）。"
-                                "若调研底稿直接放在 references/ 下，请维护者人工确认可溯源性即可，不作硬性拦截"))
+            items.append(("⚠️", "No references/research/ subdirectory found (the raw-research layout CONTRIBUTING expects). "
+                                "If the raw research sits directly under references/, the maintainer can confirm traceability by hand — not a hard blocker"))
     else:
-        items.append(("❌", "缺 references/ 调研底稿（skill需自包含可溯源）"))
+        items.append(("❌", "Missing references/ raw research (a skill must be self-contained and traceable)"))
 
     fidelity = gh(f"/repos/{slug}/contents/FIDELITY.md", token, raw=True)
     if fidelity is None:
-        items.append(("❌", "缺 FIDELITY.md 保真度评分卡（见 references/fidelity-scorecard.md）"))
+        items.append(("❌", "Missing FIDELITY.md fidelity scorecard (see references/fidelity-scorecard.md)"))
     else:
-        m = re.search(r"总分[：:]\s*(\d+)\s*/\s*100", fidelity)
+        m = re.search(r"(?:总分|total)[：:]\s*(\d+)\s*/\s*100", fidelity, re.IGNORECASE)
         if not m:
-            items.append(("❌", "FIDELITY.md 存在但未解析到「总分：NN/100」"))
+            items.append(("❌", "FIDELITY.md exists but no \"Total: NN/100\" could be parsed out of it"))
         elif int(m.group(1)) >= 70:
-            items.append(("✅", f"保真度 {m.group(1)}/100 ≥ 70（B级门槛）"))
+            items.append(("✅", f"Fidelity {m.group(1)}/100 >= 70 (grade B bar)"))
         else:
-            items.append(("❌", f"保真度 {m.group(1)}/100 未达B级门槛（70）"))
+            items.append(("❌", f"Fidelity {m.group(1)}/100 below the grade B bar (70)"))
         red_flags = find_fidelity_red_flags(fidelity)
         if red_flags:
-            items.append(("❌", "FIDELITY.md 关键字段（测试日期/总分/评分）检出占位或预估：`"
-                          + "`、`".join(red_flags[:8])
-                          + ("`" if len(red_flags) <= 8 else f"`…等{len(red_flags)}项")
-                          + "。保真度分数须由独立双agent实测产生（方法见 references/fidelity-scorecard.md），"
-                            "预填模板或自评预估分不满足收录门槛，请实测后更新评分卡"))
+            items.append(("❌", "FIDELITY.md's key fields (test date / total score / per-dimension scores) contain a placeholder or estimate: `"
+                          + "`, `".join(red_flags[:8])
+                          + ("`" if len(red_flags) <= 8 else f"`, and {len(red_flags)} more")
+                          + ". Fidelity scores must come from an independent dual-agent test (method in references/fidelity-scorecard.md); "
+                            "a prefilled template or a self-estimated score does not meet the listing bar — run the real test and update the scorecard"))
         else:
-            items.append(("✅", "FIDELITY.md 关键字段未检出占位/预估"))
+            items.append(("✅", "No placeholder or estimate detected in FIDELITY.md's key fields"))
 
     ok = all(mark != "❌" for mark, _ in items)
     return ok, items
@@ -175,17 +201,17 @@ def main():
 
     files = gh(f"/repos/{repo}/pulls/{pr}/files?per_page=100", token) or []
     names = [f["filename"] for f in files]
-    lines = ["## 🤖 社区收录检查\n"]
+    lines = ["## 🤖 Community listing check\n"]
     all_ok = True
 
     core_touched = [n for n in names if n != "COMMUNITY.md"]
     if core_touched:
         all_ok = False
-        lines.append(f"❌ PR改动了 COMMUNITY.md 以外的文件：`{'`, `'.join(core_touched[:10])}`")
+        lines.append(f"❌ This PR touches files other than COMMUNITY.md: `{'`, `'.join(core_touched[:10])}`")
         if any(n == "SKILL.md" for n in core_touched):
-            lines.append("　　⚠️ SKILL.md 是核心资产，不接受外部PR改动（见 CONTRIBUTING.md），请从PR中移除")
+            lines.append("　　⚠️ SKILL.md is a core asset and does not accept external PRs (see CONTRIBUTING.md) — please remove it from this PR")
     else:
-        lines.append("✅ 只改动 COMMUNITY.md")
+        lines.append("✅ Only COMMUNITY.md was touched")
 
     added = []
     for f in files:
@@ -197,7 +223,7 @@ def main():
 
     if not added:
         all_ok = False
-        lines.append("❌ 未在新增行中检测到GitHub仓库链接")
+        lines.append("❌ No GitHub repo link was found in the added lines")
     for slug in added[:5]:
         ok, items = check_target_repo(slug, token)
         all_ok = all_ok and ok
@@ -205,8 +231,8 @@ def main():
         lines += [f"- {mark} {text}" for mark, text in items]
 
     lines.append("\n---")
-    lines.append(("✅ **机器检查通过**。" if all_ok else "❌ **机器检查未通过**，请按上述项修改后推送更新（会自动重跑）。"))
-    lines.append("最终合并前维护者还会人工确认：伦理红线（CONTRIBUTING.md）+ 内容质量抽查。")
+    lines.append(("✅ **Machine check passed.**" if all_ok else "❌ **Machine check failed** — please fix the items above and push an update (it reruns automatically)."))
+    lines.append("Before the final merge, the maintainer will also confirm by hand: ethics red lines (CONTRIBUTING.md) + a content-quality spot check.")
 
     body = "\n".join(lines)
     req = urllib.request.Request(

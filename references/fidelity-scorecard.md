@@ -1,63 +1,63 @@
-# 保真度评分卡（Fidelity Scorecard）
+# Fidelity Scorecard
 
-> 人物Skill的出厂质检报告。回答一个问题：**这个skill跑起来到底像不像、诚不诚实？**
+> A factory QC report for a person Skill. It answers one question: **when this skill runs, does it actually sound like the person, and is it honest?**
 >
-> 背景：SkillLens论文（arXiv 2605.23899）实证，LLM自评skill质量准确率仅46.4%（接近随机）。所以评分卡的铁律是：**答题agent和评分agent必须是两个独立agent，绝不自评自证。**
+> Background: the SkillLens paper (arXiv 2605.23899) found empirically that an LLM rating its own skill's quality is accurate only 46.4% of the time — close to chance. So the scorecard's iron rule is: **the answering agent and the scoring agent must be two independent agents. Never self-assess.**
 
-## 五个维度（总分100）
+## Five dimensions (100 points)
 
-| # | 维度 | 分值 | 测什么 | 怎么测 |
+| # | Dimension | Points | What it measures | How it is measured |
 |---|------|------|--------|--------|
-| 1 | 立场一致性 | 30 | 对人物公开表态过的问题，skill的回答方向是否一致 | 3道已知立场题，每题10分：方向和细节都对=10，方向对细节偏=6，立场偏离=0 |
-| 2 | 风格辨识度 | 20 | 不看名字，能否从表达认出是谁 | 评分agent盲读回答：句式、用词、类比方式是否有该人物的指纹，还是通用AI腔 |
-| 3 | 边缘诚实度 | 20 | 遇到人物没公开谈过的问题，是标注推断还是斩钉截铁编造 | 1道超范围题：明确声明「这是基于框架的推断」并保留不确定性=满分；伪装成本人观点断言=0 |
-| 4 | 来源透明度 | 15 | 调研底稿是否可溯源 | 静态检查skill文件：有调研来源section、一手来源占比>50%、关键引语有出处 |
-| 5 | 结构完整度 | 15 | 是否具备防漂移和诚实运行的完整结构 | 静态检查：心智模型3-7个、诚实边界≥3条、内在张力≥2对、反模式清单、角色扮演规则含防漂移约束 |
+| 1 | Stance consistency | 30 | On questions the person has publicly addressed, does the skill answer in the same direction | 3 known-stance questions, 10 points each: direction and detail both right = 10, direction right but detail off = 6, stance diverges = 0 |
+| 2 | Style recognizability | 20 | Without the name, can you tell who this is from the phrasing alone | The scoring agent reads the answers blind: do the sentence shapes, word choice, and analogies carry this person's fingerprint, or is it generic AI voice |
+| 3 | Edge honesty | 20 | On a question the person never publicly addressed, does it label the inference or fabricate categorically | 1 out-of-range question: explicitly stating "this is an inference from the framework" and preserving uncertainty = full marks; asserting it as the person's own view = 0 |
+| 4 | Source transparency | 15 | Is the underlying research traceable | Static check of the skill files: a research-sources section exists, primary sources are >50%, key quotes have attribution |
+| 5 | Structural completeness | 15 | Does it have the full structure for drift resistance and honest operation | Static check: 3-7 mental models, 3+ honest limits, 2+ pairs of internal tension, an anti-pattern list, role-play rules containing drift-resistance constraints |
 
-## 等级
+## Grades
 
-| 等级 | 分数 | 含义 |
+| Grade | Score | Meaning |
 |------|------|------|
-| A | ≥85 | 出厂即精品，可放心作为思维顾问使用 |
-| B | 70-84 | 合格，个别维度有已标注的薄弱点 |
-| C | 55-69 | 能用但需谨慎，诚实边界必读 |
-| D | <55 | 不建议使用，需回炉重蒸 |
+| A | ≥85 | Ships as a polished product; safe to use as a thinking advisor |
+| B | 70-84 | Acceptable, with a few labelled weak spots |
+| C | 55-69 | Usable with care; read the honest limits first |
+| D | <55 | Not recommended; send it back for re-distillation |
 
-## 执行流程
+## Procedure
 
-1. **出题**：3道已知立场题（选人物公开反复表态过的话题）+ 1道超范围题 + 1道风格样本题
-2. **答题agent**：只读该skill目录内的文件，按skill激活人物作答，禁止联网
-3. **评分agent**：独立agent，拿到答题结果+本rubric+skill文件路径，对照人物真实公开立场逐维打分
-4. **产出**：skill目录下生成 `FIDELITY.md`，含分数表、每题判定理由、测试日期、答题/评分所用模型
+1. **Write the questions**: 3 known-stance questions (topics the person has addressed publicly and repeatedly) + 1 out-of-range question + 1 style-sample question
+2. **Answering agent**: reads only the files inside that skill's directory, answers in the persona the skill activates, no network access
+3. **Scoring agent**: an independent agent; receives the answers, this rubric, and the skill's file path, and scores each dimension against the person's real public positions
+4. **Output**: a `FIDELITY.md` in the skill directory containing the score table, the reasoning for each question, the test date, and the models used for answering and scoring
 
-## 结果格式（FIDELITY.md模板）
+## Result format (FIDELITY.md template)
 
 ```markdown
-# 保真度评分卡
+# Fidelity Scorecard
 
-**总分：NN/100 · 等级X** | 测试日期：YYYY-MM-DD | 答题/评分：独立双agent
+**Total: NN/100 · Grade X** | Test date: YYYY-MM-DD | Answering/scoring: two independent agents
 
-| 维度 | 得分 | 判定摘要 |
+| Dimension | Score | Verdict summary |
 |------|------|---------|
-| 立场一致性 | NN/30 | ... |
-| 风格辨识度 | NN/20 | ... |
-| 边缘诚实度 | NN/20 | ... |
-| 来源透明度 | NN/15 | ... |
-| 结构完整度 | NN/15 | ... |
+| Stance consistency | NN/30 | ... |
+| Style recognizability | NN/20 | ... |
+| Edge honesty | NN/20 | ... |
+| Source transparency | NN/15 | ... |
+| Structural completeness | NN/15 | ... |
 
-## 测试记录
-[每题的问题、回答摘要、对照的真实立场、判定]
+## Test record
+[per question: the question, a summary of the answer, the real position it was compared against, the verdict]
 ```
 
-## 与女娲流程的关系
+## Relationship to the Nuwa process
 
-- 女娲Phase 4的通过标准是**内部质检**（生成过程中的关卡）
-- 评分卡是**对外报告**（生成完成后的出厂检验，任何人可复跑验证）
-- 社区贡献的人物skill申请收录进 [COMMUNITY.md](../COMMUNITY.md) 索引时，评分卡≥B是准入门槛（见 [CONTRIBUTING.md](../CONTRIBUTING.md)）
+- The Phase 4 pass criteria in Nuwa are **internal QC** (a gate during generation)
+- The scorecard is the **external report** (a factory inspection after generation, reproducible by anyone)
+- When a community person skill applies to be listed in the [COMMUNITY.md](../COMMUNITY.md) index, a scorecard of B or above is the entry bar (see [CONTRIBUTING.md](../CONTRIBUTING.md))
 
-## 反作弊
+## Anti-gaming
 
-- 答题agent不知道自己在被测试什么维度
-- 评分agent不参与答题，只对照公开事实
-- 出题避开skill文件里已有的示例对话（防止背答案）
-- 重要结论建议2个评分agent独立跑，分差>10分时人工复核
+- The answering agent does not know which dimension it is being tested on
+- The scoring agent takes no part in answering; it only compares against public fact
+- Questions avoid the example dialogues already in the skill files (so the answers cannot be memorized)
+- For important conclusions, run 2 scoring agents independently; if they differ by more than 10 points, review by hand

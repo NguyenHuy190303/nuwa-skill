@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-自动检查生成的SKILL.md是否通过Phase 4质量标准。
-对照通过标准表格逐项检查，输出通过/不通过和具体原因。
+Check a generated SKILL.md against the Phase 4 quality criteria.
+Walks the pass-criteria table item by item and prints pass/fail with the reason.
 
-用法:
-    python3 quality_check.py <SKILL.md路径>
+Usage:
+    python3 quality_check.py <path to SKILL.md>
 
-示例:
+Example:
     python3 quality_check.py .claude/skills/elon-musk-perspective/SKILL.md
 """
 
@@ -14,136 +14,155 @@ import sys
 import re
 from pathlib import Path
 
+# Section headings follow references/skill-template.md.
+MENTAL_MODEL_SECTION_RE = re.compile(r'^##\s+.*\bmental model', re.IGNORECASE)
+MENTAL_MODEL_ITEM_RE = re.compile(r'^###\s+(?:Model|Mental model)\s*\d', re.IGNORECASE | re.MULTILINE)
+LIMITS_RE = re.compile(r'\blimits?\b|\blimitations?\b|\bblind spot\b|\bbreaks down\b|\bfails when\b',
+                       re.IGNORECASE)
+DNA_SECTION_RE = re.compile(r'^##\s+.*expression dna', re.IGNORECASE | re.MULTILINE)
+STYLE_MARKER_RE = re.compile(
+    r'^\s*[-*]?\s*\**(sentences?|vocabulary|rhythm|humou?r|certainty|citation)\b',
+    re.IGNORECASE | re.MULTILINE,
+)
+HONEST_SECTION_RE = re.compile(r'##\s+.*honest limits?(.*?)(?=\n##\s|\Z)',
+                               re.DOTALL | re.IGNORECASE)
+TENSION_RE = re.compile(r'\btensions?\b|\bcontradictions?\b|\bparadox\b|\bon one hand\b',
+                        re.IGNORECASE)
+SOURCE_SECTION_RE = re.compile(r'##\s+.*(?:research sources|sources|references)(.*?)(?=\n##\s|\Z)',
+                               re.DOTALL | re.IGNORECASE)
+PRIMARY_SUB_RE = re.compile(r'###\s+primary sources?(.*?)(?=\n###\s|\n##\s|\Z)',
+                            re.DOTALL | re.IGNORECASE)
+SECONDARY_SUB_RE = re.compile(r'###\s+secondary sources?(.*?)(?=\n###\s|\n##\s|\Z)',
+                              re.DOTALL | re.IGNORECASE)
+LIST_ITEM_RE = re.compile(r'^\s*[-*]\s+\S', re.MULTILINE)
+
 
 def check_mental_models(content: str) -> tuple[bool, str]:
-    """检查心智模型数量（3-7个）"""
-    # 匹配 ### 模型N: 或 ### N. 等模式
-    models = re.findall(r'^###\s+(?:模型|Model|心智模型)\s*\d', content, re.MULTILINE)
-    if not models:
-        # fallback: 数「### 」开头的行在心智模型section中
+    """Mental model count must be 3-7."""
+    count = len(MENTAL_MODEL_ITEM_RE.findall(content))
+
+    if count == 0:
+        # Fallback: count H3 headings inside the mental-models section.
         in_section = False
-        count = 0
         for line in content.split('\n'):
-            if re.match(r'^##\s+.*心智模型|Mental Model', line, re.IGNORECASE):
+            if MENTAL_MODEL_SECTION_RE.match(line):
                 in_section = True
                 continue
-            if in_section and re.match(r'^##\s+', line) and '心智模型' not in line:
+            if in_section and line.startswith('## '):
                 break
-            if in_section and re.match(r'^###\s+', line):
+            if in_section and line.startswith('### '):
                 count += 1
-        if count > 0:
-            passed = 3 <= count <= 7
-            return passed, f"{count}个心智模型 {'✅' if passed else '❌ (应为3-7个)'}"
 
-    count = len(models)
     if count == 0:
-        return False, "未检测到心智模型section"
+        return False, "no mental-models section detected"
     passed = 3 <= count <= 7
-    return passed, f"{count}个心智模型 {'✅' if passed else '❌ (应为3-7个)'}"
+    return passed, f"{count} mental models {'✅' if passed else '❌ (should be 3-7)'}"
 
 
 def check_limitations(content: str) -> tuple[bool, str]:
-    """检查每个模型是否有局限性"""
-    has_limitation = bool(re.search(r'局限|失效|不适用|盲区|limitation|blind spot', content, re.IGNORECASE))
-    return has_limitation, "有局限性标注 ✅" if has_limitation else "❌ 未找到局限性描述"
+    """Every model should state where it breaks down."""
+    has_limitation = bool(LIMITS_RE.search(content))
+    return has_limitation, "limits are stated ✅" if has_limitation else "❌ no statement of limits found"
 
 
 def check_expression_dna(content: str) -> tuple[bool, str]:
-    """检查表达DNA辨识度"""
-    dna_section = bool(re.search(r'表达DNA|Expression DNA|表达风格', content, re.IGNORECASE))
-    if not dna_section:
-        return False, "❌ 未找到表达DNA section"
+    """Expression DNA must be recognizable, i.e. spelled out concretely."""
+    if not DNA_SECTION_RE.search(content):
+        return False, "❌ no Expression DNA section found"
 
-    # 检查是否有具体的风格描述（句式、词汇等）
-    style_markers = len(re.findall(r'句式|词汇|语气|幽默|节奏|确定性|引用|口头禅', content))
+    style_markers = len(set(m.lower() for m in STYLE_MARKER_RE.findall(content)))
     passed = style_markers >= 3
-    return passed, f"表达DNA特征: {style_markers}项 {'✅' if passed else '❌ (应≥3项)'}"
+    return passed, f"Expression DNA traits: {style_markers} {'✅' if passed else '❌ (should be >=3)'}"
 
 
 def check_honest_boundary(content: str) -> tuple[bool, str]:
-    """检查诚实边界（至少3条）"""
-    # 找诚实边界section
-    boundary_match = re.search(r'(?:##\s+.*诚实边界|## Honest Boundary)(.*?)(?=\n##\s|\Z)', content, re.DOTALL | re.IGNORECASE)
-    if not boundary_match:
-        return False, "❌ 未找到诚实边界section"
+    """Honest limits: at least 3 items."""
+    match = HONEST_SECTION_RE.search(content)
+    if not match:
+        return False, "❌ no Honest limits section found"
 
-    boundary_text = boundary_match.group(1)
-    # 计算列表项
-    items = re.findall(r'^[-*]\s+', boundary_text, re.MULTILINE)
-    count = len(items)
+    count = len(LIST_ITEM_RE.findall(match.group(1)))
     passed = count >= 3
-    return passed, f"诚实边界: {count}条 {'✅' if passed else '❌ (应≥3条)'}"
+    return passed, f"Honest limits: {count} {'✅' if passed else '❌ (should be >=3)'}"
 
 
 def check_tensions(content: str) -> tuple[bool, str]:
-    """检查内在张力（至少2对）"""
-    tension_markers = len(re.findall(r'张力|矛盾|tension|paradox|一方面.*另一方面|既.*又', content, re.IGNORECASE))
-    passed = tension_markers >= 2
-    return passed, f"内在张力: {tension_markers}处 {'✅' if passed else '❌ (应≥2处)'}"
+    """Internal tension: at least 2 mentions."""
+    count = len(TENSION_RE.findall(content))
+    passed = count >= 2
+    return passed, f"Internal tension: {count} mentions {'✅' if passed else '❌ (should be >=2)'}"
 
 
 def check_primary_sources(content: str) -> tuple[bool, str]:
-    """检查一手来源占比"""
-    # 找调研来源section
-    source_section = re.search(r'(?:##\s+.*来源|## Source|## Reference)(.*?)(?=\n##\s|\Z)', content, re.DOTALL | re.IGNORECASE)
-    if not source_section:
-        return True, "未找到来源section（跳过检查）"
+    """Primary sources must be more than half of the cited sources."""
+    section = SOURCE_SECTION_RE.search(content)
+    if not section:
+        return True, "no sources section found (check skipped)"
 
-    source_text = source_section.group(1)
-    primary = len(re.findall(r'一手|primary|本人著作|原始', source_text, re.IGNORECASE))
-    secondary = len(re.findall(r'二手|secondary|转述|评论', source_text, re.IGNORECASE))
+    text = section.group(1)
+    primary_block = PRIMARY_SUB_RE.search(text)
+    secondary_block = SECONDARY_SUB_RE.search(text)
+    if not primary_block and not secondary_block:
+        return True, "sources not split into primary/secondary (check skipped)"
+
+    primary = len(LIST_ITEM_RE.findall(primary_block.group(1))) if primary_block else 0
+    secondary = len(LIST_ITEM_RE.findall(secondary_block.group(1))) if secondary_block else 0
     total = primary + secondary
     if total == 0:
-        return True, "未标记来源类型（跳过检查）"
+        return True, "sources sections are empty (check skipped)"
 
     ratio = primary / total
     passed = ratio > 0.5
-    return passed, f"一手来源占比: {primary}/{total} ({ratio:.0%}) {'✅' if passed else '❌ (应>50%)'}"
+    return passed, f"Primary sources: {primary}/{total} ({ratio:.0%}) {'✅' if passed else '❌ (should be >50%)'}"
+
+
+CHECKS = [
+    ("Mental models", check_mental_models),
+    ("Model limits", check_limitations),
+    ("Expression DNA", check_expression_dna),
+    ("Honest limits", check_honest_boundary),
+    ("Internal tension", check_tensions),
+    ("Primary sources", check_primary_sources),
+]
+
+
+def run_checks(content: str) -> list[tuple[str, bool, str]]:
+    return [(name, *fn(content)) for name, fn in CHECKS]
 
 
 def main():
     if len(sys.argv) < 2:
-        print("用法: python3 quality_check.py <SKILL.md路径>")
+        print("Usage: python3 quality_check.py <path to SKILL.md>")
         sys.exit(1)
 
     skill_path = Path(sys.argv[1])
     if not skill_path.exists():
-        print(f"❌ 文件不存在: {skill_path}")
+        print(f"❌ File not found: {skill_path}")
         sys.exit(1)
 
     content = skill_path.read_text(encoding='utf-8')
+    results = run_checks(content)
 
-    checks = [
-        ("心智模型数量", check_mental_models),
-        ("模型局限性", check_limitations),
-        ("表达DNA辨识度", check_expression_dna),
-        ("诚实边界", check_honest_boundary),
-        ("内在张力", check_tensions),
-        ("一手来源占比", check_primary_sources),
-    ]
-
-    print(f"质量检查: {skill_path.name}")
-    print("=" * 50)
+    print(f"Quality check: {skill_path.name}")
+    print("=" * 60)
 
     passed_count = 0
-    total = len(checks)
-
-    for name, check_fn in checks:
-        passed, detail = check_fn(content)
+    for name, passed, detail in results:
         status = "✅ PASS" if passed else "❌ FAIL"
-        print(f"  {name:<12} {status}  {detail}")
+        print(f"  {name:<18} {status}  {detail}")
         if passed:
             passed_count += 1
 
-    print("=" * 50)
-    print(f"结果: {passed_count}/{total} 通过")
+    total = len(results)
+    print("=" * 60)
+    print(f"Result: {passed_count}/{total} passed")
 
     if passed_count == total:
-        print("🎉 全部通过，可以交付")
+        print("🎉 All checks passed — ready to deliver")
     elif passed_count >= total - 1:
-        print("⚠️ 基本通过，建议修复不通过项后交付")
+        print("⚠️ Mostly passing — fix the failing item before delivering")
     else:
-        print("❌ 多项不通过，建议回到Phase 2迭代")
+        print("❌ Several checks failed — iterate from Phase 2")
 
     sys.exit(0 if passed_count == total else 1)
 

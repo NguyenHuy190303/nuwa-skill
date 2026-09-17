@@ -1,59 +1,51 @@
-# 贡献指南 / Contributing
+# Contributing
 
-感谢你想为女娲生态出力。先读这一页，能帮你的贡献走对路，也能省掉双方的往返。
+Thanks for wanting to help the Nuwa ecosystem. Read this page first — it keeps your contribution on the right track and saves both of us a round trip.
 
-## 一条核心规则
+## One core rule
 
-**`SKILL.md` 是本仓库的核心资产，不接受外部PR改动。** 女娲方法论的每一行都经过维护者的实测验证和版本化优化（见darwin-skill流程），任何对它的修改只由维护者本人完成。
+**`SKILL.md` is this repository's core asset and does not accept external PRs.** Every line of the Nuwa methodology has been tested and versioned by the maintainer (see the darwin-skill process); changes to it are made by the maintainer alone.
 
-这不是拒绝你的想法——如果你发现了方法论的bug或改进点，**开issue讨论**。被采纳的想法会由维护者写进SKILL.md，并在commit中致谢你（先例：PR #59发现的description超限bug已按此方式采纳）。
+This is not a rejection of your ideas. If you find a bug or an improvement in the methodology, **open an issue to discuss it**. Adopted ideas are written into SKILL.md by the maintainer and credited in the commit (precedent: the description-length bug found in PR #59 was adopted this way).
 
-## 贡献人物Skill：走社区索引，不走examples/
+## Contributing a person Skill: use the community index, not `examples/`
 
-`examples/` 是维护者出品的官方示范，保持统一的质量口径。社区蒸馏的人物skill走这条路：
+`examples/` holds the maintainer's official demonstrations and keeps a single quality bar. Community-distilled person skills take this route instead:
 
-1. **放进你自己的GitHub仓库**（一个skill一个仓库，star和维护权都归你）
-2. **跑一遍保真度评分**（见 [references/fidelity-scorecard.md](references/fidelity-scorecard.md)），在仓库里放一份 `FIDELITY.md`
-3. **提PR把你的仓库链接加进 [COMMUNITY.md](COMMUNITY.md)**，一行搞定
+1. **Put it in your own GitHub repo** (one skill per repo — the stars and the maintenance rights are yours)
+2. **Run the fidelity scorecard** (see [references/fidelity-scorecard.md](references/fidelity-scorecard.md)) and commit a `FIDELITY.md` to your repo
+3. **Open a PR adding your repo link to [COMMUNITY.md](COMMUNITY.md)** — one line is all it takes
 
-这对你更划算：你的作品有自己的门牌和star数，还能持续迭代不受本仓库节奏限制。
+This is the better deal for you: your work gets its own address and its own star count, and you can keep iterating without waiting on this repo's release rhythm.
 
-### 收录COMMUNITY.md的门槛
+### Bar for being listed in COMMUNITY.md
 
-- 用女娲流程蒸馏，仓库内含 `references/research/` 调研底稿（自包含，可溯源）
-- 有「诚实边界」和「反模式」章节
-- 保真度评分卡 ≥ B（70分），仓库根目录放 `FIDELITY.md`
-- `FIDELITY.md` 的关键字段（测试日期/总分/各维评分）须为独立双agent实测的真实值，不得是「待跑」「预估」「TBD」「YYYY-MM-DD」等占位或预估——机器检查按此拦截
-- 通过伦理红线检查（见下）
+- Distilled with the Nuwa process, with the `references/research/` raw research kept in the repo (self-contained, traceable)
+- Has "Honest limits" and "Anti-patterns" sections
+- Fidelity scorecard grade B or above (70 points), with `FIDELITY.md` at the repo root
+- The key fields of `FIDELITY.md` (test date / total score / per-dimension scores) must be real values from an independent dual-agent test — not placeholders or estimates like "pending", "estimated", "TBD", or "YYYY-MM-DD". The automated check rejects those.
+- Passes the ethics red lines (below)
 
-提交收录PR后，机器人会自动检查以上形式门槛并把✅/❌清单贴成评论（改完推送会自动重跑）；机器检查通过后，维护者人工确认伦理红线和内容质量即可合并。
+Once you open the listing PR, a bot checks the formal requirements above and posts a ✅/❌ checklist as a comment (push a fix and it re-runs automatically). After the machine check passes, the maintainer manually confirms the ethics red lines and content quality, then merges.
 
-## 伦理红线（不收录，也请不要提交）
+## Ethics red lines (not listed, and please do not submit)
 
-- 未经本人同意蒸馏**在世的非公众人物**（同事、前任、普通人）
-- 用于冒充、骚扰、诈骗场景的skill
-- 医疗、法律、投资等高责任领域的skill，若无明确免责声明和「不能替代专业人士」边界
+- Distilling a **living private individual** (a colleague, an ex, an ordinary person) without their consent
+- Skills built for impersonation, harassment, or fraud
+- Skills in high-liability domains — medical, legal, investment — without an explicit disclaimer and a "cannot replace a professional" boundary
 
-## 其他贡献类型
+## Other kinds of contribution
 
-| 类型 | 怎么提 |
+| Type | How to submit |
 |------|--------|
-| 方法论bug/改进想法 | 开issue讨论（不要直接PR改SKILL.md） |
-| scripts/工具脚本修复 | 直接PR，说明复现步骤 |
-| README翻译/文档错别字 | 直接PR |
-| 衍生工具/合集/编排项目 | 提PR加进COMMUNITY.md |
+| Methodology bug or improvement idea | Open an issue to discuss (do not PR changes to SKILL.md directly) |
+| Fixes to `scripts/` tooling | PR directly, with reproduction steps |
+| README translations, doc typos | PR directly |
+| Derivative tools, collections, orchestration projects | PR an entry into COMMUNITY.md |
 
-## PR Checklist
+## PR checklist
 
-- [ ] 没有改动 `SKILL.md`
-- [ ] 没有 `.DS_Store` 等垃圾文件
-- [ ] 一个PR只做一件事（不要多个人物打包）
-- [ ] PR描述说清楚：做了什么、为什么、怎么验证的
-
----
-
-## English Summary
-
-- **`SKILL.md` is the core asset and does not accept external PRs.** Found a bug or improvement? Open an issue — adopted ideas are implemented by the maintainer with credit in the commit.
-- **Persona skills go to the community index, not `examples/`**: host the skill in your own repo (you keep the stars), run the [fidelity scorecard](references/fidelity-scorecard.md) (grade B or above), then PR a one-line entry to [COMMUNITY.md](COMMUNITY.md).
-- **Ethics**: no distilling living private individuals without consent; no impersonation/harassment use cases; medical/legal/financial personas need explicit disclaimers.
+- [ ] `SKILL.md` is unchanged
+- [ ] No junk files such as `.DS_Store`
+- [ ] One PR does one thing (do not bundle several people together)
+- [ ] The PR description says what you did, why, and how you verified it

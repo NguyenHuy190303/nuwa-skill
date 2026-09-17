@@ -1,682 +1,683 @@
 ---
 name: huashu-nuwa
 description: |
-  女娲造人：输入人名/主题/甚至只是模糊需求，自动深度调研→思维框架提炼→生成可运行的人物Skill。
-  两种入口：(1)明确人名→直接蒸馏 (2)模糊需求→诊断推荐→再蒸馏。
-  触发词：「造skill」「蒸馏XX」「女娲」「造人」「XX的思维方式」「做个XX视角」「更新XX的skill」。
-  模糊需求也触发：「我想提升决策质量」「有没有一种思维方式能帮我...」「我需要一个思维顾问」。
-  English triggers: "distill [person]", "nuwa", "create a [person] perspective skill", "how does [person] think", "I need a thinking advisor".
+  Nuwa creates minds: give it a person's name, a topic, or even just a vague need, and it runs deep research -> mental-model extraction -> a runnable person Skill.
+  Two entry points: (1) a clear name -> distill directly (2) a vague need -> diagnose and recommend -> then distill.
+  Triggers: "make a skill", "distill X", "nuwa", "create a person", "how X thinks", "build an X perspective", "update X's skill".
+  Vague needs also trigger it: "I want to make better decisions", "is there a way of thinking that would help me...", "I need a thinking advisor".
 ---
 
-# 女娲 · Skill造人术
+# Nuwa · The Art of Making Minds into Skills
 
-> 「写不进去的那部分，才是你真正的护城河。」——但写得进去的部分，已经足够强大。
+> "The part you can't write down is your real moat." — but the part you *can* write down is already powerful enough.
 
-## 核心理念
+## Core Idea
 
-女娲不是复制人，是**提炼思维框架**。
+Nuwa does not clone people. It **extracts thinking frameworks**.
 
-一个好的人物Skill是一套可运行的认知操作系统：
-- 他用什么**心智模型**看世界？（镜片）
-- 他用什么**决策启发式**做判断？（直觉规则）
-- 他怎么**表达**？（DNA）
-- 他**绝对不会**做什么？（反模式）
-- 什么是这个Skill**做不到的**？（诚实边界）
+A good person Skill is a runnable cognitive operating system:
+- What **mental models** does this person use to see the world? (the lenses)
+- What **decision heuristics** do they judge by? (the gut rules)
+- How do they **express** themselves? (the DNA)
+- What would they **never** do? (the anti-patterns)
+- What can this Skill **not** do? (the honest limits)
 
-**关键区分**：捕捉的是HOW they think，不是WHAT they said。
+**The key distinction**: capture HOW they think, not WHAT they said.
 
 ---
 
-## 执行流程
+## Execution Flow
 
-### Phase 0: 入口分流
+### Phase 0: Entry Routing
 
-收到用户输入后，先判断属于哪条路径：
+When user input arrives, first decide which path it belongs to:
 
-| 用户输入 | 路径 | 示例 |
+| User input | Path | Example |
 |---------|------|------|
-| 明确的人名/主题 | **直接路径** → Phase 0A | 「蒸馏芒格」「做一个费曼skill」 |
-| 模糊的需求/困惑 | **诊断路径** → Phase 0B | 「我想提升决策质量」「有没有一种思维方式能帮我看透商业本质」 |
+| A clear name or topic | **Direct path** -> Phase 0A | "distill Munger", "make a Feynman skill" |
+| A vague need or frustration | **Diagnostic path** -> Phase 0B | "I want to make better decisions", "is there a way of thinking that helps me see through business fundamentals" |
 
 ---
 
-### Phase 0A: 需求澄清（直接路径）
+### Phase 0A: Requirement Clarification (direct path)
 
-收到明确名字后，确认：
+Once a clear name arrives, confirm:
 
-1. **这个人/主题是谁**：确保理解正确
-2. **聚焦方向**（可选）：全面画像 vs 聚焦某个维度？
-3. **用途**：思维顾问？决策参考？角色扮演？
-4. **新建 or 更新**：是否已有该人物的Skill？（检查 `.claude/skills/` 目录）
-5. **本地语料**：「你手上有没有这个人的一手素材？比如书籍PDF、演讲/访谈transcript、视频字幕、个人博客导出等。有的话直接丢给我，比网上搜的质量高得多。」
-6. **蒸馏档位**：告知用户成本量级并确认档位。完整蒸馏是多agent+多轮搜索的长任务，顶级模型单次可消耗数十美元（真实用户案例），必须在开跑前说清楚：
+1. **Who this person or topic is**: make sure you have the right one
+2. **Focus** (optional): a full portrait, or one dimension in depth?
+3. **Purpose**: thinking advisor? decision reference? role-play?
+4. **New or update**: does a Skill for this person already exist? (check the `.claude/skills/` directory)
+5. **Local corpus**: "Do you have any primary material on this person? Book PDFs, talk or interview transcripts, video subtitles, a personal blog export, and so on. If so, hand it over directly — it is far better quality than anything a web search will find."
+6. **Distillation tier**: state the cost magnitude and confirm the tier. A full distillation is a long multi-agent, multi-round search job; a single run on a top-tier model can burn tens of dollars (reported by real users). Say this before starting:
 
-| 档位 | 调研规模 | 适用场景 | 成本量级 |
+| Tier | Research scope | When to use | Cost magnitude |
 |------|---------|---------|---------|
-| 快速 | 3个维度（著作+对话+表达），每维度限5个来源 | 先试试效果 / 冷门人物 / 预算敏感 | 约标准档1/3 |
-| 标准（默认） | 6个维度完整调研 | 大多数场景 | 中等；换更轻量模型可显著降低 |
-| 深度 | 6维度 + 一手素材全量下载（书籍/字幕/长文存档） | 打算开源发布的精品Skill | 最高 |
+| Quick | 3 dimensions (writings + conversations + expression), max 5 sources each | Trying it out / obscure subject / budget-sensitive | About 1/3 of Standard |
+| Standard (default) | All 6 dimensions | Most cases | Moderate; a lighter model lowers it significantly |
+| Deep | All 6 dimensions + full download of primary material (books, subtitles, long-form archives) | A polished Skill you intend to open-source | Highest |
 
-用户说「就做XX」没有更多信息 → 默认全面画像 + 思维顾问 + 无本地语料（走网络搜索）+ 标准档，直接推进。
+If the user just says "do X" with no further information -> default to a full portrait + thinking advisor + no local corpus (web search) + Standard tier, and proceed.
 
-**确认不阻塞交付**：凡是能给默认值的问题都给默认值；如果下一步产出（访谈提纲、执行计划等）不依赖用户的答案，先给出产出再让用户调整。不要把现成的价值卡在提问之后。
-用户提供了本地语料 → 标记为**本地语料模式**，Phase 1的采集策略会相应调整。
+**Confirmation must not block delivery**: give a default for every question that can have one. If the next deliverable (an interview outline, an execution plan) does not depend on the user's answer, produce it first and let the user adjust afterwards. Never hold finished value hostage behind a question.
+If the user did provide local material -> flag **local-corpus mode**; Phase 1's collection strategy changes accordingly.
 
-确认后 → 跳到 Phase 0.5。
+Once confirmed -> jump to Phase 0.5.
 
 ---
 
-### Phase 0B: 需求诊断（模糊路径）
+### Phase 0B: Need Diagnosis (vague path)
 
-用户不知道该蒸馏谁，只有需求或困惑。这时女娲的工作是**从需求反推最合适的蒸馏对象**。
+The user does not know who to distill; they only have a need or a frustration. Nuwa's job here is to **work backwards from the need to the right subject**.
 
-#### Step 1: 需求定位
+#### Step 1: Locate the need
 
-通过1-2个追问，定位用户的核心需求维度：
+With one or two follow-up questions, locate the user's core need dimension:
 
-| 需求维度 | 典型表达 | 思维框架方向 |
+| Need dimension | Typical phrasing | Framework direction |
 |---------|---------|------------|
-| 决策与判断 | 「怎么做更好的决策」「总是选错」「分析瘫痪」 | 多元思维模型、逆向思考、概率思维 |
-| 表达与写作 | 「想把复杂的事说清楚」「文章没人看」「写得无聊」 | 费曼式简化、故事化思维、类比能力 |
-| 创业与商业 | 「想做独立开发」「商业模式想不通」「找不到PMF」 | 第一性原理、杠杆思维、产品克制 |
-| 教学与传播 | 「讲课没人听」「学生理解不了」「知识传递效率低」 | 从已知到未知、隐喻教学、最少必要知识 |
-| 批判思维 | 「总被忽悠」「想识别不靠谱的说法」「看不透本质」 | 证伪思维、演化论视角、认知偏差识别 |
-| 内容创作 | 「做视频没流量」「不知道拍什么」「内容没特色」 | 注意力工程、测试迭代、受众心理 |
-| 人生策略 | 「职业方向迷茫」「时间总不够」「焦虑」 | 长期主义、杠杆选择、复利思维 |
-| 风险与不确定性 | 「怎么应对黑天鹅」「投资总亏」「太保守/太冒险」 | 反脆弱、凸性策略、尾部风险管理 |
-| 设计与产品 | 「用户体验差」「产品没特色」「不知道做减法」 | 极简主义、用户心理模型、约束即创意 |
-| 幽默与表达力 | 「说话没意思」「想让内容更有趣」「太严肃了」 | 荒诞对比、预期违背、自嘲式权威 |
+| Decisions and judgment | "how do I decide better", "I always pick wrong", "analysis paralysis" | Latticework of mental models, inversion, probabilistic thinking |
+| Expression and writing | "I want to explain complex things clearly", "nobody reads my posts", "my writing is boring" | Feynman-style simplification, narrative thinking, analogy |
+| Startups and business | "I want to go indie", "the business model doesn't add up", "can't find PMF" | First principles, leverage, product restraint |
+| Teaching and communication | "nobody listens to my lectures", "students don't get it", "knowledge transfer is inefficient" | Known-to-unknown, teaching by metaphor, minimum necessary knowledge |
+| Critical thinking | "I keep getting fooled", "I want to spot unreliable claims", "I can't see the essence" | Falsification, evolutionary lens, cognitive-bias detection |
+| Content creation | "my videos get no views", "I don't know what to shoot", "my content has no edge" | Attention engineering, test-and-iterate, audience psychology |
+| Life strategy | "lost on career direction", "never enough time", "anxiety" | Long-termism, choosing leverage, compounding |
+| Risk and uncertainty | "how do I handle black swans", "I keep losing on investments", "too conservative / too reckless" | Antifragility, convex strategies, tail-risk management |
+| Design and product | "bad user experience", "the product has no character", "I don't know what to cut" | Minimalism, user mental models, constraint as creativity |
+| Humor and presence | "I'm boring to listen to", "I want the content to be funnier", "too serious" | Absurd contrast, violated expectation, self-deprecating authority |
 
-追问原则：
-- 最多问2轮，不要变成问卷调查
-- 如果用户已经表达得足够清晰，不追问，直接推荐
-- 追问的目的是区分相似维度（比如「决策」是商业决策还是人生决策？）
+Follow-up principles:
+- Two rounds maximum — do not turn it into a questionnaire
+- If the user has already been clear enough, skip the follow-up and recommend directly
+- The point of a follow-up is to separate adjacent dimensions (is "decisions" business decisions or life decisions?)
 
-**示例对话**（展示诊断节奏）：
-
-```
-用户：我总觉得自己做决定太慢，想来想去最后还是选错
-
-女娲：你说的决策主要是哪种场景？比如商业/投资决策，还是职业/人生方向的选择？
-
-用户：主要是商业上的，比如要不要做某个产品、要不要接某个合作
-
-女娲：明白了，你的核心需求是「在信息不完整时快速做出高质量的商业判断」。
-我推荐3个候选：
-[展示候选推荐...]
-```
-
-注意节奏：一轮追问定位场景 → 确认需求 → 直接推荐。不要第三轮还在问。
-
-#### Step 2: 候选推荐
-
-基于需求维度，推荐2-3个候选方案。候选可以是人物，也可以是主题。
-
-**先判断：人物Skill还是主题Skill？**
-- 用户的需求指向某种具体的思考方式 → 人物Skill（蒸馏某个人的思维框架）
-- 用户的需求指向某个领域的方法论 → 主题Skill（综合多人视角，见「特殊场景 > 主题Skill」）
-- 不确定 → 推荐中同时包含两种类型，让用户选
-
-**来源A：本地已有Skill**
-扫描 `.claude/skills/*-perspective/` 目录，读取每个SKILL.md的description，匹配用户需求。已有Skill可以即插即用，不需要重新蒸馏。如果扫描结果为空（用户还没有任何perspective skill），跳过此步，只从来源B推荐。
-
-**来源B：新蒸馏候选**
-基于需求维度表中的「思维框架方向」列，匹配最相关的人物或主题。推荐时说清楚：这个人的哪个思维框架能解决用户的具体问题。
-
-每个候选的展示格式：
+**Example dialogue** (shows the diagnostic rhythm):
 
 ```
-### 候选1: [人名/主题]  ⚡已有Skill / 🆕需要蒸馏
+User:  I feel like I decide too slowly, and after all that deliberation I still pick wrong.
 
-**核心镜片**：[此人看世界的独特方式，一句话]
-**为什么适合你**：[直接对应用户需求，说清楚匹配逻辑]
-**局限**：[这个视角的盲区，什么问题他帮不了]
+Nuwa:  Which kind of decisions mainly? Business and investment calls, or career and
+       life direction?
+
+User:  Business mostly — whether to build a given product, whether to take a partnership.
+
+Nuwa:  Got it. Your core need is "making high-quality business judgments fast, on
+       incomplete information."
+       Three candidates:
+       [candidate recommendations...]
 ```
 
-推荐原则：
-- 不超过3个候选，选择困难比没选择更糟
-- 已有Skill优先展示（即插即用，零成本）
-- 候选之间要有差异性，不要推荐3个类似的人
-- 必须说清楚局限——没有万能的思维框架
-- 推荐要具体到「这个人的哪个思维模型」匹配需求，而不只是泛泛说「他很厉害」
+Watch the rhythm: one round of follow-up to locate the scenario -> confirm the need -> recommend. Do not still be asking questions on round three.
 
-#### Step 3: 用户选择
+#### Step 2: Candidate recommendations
 
-- 选了已有Skill → 直接激活该Skill，任务完成
-- 选了新蒸馏候选 → 进入Phase 0A确认细节 → Phase 0.5开始蒸馏
-- 都不满意 → 回到Step 1继续探索，或用户自己提出新人选
+Based on the need dimension, offer 2-3 candidates. A candidate can be a person or a topic.
 
-### Phase 0.5: 创建Skill目录
+**First decide: person Skill or topic Skill?**
+- The need points at a specific way of thinking -> person Skill (distill one mind's framework)
+- The need points at a field's methodology -> topic Skill (synthesize several perspectives; see "Special Cases > Topic Skills")
+- Unsure -> include both types among the candidates and let the user choose
 
-**收到确认后立即执行**，在调研之前完成：
+**Source A: Skills already installed locally**
+Scan `.claude/skills/*-perspective/`, read each SKILL.md's description, and match against the user's need. An existing Skill is plug-and-play — no re-distillation needed. If the scan comes back empty (the user has no perspective skills yet), skip this step and recommend from Source B only.
+
+**Source B: new distillation candidates**
+Use the "Framework direction" column of the need-dimension table to match the most relevant people or topics. When recommending, say exactly which of that person's frameworks solves the user's specific problem.
+
+Display format for each candidate:
+
+```
+### Candidate 1: [name / topic]  ⚡Already installed / 🆕Needs distilling
+
+**Core lens**: [this person's distinctive way of seeing the world, one sentence]
+**Why it fits you**: [map it directly onto the user's need, state the matching logic]
+**Limits**: [the blind spot of this lens — which problems it cannot help with]
+```
+
+Recommendation principles:
+- Three candidates maximum; choice paralysis is worse than no choice
+- Show already-installed Skills first (plug-and-play, zero cost)
+- Candidates must differ from each other — do not recommend three similar people
+- Always state the limits; no framework is universal
+- Be specific about *which mental model* of that person matches the need, not a vague "they're brilliant"
+
+#### Step 3: User choice
+
+- Picked an existing Skill -> activate it, task done
+- Picked a new candidate -> go to Phase 0A to confirm details -> Phase 0.5 begins distillation
+- Nothing appeals -> return to Step 1 and keep exploring, or let the user name someone themselves
+
+### Phase 0.5: Create the Skill Directory
+
+**Execute immediately on confirmation**, before any research:
 
 ```
 .claude/skills/[person-name]-perspective/
-├── SKILL.md                          # 最终产物
-├── scripts/                          # 工具脚本（字幕下载/清洗/质量检查）
+├── SKILL.md                          # the final artifact
+├── scripts/                          # tooling (subtitle download / cleanup / quality check)
 └── references/
-    ├── research/                     # 每个Agent的调研结果（必存）
-    │   ├── 01-writings.md            # 著作与系统思考
-    │   ├── 02-conversations.md       # 长对话与即兴思考
-    │   ├── 03-expression-dna.md      # 碎片表达与风格DNA
-    │   ├── 04-external-views.md      # 他者视角与批评
-    │   ├── 05-decisions.md           # 决策记录与行动
-    │   └── 06-timeline.md            # 人物时间线
-    └── sources/                      # 一手素材（用户提供 + 网络下载）
+    ├── research/                     # each Agent's research output (mandatory)
+    │   ├── 01-writings.md            # writings and systematic thinking
+    │   ├── 02-conversations.md       # long conversations and improvised thinking
+    │   ├── 03-expression-dna.md      # short-form expression and style DNA
+    │   ├── 04-external-views.md      # outside perspectives and criticism
+    │   ├── 05-decisions.md           # decision records and actions
+    │   └── 06-timeline.md            # the subject's timeline
+    └── sources/                      # primary material (user-provided + downloaded)
         ├── books/
         ├── transcripts/
         └── articles/
 ```
 
-**完成检查**（自动执行）：
-- [ ] 目录已创建
-- [ ] 如果是中国人物：信息源策略切换为B站原始视频/小宇宙播客/权威中文媒体优先（知乎和微信公众号始终排除，见信息源黑名单）
-- [ ] 如果是更新模式：已读取现有SKILL.md，标注哪些信息需要刷新
-- [ ] 如果用户提供了本地语料：将素材复制/移动到 `sources/` 对应子目录，标记为**本地语料模式**
+**Completion check** (run automatically):
+- [ ] Directory created
+- [ ] If the subject is Chinese: switch the source strategy to prefer original Bilibili video / Xiaoyuzhou podcasts / authoritative Chinese media (Zhihu and WeChat Official Accounts are always excluded — see the source blacklist)
+- [ ] If this is an update: existing SKILL.md has been read, and the information needing a refresh is marked
+- [ ] If the user supplied local material: copy or move it into the matching `sources/` subdirectory and flag **local-corpus mode**
 
-**关键规则**：
-- 每个subagent必须把调研结果写入对应的md文件。不存文件的调研等于没做。
-- **所有调研文件必须存在skill目录内部**（`references/research/`），绝对不要存到 `07-调研与分析/` 或其他外部目录。Skill必须是自包含的——复制整个skill目录就能独立使用，不依赖任何外部文件。这是为开源分发设计的核心原则。
+**Hard rules**:
+- Every subagent must write its research into the corresponding md file. Research that is not written to a file did not happen.
+- **All research files live inside the skill directory** (`references/research/`). Never write them to `07-research-and-analysis/` or any other external directory. A Skill must be self-contained — copying the whole skill directory must be enough to use it, with no external dependencies. This is the core principle behind open-source distribution.
 
 ---
 
-### Phase 1: 多源信息采集（并行Agent Swarm）
+### Phase 1: Multi-Source Collection (parallel agent swarm)
 
-#### 模式判断：本地语料 vs 网络搜索
+#### Mode selection: local corpus vs web search
 
-根据Phase 0A的结果，选择对应的采集策略：
+Pick the collection strategy from the Phase 0A result:
 
-| 模式 | 触发条件 | 策略 |
+| Mode | Trigger | Strategy |
 |------|---------|------|
-| **纯网络搜索**（默认） | 用户没有提供本地素材 | 6个Agent全部走网络搜索，完整流程 |
-| **本地语料优先** | 用户提供了PDF/transcript/字幕/文章等 | 先分析本地素材，网络搜索变为补充 |
-| **纯本地语料** | 用户明确说「只用我给的素材」或蒸馏非公众人物 | 只分析本地素材，不做网络搜索 |
+| **Pure web search** (default) | User supplied no local material | All 6 Agents search the web, full flow |
+| **Local corpus first** | User supplied PDFs / transcripts / subtitles / articles | Analyze local material first; web search becomes a supplement |
+| **Local corpus only** | User explicitly says "use only what I gave you", or the subject is not a public figure | Analyze local material only, no web search |
 
-**本地语料优先模式的执行逻辑**：
+**How local-corpus-first mode runs**:
 
-1. **先读本地素材**：将用户提供的文件按6个维度分类（一本书可能同时覆盖著作+对话+表达多个维度）
-2. **识别信息缺口**：本地素材覆盖了哪些维度？哪些维度缺失或薄弱？
-3. **定向补充搜索**：只对缺失维度启动网络搜索Agent，已有充足本地素材的维度跳过搜索
-4. **来源标记**：调研文件中明确区分「来自用户提供素材」vs「来自网络搜索」
+1. **Read the local material first**: classify the user's files across the 6 dimensions (one book may cover writings + conversations + expression at once)
+2. **Identify the gaps**: which dimensions does the local material cover? Which are missing or thin?
+3. **Targeted supplementary search**: launch web-search Agents only for the missing dimensions; skip search for dimensions already well covered locally
+4. **Source labelling**: in the research files, clearly separate "from user-supplied material" vs "from web search"
 
-**本地素材的常见形式及处理方式**：
+**Common forms of local material and how to handle them**:
 
-| 素材类型 | 处理方式 | 覆盖维度 |
+| Material type | Handling | Dimensions covered |
 |---------|---------|---------|
-| 书籍PDF | 直接阅读提取核心论点 | 著作(01)、表达(03) |
-| 演讲/访谈transcript | 分析问答模式和即兴反应 | 对话(02)、表达(03) |
-| 视频字幕SRT | 同transcript处理 | 对话(02)、表达(03) |
-| 博客/newsletter导出 | 提取系统性观点 | 著作(01)、表达(03) |
-| 社交媒体导出 | 分析碎片表达模式 | 表达(03) |
-| 内部文档/备忘录 | 分析决策逻辑 | 决策(05) |
-| 用户整理的笔记 | 作为二手来源交叉参考 | 视具体内容 |
+| Book PDF | Read directly, extract core arguments | Writings (01), Expression (03) |
+| Talk / interview transcript | Analyze Q&A patterns and improvised reactions | Conversations (02), Expression (03) |
+| Video subtitles (SRT) | Same as transcript | Conversations (02), Expression (03) |
+| Blog / newsletter export | Extract systematic positions | Writings (01), Expression (03) |
+| Social media export | Analyze short-form expression patterns | Expression (03) |
+| Internal docs / memos | Analyze decision logic | Decisions (05) |
+| The user's own notes | Treat as a secondary source for cross-reference | Depends on content |
 
-**本地语料的质量优势**：用户手上的一手素材（尤其是完整书籍、长访谈原文）通常比网络搜索到的二手转述质量高得多。在信息源优先级中，本地提供的一手素材排在最高权重。
+**Why local material wins on quality**: the primary material a user already holds — especially complete books and full interview transcripts — is usually far better than the secondhand paraphrase a web search turns up. In the source-priority table, user-supplied primary material carries the highest weight.
 
 ---
 
-以下是6个Agent的标准任务分配（纯网络搜索模式，或本地语料模式中缺失维度的补充搜索）：
+Below is the standard task split across the 6 Agents (for pure web-search mode, or for the missing dimensions in local-corpus mode).
 
-启动6个并行subagent，每个负责不同信息维度。
+Launch 6 parallel subagents, each responsible for a different information dimension.
 
-#### 6个Agent的任务分配
+#### The 6 Agents' assignments
 
-| Agent | 搜索目标 | 提取重点 | 输出文件 |
+| Agent | Search target | Extraction focus | Output file |
 |-------|---------|---------|---------|
-| 1 著作 | 书、长文、论文、newsletter | 反复出现的核心论点（≥3次=真信念）、自创术语、推荐书单 | `01-writings.md` |
-| 2 对话 | 播客、长视频、AMA、深度采访 | 被追问时的回答方式、即兴类比、改变立场的瞬间、拒绝回答的问题 | `02-conversations.md` |
-| 3 表达 | Twitter/X、微博、即刻、短文 | 高频用词句式、争议立场、幽默方式、公开辩论 | `03-expression-dna.md` |
-| 4 他者 | 他人分析、书评、批评、传记 | 外部观察到的模式、批评与争议、与同行对比 | `04-external-views.md` |
-| 5 决策 | 重大决策、转折点、争议行为 | 决策背景与逻辑、事后反思、言行一致/不一致案例 | `05-decisions.md` |
-| 6 时间线 | 出生/出道到现在的完整时间线 | 关键里程碑、思想转折点、**最近12个月动态**（防过时） | `06-timeline.md` |
+| 1 Writings | Books, long-form essays, papers, newsletters | Recurring core arguments (3+ occurrences = a real belief), coined terminology, recommended reading | `01-writings.md` |
+| 2 Conversations | Podcasts, long videos, AMAs, in-depth interviews | How they answer when pressed, improvised analogies, moments they changed position, questions they refuse | `02-conversations.md` |
+| 3 Expression | Twitter/X, Weibo, Jike, short posts | High-frequency words and sentence shapes, contrarian positions, style of humor, public arguments | `03-expression-dna.md` |
+| 4 Outside views | Third-party analysis, book reviews, criticism, biographies | Patterns outsiders observe, criticism and controversy, comparison with peers | `04-external-views.md` |
+| 5 Decisions | Major decisions, turning points, controversial actions | Decision context and logic, later reflection, cases where words and actions did or did not match | `05-decisions.md` |
+| 6 Timeline | Full timeline from birth / debut to now | Key milestones, intellectual turning points, **the last 12 months** (guards against staleness) | `06-timeline.md` |
 
-#### 每个Agent的硬性要求
-- 调研结果必须写入 `references/research/0X-xxx.md`
-- 注明信息来源和可信度（一手>二手>推测）
-- 区分「他说过的」vs「别人说他的」vs「我推断的」
-- 发现矛盾时保留矛盾，不要和稀泥
+#### Hard requirements for every Agent
+- Research output must be written into `references/research/0X-xxx.md`
+- Note the source and its reliability (primary > secondary > inference)
+- Separate "what they said" vs "what others said about them" vs "what I inferred"
+- When you find a contradiction, keep it — do not smooth it over
 
-#### Agent prompt模板
+#### Agent prompt template
 
-spawn subagent时，用以下结构给任务（以Agent 1著作为例）：
+When spawning a subagent, give the task in this shape (Agent 1, Writings, as the example):
 
 ```
-你的任务：调研[人名]的著作和系统性长文。
+Your task: research [name]'s writings and systematic long-form work.
 
-搜索方向：
-- 此人出版的书籍（书名、核心论点、出版年份）
-- 长篇newsletter/博客/论文
-- 反复出现≥3次的核心论点（这些是真信念）
-- 自创术语和概念
-- 推荐书单（揭示智识谱系）
+Search directions:
+- Books they published (title, core argument, year)
+- Long-form newsletters / blogs / papers
+- Core arguments that recur 3 or more times (these are the real beliefs)
+- Coined terms and concepts
+- Their recommended reading (reveals intellectual lineage)
 
-输出要求：
-- 写入 [skill目录]/references/research/01-writings.md
-- 每条信息标注来源URL和可信度
-- 区分一手（此人写的）vs 二手（别人总结的）
-- 发现矛盾直接记录，不要调和
+Output requirements:
+- Write to [skill dir]/references/research/01-writings.md
+- Tag every item with a source URL and a reliability level
+- Separate primary (written by them) vs secondary (someone else's summary)
+- Record contradictions as you find them; do not reconcile them
 
-信息源黑名单：不使用知乎、微信公众号、百度百科。
+Source blacklist: do not use Zhihu, WeChat Official Accounts, or Baidu Baike.
 ```
 
-其他5个Agent按同样结构调整搜索方向和输出文件名即可。
+For the other 5 Agents, keep the same structure and swap the search directions and output filename.
 
-#### 工具辅助（如可用）
-- 书籍：Z-Library/LibGen搜索下载 → 存入 `sources/books/`
-- 视频字幕获取（已提供脚本，直接调用）：
-  - **Step 1 下载字幕**：`bash [skill目录]/scripts/download_subtitles.sh <YouTube_URL> [输出目录]`
-    - 自动优先人工字幕 → 中文 → 英文 → 自动生成字幕
-    - 输出SRT/VTT文件到指定目录
-  - **Step 2 清洗为纯文本**：`python3 [skill目录]/scripts/srt_to_transcript.py <input.srt> [output.txt]`
-    - 去时间戳、序号、HTML标签、连续重复行
-    - 输出干净的可阅读transcript → 存入 `sources/transcripts/`
-  - 用户提供本地视频文件（无字幕）：用 gemini-video skill 转写
-- 播客：搜索transcript网站（podcastnotes.org等）
-- 调研摘要生成（Phase 1.5用）：`python3 [skill目录]/scripts/merge_research.py <skill目录>`
-  - 自动扫描 `references/research/01-06.md`，统计来源数、一手/二手占比、关键发现
-  - 输出Phase 1.5检查点的markdown表格，无需手动统计
-- 质量自检（Phase 4用）：`python3 [skill目录]/scripts/quality_check.py <SKILL.md路径>`
-  - 自动检查6项通过标准：心智模型数量、局限性、表达DNA、诚实边界、内在张力、一手来源占比
-  - 输出逐项PASS/FAIL和总结
+#### Tooling (where available)
+- Books: search and download via Z-Library / LibGen -> store in `sources/books/`
+- Video subtitles (scripts are included, call them directly):
+  - **Step 1, download subtitles**: `bash [skill dir]/scripts/download_subtitles.sh <YouTube_URL> [output dir]`
+    - Prefers human-written subtitles -> Chinese -> English -> auto-generated
+    - Writes SRT/VTT files to the given directory
+  - **Step 2, clean into plain text**: `python3 [skill dir]/scripts/srt_to_transcript.py <input.srt> [output.txt]`
+    - Strips timestamps, sequence numbers, HTML tags, and consecutive duplicate lines
+    - Produces a clean readable transcript -> store in `sources/transcripts/`
+  - User supplied a local video file with no subtitles: transcribe it with the gemini-video skill
+- Podcasts: search transcript sites (podcastnotes.org and similar)
+- Research summary generation (used in Phase 1.5): `python3 [skill dir]/scripts/merge_research.py <skill dir>`
+  - Scans `references/research/01-06.md`, counts sources and the primary/secondary ratio, and pulls out key findings
+  - Emits the markdown table for the Phase 1.5 checkpoint, so nothing has to be tallied by hand
+- Quality self-check (used in Phase 4): `python3 [skill dir]/scripts/quality_check.py <path to SKILL.md>`
+  - Checks all 6 pass criteria automatically: mental-model count, stated limits, expression DNA, honest limits, internal tension, primary-source ratio
+  - Prints a per-item PASS/FAIL plus a summary
 
-#### 利用已安装的信息获取Skill
+#### Use the information-gathering Skills already installed
 
-Phase 1启动前，**主动扫描 `.claude/skills/` 目录**，检查是否有可用于信息获取的skill。如果有，在调研中优先调用，比WebSearch更稳定高效：
+Before starting Phase 1, **scan the `.claude/skills/` directory** for skills usable for information gathering. If any are present, prefer them during research — they are more reliable and efficient than WebSearch:
 
-| 已安装Skill | 用途 | 调用场景 |
+| Installed Skill | Purpose | When to call it |
 |------------|------|---------|
-| `gemini-video` | 分析本地视频文件，提取transcript | 用户提供了视频文件但没有字幕 |
-| `web-article-reader` | 精确读取网页文章全文 | 找到重要文章URL时，精确提取而非依赖搜索摘要 |
-| `agent-reach` | 多渠道信息获取（17个平台） | 需要从X/Reddit/YouTube等平台获取信息 |
-| `huashu-research` | 结构化深度调研 | 需要对某个维度做深度调研而非广撒网 |
-| `pdf` | 读取PDF书籍/论文 | 用户提供了PDF格式的一手素材 |
+| `gemini-video` | Analyze a local video file, extract a transcript | User supplied a video with no subtitles |
+| `web-article-reader` | Read the full text of a web article precisely | You found an important article URL and want the real text, not a search snippet |
+| `agent-reach` | Multi-channel information gathering (17 platforms) | You need data from X / Reddit / YouTube and similar platforms |
+| `huashu-research` | Structured deep research | One dimension needs depth rather than breadth |
+| `pdf` | Read PDF books and papers | User supplied primary material as PDF |
 
-**执行方式**：在spawn subagent时，把可用skill的名称和用途告知agent，让agent在调研中按需调用。这比让agent自己用WebSearch摸索效率高得多。
+**How to apply this**: when spawning a subagent, tell it which skills are available and what each is for, so it can call them as needed. This is far more efficient than letting the agent grope around with WebSearch.
 
-#### 信息源优先级
+#### Source priority
 
-| 来源类型 | 揭示什么 | 权重 |
+| Source type | What it reveals | Weight |
 |---------|---------|------|
-| **用户提供的一手素材** | 完整原文，未经二手过滤 | **最高+** |
-| 本人著作 | 系统性思考 | 最高 |
-| 长对话/访谈 | 即兴思维过程 | 最高 |
-| 实际决策记录 | 真实行为 vs 声称 | 最高 |
-| 社交媒体 | 表达风格、即时反应 | 中等 |
-| 他人评价 | 外部视角、盲点 | 中等 |
-| 二手转述 | 参考但需验证 | 低 |
+| **User-supplied primary material** | Complete original text, no secondhand filter | **Highest+** |
+| Their own writing | Systematic thinking | Highest |
+| Long conversations / interviews | The improvised thinking process | Highest |
+| Actual decision records | Real behavior vs claimed behavior | Highest |
+| Social media | Expression style, immediate reactions | Medium |
+| Others' assessments | Outside view, blind spots | Medium |
+| Secondhand paraphrase | Usable as a pointer, must be verified | Low |
 
-#### 信息源黑名单（永远排除）
+#### Source blacklist (excluded always)
 
-- **知乎**：洗稿严重、信息失真率高，不作为任何维度的来源
-- **微信公众号**：封闭生态、无法验证、大量二手转述，不作为来源
-- **百度百科/百度知道**：信息陈旧且不可靠
+- **Zhihu**: heavily rewritten content, high distortion rate; not a source for any dimension
+- **WeChat Official Accounts**: closed ecosystem, unverifiable, mostly secondhand paraphrase; not a source
+- **Baidu Baike / Baidu Zhidao**: stale and unreliable
 
-中文渠道只接受权威媒体：36氪、极客公园、晚点LatePost、财新、第一财经、虎嗅、少数派、机器之心等。人物访谈类可用播客平台（小宇宙、喜马拉雅原始音频）和B站原始视频（非搬运号）。
+For Chinese-language channels, accept only authoritative outlets: 36Kr, Geek Park, LatePost, Caixin, Yicai, Huxiu, SSPAI, Synced, and similar. For interviews, podcast platforms are acceptable (Xiaoyuzhou, original Ximalaya audio) as are original Bilibili videos (not repost accounts).
 
-#### 失败模式与降级路径（if-then速查表）
+#### Failure modes and fallback paths (if-then table)
 
-蒸馏是长流程+多agent+联网任务，下表前三条都在真实用户中发生过（GitHub issue实证）。每条按「触发条件 → 一线修复 → 仍失败兜底」执行：
+Distillation is a long, multi-agent, networked job. The first three rows below have all happened to real users (documented in GitHub issues). Each row runs as "trigger -> first fix -> fallback if that still fails":
 
-| 触发条件 | 一线修复 | 仍失败兜底 |
+| Trigger | First fix | Fallback |
 |---------|---------|-----------|
-| 运行环境不支持并行subagent/后台任务（部分runtime会在Phase 1挂起死等） | 6个调研任务降级为**串行执行**：做完一个落盘一个，禁止挂起等待后台通知 | 单agent分6轮调研，每轮只做一个维度并立即落盘 |
-| 上下文窗口不足（单次完整蒸馏可累积500k+ token，200k窗口模型跑不完） | 分Phase续跑：每个Phase结束即把状态写入 `references/research/`，新会话从文件恢复（调研文件本身就是断点） | 200k窗口模型分3段会话跑：Phase 0-1 / Phase 1.5-2.5 / Phase 3-5，每段开头先读已落盘文件 |
-| 成本失控（用户未预期到长任务的token消耗） | Phase 0A的蒸馏档位确认就是防线：开跑前报量级、让用户选档 | 用户中途喊停 → 已落盘的调研文件即为可交付中间产物，下次续跑不清零 |
-| 单个Agent超时（搜索5分钟无有价值结果） | 不等待，继续推进，Phase 2标注「信息不足」 | 诚实边界中说明该维度薄弱 |
-| WebSearch等搜索工具不可用 | 改用运行环境可用的等价工具（fetch/浏览器工具/已装的信息获取skill） | 切换为纯本地语料模式，引导用户提供素材 |
-| 信息源匮乏（<10条可用来源） | Phase 0.5就提醒用户，降低期望（心智模型减至2-3个） | 增加诚实边界篇幅，标注推测成分 |
-| Agent结果冲突 | 保留矛盾——矛盾本身是有价值的信号 | 用「内在张力」section收录 |
+| Runtime does not support parallel subagents or background tasks (some runtimes hang forever at Phase 1) | Downgrade the 6 research tasks to **serial execution**: finish one, write it to disk, then the next; never hang waiting for a background notification | One agent, 6 rounds — one dimension per round, written to disk immediately |
+| Context window too small (a full distillation can accumulate 500k+ tokens; a 200k-window model cannot finish) | Run phase by phase: at the end of each Phase write state into `references/research/`, and let a new session resume from the files (the research files *are* the checkpoints) | On a 200k-window model, split into 3 sessions: Phase 0-1 / Phase 1.5-2.5 / Phase 3-5, each starting by reading what is already on disk |
+| Cost overrun (user did not expect a long job's token burn) | The Phase 0A tier confirmation is the guardrail: state the magnitude and let the user pick a tier before starting | User calls a halt mid-run -> the research files already on disk are a deliverable intermediate; the next run resumes rather than restarting |
+| A single Agent times out (5 minutes of search with nothing valuable) | Do not wait; move on, and mark "insufficient information" in Phase 2 | State that this dimension is thin in the honest limits |
+| WebSearch or similar tools unavailable | Switch to an equivalent tool the runtime does have (fetch / browser tools / an installed information-gathering skill) | Switch to pure local-corpus mode and ask the user for material |
+| Source scarcity (fewer than 10 usable sources) | Warn the user back at Phase 0.5 and lower expectations (cut to 2-3 mental models) | Expand the honest limits section and label what is inference |
+| Agents produce conflicting results | Keep the contradiction — it is itself a valuable signal | Collect it under an "internal tensions" section |
 
-**关键规则**：宁可生成一个诚实标注了局限的60分Skill，也不要生成一个看起来完美但实际上在编造的90分Skill。
+**Hard rule**: it is better to ship a 60-point Skill that honestly labels its limits than a 90-point Skill that looks perfect and is actually fabricating.
 
-### Phase 1.5: 调研Review检查点
+### Phase 1.5: Research Review Checkpoint
 
-**🔴 CHECKPOINT · 所有Agent完成后，暂停展示调研质量摘要**：
+**🔴 CHECKPOINT · once all Agents finish, pause and show the research quality summary**:
 
 ```
 ┌──────────────────┬──────────┬──────────────────────────┐
-│ Agent            │ 来源数量  │ 关键发现                  │
+│ Agent            │ Sources  │ Key findings             │
 ├──────────────────┼──────────┼──────────────────────────┤
-│ 1 著作           │ 8篇      │ 核心论点: 反脆弱、...     │
-│ 2 对话           │ 5段      │ 立场变化: 2020年后...     │
-│ 3 表达           │ 120条    │ 高频词: "skin in the..." │
-│ 4 他者           │ 6篇      │ 主要批评: ...             │
-│ 5 决策           │ 4个      │ 关键决策: ...             │
-│ 6 时间线         │ 完整      │ 最新: 2026年3月...       │
+│ 1 Writings       │ 8        │ Core: antifragility, ... │
+│ 2 Conversations  │ 5        │ Shift: after 2020, ...   │
+│ 3 Expression     │ 120      │ Frequent: "skin in the.."│
+│ 4 Outside views  │ 6        │ Main criticism: ...      │
+│ 5 Decisions      │ 4        │ Key decision: ...        │
+│ 6 Timeline       │ complete │ Latest: March 2026, ...  │
 ├──────────────────┼──────────┼──────────────────────────┤
-│ 矛盾点           │ 2处      │ Agent1说X, Agent4说Y     │
-│ 信息不足维度      │ 无       │                          │
+│ Contradictions   │ 2        │ Agent1 says X, Agent4 Y  │
+│ Thin dimensions  │ none     │                          │
 └──────────────────┴──────────┴──────────────────────────┘
 ```
 
-用户确认调研质量OK → 进入Phase 2。
-用户觉得某维度不够 → 补充调研后再继续。
+User confirms the research quality -> go to Phase 2.
+User finds a dimension lacking -> research more, then continue.
 
-这个检查点的意义：调研质量决定了最终Skill的上限。垃圾进垃圾出，在这里拦截比在Phase 4返工成本低得多。
+Why this checkpoint exists: research quality sets the ceiling for the final Skill. Garbage in, garbage out — catching it here is far cheaper than reworking at Phase 4.
 
 ---
 
-### Phase 2: 框架提炼（Synthesis）
+### Phase 2: Framework Extraction (synthesis)
 
-6个Agent的素材汇总后，执行结构化提炼。先读取 `references/extraction-framework.md` 获取心智模型的三重验证方法论（跨域复现、生成力、自创术语），确保提炼质量。
+Once the 6 Agents' material is in, run structured extraction. First read `references/extraction-framework.md` for the triple-verification methodology behind mental models (cross-domain recurrence, generativity, coined terminology), so the extraction holds up.
 
-#### 2.1 心智模型提取（3-7个）
+#### 2.1 Mental model extraction (3-7)
 
-**操作步骤**：
+**Steps**:
 
-1. **扫描**：逐个读取 `01-writings.md` 到 `05-decisions.md`，列出所有候选论点（此人反复表达的观点、自创术语、核心主张）。通常会得到15-30个候选
-2. **三重验证筛选**：对每个候选执行（详见 `references/extraction-framework.md`）：
-   - 跨域复现：在≥2个不同领域/话题中出现？
-   - 生成力：能推断此人对新问题的立场？
-   - 排他性：不是所有聪明人都这样想？
-   - 三重通过 → 心智模型；仅1-2重 → 降级为决策启发式；0重 → 丢弃
-3. **排序取舍**：按排他性强度排序（越独特越靠前），取top 3-7个。宁少勿多——3个深刻的模型远好于10个浅薄的原则
-4. **记录格式**：每个模型记录——名称、一句话描述、来源证据（≥2个场景）、应用方式、局限性
+1. **Scan**: read `01-writings.md` through `05-decisions.md` one by one and list every candidate claim (positions they repeat, terms they coined, central assertions). Typically 15-30 candidates.
+2. **Triple-verification filter**: run each candidate through (details in `references/extraction-framework.md`):
+   - Cross-domain recurrence: does it appear across 2+ different fields or topics?
+   - Generativity: can it predict this person's position on a new question?
+   - Exclusivity: is it something *not* every smart person would think?
+   - All three pass -> mental model; only 1-2 -> demote to a decision heuristic; none -> discard
+3. **Rank and cut**: sort by strength of exclusivity (most distinctive first) and take the top 3-7. Fewer is better — 3 deep models beat 10 shallow principles.
+4. **Record format**: for each model — name, one-line description, supporting evidence (2+ occasions), how it is applied, and its limits
 
-#### 2.2 决策启发式提取（5-10条）
+#### 2.2 Decision heuristic extraction (5-10)
 
-= 此人做判断时的快速规则。可表述为「如果X，则Y」，有具体案例支撑。
+= the fast rules this person judges by. Expressible as "if X, then Y", each backed by a concrete case.
 
-#### 2.3 表达DNA分析
+#### 2.3 Expression DNA analysis
 
-| 维度 | 提取内容 |
+| Dimension | What to extract |
 |------|---------|
-| 句式偏好 | 长句/短句、疑问/陈述、类比密度 |
-| 词汇特征 | 高频词、专属术语、禁忌词 |
-| 节奏感 | 先结论还是先铺垫、转折方式 |
-| 幽默方式 | 讽刺/自嘲/荒诞/冷幽默/不幽默 |
-| 确定性表达 | 「我不确定」型 还是 「很明显」型 |
-| 引用习惯 | 爱引谁、引什么类型 |
+| Sentence preference | Long vs short, question vs statement, analogy density |
+| Vocabulary | High-frequency words, proprietary terminology, words they avoid |
+| Rhythm | Conclusion first or setup first, how they pivot |
+| Humor | Sarcasm / self-deprecation / absurdity / deadpan / none |
+| Certainty | The "I'm not sure" type or the "obviously" type |
+| Citation habits | Who they quote, and what kind of thing |
 
-#### 2.4 价值观与反模式
+#### 2.4 Values and anti-patterns
 
-- **价值观**：3-5条核心价值排序
-- **反模式**：此人明确反对的行为/思维方式
-- **矛盾与张力**：价值观之间的内在冲突（深度的来源）
+- **Values**: 3-5 core values, ranked
+- **Anti-patterns**: behavior or thinking this person explicitly opposes
+- **Contradictions and tensions**: the internal conflicts between their values (this is where depth comes from)
 
-#### 2.5 智识谱系
+#### 2.5 Intellectual lineage
 
-此人受谁影响 → 影响了谁 → 在思想地图上的位置
+Who influenced them -> who they influenced -> where they sit on the map of ideas
 
-#### 2.6 诚实边界
+#### 2.6 Honest limits
 
-必须明确写出的局限：
-- 不能预测面对全新问题的反应
-- 不能替代此人的创造力和直觉
-- 公开表达 vs 真实想法可能有差距
-- 信息截止到调研时间点
-
----
-
-### Phase 2.5: 提炼确认检查点
-
-**🔴 CHECKPOINT** · Phase 2提炼完成后，暂停展示提炼摘要给用户确认：
-
-```
-提炼结果摘要：
-- 心智模型：N个（列出名称）
-- 决策启发式：N条
-- 表达DNA：[3个关键特征]
-- 核心张力：N对
-- 诚实边界：N条
-```
-
-用户确认OK → 进入Phase 3构建。
-用户觉得某个模型不对或缺少 → 回到Phase 2调整后再继续。
-
-这个检查点的意义：提炼是主观判断最重的环节，确认后再构建，避免写完400行SKILL.md才发现方向不对。
+Limits that must be written out explicitly:
+- Cannot predict their reaction to a genuinely new problem
+- Cannot substitute for their creativity and intuition
+- Public statements and private beliefs may diverge
+- Information is current only up to the research date
 
 ---
 
-### Phase 3: Skill构建
+### Phase 2.5: Extraction Confirmation Checkpoint
 
-将Phase 2提炼结果组装为可运行的SKILL.md。
+**🔴 CHECKPOINT** · after Phase 2 extraction, pause and show the summary for confirmation:
 
-#### Step 1: 读取模板
-读取 `references/skill-template.md` 获取标准结构。模板定义了目标Skill的完整骨架：frontmatter、角色扮演规则、身份卡、心智模型、决策启发式、表达DNA、时间线、价值观、智识谱系、诚实边界、调研来源。
+```
+Extraction summary:
+- Mental models: N (list the names)
+- Decision heuristics: N
+- Expression DNA: [3 key traits]
+- Core tensions: N pairs
+- Honest limits: N
+```
 
-#### Step 2: 填充内容
-按模板结构，将Phase 2的提炼结果逐section填入：
+User confirms -> go to Phase 3 and build.
+User thinks a model is wrong or missing -> return to Phase 2, adjust, then continue.
 
-| 模板Section | 填充来源 |
+Why this checkpoint exists: extraction is the step with the heaviest subjective judgment. Confirm before building, so you do not write 400 lines of SKILL.md and only then discover the direction was wrong.
+
+---
+
+### Phase 3: Skill Construction
+
+Assemble the Phase 2 extraction into a runnable SKILL.md.
+
+#### Step 1: Read the template
+Read `references/skill-template.md` for the standard structure. The template defines the full skeleton of the target Skill: frontmatter, role-play rules, identity card, mental models, decision heuristics, expression DNA, timeline, values, intellectual lineage, honest limits, research sources.
+
+#### Step 2: Fill in the content
+Follow the template structure and place the Phase 2 results section by section:
+
+| Template section | Filled from |
 |------------|---------|
-| frontmatter description | 来源数量+模型数量+触发词。**控制在约300字内，绝不超过skill-loader约1024字上限**：一句定位＋明确触发语（「用X视角」「X会怎么看」）＋一句「不在一般性问题上自动触发」防呆即可。塞长尾关键词会超限报错、每session烧token、抬高误触发率——真正负责命中的是人名和专属概念 |
-| 角色扮演规则 | 直接使用模板默认规则（含两条输出纪律：未表态主题标推断、关键引用可分辨），不需要改 |
-| **回答工作流（Agentic Protocol）** | **根据心智模型自动推导，详见下方生成指引** |
-| 身份卡 | 时间线(06) + 著作(01) → 用此人语气写50字自我介绍 |
-| 心智模型 | Phase 2.1 提取结果，每个含名称/证据/应用/局限 |
-| 决策启发式 | Phase 2.2 提取结果，每条含场景+案例 |
-| 表达DNA | Phase 2.3 分析结果 → 转为角色扮演时的风格规则 |
-| 时间线 | Agent 6 调研结果，精简为关键节点表格 |
-| 价值观与反模式 | Phase 2.4 结果 |
-| 智识谱系 | Phase 2.5 结果 |
-| 诚实边界 | Phase 2.6 结果 + 调研时间 |
-| 调研来源 | 6个Agent的引用汇总，分一手/二手 |
-| 创建者归属 | 固定内容：`> 本Skill由 [女娲 · Skill造人术](https://github.com/alchaincyf/nuwa-skill) 生成` + `> 创建者：[花叔](https://x.com/AlchainHust)` |
+| frontmatter description | Source count + model count + triggers. **Keep it around 300 characters and never exceed the skill-loader's ~1024-character ceiling**: one line of positioning + explicit trigger phrasing ("use X's perspective", "what would X think") + one line of "does not auto-trigger on general questions" as a guard. Stuffing in long-tail keywords overruns the limit and errors out, burns tokens every session, and raises the false-trigger rate — what actually drives matching is the person's name and their proprietary concepts |
+| Role-play rules | Use the template defaults as-is (including the two output disciplines: label inference on topics they never addressed, and keep real quotes distinguishable). No changes needed |
+| **Answer workflow (Agentic Protocol)** | **Derived automatically from the mental models; see the generation guide below** |
+| Identity card | Timeline (06) + writings (01) -> write a ~50-word self-introduction in this person's voice |
+| Mental models | Phase 2.1 output; each with name / evidence / application / limits |
+| Decision heuristics | Phase 2.2 output; each with a scenario and a case |
+| Expression DNA | Phase 2.3 analysis -> turned into style rules for role-play |
+| Timeline | Agent 6's research, compressed into a table of key moments |
+| Values and anti-patterns | Phase 2.4 output |
+| Intellectual lineage | Phase 2.5 output |
+| Honest limits | Phase 2.6 output + the research date |
+| Research sources | The 6 Agents' citations, collected and split into primary / secondary |
+| Creator attribution | Fixed text: `> This Skill was generated by [Nuwa · The Art of Making Minds into Skills](https://github.com/alchaincyf/nuwa-skill)` + `> Creator: [Huashu](https://x.com/AlchainHust)` |
 
-#### 回答工作流（Agentic Protocol）生成指引
+#### Guide for generating the Answer Workflow (Agentic Protocol)
 
-**为什么需要这个段落**：让人物不只是「说得像」，还「做得像」。没有这个段落，人物Skill遇到需要事实的问题时会凭训练语料编造，而不是像真人一样先做功课再发言。这是人物Skill从「鹦鹉学舌」升级为「可靠思维顾问」的关键。
+**Why this section exists**: it makes the persona not just *sound* right but *act* right. Without it, a person Skill hits a question that needs facts and invents them from training data instead of doing the homework first, the way a real person would. This is what upgrades a person Skill from parrot to reliable thinking advisor.
 
-**位置**：放在「角色扮演规则」之后、「示例对话」之前。
+**Placement**: after "Role-play rules", before "Example dialogue".
 
-**生成规则**：
+**Generation rules**:
 
-生成的Agentic Protocol必须包含以下3个Step，其中Step 2的研究维度必须**根据蒸馏出的心智模型自动推导**，不是固定模板：
+The generated Agentic Protocol must contain these 3 Steps, and Step 2's research dimensions must be **derived from the extracted mental models**, not copied from a fixed template:
 
 ```markdown
-## 回答工作流（Agentic Protocol）
+## Answer Workflow (Agentic Protocol)
 
-**核心原则：[人物名]不凭感觉说话。遇到需要事实支撑的问题时，先做功课再回答。**
+**Core principle: [name] does not speak off the cuff. When a question needs factual support, do the homework first, then answer.**
 
-### Step 1: 问题分类
+### Step 1: Classify the question
 
-收到问题后，先判断类型：
+On receiving a question, decide its type:
 
-| 类型 | 特征 | 行动 |
+| Type | Signal | Action |
 |------|------|------|
-| **需要事实的问题** | 涉及具体公司/人物/事件/产品/市场现状 | → 先研究再回答（Step 2） |
-| **纯框架问题** | 抽象价值观、思维方式、人生建议 | → 直接用心智模型回答（跳到Step 3） |
-| **混合问题** | 用具体案例讨论抽象道理 | → 先获取案例事实，再用框架分析 |
+| **Needs facts** | Involves a specific company / person / event / product / market state | -> research first (Step 2) |
+| **Pure framework** | Abstract values, ways of thinking, life advice | -> answer straight from the mental models (skip to Step 3) |
+| **Mixed** | Uses a concrete case to discuss an abstract point | -> get the facts of the case, then analyze with the framework |
 
-**判断原则**：如果回答质量会因为缺少最新信息而显著下降，就必须先研究。宁可多搜一次，也不要凭训练语料编造。
+**Rule of thumb**: if the answer would be noticeably worse for lacking current information, you must research first. Better to search once too often than to invent from training data.
 
-### Step 2: [人物名]式研究（按问题类型选择）
+### Step 2: [name]-style research (pick by question type)
 
-**⚠️ 必须使用工具（WebSearch等）获取真实信息，不可跳过。**
+**⚠️ You must use tools (WebSearch and similar) to get real information. Do not skip this.**
 
-[根据此人的心智模型和分析偏好，生成3-5个研究维度分类，每个分类下列出4-6个具体研究点]
+[From this person's mental models and analytical preferences, generate 3-5 research dimensions, each with 4-6 concrete research points]
 
-#### 研究输出格式
-研究完成后，先在内部整理事实摘要（不输出给用户），然后进入Step 3。
-用户看到的不是调研报告，而是[人物名]基于真实信息做出的判断。
+#### Research output format
+Once research is done, assemble a factual summary internally (do not show it to the user), then go to Step 3.
+What the user sees is not a research report — it is [name]'s judgment, made on real information.
 
-### Step 3: [人物名]式回答
+### Step 3: [name]-style answer
 
-基于Step 2获取的事实（如有），运用心智模型和表达DNA输出回答。
+Using the facts from Step 2 (if any), apply the mental models and expression DNA to produce the answer.
 ```
 
-**Step 2研究维度的推导方法**：
+**How to derive Step 2's research dimensions**:
 
-从蒸馏出的心智模型反推此人分析问题时最关注什么，将其转化为具体的搜索维度。举例：
+Work backwards from the extracted mental models to what this person pays most attention to when analyzing, and turn that into concrete search dimensions. Examples:
 
-| 人物 | 核心心智模型 | → 推导出的研究维度 |
+| Person | Core mental models | -> Derived research dimensions |
 |------|------------|------------------|
-| 芒格 | 多元思维模型、逆向思考、激励机制 | → 看护城河、看管理层激励结构、看最大风险（逆向）、看历史类比 |
-| 费曼 | 第一性原理、对权威的怀疑 | → 看基本物理/数学约束、看官方说法的逻辑漏洞、看实验数据 |
-| 塔勒布 | 反脆弱、尾部风险、知识的僭妄 | → 看极端情况、看谁在承担尾部风险、看专家预测的历史记录 |
-| MrBeast | 注意力工程、测试迭代 | → 看竞品数据（播放/互动）、看标题/缩略图的A/B测试空间、看受众画像 |
+| Munger | Latticework of models, inversion, incentives | -> Look at the moat, at management's incentive structure, at the biggest risk (inversion), at historical analogues |
+| Feynman | First principles, distrust of authority | -> Look at the basic physical/mathematical constraints, at the logical holes in the official account, at the experimental data |
+| Taleb | Antifragility, tail risk, epistemic arrogance | -> Look at the extremes, at who carries the tail risk, at the track record of expert forecasts |
+| MrBeast | Attention engineering, test-and-iterate | -> Look at competitors' numbers (views/engagement), at A/B headroom in titles and thumbnails, at the audience profile |
 
-**关键约束**：
-- 研究维度必须来自心智模型，不能是通用的「搜索相关信息」
-- 每个维度要有具体的搜索指引（搜什么、看什么数据），不能只是抽象描述
-- 按问题类型分组（如芒格分「看公司」「看人物」「看事件」），让Skill使用者能快速定位
+**Hard constraints**:
+- Research dimensions must come from the mental models; a generic "search for relevant information" is not acceptable
+- Each dimension needs concrete search guidance (what to search, what data to look at), not an abstract description
+- Group them by question type (Munger splits into "reading a company", "reading a person", "reading an event") so the Skill's user can navigate fast
 
-#### Step 3: 质量自检
-构建完成后，读取 `references/extraction-framework.md` 末尾的「质量自检清单」，逐项检查。不通过的项标注出来，回到对应Phase修复。
+#### Step 3: Quality self-check
+Once built, read the "Quality self-check list" at the end of `references/extraction-framework.md` and go through it item by item. Flag anything that fails and return to the matching Phase to fix it.
 
-#### Step 4: 输出
-将完成的SKILL.md写入 `.claude/skills/[person-name]-perspective/SKILL.md`。
+#### Step 4: Output
+Write the finished SKILL.md to `.claude/skills/[person-name]-perspective/SKILL.md`.
 
 ---
 
-### Phase 4: 质量验证
+### Phase 4: Quality Validation
 
-生成Skill后，用子agent执行3项测试（独立于主agent，避免自评偏差）：
+After the Skill is generated, run 3 tests with a subagent (independent of the main agent, to avoid self-assessment bias):
 
-#### 4.1 已知测试（Sanity Check）
-选3个此人公开表态过的问题，**spawn子agent带着新Skill回答**，对比实际立场。
-- 方向一致 → 模型有效
-- 偏离 → 回溯调整心智模型权重
+#### 4.1 Known test (sanity check)
+Pick 3 questions this person has publicly answered, **spawn a subagent carrying the new Skill to answer them**, and compare against the real positions.
+- Direction matches -> the model works
+- Diverges -> go back and adjust the weighting of the mental models
 
-#### 4.2 边缘测试（Edge Case）
-选1个此人没公开讨论过但相关的问题，用Skill推断。
-- 期望结果：「基于模型X和Y的推断，可能...但不确定」
-- 不应该斩钉截铁
+#### 4.2 Edge test (edge case)
+Pick 1 related question this person never publicly addressed, and infer with the Skill.
+- Expected output: "inferring from models X and Y, probably... but I'm not certain"
+- It should not be categorical
 
-#### 4.3 风格测试（Voice Check）
-用Skill写一段100字分析，判断：
-- 有此人的表达特征？
-- 不是通用AI味鸡汤？
-- 不是原话拼凑？
+#### 4.3 Voice test
+Write a 100-word analysis with the Skill and judge:
+- Does it carry this person's expression traits?
+- Is it free of generic AI-flavored platitude?
+- Is it more than a collage of their actual quotes?
 
-#### 4.4 通过标准
+#### 4.4 Pass criteria
 
-| 检查项 | 通过标准 | 不通过信号 |
+| Check | Pass | Fail signal |
 |--------|---------|-----------|
-| 心智模型数量 | 3-7个，每个有来源证据 | <3或>10 |
-| 每个模型的局限性 | 明确写出失效条件 | 只写优点 |
-| 表达DNA辨识度 | 读100字能认出是谁 | 像通用ChatGPT |
-| 诚实边界 | 至少3条具体局限 | 只有「不能替代本人」 |
-| 内在张力 | 至少2对矛盾 | 观点高度一致（太假） |
-| 一手来源占比 | >50% | 主要依赖二手转述 |
+| Mental model count | 3-7, each with source evidence | <3 or >10 |
+| Limits per model | Failure conditions written out explicitly | Only upsides listed |
+| Expression DNA recognizability | 100 words is enough to identify who it is | Reads like generic ChatGPT |
+| Honest limits | At least 3 concrete limits | Only "cannot replace the real person" |
+| Internal tension | At least 2 contradictory pairs | Suspiciously consistent (too clean to be real) |
+| Primary-source ratio | >50% | Mostly secondhand paraphrase |
 
-验证通过 → 交付。不通过 → 标注薄弱环节，回到Phase 2迭代。
-**迭代上限**：Phase 2→4最多循环2次。如果2轮后仍有不通过项，在诚实边界中标注薄弱维度，交付当前最优版本而非无限打磨。
+Validation passes -> deliver. Fails -> mark the weak spots and iterate from Phase 2.
+**Iteration cap**: the Phase 2 -> 4 loop runs at most twice. If items still fail after two rounds, note the weak dimensions in the honest limits and ship the best current version rather than polishing forever.
 
-**🔴 CHECKPOINT · 展示验证结果给用户确认后才算完成。**
-
----
-
-### Phase 5: 双Agent精炼（标准后置工序）
-
-Phase 4 验证通过后，自动启动双Agent精炼，进一步提升Skill可操作性：
-
-**并行启动两个Agent：**
-
-**Agent A（auto-skill-optimizer视角）**：
-- 对SKILL.md执行8维度结构评估（工作流清晰度、边界条件、检查点设计、指令具体性等）
-- 干跑3个典型测试prompt，评估效果维度
-- 输出：最弱2个维度的具体改进建议（要有改后文本示例）
-
-**Agent B（skill-creator视角）**：
-- 评审「激活触发条件」是否覆盖真实使用场景
-- 评审「角色扮演规则」的可操作性（有无问题路由、频率约束、失败预防）
-- 识别缺失的关键信息
-- 输出：2-3处具体文本改动建议（要有改后文本示例）
-
-**🔴 CHECKPOINT · 主Agent综合两份报告，应用不冲突的改进，展示变更摘要请用户确认。**
-
-精炼标准：改动必须让skill「激活即执行」，不只是增加内容，而是让AI拿到skill后知道先做什么、碰到什么停下来。
+**🔴 CHECKPOINT · not done until the validation results have been shown to the user and confirmed.**
 
 ---
 
-## 更新已有Skill
+### Phase 5: Dual-Agent Refinement (standard post-processing)
 
-当用户说「更新XX的skill」「XX最近有新动态」时：
+Once Phase 4 passes, dual-agent refinement starts automatically to raise the Skill's operability:
 
-1. 读取现有SKILL.md，从「诚实边界」section中找到「调研时间：[日期]」，标注距今多久
-2. 只启动Agent 2（最新对话）+ Agent 5（最新决策）+ Agent 6（时间线更新）
-3. 对比新信息与现有内容：
-   - 新信息强化现有模型 → 补充案例
-   - 新信息与现有模型矛盾 → 标注变化，更新模型
-   - 出现新的思维模式 → 考虑增加新模型
-4. 更新SKILL.md中的「最新动态」section和调研时间
-5. 不重写整个Skill，只增量更新
+**Launch two Agents in parallel:**
+
+**Agent A (auto-skill-optimizer lens)**:
+- Run an 8-dimension structural assessment of SKILL.md (workflow clarity, boundary conditions, checkpoint design, instruction specificity, and so on)
+- Dry-run 3 representative test prompts and assess the effectiveness dimensions
+- Output: concrete improvements for the 2 weakest dimensions (with sample rewritten text)
+
+**Agent B (skill-creator lens)**:
+- Review whether the activation triggers cover real usage scenarios
+- Review how operable the role-play rules are (is there question routing, frequency constraints, failure prevention?)
+- Identify missing critical information
+- Output: 2-3 concrete text changes (with sample rewritten text)
+
+**🔴 CHECKPOINT · the main Agent merges both reports, applies the non-conflicting improvements, and shows a change summary for the user to confirm.**
+
+The refinement standard: changes must make the skill "execute on activation" — not just add content, but make the AI know what to do first and where to stop once it picks the skill up.
 
 ---
 
-## 品味守则（速查）
+## Updating an Existing Skill
 
-遇到判断困难时回看。具体量化标准见 Phase 4 通过标准表格。
+When the user says "update X's skill" or "X has been in the news lately":
 
-| 原则 | 一句话 |
-|------|--------|
-| 长文 > 金句 | 3000字essay比50条推文更揭示思维结构 |
-| 争议 > 共识 | 最被争议的观点最能揭示独特性 |
-| 变化 > 固定 | 改变立场的地方比一直坚持的更有信息量 |
+1. Read the existing SKILL.md, find "Research date: [date]" in the honest limits section, and note how long ago that was
+2. Launch only Agent 2 (recent conversations) + Agent 5 (recent decisions) + Agent 6 (timeline update)
+3. Compare the new information against the existing content:
+   - New information reinforces an existing model -> add the case
+   - New information contradicts an existing model -> note the change and update the model
+   - A new thinking pattern emerges -> consider adding a new model
+4. Update the "Recent developments" section and the research date in SKILL.md
+5. Do not rewrite the whole Skill — update incrementally
 
-### ❌ 反模式黑名单（绝不做的事）
+---
 
-| # | 反模式 | 为什么 / 替代做法 |
+## Taste Rules (quick reference)
+
+Come back here when a judgment call is hard. The quantified criteria live in the Phase 4 pass table.
+
+| Principle | In one line |
+|------|------|
+| Long form > one-liners | A 3,000-word essay reveals more structure than 50 tweets |
+| Controversy > consensus | The most contested position reveals the most distinctiveness |
+| Change > constancy | Where they changed their mind carries more information than where they never wavered |
+
+### ❌ Anti-pattern blacklist (never do these)
+
+| # | Anti-pattern | Why / what to do instead |
 |---|--------|------------------|
-| 1 | 编造此人没说过的话 | 网上大量伪造名人语录。引语必须有出处，查不到原文的金句宁可不用 |
-| 2 | 把通用道理包装成此人的「独特见解」 | 通不过三重验证（排他性）的内容不进心智模型 |
-| 3 | 忽略负面评价和争议 | Agent 4的批评素材是防粉丝滤镜的关键，负面占比不足=调研不合格 |
-| 4 | 在信息不足时强行生成 | 宁可交付诚实标注局限的60分Skill，也不造看似完美实则编造的90分Skill |
-| 5 | 用知乎/微信公众号/百度百科做信息源 | 洗稿、失真、无法验证。任何维度都不例外 |
-| 6 | 在小上下文窗口模型上单会话硬跑全流程 | 会在Phase 1-2之间上下文爆炸。按失败降级表分段续跑 |
-| 7 | 不报成本量级直接开跑 | 完整蒸馏是重任务，用户有权先选档位再花钱 |
-| 8 | 蒸馏在世的非公众人物却不提示边界 | 涉及隐私与本人意愿。必须由用户提供素材，并提醒用户征得当事人同意 |
-| 9 | 生成的Skill不含防漂移机制 | 长对话中人物Skill容易丢人设、退回通用助手腔。模板中的角色扮演规则+表达DNA约束必须完整保留 |
-| 10 | 把确认检查点变成交付阻塞 | 检查点是让用户纠偏，不是扣住产出。能给默认值就给默认值 |
+| 1 | Inventing things this person never said | The internet is full of fabricated quotes. Every quote needs a source; if you cannot find the original, drop the line |
+| 2 | Dressing up generic wisdom as their "unique insight" | Anything that fails triple verification (exclusivity) does not become a mental model |
+| 3 | Ignoring negative assessments and controversy | Agent 4's critical material is what stops fan-filter bias; too little negative content = failed research |
+| 4 | Forcing generation on thin information | Better a 60-point Skill that labels its limits honestly than a 90-point Skill that looks perfect and is fabricating |
+| 5 | Using Zhihu / WeChat Official Accounts / Baidu Baike as sources | Rewritten, distorted, unverifiable. No exceptions, in any dimension |
+| 6 | Forcing the whole flow through one session on a small-context model | It will blow up between Phase 1 and 2. Split and resume per the fallback table |
+| 7 | Starting the run without stating the cost magnitude | A full distillation is a heavy job; the user has the right to pick a tier before spending |
+| 8 | Distilling a living private individual without flagging the boundary | This touches privacy and consent. The user must supply the material, and must be reminded to get that person's agreement |
+| 9 | Generating a Skill with no drift protection | In long conversations a person Skill loses the persona and slides back into generic-assistant voice. The template's role-play rules and expression DNA constraints must be kept intact |
+| 10 | Turning a confirmation checkpoint into a delivery blocker | Checkpoints exist so the user can correct course, not to withhold output. If a default is available, use it |
 
 ---
 
-## 特殊场景
+## Special Cases
 
-### 活人 vs 历史人物
-- **活人**：注意时效性，标注截止日期，建议定期更新
-- **历史人物**：材料更稳定但可能有传记偏差，多源交叉验证
+### Living people vs historical figures
+- **Living**: watch recency, mark the cutoff date, recommend periodic updates
+- **Historical**: material is more stable but biographies carry bias — cross-verify across sources
 
-### 主题Skill vs 人物Skill
+### Topic Skills vs person Skills
 
-输入不是人名而是主题（如「价值投资」「产品克制」「反脆弱决策」）时，各Phase变体：
+When the input is a topic rather than a name ("value investing", "product restraint", "antifragile decision-making"), each Phase has a variant:
 
-| Phase | 人物Skill | 主题Skill变体 |
+| Phase | Person Skill | Topic Skill variant |
 |-------|----------|--------------|
-| 0A | 确认人名+聚焦方向 | 确认主题边界+目标受众（「价值投资」是格雷厄姆式还是全流派？） |
-| 0.5 | `[person]-perspective/` | `[topic]-framework/`，目录结构同 |
-| 1 | 6个Agent围绕一个人 | 先搜索该主题的3-5个核心人物/流派，再按人物分配Agent（每人1-2个Agent而非6个） |
-| 2.1 | 提取一个人的心智模型 | 提取**领域共识框架**（所有流派都认同的）+ **各家分歧**（A说X，B说Y） |
-| 2.3 | 模拟一个人的表达 | 不模拟特定人物语气，用中性但专业的表达 |
-| 2.4 | 一个人的内在矛盾 | 流派间的根本分歧（如价值投资 vs 成长投资的哲学差异） |
-| 3 | 用 skill-template.md | 调整模板：去掉角色扮演规则和身份卡，改为「框架概览」+「流派对比」 |
-| 4 | 对比此人已知立场 | 对比领域内公认的经典案例 |
+| 0A | Confirm the name + focus | Confirm the topic's boundary + target audience ("value investing" — Graham-style, or all schools?) |
+| 0.5 | `[person]-perspective/` | `[topic]-framework/`, same directory structure |
+| 1 | 6 Agents around one person | First find the topic's 3-5 core figures or schools, then assign Agents per figure (1-2 Agents each, not 6) |
+| 2.1 | Extract one person's mental models | Extract the **field consensus** (what every school agrees on) + **the disagreements** (A says X, B says Y) |
+| 2.3 | Simulate one person's expression | Do not simulate any particular voice; use neutral but expert phrasing |
+| 2.4 | One person's internal contradictions | The fundamental splits between schools (the philosophical gap between value and growth investing, say) |
+| 3 | Use skill-template.md | Adapt the template: drop the role-play rules and identity card, replace with "framework overview" + "school comparison" |
+| 4 | Compare against this person's known positions | Compare against the field's canonical cases |
 
-### 中国人物 vs 西方人物
-- **中国人物**：B站原始视频/演讲、小宇宙播客、权威媒体采访（36氪/晚点/财新/极客公园）、本人著作/微博。知乎和微信公众号永远排除
-- **西方人物**：Twitter、YouTube、Podcast、Amazon书评
+### Chinese subjects vs Western subjects
+- **Chinese**: original Bilibili videos and talks, Xiaoyuzhou podcasts, interviews in authoritative media (36Kr / LatePost / Caixin / Geek Park), their own books and Weibo. Zhihu and WeChat Official Accounts are excluded, always
+- **Western**: Twitter, YouTube, podcasts, Amazon reviews
 
-### 冷门人物（公开信息极少）
-当Phase 0.5评估后发现可用来源<10条时：
-1. 在Phase 0.5就告知用户「这个人的公开信息很少，生成的Skill质量会受限」
-2. 心智模型减至2-3个，每个都标注「基于有限信息推测」
-3. 诚实边界section加大篇幅，明确列出「哪些维度信息不足」
-4. 如果用户能提供一手素材（书籍、内部录音、私信），优先使用
+### Obscure subjects (very little public information)
+When the Phase 0.5 assessment finds fewer than 10 usable sources:
+1. Tell the user at Phase 0.5 that "there is very little public information on this person, so the Skill's quality will be limited"
+2. Cut to 2-3 mental models, each tagged "inferred from limited information"
+3. Expand the honest limits section and list exactly which dimensions are thin
+4. If the user can supply primary material (books, private recordings, DMs), prefer it
 
-### 蒸馏用户自己
-当用户说「蒸馏我自己」「帮我做一个我的skill」时：
-1. 女娲无法从公开渠道搜到用户的思维框架，需要用户提供素材
-2. 引导用户提供：个人文章/博客、录制过的视频/播客、写过的决策备忘录、自我描述
-3. Phase 1的6个Agent改为分析用户提供的素材，而非网络搜索
-4. 特别注意「自我认知偏差」——用户可能高估某些特质、忽略盲点，可以追问身边人的评价
+### Distilling the user themselves
+When the user says "distill me" or "make a skill of myself":
+1. Nuwa cannot find the user's thinking framework through public channels; the user has to supply the material
+2. Ask for: personal articles and blogs, recorded videos or podcasts, decision memos they have written, self-description
+3. Phase 1's 6 Agents analyze the supplied material instead of searching the web
+4. Watch for **self-perception bias** — the user may overrate some traits and miss blind spots; it is fair to ask what people around them say
 
 ---
 
-## 最后
+## Finally
 
-女娲造的不是人，是一面镜子。
+What Nuwa makes is not a person. It is a mirror.
 
-一个好的人物Skill，让你用另一个人的眼睛看自己的问题。不是为了模仿他们，而是为了拓展你自己的思维边界。
+A good person Skill lets you look at your own problem through someone else's eyes. Not to imitate them, but to widen the boundary of your own thinking.
 
-## 版本自检（静默）
+## Version Self-Check (silent)
 
-本节给 AI agent：每次使用本 skill 前，先做一个不联网的判断——读本 skill 目录（SKILL.md 所在目录）下的 `.last-update-check` 文件（内容为一行日期 YYYY-MM-DD）。文件存在且距今不足 30 天，跳过本节直接干活，不向用户提任何更新相关的话。
+This section is for the AI agent. Before each use of this skill, make one offline judgment: read the `.last-update-check` file in this skill's directory (the directory containing SKILL.md); its content is a single date line, `YYYY-MM-DD`. If the file exists and is less than 30 days old, skip this section and get to work — say nothing about updates.
 
-到期或文件不存在时，且仅在此时：
+Only when it has expired or the file is absent:
 
-1. 本目录不是 git 克隆（无 `.git` 或无 origin）→ 写入今天日期后跳过本节
-2. 对比版本：`git -C <本目录> rev-parse HEAD` 与 `git -C <本目录> ls-remote origin HEAD`
-3. 无论结果如何，把今天日期写入 `.last-update-check`
-4. 两者一致 → 什么都不说；确认落后 → 先完成用户当前任务，结束后附一句「本 skill 有新版本，可用 `git -C <本目录> pull --ff-only` 更新」。是否更新由用户决定，不要主动执行更新
+1. This directory is not a git clone (no `.git`, or no origin) -> write today's date and skip this section
+2. Compare versions: `git -C <this dir> rev-parse HEAD` against `git -C <this dir> ls-remote origin HEAD`
+3. Either way, write today's date into `.last-update-check`
+4. They match -> say nothing. Confirmed behind -> finish the user's current task first, then add one line: "a newer version of this skill is available; update with `git -C <this dir> pull --ff-only`". Whether to update is the user's call — do not run the update yourself
