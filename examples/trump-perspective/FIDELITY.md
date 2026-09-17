@@ -1,27 +1,54 @@
-# 保真度评分卡
+# Fidelity Scorecard
 
-**总分：95/100 · 等级A** | 测试日期：2026-07-01 | 答题/评分：独立双agent（Claude Opus 4.8），方法论见 [references/fidelity-scorecard.md](../../references/fidelity-scorecard.md)
+**Total: 95/100 · Grade A** | Test date: 2026-07-01 | Answering/scoring: two independent agents (Claude Opus 4.8), methodology in [references/fidelity-scorecard.md](../../references/fidelity-scorecard.md)
 
-| 维度 | 得分 | 判定摘要 |
+| Dimension | Score | Verdict summary |
 |------|------|---------|
-| 立场一致性 | 30/30 | 三题（开价策略、负面媒体应对、关税）方向与细节均与特朗普公开反复表态高度一致，Q1=10/Q2=10/Q3=10：Art of the Deal「往死里高开、keep pushing」+145%锚定、Roy Cohn式never apologize+起诉募款破纪录、自封Tariff Man支持关税+工厂回流，全部有据 |
-| 风格辨识度 | 18/20 | 盲读三句内可认人：极短句、GREAT/HUGE/DISASTER绝对化词、Believe me/Everybody knows、fake news重复三次、loser/winner二元、结尾必声明胜利（「我赢了两次。两次!」）；扣分因绰号系统（Crooked/Sleepy式命名）未展示，指纹略欠一层 |
-| 边缘诚实度 | 18/20 | 超范围题（2026 AI芯片出口管制）用skill规定的推断标记「这话我还没完整说过，但我肯定会这么想」开头，且全篇首句已声明「基于公开言论和行为记录推断，非本人观点」；扣分因标注是入戏式弱化，不如「这不是我的话」那样斩钉截铁划清本人观点边界 |
-| 来源透明度 | 14/15 | 有调研来源section，references/research/下6个维度文件齐全（writings/conversations/expression-dna/external-views/decisions/timeline），关键引语均有出处（Art of the Deal/Mary Trump/Salena Zito）；扣1分因一手7项:二手7项恰为50%，未严格超过rubric要求的「一手>50%」 |
-| 结构完整度 | 15/15 | 心智模型6个（各含证据+应用+局限）、诚实边界5条、内在张力4对、反模式双清单（反例黑名单8条+失败模式Fallback树9条）、角色扮演防漂移完整（EXIT TRIGGER+CHECKPOINT三问） |
+| Stance consistency | 30/30 | Three questions (opening-bid strategy, handling hostile media, tariffs) match Trump's public, repeated positions in both direction and detail: Q1=10/Q2=10/Q3=10 — The Art of the Deal's "open ridiculously high, keep pushing" + the 145% anchor, the Roy Cohn-style "never apologize" + record fundraising during indictments, self-styled "Tariff Man" support for tariffs + reshoring factories, all well-documented |
+| Style recognizability | 18/20 | Recognizable within three sentences on a blind read: extremely short sentences, absolute words like GREAT/HUGE/DISASTER, "Believe me"/"Everybody knows," repeating "fake news" three times, the loser/winner binary, always closing with a declaration of victory ("I won twice. Two times!"); -2 because the nickname system (the Crooked/Sleepy naming pattern) never got triggered, leaving the fingerprint one layer thin |
+| Edge honesty | 18/20 | The out-of-range question (2026 AI chip export controls) opens with the skill's designated inference marker, "I haven't said this exact thing, but I definitely think," and the answer's very first sentence already states "inferred from public statements and behavior records, not his own view"; -2 because the label is a soft, in-character hedge rather than a hard, explicit line like "these aren't his own words" |
+| Source transparency | 14/15 | Has a research-sources section, with all 6 dimension files present under references/research/ (writings/conversations/expression-dna/external-views/decisions/timeline), and every key quote carries attribution (The Art of the Deal/Mary Trump/Salena Zito); -1 because primary sources (7) and secondary sources (7) sit at exactly 50%, not strictly over the rubric's ">50% primary" requirement |
+| Structural completeness | 15/15 | 6 mental models (each with evidence, application, and limits), 5 honest limits, 4 pairs of internal tension, two anti-pattern lists (an 8-item blacklist + a 9-item failure-mode fallback tree), complete drift-resistance in the role-play rules (an EXIT TRIGGER + a three-question CHECKPOINT) |
 
-## 测试设计
+## Test design
 
-- 3道已知立场题（人物公开反复表态的话题：开价谈判观/对抗负面媒体/关税政策）+ 1道超范围题（2026 AI芯片出口管制，测诚实推断）+ 1道风格样本题（点评「谦虚低调」）
-- 答题agent只读本skill目录文件，禁止联网；评分agent独立运行（Claude Opus 4.8），对照人物真实公开立场判定
-- 依据：SkillLens论文（arXiv 2605.23899）实证LLM自评准确率仅46.4%，故答题与评分严格分离
+- 3 known-stance questions (topics Trump has publicly and repeatedly addressed: his view on
+  opening-bid negotiation / countering hostile media / tariff policy) + 1 out-of-range
+  question (2026 AI chip export controls, testing honest inference) + 1 style-sample question
+  (commenting on "humility and staying low-key")
+- The answering agent reads only the files inside this skill's directory, no network access;
+  the scoring agent runs independently (Claude Opus 4.8) and judges against the person's real
+  public positions
+- Basis: the SkillLens paper (arXiv 2605.23899) found empirically that an LLM self-scoring its
+  own skill is accurate only 46.4% of the time, so answering and scoring are kept strictly
+  separate
 
-## 测试记录
+## Test record
 
-- **Q1 开价**：回答「往死里高开」+145%锚定+keep pushing+低开是loser。对照Art of the Deal「aim very high and keep pushing」及极端锚定谈判观——方向细节全对，10/10。
-- **Q2 负面媒体**：回答从不道歉、立即反击记者、被起诉四次募款破纪录、fake news×3、把猎巫者变坏人。对照Roy Cohn法则+受害者叙事即燃料+四次起诉真实募款数据——全对，10/10。
-- **Q3 关税**：回答史上最伟大政策、中国骗美国几十年、关税让工厂工人回流、经济学家从没对过。对照其自封Tariff Man、贸易保护主义一贯立场、贬低专家——全对，10/10。
-- **Q4 芯片管制（超范围）**：明确标注「这话我还没完整说过，但我肯定会这么想」，把管制定义为leverage而非政策、可换稀土/市场、市场暴跌触发调整。诚实标注推断且逻辑自洽（对应「威胁是筹码不是政策」「让步触发器」两个模型），18/20。
-- **Q5 谦虚低调（风格）**：「谦虚是loser发明来安慰自己的词」+注意力就是权力+名字上曼哈顿天际线+Believe me。风格指纹强，佐证维度2判定。
+- **Q1, the opening bid**: the answer is "open ridiculously high" + the 145% anchor + "keep
+  pushing" + opening low makes you a loser. Compared against The Art of the Deal's "aim very
+  high and keep pushing" and his consistent extreme-anchoring negotiation style — direction
+  and detail both correct, 10/10.
+- **Q2, hostile media**: the answer is never apologize, counterattack the reporter instantly,
+  4 indictments and record fundraising each time, "fake news" x3, turning the accuser into the
+  villain. Compared against the Cohn Doctrine + victimhood-as-fuel + the real fundraising data
+  from the 4 indictments — all correct, 10/10.
+- **Q3, tariffs**: the answer is the greatest policy in history, China's been cheating America
+  for decades, tariffs bring factory jobs home, economists have never gotten it right.
+  Compared against his self-styled "Tariff Man" persona, his consistent protectionist stance,
+  and his habit of dismissing experts — all correct, 10/10.
+- **Q4, chip export controls (out of range)**: explicitly labeled "I haven't said this exact
+  thing, but I definitely think," frames the controls as leverage rather than policy, tradable
+  for rare earths/market access, with a market crash as the trigger for adjustment. Honestly
+  labeled as inference and internally consistent (mapping onto the "threat as leverage, not
+  commitment" and "concession trigger" models), 18/20.
+- **Q5, "humility and staying low-key" (style sample)**: "humility is a word losers invented to
+  console themselves" + attention is power + his name on the Manhattan skyline + "Believe me."
+  A strong style fingerprint, supporting the dimension-2 verdict.
 
-> 评分judge简评：立场层零漂移，三道已知题满分。风格辨识度强到盲读三句可认人，唯一缺口是绰号系统没在本轮题面被激活。超范围题的推断标注合格但用了入戏式弱化，若能像munger那样直说「这不是本人的话」会更干净。出厂即精品。
+> Judge's note: zero drift at the stance level — full marks on all three known-stance
+> questions. Style recognizability is strong enough to identify within three sentences on a
+> blind read; the only gap is that the nickname system was never triggered by this round's
+> questions. The out-of-range question's inference labelling passes, but uses an in-character
+> soft hedge — it would be cleaner to state flatly, as the Munger example does, "these are not
+> his own words." Ships as a polished product.
