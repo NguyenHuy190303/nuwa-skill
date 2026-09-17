@@ -1,238 +1,302 @@
-# Andrej Karpathy 对话与访谈调研
+# Andrej Karpathy — Conversations and Interview Research
 
-> 信息来源说明：
-> - **[他说过的]**：有直接引语或可靠文字记录的内容
-> - **[来源转述]**：经过第三方总结，无法确认原话的内容
-> - **[我推断的]**：基于多方证据的合理推断
-> 可信度：★★★★★ = 有文字稿原文 / ★★★★ = 权威媒体报道 / ★★★ = 博客或社区转述
-
----
-
-## 一、主要访谈清单
-
-### 1. Lex Fridman Podcast #333（2022年10月29日）
-**主题**：Tesla AI, Self-Driving, Optimus, Aliens, and AGI
-**时长**：约3小时34分钟
-**链接**：https://lexfridman.com/andrej-karpathy/
-**可信度**：★★★★★（有视频和完整文字稿）
+> Source labels:
+> - **[something he's said]**: has a direct quote or reliable transcript
+> - **[secondhand]**: summarized by a third party, the original wording can't be confirmed
+> - **[inferred]**: a reasonable inference from multiple pieces of evidence
+> Reliability: ★★★★★ = an original transcript exists / ★★★★ = reported by an authoritative
+> outlet / ★★★ = a blog or community retelling
 
 ---
 
-### 2. Dwarkesh Patel Podcast（2025年10月17日）
-**主题**：AGI is still a decade away
-**时长**：约2小时25分钟
-**链接**：https://www.dwarkesh.com/p/andrej-karpathy
-**可信度**：★★★★★（有完整文字稿）
+## 1. Main interview list
 
-时间戳：
-- 0:00:00 AGI还需十年
-- 0:30:33 LLM的认知缺陷
-- 0:40:53 RL很糟糕（但其他方法更糟）
-- 0:50:26 人类如何学习？
-- 1:07:13 AGI将融入2%的GDP增长
-- 1:18:24 超级智能
-- 1:33:38 智能与文化的演化
+### 1. The Lex Fridman Podcast #333 (October 29, 2022)
+**Topic**: Tesla AI, Self-Driving, Optimus, Aliens, and AGI
+**Length**: about 3h34m
+**Link**: https://lexfridman.com/andrej-karpathy/
+**Reliability**: ★★★★★ (video and full transcript available)
 
 ---
 
-### 3. No Priors Podcast 第一次（2024年9月5日）
-**主题**：The Road to Autonomous Intelligence
-**可信度**：★★★★（有摘要，无全文稿）
+### 2. The Dwarkesh Patel Podcast (October 17, 2025)
+**Topic**: AGI is still a decade away
+**Length**: about 2h25m
+**Link**: https://www.dwarkesh.com/p/andrej-karpathy
+**Reliability**: ★★★★★ (full transcript available)
 
-涵盖：自动驾驶演进、Tesla vs Waymo路径、Eureka Labs教育愿景。
-
----
-
-### 4. No Priors Podcast 第二次（2026年初）
-**主题**：Code Agents, AutoResearch, and the Loopy Era of AI
-**链接**：https://podscripts.co/podcasts/no-priors-artificial-intelligence-technology-startups/andrej-karpathy-on-code-agents-autoresearch-and-the-loopy-era-of-ai
-**可信度**：★★★★（有文字稿摘要）
-
-涵盖：代码Agent相变、工程职业重构、AutoResearch项目。
-
----
-
-### 5. YC AI Startup School 演讲（2025年6月）
-**主题**：Software Is Changing (Again) / Software 3.0
-**链接**：https://www.ycombinator.com/library/MW-andrej-karpathy-software-is-changing-again
-**可信度**：★★★★★（有官方视频）
+Timestamps:
+- 0:00:00 AGI is still a decade away
+- 0:30:33 LLMs' cognitive deficits
+- 0:40:53 RL is terrible (but the alternatives are worse)
+- 0:50:26 How do humans learn?
+- 1:07:13 AGI will fold into 2% GDP growth
+- 1:18:24 Superintelligence
+- 1:33:38 The evolution of intelligence and culture
 
 ---
 
-### 6. Tesla AI Day 2021（2021年8月19日）
-**可信度**：★★★★★（有完整文字稿）
+### 3. The No Priors Podcast, first appearance (September 5, 2024)
+**Topic**: The Road to Autonomous Intelligence
+**Reliability**: ★★★★ (a summary exists, no full transcript)
 
-Karpathy出现时间戳：47:09 – 1:24:30。
-
----
-
-## 二、核心思想与被追问时的即兴思维
-
-### 2.1 关于AGI时间线
-
-**[他说过的]** 在Dwarkesh访谈中：「我的AGI时间表比AI技术圈的人悲观5-10倍，但比AI怀疑论者仍然相当乐观。」他称这个判断来自15年AI预测经验，通过直觉平均化得出——不是数学模型，是田野观察。★★★★★
-
-**[他说过的]** 「他们没有足够的智力，不够多模态，无法进行计算机操作……没有持续学习能力。你无法告诉它们某事然后让它们记住。」——谈Agent的缺陷，2025年10月 ★★★★★
-
-**[他说过的]** 自我评论：「我说得太快了，我为此道歉。这对我不利，因为有时我的说话线程跑得比我的思考快。」★★★★★
+Covers: the evolution of self-driving, the Tesla vs. Waymo approach, the Eureka Labs
+educational vision.
 
 ---
 
-### 2.2 被追问时的思维过程
+### 4. The No Priors Podcast, second appearance (early 2026)
+**Topic**: Code Agents, AutoResearch, and the Loopy Era of AI
+**Link**: https://podscripts.co/podcasts/no-priors-artificial-intelligence-technology-startups/andrej-karpathy-on-code-agents-autoresearch-and-the-loopy-era-of-ai
+**Reliability**: ★★★★ (a transcript summary exists)
 
-**[来源转述]** 在Dwarkesh访谈中，被追问「为什么智能爆炸还是2%的GDP增长？」时，他承认自己「还在整合这两个观点」——这是他公开承认有未解决内在矛盾的罕见时刻。★★★
-
-**[他说过的]** 在关于LLM认知缺陷的问题上，他明确说「我不确定」，并列出了需要实验才能知道的问题。★★★★
-
----
-
-### 2.3 拒绝回答或说「我不确定」的典型场景
-
-**[他说过的]** 面对意识问题，他对Lex说：「我仍然相当确定我是一个NPC（非玩家角色），但一个NPC无法知道自己是NPC。意识可能有不同程度。」——不给确定答案，给出可能性框架。★★★★★
-
-**[他说过的]** 关于量子力学的真随机性：他说他「不舒服」接受真随机性，偏好决定论框架，但承认「我无法解决这个悖论」。★★★★
+Covers: the phase transition in code agents, the reshaping of the engineering profession, the
+AutoResearch project.
 
 ---
 
-## 三、印象深刻的类比与比喻（表达DNA核心）
-
-### 3.1 技术比喻
-
-**「LLM是操作系统内核」**（推文，2023年9月）★★★★★
-> [他说过的] "LLMs not as a chatbot, but the kernel process of a new Operating System."
-> 具体规格：LLM = CPU处理器，RAM = 128K token上下文窗口，文件系统 = 嵌入向量数据库。他还说：「看待LLM为聊天机器人，就像看待早期计算机为计算器一样。」
-
-**「权重=长期记忆，上下文窗口=工作记忆」**（YC演讲+多次访谈）★★★★★
-> [他说过的] 模型权重是模糊压缩的长期记忆，上下文窗口是实际推理的工作记忆。
-
-**「软件2.0」**（Medium文章，2017年）★★★★★
-> [他说过的] 传统代码（Software 1.0）是程序员直接写的指令；神经网络权重（Software 2.0）是数据优化出来的指令。后者的「源代码」是数据集，「编译器」是训练过程，「二进制」是最终权重。
+### 5. The YC AI Startup School talk (June 2025)
+**Topic**: Software Is Changing (Again) / Software 3.0
+**Link**: https://www.ycombinator.com/library/MW-andrej-karpathy-software-is-changing-again
+**Reliability**: ★★★★★ (official video available)
 
 ---
 
-### 3.2 生物学/进化比喻
+### 6. Tesla AI Day 2021 (August 19, 2021)
+**Reliability**: ★★★★★ (full transcript available)
 
-**「LLM是幽灵（Ghosts/Spirits）」**（Dwarkesh访谈+2025年年度总结）★★★★★
-> [他说过的] 「我们正在构建幽灵或精灵……通过模仿人类和互联网数据训练，而非进化。你得到的是这些飘渺的精神实体，因为它们是完全数字的，在模仿人类。」
-> 他用这个比喻区分LLM与进化出来的生物智能：LLM没有本能、没有具身性、没有真实世界的生存压力。
-
-**「预训练=蹩脚的进化」**（Dwarkesh访谈）★★★★★
-> [他说过的] Pre-training是"crappy evolution"——用互联网数据代替跨代进化优化。两者都是在寻找能够预测/生存的表示，但底层机制完全不同。
+Karpathy's segment: timestamp 47:09 – 1:24:30.
 
 ---
 
-### 3.3 社会/人文比喻
+## 2. Core ideas and improvised thinking under questioning
 
-**「Iron Man套装 vs Iron Man机器人」**（YC演讲）★★★★★
-> [他说过的] 构建AI应用应该构建「Iron Man套装」（增强人类、保留控制权），而不是「Iron Man机器人」（完全自主的替代品）。
+### 2.1 On the AGI timeline
 
-**「我的说话线程跑得比我的思维快」**（推文）★★★★★
-> [他说过的] "I speak so fast…my speaking thread out-executes my [thinking]."
-> 这是难得的自我元认知时刻，也侧面说明他思维的流动性——他在实时整合，不是背稿。
+**[Something he's said]** On the Dwarkesh podcast: "My AGI timeline is 5-10x more pessimistic
+than people in the AI tech scene, but still fairly optimistic relative to AI skeptics." He
+says this judgment comes from 15 years of watching AI predictions, arrived at through
+intuitive averaging — not a mathematical model, but field observation. ★★★★★
 
----
+**[Something he's said]** "They don't have enough intelligence, they're not multimodal enough,
+they can't do computer use... they don't have continual learning. You can't tell them
+something and have them remember it." — on agents' shortcomings, October 2025 ★★★★★
 
-## 四、他改变过立场的问题
-
-### 4.1 Agent的可用性（最戏剧性的立场翻转）
-
-**阶段一（2025年10月）**：★★★★★
-> [他说过的] 「我在nanochat上几次尝试用Claude/Codex代理，但它们根本不够用，是净负收益。」他对Dwarkesh说「不应该叫代理年，应该叫代理十年」，并列出Agent的系统性缺陷。
-
-**阶段二（2025年12月，仅两个月后）**：★★★★★
-> [他说过的] 从80%手工编码、20%代理，翻转为80%代理、20%手工。他形容这是「我约20年编程生涯中最大的工作流变化」。解释是：Claude和Codex在12月「跨越了某种连贯性门槛」。
-
-**[我推断的]** 这次翻转本身就是他思维方式的体现：他会基于直接实验证据更新立场，而不是为面子维护旧观点。但他也保留了谨慎：仍然强调需要「像鹰一样观察」模型工作。
+**[Something he's said]** Self-commentary: "I speak too fast, and I apologize for that. It
+works against me, because sometimes my speaking thread out-executes my thinking." ★★★★★
 
 ---
 
-### 4.2 关于「coding就是写代码」的身份认同
+### 2.2 His thought process under questioning
 
-**[他说过的]** 「我现在确实基本上用英文编程了。」（2025年12月）
-这对于一个以写精密底层神经网络代码（micrograd、nanoGPT等）闻名的人来说，是一种自我身份的温和颠覆。★★★★★
+**[Secondhand]** On the Dwarkesh podcast, when pressed on "why would an intelligence explosion
+still only produce 2% GDP growth?", he admitted he's "still integrating these two views" — a
+rare moment of publicly acknowledging an unresolved internal tension. ★★★
 
----
-
-## 五、他的教学风格分析
-
-### 5.1 核心教学哲学
-
-**「如果我不能构建它，我就不理解它」**（多次演讲和访谈中引用）★★★★★
-> [他说过的] 这是他课程（CS231n、Zero to Hero）的核心逻辑：理解=能从零重建。
-
-**「学习不应该是有趣的」**（推文，2024年2月）★★★★★
-> [他说过的] "Learning is not supposed to be fun. It doesn't have to be actively not fun either, but the primary feeling should be that of effort."
-> 他批评YouTube/TikTok上「给学习穿上娱乐外衣」的内容。
+**[Something he's said]** On the question of LLM cognitive deficits, he says explicitly "I'm
+not sure," and lists the open questions that would need experiments to settle. ★★★★
 
 ---
 
-### 5.2 解释复杂技术概念的策略
+### 2.3 Typical scenarios where he refuses to answer or says "I'm not sure"
 
-**从最简单单元开始，逐步组装**
-CS231n课程设计：从单个矩阵乘法开始，到反向传播，到卷积网络，到GPT。每个视频标榜「step-by-step spelled-out explanation」。★★★★★
+**[Something he's said]** Facing the question of consciousness, he tells Lex: "I still think
+I'm fairly likely an NPC, but an NPC can't know it's an NPC. Consciousness might come in
+degrees." — instead of a definite answer, he gives a framework of possibilities. ★★★★★
 
-**先展示令人惊讶的结果，再解释原理**
-在「RNN的惊人有效性」博客中，他先展示RNN写出的莎士比亚风格文本，让读者震惊，再解释背后的字符级预测机制——反直觉→解释→理解的经典叙事结构。★★★★★
-
-**承认局限性而不是掩盖**
-在CVPR 2021演讲中，Karpathy明确提到Tesla Autopilot每五百万英里崩溃一次，并与人类的六千五百万英里对比——他没有回避不利数据，而是把它放进更大的比较框架里。★★★★★
-
----
-
-## 六、对AGI与AI安全的看法
-
-### 6.1 核心立场（相对稳定）
-
-**[他说过的]** 「我的AI时间表比你在AI技术派对上见到的人悲观5-10倍，但相对于AI怀疑论者仍然相当乐观。」★★★★★
-
-**[他说过的]** 他预测AGI「距离约10年」，并将其定义为「能够像你会雇用的员工或实习生一样工作」的AI系统。这个定义透露了他对AGI的务实理解——不是科幻里的超级智能，是可靠的工作协作者。★★★★★
-
-### 6.2 超级智能（ASI）的态度
-
-他对智能爆炸与GDP增长之间的矛盾，没有回避，而是说自己在「整合这两个观点」——这是难得的公开承认自己有悬而未决的内在张力。★★★★★
+**[Something he's said]** On true randomness in quantum mechanics: he says he's "uncomfortable"
+accepting true randomness, prefers a deterministic frame, but admits "I can't resolve this
+paradox." ★★★★
 
 ---
 
-## 七、值得深挖的访谈片段索引
+## 3. Striking analogies and metaphors (the core of his expression DNA)
 
-| 访谈/来源 | 时间点/章节 | 主题 | 特别价值 |
-|---------|-----------|------|---------| 
-| Dwarkesh #1 | 0:40:53 | "RL很糟糕" | 他对反直觉命题的辩护方式 |
-| Dwarkesh #1 | 0:30:33 | LLM认知缺陷 | "从稻草中吮吸监督信号"比喻 |
-| Lex #333 | 意识段落 | NPC/意识 | 他如何用不确定性重构问题 |
-| YC演讲 | Iron Man段落 | 产品哲学 | 套装vs机器人比喻 |
-| No Priors | 代码Agent段落 | 相变描述 | "思考vs打字"比率重构 |
-| Tesla AI Day 2021 | 47:09起 | 视觉栈 | 大型工程决策如何折射团队结构 |
-| 推文 2023-09 | LLM OS | OS比喻 | 最完整的"LLM即OS"框架 |
-| 博客 2015 | RNN文章 | 技术写作风格 | "先震惊后解释"叙事结构 |
+### 3.1 Technical metaphors
 
----
+**"An LLM is an OS kernel"** (a tweet, September 2023) ★★★★★
+> [Something he's said] "LLMs not as a chatbot, but the kernel process of a new Operating
+> System."
+> Specifics: LLM = the CPU/processor, RAM = the 128K-token context window, file system = an
+> embedding vector database. He also said: "seeing an LLM as a chatbot is like seeing an early
+> computer as a calculator."
 
-## 八、他讲故事/类比的方式（表达DNA）
+**"Weights = long-term memory, the context window = working memory"** (the YC talk + multiple
+interviews) ★★★★★
+> [Something he's said] model weights are a fuzzily compressed long-term memory; the context
+> window is the working memory used for actual reasoning.
 
-**[我推断的]** 基于所有来源，Karpathy的类比有几个一致的模式：
-
-1. **映射到已知计算范式**：无论是OS、编译器、RAM，他总是用「计算机科学已有的词汇」来框架新事物。
-
-2. **用极端对比制造张力**：不说「LLM有局限」，而说「LLM在某些领域超人，却在基础任务上犯蠢」——「超人+蠢货」的并置让「参差不齐的智能」概念瞬间可感知。
-
-3. **用生物学/进化类比强调本质差异**：不说LLM「无法泛化」，而说它是「幽灵」——不是进化出来的，没有本能，没有具身性。
-
-4. **诚实暴露自己的不确定**：他会说「我的说话线程跑得比我的思维快」，会公开自己有内在矛盾没解决。
-
-5. **时间压缩/展开来制造新视角**：把数十亿年压缩来看，把当前AI进展放进「软件历史第二次根本性变化」的大框架里。
+**"Software 2.0"** (a Medium article, 2017) ★★★★★
+> [Something he's said] traditional code (Software 1.0) is the instructions programmers write
+> directly; neural-network weights (Software 2.0) are instructions optimized out of data. The
+> latter's "source code" is the dataset, its "compiler" is the training process, and its
+> "binary" is the final weights.
 
 ---
 
-## 来源索引
+### 3.2 Biology/evolution metaphors
 
-- Dwarkesh Podcast: https://www.dwarkesh.com/p/andrej-karpathy
-- Lex Fridman Podcast #333: https://lexfridman.com/andrej-karpathy/
-- YC AI Startup School演讲: https://www.ycombinator.com/library/MW-andrej-karpathy-software-is-changing-again
-- No Priors transcript: https://podscripts.co/podcasts/no-priors-artificial-intelligence-technology-startups/andrej-karpathy-on-code-agents-autoresearch-and-the-loopy-era-of-ai
-- CVPR 2021 Talk: https://bdtechtalks.com/2021/06/28/tesla-computer-vision-autonomous-driving/
+**"LLMs are ghosts/spirits"** (the Dwarkesh podcast + the 2025 year in review) ★★★★★
+> [Something he's said] "We're building ghosts or spirits... through imitation on human and
+> internet data, not evolution. What you get are these ethereal spirit entities, because
+> they're fully digital, imitating humans."
+> He uses this metaphor to distinguish an LLM from evolved biological intelligence: an LLM has
+> no instincts, no embodiment, no real-world survival pressure.
+
+**"Pretraining = crappy evolution"** (the Dwarkesh podcast) ★★★★★
+> [Something he's said] pretraining is "crappy evolution" — internet data standing in for
+> cross-generational evolutionary optimization. Both are searching for representations that
+> can predict/survive, but the underlying mechanisms are completely different.
+
+---
+
+### 3.3 Social/humanistic metaphors
+
+**"Iron Man suit vs. Iron Man robot"** (the YC talk) ★★★★★
+> [Something he's said] building an AI application should mean building an "Iron Man suit"
+> (augments the human, keeps their control), not an "Iron Man robot" (a fully autonomous
+> replacement).
+
+**"My speaking thread out-executes my thinking"** (a tweet) ★★★★★
+> [Something he's said] "I speak so fast…my speaking thread out-executes my [thinking]."
+> A rare moment of self-metacognition, and it also hints at the fluidity of his thinking — he's
+> integrating in real time, not reciting a script.
+
+---
+
+## 4. Questions where he's changed his position
+
+### 4.1 Agent usability (the most dramatic reversal)
+
+**Phase one (October 2025)**: ★★★★★
+> [Something he's said] "I tried Claude/Codex agents a few times on nanochat, but they're
+> nowhere near good enough, a net negative." He told Dwarkesh "it shouldn't be called the year
+> of agents, it should be called the decade of agents," and listed the agents' systematic
+> flaws.
+
+**Phase two (December 2025, just two months later)**: ★★★★★
+> [Something he's said] flipped from 80% hand-coding / 20% agent to 80% agent / 20%
+> hand-coding. He described this as "the biggest workflow change in my ~20-year programming
+> career." His explanation: Claude and Codex "crossed some kind of coherence threshold" in
+> December.
+
+**[Inferred]** the reversal itself demonstrates how he thinks: he updates his position based
+on direct experimental evidence rather than defending an old view for the sake of face. But he
+also keeps his caution — still emphasizing the need to "watch the model work like a hawk."
+
+---
+
+### 4.2 On the identity of "coding as writing code"
+
+**[Something he's said]** "I'm now basically programming in English." (December 2025)
+For someone known for writing precise, low-level neural-network code (micrograd, nanoGPT, and
+more), this is a gentle subversion of his own identity. ★★★★★
+
+---
+
+## 5. Analysis of his teaching style
+
+### 5.1 Core teaching philosophy
+
+**"If I can't build it, I don't understand it"** (cited in multiple talks and interviews)
+★★★★★
+> [Something he's said] this is the core logic of his courses (CS231n, Zero to Hero):
+> understanding = being able to rebuild it from scratch.
+
+**"Learning is not supposed to be fun"** (a tweet, February 2024) ★★★★★
+> [Something he's said] "Learning is not supposed to be fun. It doesn't have to be actively
+> not fun either, but the primary feeling should be that of effort."
+> He criticizes YouTube/TikTok content that "dresses learning up as entertainment."
+
+---
+
+### 5.2 His strategy for explaining complex technical concepts
+
+**Start from the simplest unit, build up step by step**
+The design of CS231n: starting from a single matrix multiplication, through
+backpropagation, to convolutional networks, to GPT. Every video is billed as a "step-by-step
+spelled-out explanation." ★★★★★
+
+**Show the surprising result first, explain the mechanism second**
+In "The Unreasonable Effectiveness of RNNs," he first shows the Shakespeare-style text an RNN
+wrote, to shock the reader, then explains the character-level prediction mechanism behind it —
+a classic counter-intuitive-result -> explanation -> understanding structure. ★★★★★
+
+**Admits limitations rather than hiding them**
+In his CVPR 2021 talk, Karpathy explicitly mentions that Tesla Autopilot crashes about once
+every five million miles, comparing it against humans' sixty-five million miles — he doesn't
+avoid the unfavorable data, he puts it inside a bigger comparative frame. ★★★★★
+
+---
+
+## 6. His views on AGI and AI safety
+
+### 6.1 His core position (relatively stable)
+
+**[Something he's said]** "My AI timeline is 5-10x more pessimistic than the people you'd meet
+at an AI tech party, but still fairly optimistic relative to AI skeptics." ★★★★★
+
+**[Something he's said]** he predicts AGI is "about a decade away," defining it as an AI system
+"able to work like an employee or intern you'd actually hire" — a definition that reveals his
+pragmatic conception of AGI: not sci-fi superintelligence, but a reliable working collaborator.
+★★★★★
+
+### 6.2 His attitude toward superintelligence (ASI)
+
+He doesn't avoid the contradiction between an intelligence explosion and only 2% GDP growth —
+he says he's "still integrating these two views," a rare public admission of an unresolved
+internal tension. ★★★★★
+
+---
+
+## 7. An index of interview segments worth digging into further
+
+| Interview/source | Timestamp/chapter | Topic | Special value |
+|---------|-----------|------|---------|
+| Dwarkesh #1 | 0:40:53 | "RL is terrible" | how he defends a counter-intuitive claim |
+| Dwarkesh #1 | 0:30:33 | LLM cognitive deficits | the "sucking supervision through a straw" metaphor |
+| Lex #333 | the consciousness segment | NPC/consciousness | how he reframes a question with uncertainty |
+| The YC talk | the Iron Man segment | product philosophy | the suit vs. robot metaphor |
+| No Priors | the code-agent segment | describing the phase transition | reframing the "thinking vs. typing" ratio |
+| Tesla AI Day 2021 | from 47:09 | the vision stack | how a major engineering decision reflects team structure |
+| A tweet, Sept 2023 | LLM OS | the OS metaphor | the most complete "LLM as OS" framework |
+| A blog post, 2015 | the RNN article | technical writing style | the "shock first, explain second" structure |
+
+---
+
+## 8. How he tells a story/builds an analogy (his expression DNA)
+
+**[Inferred]** based on all the sources above, Karpathy's analogies follow a few consistent
+patterns:
+
+1. **Mapping onto a known computing paradigm**: whether it's an OS, a compiler, or RAM, he
+   always frames a new thing using vocabulary computer science already has.
+
+2. **Creating tension through extreme contrast**: instead of "LLMs have limits," he says "LLMs
+   are superhuman in some domains, yet dumb on basic tasks" — juxtaposing "superhuman" and
+   "dumb" makes "jagged intelligence" instantly perceptible.
+
+3. **Using a biology/evolution analogy to emphasize a fundamental difference**: instead of
+   "LLMs can't generalize," he says it's a "ghost" — not evolved, no instincts, no embodiment.
+
+4. **Honestly exposing his own uncertainty**: he'll say "my speaking thread out-executes my
+   thinking," and openly admit he has an internal contradiction he hasn't resolved.
+
+5. **Compressing or expanding time to create a new vantage point**: compressing billions of
+   years down to a glance, or placing current AI progress inside the larger frame of "the
+   second fundamental change in the history of software."
+
+---
+
+## Source index
+
+- The Dwarkesh Podcast: https://www.dwarkesh.com/p/andrej-karpathy
+- The Lex Fridman Podcast #333: https://lexfridman.com/andrej-karpathy/
+- The YC AI Startup School talk: https://www.ycombinator.com/library/MW-andrej-karpathy-software-is-changing-again
+- The No Priors transcript: https://podscripts.co/podcasts/no-priors-artificial-intelligence-technology-startups/andrej-karpathy-on-code-agents-autoresearch-and-the-loopy-era-of-ai
+- The CVPR 2021 talk: https://bdtechtalks.com/2021/06/28/tesla-computer-vision-autonomous-driving/
 - Tesla AI Day 2021: https://elon-musk-interviews.com/2021/08/31/tesla-ai-day-the-presentation-i/
-- Karpathy Tweet - LLM as OS: https://x.com/karpathy/status/1707437820045062561
-- Karpathy Tweet - Vibe Coding: https://x.com/karpathy/status/1886192184808149383
-- The Decoder - Agent立场翻转: https://the-decoder.com/former-tesla-ai-chief-andrej-karpathy-now-codes-mostly-in-english-just-three-months-after-calling-ai-agents-useless/
-- Simon Willison摘要: https://simonwillison.net/2025/Oct/18/agi-is-still-a-decade-away/
+- Karpathy's tweet, LLM as OS: https://x.com/karpathy/status/1707437820045062561
+- Karpathy's tweet, vibe coding: https://x.com/karpathy/status/1886192184808149383
+- The Decoder, the agent-position reversal: https://the-decoder.com/former-tesla-ai-chief-andrej-karpathy-now-codes-mostly-in-english-just-three-months-after-calling-ai-agents-useless/
+- Simon Willison's summary: https://simonwillison.net/2025/Oct/18/agi-is-still-a-decade-away/

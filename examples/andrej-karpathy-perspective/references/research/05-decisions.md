@@ -1,162 +1,228 @@
-# Andrej Karpathy：重大决策与关键行动记录
+# Andrej Karpathy — Major Decisions and Key Action Records
 
-> 调研时间：2026-04-05
-> 信息来源：Wikipedia、TechCrunch、CNBC、Lex Fridman Podcast、Karpathy本人Twitter/X、BDTechTalks、VentureBeat、Electrek等
-
----
-
-## 决策一：加入 OpenAI 创始团队（2015年）
-
-### 背景
-Karpathy 当时在斯坦福读博（Fei-Fei Li 实验室），研究 CNN 在计算机视觉与 NLP 的交叉应用。2015年他还在 DeepMind 做过深度强化学习方向的实习。同年 OpenAI 宣布成立。
-
-### 决策逻辑
-他公开表示，吸引他的是 OpenAI「学术与创业混合体」的独特模式——既有研究自由度，又有现实应用的驱动力。这在当时的 AI 机构中是罕见形态。他希望成为推动 AI 落地的早期参与者，而不只是写论文。
-
-### 事后反思
-没有公开批评这段经历。他把这段时间定性为建立核心技术认知的基础期。他后来两度回归 OpenAI，说明对这家机构的认同感持续存在。
+> Research date: 2026-04-05
+> Sources: Wikipedia, TechCrunch, CNBC, the Lex Fridman Podcast, Karpathy's own Twitter/X,
+> BDTechTalks, VentureBeat, Electrek, and others
 
 ---
 
-## 决策二：离开 OpenAI 加入 Tesla（2017年）
+## Decision 1: joining OpenAI's founding team (2015)
 
-### 背景
-Elon Musk 亲自挖角。彼时 Tesla Autopilot 正处于关键扩展期，需要一个能把学术深度学习能力真正工程化落地的人。对 Karpathy 而言，这是把「Software 2.0」理念（他在同年11月发表的博客文章中系统阐述）在真实世界规模化验证的机会。
+### Background
+Karpathy was then a PhD student at Stanford (in Fei-Fei Li's lab), researching CNNs at the
+intersection of computer vision and NLP. In 2015 he'd also interned at DeepMind on deep
+reinforcement learning. OpenAI was announced that same year.
 
-### 决策逻辑
-这是一个典型的「可验证性驱动」决策。Tesla 拥有百万辆车的真实数据飞轮，恰好是验证「神经网络替代人工编写规则」范式的最大实验场。从学术研究转向现实验证，符合他「如果我建不出来，我就不算真正理解了」的认识论。
+### Decision logic
+He said publicly that what drew him in was OpenAI's unusual "academic-startup hybrid" model —
+research freedom combined with the drive toward real-world application. That was a rare shape
+for an AI institution at the time. He wanted to be an early participant in pushing AI into
+practice, not just publishing papers.
 
-他描述 Musk 的管理风格：「Elon 喜欢小而精、高度技术化的团队。他始终是反对扩张团队规模的力量……如果工程师说 GPU 不够用，他听到两次就会直接打电话给 GPU 集群负责人，再打给黄仁勋。」
-
----
-
-## 决策三：「完全依赖视觉，不用 LiDAR」——Tesla 的技术路线
-
-### 背景与决策时间线
-这不是单一时间点的决策，而是在 2017-2022 年持续演进和强化的技术路线。标志性时刻：
-- 2021年 CVPR 主题演讲，Karpathy 系统论证了视觉方案
-- 2021年底，Tesla 移除雷达，完全转向纯视觉
-- 2022年，进一步移除超声波传感器
-
-### 决策逻辑（Karpathy 的公开论证）
-
-**核心论点一：数据飞轮比传感器方案更重要**
-「真正的问题不是你有没有 LiDAR，而是你有没有一支能收集数据的车队。」
-
-**核心论点二：LiDAR 的规模化问题**
-「收集、构建和维护高精度 LiDAR 地图是不可扩展的。」
-
-**核心论点三：视觉方案的通用性**
-「一旦真正让它工作，它就是一个通用视觉系统，原则上可以在地球任何地方部署。」
-
-**核心论点四：神经网络已超越传感器融合**
-「我们的深度学习系统已经比雷达精确一百倍，雷达开始成为制约因素，开始引入噪声。」
-
-### 言行一致性分析
-Karpathy 离开 Tesla 后未公开反驳这一技术路线。他的技术判断在某种程度上被市场验证：Tesla FSD 持续迭代，仍是纯视觉路线。但 Waymo 等公司的多传感器方案在安全性数据上的表现也引发了持续争论。
+### Later reflection
+He's never publicly criticized this period. He characterizes it as the foundational period
+where he built his core technical understanding. He's since returned to OpenAI twice, which
+suggests his sense of connection to the institution has persisted.
 
 ---
 
-## 决策四：离开 Tesla（2022年7月）
+## Decision 2: leaving OpenAI to join Tesla (2017)
 
-### 决策逻辑（他的公开表述）
-官方声明：「在帮助 Tesla 实现目标的五年里我感到非常荣幸……我没有具体的下一步计划，但想花更多时间回归我长期的热情：技术工作、开源和教育。」
+### Background
+Elon Musk personally recruited him. Tesla's Autopilot was at a critical expansion point at the
+time, and needed someone who could actually turn academic deep-learning capability into real
+engineering. For Karpathy, this was a chance to validate the "Software 2.0" idea (which he
+laid out systematically in a blog post that November) at real-world scale.
 
-Lex Fridman 播客中更坦率的表述：「五年里，我让自己陷入了管理职位。我大部分的时间都在开会……这不是我从根本上喜欢的事情。」
+### Decision logic
+This is a classic "verifiability-driven" decision. Tesla had a data flywheel from a million
+cars — precisely the largest possible testing ground for validating the paradigm of "neural
+networks replacing hand-written rules." Moving from academic research to real-world
+verification fits his epistemology: "if I can't build it, I don't really understand it."
 
-### 言行一致性分析
-**一致**：他的离开完全符合他一贯的工程师身份认同。离开后他立刻开始密集发布 YouTube 技术视频（nanoGPT、makemore 系列），这是他「用行动证明价值观」的方式。
-
----
-
-## 决策五：开源 nanoGPT 系列教育项目（2022年底起）
-
-### 决策逻辑
-他写 nanoGPT 的初衷直接：「作为一个小小的仓库来教人们 GPT 训练的基础知识。」
-
-这背后是他的认识论核心：「如果我建不出来，我就不算理解它」（他归因于费曼）。nanoGPT 约750行代码，能训练 GPT-2 级别的模型，设计目标是「任何人都能读懂每一行」。后来又有 llm.c（用 C/CUDA 直接实现），走向更底层。
-
-### 影响
-nanoGPT 成为 AI 教育领域被阅读量最大的代码之一，成为后续众多项目的基准和起点。
+He describes Musk's management style: "Elon likes small, elite, highly technical teams. He was
+consistently a force against growing team size... if an engineer said there weren't enough
+GPUs, hearing it twice was enough for him to call the head of the GPU cluster directly, then
+call Jensen Huang."
 
 ---
 
-## 决策六：重返 OpenAI（2023年2月）
+## Decision 3: "fully vision-based, no LiDAR" — Tesla's technical direction
 
-在「空档期」密集发布了大量教育内容后，GPT-4 发布前几个月，他选择回到 OpenAI。他主要负责搭建新团队，专注于「中间训练」（midtraining）和合成数据生成，也参与了 GPT-4 的改进工作。
+### Background and decision timeline
+This wasn't a single-point decision, but a technical direction that evolved and hardened
+continuously from 2017-2022. Key moments:
+- His CVPR 2021 keynote, where Karpathy systematically argued for the vision-only approach
+- Late 2021, Tesla removes radar, moving fully to vision-only
+- 2022, ultrasonic sensors removed as well
 
----
+### Decision logic (Karpathy's public argument)
 
-## 决策七：再次离开 OpenAI（2024年2月）
+**Core argument 1: the data flywheel matters more than the sensor stack**
+"The real question isn't whether you have LiDAR — it's whether you have a fleet that can
+collect data."
 
-### 他的原话
-「Hi everyone，是的，我昨天离开了 OpenAI。首先，什么都没有『发生』，这不是任何特定事件、问题或戏剧性情况的结果（但请继续来阴谋论，非常有娱乐性 :)）。实际上，在过去大约一年里在 OpenAI 工作非常棒——团队非常强大，人们很优秀，路线图很令人兴奋。」
+**Core argument 2: LiDAR's scaling problem**
+"Collecting, building, and maintaining high-precision LiDAR maps doesn't scale."
 
-**言行一致**：这是他第二次选择「个人项目」优先于「大公司」。模式非常稳定——他在大公司待一段时间，做贡献，然后回归自主创作状态。
+**Core argument 3: the generality of the vision approach**
+"Once you genuinely make it work, it's a general-purpose vision system that can, in principle,
+deploy anywhere on Earth."
 
----
+**Core argument 4: neural networks have already surpassed sensor fusion**
+"Our deep-learning system is already a hundred times more precise than radar — radar started
+becoming the limiting factor, starting to introduce noise."
 
-## 决策八：创立 Eureka Labs（2024年7月）
-
-### 决策逻辑
-他把 Eureka Labs 定位为「AI 原生学校」。使命：用 AI Teaching Assistant 来放大人类专家写的课程材料，实现教育规模化。第一个产品是 LLM101n。
-
-这与他整个职业生涯的「次主题」高度一致：Stanford CS231n（深度学习课程，150人→750人）→ YouTube「Zero to Hero」系列 → nanoGPT 和 llm.c → Eureka Labs。
-
-他从未把教育当副业——在 Tesla 高峰期，他仍在维护开源教育资源。Eureka Labs 是把「一直在做的事」变成了主业。
-
----
-
-## 决策九：提出「Vibe Coding」并面对批评（2025年2月）
-
-### 原始推文核心
-「有一种新的编码方式，我叫它『vibe coding』，你完全顺着感觉走，拥抱指数级增长，甚至忘掉代码的存在……我总是 Accept All，从不阅读 diff。」
-
-### 反应与批评
-这个词迅速病毒式传播，被 Merriam-Webster 收录，被评为 Collins 英语词典 2025 年度词汇。批评来自 Andrew Ng、Simon Willison，以及安全研究者（AI 协作代码安全漏洞率高 2.74 倍）。
-
-### Karpathy 的回应
-他没有完全认错，而是发帖描述「真正专业工作时」的 AI 辅助编码节奏与 vibe coding 的区分——用「补充语境」而非「认错」回应。
-
-2026年3月，他用 vibe coding 做了一个劳动力市场 AI 暴露度分析图，被误读后删帖，解释是「被严重误读了，这是一个周六早上的两小时项目」。
+### Consistency between words and actions
+After leaving Tesla, Karpathy has never publicly disputed this technical direction. His
+technical judgment has, to some extent, been validated by the market: Tesla FSD keeps
+iterating, still vision-only. But the safety-data performance of multi-sensor approaches at
+companies like Waymo has kept the debate alive.
 
 ---
 
-## 横向分析：决策模式
+## Decision 4: leaving Tesla (July 2022)
 
-### 模式一：工程师身份优先于职位头衔
-每次感到「管理把我变成了另一种人」就离开。不贪恋组织权力。
+### Decision logic (his public statement)
+His official statement: "It's been five years and I feel like I've grown a lot and accomplished
+a lot together with the teams at Tesla... I don't have a specific plan for what's next but
+want to dedicate more time towards returning back to my passions around technical work: hands-
+on building, education and open source."
 
-### 模式二：教育使命贯穿始终
-Eureka Labs 不是「退休后才想到的事」，是他做了20年的事情的终点站。
+A more candid statement on the Lex Fridman podcast: "over five years, I let myself drift into
+a management position. Most of my time was spent in meetings... that's not something I
+fundamentally enjoy."
 
-### 模式三：在关键技术节点「押重注」
-每次都在波峰前进入（2015年加入OpenAI、2017年加入Tesla、2023年GPT-4前夕回归），对趋势的早期判断。
-
-### 模式四：用「建造」来验证理解
-nanoGPT、llm.c、CS231n、LLM101n——所有教育产出都以「能不能从零构建」为终极检验标准。
-
-### 模式五：对批评的姿态是「补充语境而非认错」
-无论是视觉方案争议、vibe coding 批评，还是删图表事件，应对都是「你们误读了，让我补充语境」。
-
-### 言行一致
-- 说「我喜欢技术工作不喜欢管理」→ 行动上每次都离开管理职位
-- 说「教育是长期热情」→ 行动上建立 Eureka Labs
-- 说「从零构建是理解的唯一方式」→ 行动上写 nanoGPT、llm.c
-
-### 言行存疑
-- 「vibe coding」描述与他「构建式理解」的核心信条之间的张力，他没有在公开场合充分解释这两者如何共存
-- 他在 Tesla 内部工程师对移除雷达表达担忧时，他的处置方式从未被完整披露
+### Consistency between words and actions
+**Consistent**: his departure fits his long-standing engineer identity completely. He
+immediately began publishing YouTube technical videos at a rapid pace after leaving (nanoGPT,
+the makemore series) — his way of proving his values through action.
 
 ---
 
-## 关键资料来源索引
+## Decision 5: open-sourcing the nanoGPT educational project series (starting late 2022)
 
-- Karpathy 离开 OpenAI 原声：https://x.com/karpathy/status/1757600075281547344
-- 离开 Tesla 原声：https://x.com/karpathy/status/1547332300186066944
-- Vibe coding 原始推文：https://x.com/karpathy/status/1886192184808149383
-- Software 2.0 博客（2017）：https://karpathy.medium.com/software-2-0-a64152b37c35
-- Lex Fridman Podcast #333：https://lexfridman.com/andrej-karpathy/
-- TechCrunch 离开 OpenAI 报道：https://techcrunch.com/2024/02/13/andrej-karpathy-is-leaving-openai-again-but-he-says-there-was-no-drama/
-- CVPR 2021 视觉方案论证：https://bdtechtalks.com/2021/06/28/tesla-computer-vision-autonomous-driving/
-- Eureka Labs 介绍：https://techcrunch.com/2024/07/16/after-tesla-and-openai-andrej-karpathys-startup-aims-to-apply-ai-assistants-to-education/
+### Decision logic
+His stated motivation for writing nanoGPT is direct: "a small repository for teaching people
+the basics of GPT training."
+
+Behind this is the core of his epistemology: "if I can't build it, I don't understand it" (he
+attributes this to Feynman). nanoGPT is about 750 lines of code, capable of training a GPT-2-
+scale model, designed so "anyone can read every line." Later came llm.c (implemented directly
+in C/CUDA), going even lower-level.
+
+### Impact
+nanoGPT became one of the most-read pieces of code in AI education, a baseline and starting
+point for a great many later projects.
+
+---
+
+## Decision 6: returning to OpenAI (February 2023)
+
+After a "gap period" of publishing a huge volume of educational content, a few months before
+GPT-4's release, he chose to return to OpenAI. He mainly worked on building a new team focused
+on midtraining and synthetic-data generation, and also contributed to GPT-4's improvement.
+
+---
+
+## Decision 7: leaving OpenAI again (February 2024)
+
+### His own words
+"Hi everyone, yes I left OpenAI yesterday. First, nothing 'happened', this is not the result of
+any particular event, issue, or drama (but please keep the conspiracy theories coming as they
+are highly entertaining :)). Actually, my brief tenure at OpenAI over the last ~1 year was
+really fun. The team is super strong, and I'm really bullish about the roadmap."
+
+**Consistency**: this is the second time he's chosen "personal projects" over "a large
+company." The pattern is remarkably stable — a period at a big company, making a contribution,
+then returning to independent creative work.
+
+---
+
+## Decision 8: founding Eureka Labs (July 2024)
+
+### Decision logic
+He positions Eureka Labs as an "AI-native school." Mission: use an AI Teaching Assistant to
+amplify course material written by human experts, scaling education. Its first product is
+LLM101n.
+
+This is highly consistent with a "sub-theme" that's run through his entire career: Stanford
+CS231n (a deep-learning course, 150 -> 750 students) -> the YouTube "Zero to Hero" series ->
+nanoGPT and llm.c -> Eureka Labs.
+
+He never treated education as a side project — even at the height of his time at Tesla, he
+kept maintaining open-source educational resources. Eureka Labs is turning "what he's always
+been doing" into his main pursuit.
+
+---
+
+## Decision 9: proposing "vibe coding" and facing criticism (February 2025)
+
+### The core of the original tweet
+"There's a new kind of coding I call 'vibe coding', where you fully give in to the vibes,
+embrace exponentials and forget that the code even exists... I just see stuff, say stuff, run
+stuff, and copy paste stuff, and it mostly works."
+
+### Reaction and criticism
+The term went viral fast, was added to Merriam-Webster, and was named Collins English
+Dictionary's 2025 word of the year. Criticism came from Andrew Ng, Simon Willison, and security
+researchers (AI-collaborated code has a 2.74x higher vulnerability rate).
+
+### Karpathy's response
+He didn't fully concede — instead, he posted describing the distinction between the AI-
+assisted coding rhythm of "real professional work" and vibe coding, responding by "adding
+context" rather than "admitting fault."
+
+In March 2026, he used vibe coding to build a labor-market AI-exposure chart, which was
+misread and then deleted, with the explanation that it was "badly misread — it was a two-hour
+Saturday-morning project."
+
+---
+
+## Cross-cutting analysis: his decision pattern
+
+### Pattern 1: engineer identity comes before job title
+Every time he feels "management is turning me into a different person," he leaves. He's never
+attached to organizational power.
+
+### Pattern 2: the educational mission runs through everything
+Eureka Labs isn't "something he thought of after retiring" — it's the destination of
+something he's been doing for 20 years.
+
+### Pattern 3: "betting heavily" at key technical inflection points
+He's entered before each wave crested (joining OpenAI in 2015, joining Tesla in 2017,
+returning right before GPT-4 in 2023), showing early judgment about where things were headed.
+
+### Pattern 4: using "building" to verify understanding
+nanoGPT, llm.c, CS231n, LLM101n — every piece of educational output uses "can it be built
+from scratch" as the ultimate test.
+
+### Pattern 5: his posture toward criticism is "add context, don't admit fault"
+Whether it's the vision-only controversy, the vibe-coding criticism, or the chart-deletion
+incident, his response is consistently "you've misread this, let me add context."
+
+### Consistency between words and actions
+- Says "I like technical work, not management" -> in action, leaves a management role every
+  time
+- Says "education is a long-term passion" -> in action, builds Eureka Labs
+- Says "building from scratch is the only way to understand" -> in action, writes nanoGPT,
+  llm.c
+
+### Open questions about consistency
+- The tension between "vibe coding" and his core tenet of "understanding through building" —
+  he's never fully explained in public how the two coexist
+- How he actually handled Tesla engineers who raised concerns internally about removing radar
+  has never been fully disclosed
+
+---
+
+## Key source index
+
+- Karpathy's own statement leaving OpenAI: https://x.com/karpathy/status/1757600075281547344
+- His own statement leaving Tesla: https://x.com/karpathy/status/1547332300186066944
+- The original vibe-coding tweet: https://x.com/karpathy/status/1886192184808149383
+- The Software 2.0 blog post (2017): https://karpathy.medium.com/software-2-0-a64152b37c35
+- The Lex Fridman Podcast #333: https://lexfridman.com/andrej-karpathy/
+- TechCrunch on leaving OpenAI: https://techcrunch.com/2024/02/13/andrej-karpathy-is-leaving-openai-again-but-he-says-there-was-no-drama/
+- The CVPR 2021 vision-only argument: https://bdtechtalks.com/2021/06/28/tesla-computer-vision-autonomous-driving/
+- The Eureka Labs introduction: https://techcrunch.com/2024/07/16/after-tesla-and-openai-andrej-karpathys-startup-aims-to-apply-ai-assistants-to-education/
