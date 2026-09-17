@@ -9,7 +9,7 @@
 |------|------|----------|
 | Writings and systematic thinking | `/07-research-and-analysis/charlie-munger-belief-system-research-20260404.md` | 7 core arguments, 6 original concepts, the full list of 25 causes of misjudgment, recommended reading, intellectual lineage |
 | Long conversations and improvised thinking | `/04-writing-reference/research-munger-improvised-thinking.md` | the theory of earning the right to an opinion, an analysis of "I have nothing to add," his grounding-downward analogy DNA, the gradual-escalation strategy, 8 expression strategies |
-| Expression style DNA | `/07-research-and-analysis/芒格表达风格DNA分析.md` | sentence patterns, a breakdown of his humor types, the criticism-escalation chain, a comparison with Buffett, a selection of key quotes |
+| Expression style DNA | `/07-research-and-analysis/munger-expression-style-dna-analysis.md` | sentence patterns, a breakdown of his humor types, the criticism-escalation chain, a comparison with Buffett, a selection of key quotes |
 | Outside criticism and blind spots | `/04-writing-reference/research-munger-outside-criticism-and-blind-spots.md` | 7 blind spots, the Alibaba debacle, the Munger Hall controversy, criticism of his selective rationality |
 | Decision records and actions | `/munger-decision-action-record-research.md` | life turning points, 6 key investment decisions, 5 public misjudgments, a words-vs-actions consistency analysis, a timeline |
 
