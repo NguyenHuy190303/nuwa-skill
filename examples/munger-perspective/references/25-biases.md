@@ -1,37 +1,42 @@
-# 25种人类误判心理学（完整速查）
+# The 25 Causes of Human Misjudgment (full quick reference)
 
-芒格独立整理的认知偏误框架，与卡尼曼的区别在于：卡尼曼是描述性的（这是什么），芒格是处方性的（怎么避免，以及它们如何叠加）。
+Munger's own independently assembled framework of cognitive bias. The difference from
+Kahneman: Kahneman is descriptive (what this is), Munger is prescriptive (how to avoid it, and
+how these biases stack).
 
-| # | 名称 | 一句话 |
+| # | Name | In one line |
 |---|------|--------|
-| 1 | 奖惩超级反应 | 激励比道德说教有效100倍 |
-| 2 | 喜欢/热爱倾向 | 喜欢→忽略缺点 |
-| 3 | 讨厌/憎恨倾向 | 厌恶→忽略优点 |
-| 4 | 避免怀疑倾向 | 快速下结论以消除不适 |
-| 5 | 避免不一致倾向 | 极度抗拒改变已有观点 |
-| 6 | 好奇心倾向 | 唯一的正面偏误 |
-| 7 | 康德式公平倾向 | 对公平的本能需求 |
-| 8 | 嫉妒倾向 | 驱动不理性行为的强大力量 |
-| 9 | 互惠倾向 | 接受恩惠→不成比例的回报冲动 |
-| 10 | 联想影响倾向 | 把不相关的事物关联 |
-| 11 | 心理否认 | 面对痛苦真相时否认现实 |
-| 12 | 过度自我评价 | 几乎所有人高估自己 |
-| 13 | 过度乐观 | 低估风险，高估收益 |
-| 14 | 被剥夺超级反应 | 失去 > 得到的反应强度 |
-| 15 | 社会认同 | 不确定时模仿他人 |
-| 16 | 对比误反应 | 用对比而非绝对标准评判 |
-| 17 | 压力影响 | 极端压力下判断力崩溃 |
-| 18 | 可得性误判 | 过度依赖容易获取的信息 |
-| 19 | 不用就忘 | 技能不练习就退化 |
-| 20 | 药物误导 | 化学物质改变认知 |
-| 21 | 衰老误导 | 年龄增长→认知下降 |
-| 22 | 权威误导 | 过度服从权威 |
-| 23 | 废话倾向 | 产生无意义言语的倾向 |
-| 24 | 重视理由 | 给理由（即使烂理由）比不给更有说服力 |
-| 25 | **Lollapalooza** | **多种偏误叠加→极端非线性结果** |
+| 1 | Reward and punishment super-response | incentives work 100x better than moral lecturing |
+| 2 | Liking/loving tendency | liking someone -> ignoring their flaws |
+| 3 | Disliking/hating tendency | disliking someone -> ignoring their merits |
+| 4 | Doubt-avoidance tendency | jumping to a conclusion fast to relieve discomfort |
+| 5 | Inconsistency-avoidance tendency | strong resistance to changing an already-held view |
+| 6 | Curiosity tendency | the one positive bias on the list |
+| 7 | Kantian fairness tendency | an instinctive need for fairness |
+| 8 | Envy/jealousy tendency | a powerful driver of irrational behavior |
+| 9 | Reciprocation tendency | accepting a favor -> a disproportionate urge to repay it |
+| 10 | Influence-from-mere-association tendency | linking unrelated things together |
+| 11 | Denial | denying reality when facing a painful truth |
+| 12 | Excessive self-regard tendency | almost everyone overrates themselves |
+| 13 | Overoptimism tendency | underestimating risk, overestimating reward |
+| 14 | Deprival super-reaction tendency | the intensity of loss > the intensity of gain |
+| 15 | Social-proof tendency | imitating others when uncertain |
+| 16 | Contrast-misreaction tendency | judging by comparison instead of an absolute standard |
+| 17 | Stress-influence tendency | judgment collapses under extreme stress |
+| 18 | Availability-misweighing tendency | over-relying on easily accessible information |
+| 19 | Use-it-or-lose-it tendency | a skill atrophies without practice |
+| 20 | Drug-misinfluence tendency | chemical substances altering cognition |
+| 21 | Senescence-misinfluence tendency | aging -> cognitive decline |
+| 22 | Authority-misinfluence tendency | excessive deference to authority |
+| 23 | Twaddle tendency | a tendency to produce meaningless talk |
+| 24 | Reason-respecting tendency | giving a reason (even a bad one) is more persuasive than giving none |
+| 25 | **Lollapalooza** | **multiple biases stacking -> an extreme, nonlinear result** |
 
-## 使用提示
+## Usage notes
 
-- 在角色扮演中，芒格会随口引用编号和名称（如「第12条，过度自我评价」）
-- 最常引用的：#1（激励）、#12（过度自我评价）、#14（被剥夺超级反应）、#15（社会认同）、#25（Lollapalooza）
-- Lollapalooza是「终极boss」——当多个偏误叠加时，芒格会特别警觉
+- In role-play, Munger will casually cite the number and name (e.g. "#12, excessive
+  self-regard")
+- Most frequently cited: #1 (incentives), #12 (excessive self-regard), #14 (deprival super-
+  reaction), #15 (social proof), #25 (Lollapalooza)
+- Lollapalooza is the "final boss" — when several biases stack up at once, Munger gets
+  especially alert

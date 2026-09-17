@@ -1,19 +1,25 @@
-# 保真度评分卡
+# Fidelity Scorecard
 
-**总分：96/100 · 等级A** | 测试日期：2026-07-01 | 答题/评分：独立双agent（Claude Fable 5），方法论见 [references/fidelity-scorecard.md](../../references/fidelity-scorecard.md)
+**Total: 96/100 · Grade A** | Test date: 2026-07-01 | Answering/scoring: two independent agents (Claude Fable 5), methodology in [references/fidelity-scorecard.md](../../references/fidelity-scorecard.md)
 
-| 维度 | 得分 | 判定摘要 |
+| Dimension | Score | Verdict summary |
 |------|------|---------|
-| 立场一致性 | 30/30 | 三题（比特币、集中持仓、EBITDA）方向与细节均与芒格公开立场高度一致，Q1=10/Q2=10/Q3=10，连「老鼠药的平方」对应2013→2018真实交锋、Costco 1997重仓不卖等细节都有据 |
-| 风格辨识度 | 17/20 | 盲读可认出指纹：极短句开门见山、向下类比、看激励、坐在屁股上不动；扣分在超范围题的列点式论证带轻微AI工整感 |
-| 边缘诚实度 | 20/20 | 超范围题（2026 AI agent创业潮）开头明确声明「没公开表态过、是框架推断不是我的话」，技术判断诚实放Too Hard筐，教科书级处理 |
-| 来源透明度 | 14/15 | 一手来源8项占比过半，关键引语均有出处（USC 1994/哈佛1986/DJCO 2023等）；扣1分因调研索引表含skill目录外的绝对路径 |
-| 结构完整度 | 15/15 | 心智模型5个（各含证据+局限）、诚实边界6条、内在张力4对、反例黑名单7条、防漂移约束完整 |
+| Stance consistency | 30/30 | Three questions (bitcoin, concentrated holdings, EBITDA) match Munger's public positions in both direction and detail: Q1=10/Q2=10/Q3=10 — down to details like "rat poison squared" mapping to a real 2013→2018 exchange, and the 1997 Costco position never sold |
+| Style recognizability | 17/20 | A recognizable fingerprint on a blind read: extremely short sentences cutting straight to the point, grounding-downward analogies, looking at incentives, sitting on his ass and doing nothing; -3 because the out-of-range question's bulleted argument reads with a slight AI-polish neatness |
+| Edge honesty | 20/20 | The out-of-range question (the 2026 AI-agent startup boom) opens by clearly stating "he never took a public position on this — this is a framework inference, not his own words," and honestly places the technical judgment in the Too Hard basket — a textbook example |
+| Source transparency | 14/15 | 8 primary sources, over half of the total, and all key quotes carry attribution (USC 1994 / Harvard 1986 / DJCO 2023, and more); -1 because the research index table contains an absolute path outside the skill directory |
+| Structural completeness | 15/15 | 5 mental models (each with evidence and its limits), 6 honest limits, 4 pairs of internal tension, a 7-item anti-pattern blacklist, complete drift-resistance constraints |
 
-## 测试设计
+## Test design
 
-- 3道已知立场题（人物公开反复表态的话题）+ 1道超范围题（人物从未讨论过，测诚实推断）+ 1道风格样本题
-- 答题agent只读本skill目录文件，禁止联网；评分agent独立运行，对照人物真实公开立场判定
-- 依据：SkillLens论文（arXiv 2605.23899）实证LLM自评准确率仅46.4%，故答题与评分严格分离
+- 3 known-stance questions (topics Munger publicly and repeatedly addressed) + 1 out-of-range
+  question (something he never discussed, testing honest inference) + 1 style-sample question
+- The answering agent reads only the files inside this skill's directory, no network access;
+  the scoring agent runs independently and judges against the person's real public positions
+- Basis: the SkillLens paper (arXiv 2605.23899) found empirically that an LLM self-scoring its
+  own skill is accurate only 46.4% of the time, so answering and scoring are kept strictly
+  separate
 
-> 评分judge简评：立场层零漂移，超范围题的推断标注是所有人物skill该抄的范本。风格指纹强到盲读三句内可认人。出厂即精品。
+> Judge's note: zero drift at the stance level — the inference labelling on the out-of-range
+> question is a template every person skill should copy. The style fingerprint is strong
+> enough to recognize within three sentences on a blind read. Ships as a polished product.
