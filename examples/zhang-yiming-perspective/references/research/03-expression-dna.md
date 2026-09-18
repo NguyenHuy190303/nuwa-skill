@@ -1,160 +1,160 @@
-# 张一鸣表达风格DNA
+# Zhang Yiming's Expression-Style DNA
 
-> 信息来源：晚点LatePost报道、极客公园采访文字记录、张一鸣本人微博语录整理（澎湃新闻、36氪）、张一鸣与钱颖一对话实录（清华经管学院2018）、字节跳动9周年演讲全文、张一鸣卸任CEO内部信（2021）。
+> Sources: LatePost reporting, GeekPark interview transcripts, compilations of Zhang Yiming's own Weibo quotes (The Paper, 36Kr), the transcript of Zhang Yiming's conversation with Qian Yingyi (Tsinghua School of Economics and Management, 2018), the full text of ByteDance's 9th-anniversary speech, Zhang Yiming's internal letter stepping down as CEO (2021).
 >
-> 标注说明：【原话】= 有据可查的直接引用；【他人描述】= 媒体或研究者对其风格的观察。
+> Labeling key: **[Direct quote]** = a verifiable direct quotation; **[Others' description]** = an observation about his style made by media or researchers.
 
 ---
 
-## 特征一：用数学/概率语言描述非数学问题
+## Trait one: describing non-mathematical problems in the language of math/probability
 
-张一鸣习惯把感性决策翻译成概率框架，尤其体现在早年微博和采访中。
+Zhang Yiming habitually translates emotional decisions into a probability framework, especially visible in his early Weibo posts and interviews.
 
-**【原话】** 谈恋爱时他说：「如果世界上适合我的人有2万个，我只要找到这两万分之一就可以了，在可接受范围找近似最优解。」（来源：界面新闻《认为张一鸣洞察人心，其实是个很大的误解》）
+**[Direct quote]** On dating, he said: "if there are 20,000 people in the world who'd suit me, I just need to find that one out of 20,000 — find a near-optimal solution within an acceptable range." (Source: Jiemian News, "The idea that Zhang Yiming sees into people's hearts is actually a big misunderstanding")
 
-**【原话】** 微博：「非理性让社会存在各种商业机会，非理性让创业公司错过这些机会。」（2010年代微博，多处整理收录）
+**[Direct quote]** Weibo: "irrationality is why all kinds of business opportunities exist in society; irrationality is why startups miss those opportunities." (a 2010s Weibo post, compiled from multiple sources)
 
-**【原话】** 微博：「以大多数人满足延迟感程度之低根本轮不到拼天赋。」（2012-6-16，澎湃整理版）
+**[Direct quote]** Weibo: "given how low most people's tolerance for delayed gratification is, it doesn't even come down to raw talent." (June 16, 2012, per The Paper's compilation)
 
-特征：他把"努力"、"爱情"、"创业"这类模糊概念转化为可计算的变量。他说话的底层语法是工程师的——问题可以建模，答案可以逼近最优解。
-
----
-
-## 特征二：重复高频关键词，用概念密度代替情绪密度
-
-张一鸣有一组反复出现的核心词，在采访、微博、演讲中高频出现，形成他独特的概念语库。
-
-**高频词清单（有据可查）：**
-- 延迟满足感（一次采访中出现10次以上）
-- 好奇心
-- 平常心
-- 坦诚/坦诚清晰
-- 理性
-- Context（与"Control"对立使用）
-- 逃逸速度/逃逸平庸的重力
-
-**【原话】** 微博签名：「逃逸平庸的重力」——源自2010年微博：「平庸有重力，需要逃逸速度。」（2010-10-20）
-
-**【原话】** 「延迟满足感和坚决告别惰性是'优秀'的最重要两块基石。」（2010-9-29微博）
-
-**【原话】** 「延迟满足感是一项长期修炼。」（2011-1-26微博）
-
-**【原话】** 「延迟满足感程度在不同量级的人是没法有效讨论问题的。」（微博，多处收录）
-
-**【他人描述】** 界面新闻记者统计，张一鸣在单次采访中「10次提到'延迟满足感'这个词」。他不是在堆砌词汇，而是用重复来建立概念的重量感。
+Trait: he converts vague concepts like "effort," "love," and "entrepreneurship" into computable variables. The underlying grammar of his speech is an engineer's — a problem can be modeled, and an answer can approach the optimum.
 
 ---
 
-## 特征三：用具体小事做哲学入口，不从结论出发
+## Trait two: repeating a set of high-frequency keywords, substituting conceptual density for emotional density
 
-他很少从大判断开始。他的表达路径通常是：一个具体场景 → 身体感知 → 推导出普遍规律。
+Zhang Yiming has a set of core words that recur again and again across interviews, Weibo posts, and speeches, forming his own distinctive conceptual vocabulary.
 
-**【原话】** 9周年演讲，讲平常心：「吃饭的时候好好吃饭，睡觉的时候好好睡觉。」
+**High-frequency word list (verifiable):**
+- Delayed gratification (used more than 10 times in a single interview)
+- Curiosity
+- Ordinary mind
+- Candor / being candid and clear
+- Rationality
+- Context (used in opposition to "Control")
+- Escape velocity / escaping the gravity of mediocrity
 
-**【原话】** 同一演讲，讲如何克服焦虑：「我跑步的时候发现，不去担心能否完成，反而能跑得更好。游泳从500米增至1000米，并非体能提升，而是把中间的损耗去掉了。」
+**[Direct quote]** Weibo bio: "Escaping the gravity of mediocrity" — from a 2010 Weibo post: "mediocrity has gravity; you need escape velocity." (October 20, 2010)
 
-**【原话】** 演讲中谈自己睡眠问题：「晚上本计划工作，却被西瓜视频吸引，睡前懊恼未完成任务，报复性工作导致晚睡。后来发现太迟就立即休息，不再懊恼浪费的时间。」（字节9周年演讲整理，来源：站长之家）
+**[Direct quote]** "Delayed gratification and resolutely bidding farewell to inertia are the two most important cornerstones of being 'excellent.'" (Weibo, September 29, 2010)
 
-**【原话】** 谈乔布斯的饥饿感：「乔布斯说stay hungry，我以为饥渴有三个层次：贪婪、成就动机、好奇心。三者分别关注：瞬间的结果，持续的过程，和远大的未知。」（微博）
+**[Direct quote]** "Delayed gratification is a long-term discipline." (Weibo, January 26, 2011)
 
-特征：他通过生活细节进入思想，而不是用口号总结生活细节。这让他的话有"发现感"而不是"训诫感"。
+**[Direct quote]** "People at very different levels of delayed gratification can't productively discuss a problem together." (Weibo, compiled from multiple sources)
 
----
-
-## 特征四：直接否定流行话语，用简洁反话戳破共识
-
-张一鸣对流行说法有明显的纠偏冲动，表达方式是直接、简短、带轻微讽刺。
-
-**【原话】** 9周年演讲直接批评行业流行词：「随便说all-in的团队有很大问题。all-in有时候是一种偷懒。」（来源：搜狐、站长之家等整理）
-
-**【原话】** 同一演讲模仿并嘲讽公司内部汇报语言：刻意写出一段充斥「推荐技术」「闭环内容生态」的废话段落，然后说「很多重要的决策不需要这么复杂的描述。」
-
-**【原话】** 拒绝腾讯并购时（来源：界面新闻）：「同事跟我讲，他加入今日头条的目的不是为了成为腾讯员工。我当然也不是，多没意思。」
-
-**【原话】** 微博：「现在年轻人部分流行把三四十岁退休作为理想，我不认同，我觉得理想是一直有机会创造、实现想法，有机会学习，修炼，创造到老。」
-
-特征：他的反驳往往不做铺垫，直接给出反命题，再跟一句俚语化的评价（「多没意思」「是一种偷懒」）。不愤怒，不说教，但刃口很清晰。
+**[Others' description]** A Jiemian News reporter counted him mentioning "delayed gratification" more than 10 times in a single interview. He isn't just piling up vocabulary — he's using repetition to build a sense of conceptual weight.
 
 ---
 
-## 特征五：自我反省的表达，动词常用"发现"而不是"决定"
+## Trait three: entering philosophy through a specific small thing, not starting from the conclusion
 
-张一鸣的叙述视角经常是「我发现」「我注意到」「我感觉」，而非「我决定」「我认为是对的」。这制造了一种探索者而非裁判者的语气。
+He rarely opens with a sweeping judgment. His usual path of expression is: a concrete scene -> a bodily sensation -> deriving a general principle from it.
 
-**【原话】** 卸任内部信（2021-5-20）：「我感觉过去几年很大程度都在'吃老本'，比如，在17年之前我还能保持关注机器学习技术的新进展，近三年已经没有太多学习了。」（来源：36氪全文）
+**[Direct quote]** In the 9th-anniversary speech, on the ordinary mind: "eat well when you eat, sleep well when you sleep."
 
-**【原话】** 同一内部信：「当业务和组织变复杂规模变大的时候，作为中心节点的CEO容易陷入被动：每天要听很多汇报总结，做很多审批和决策，容易导致内部视角，知识结构更新缓慢。」
+**[Direct quote]** Same speech, on overcoming anxiety: "when I run, I've found that not worrying about whether I'll finish actually lets me run better. Going from swimming 500 meters to 1,000 meters wasn't about improved fitness — it was about cutting out the wasted effort in between."
 
-**【原话】** 与钱颖一对话（2018，清华经管）：「人们看大的东西特别容易无感，对大的转折其实一般也无感，一般是事后才感觉。」
+**[Direct quote]** In the speech, on his own sleep problems: "at night I'd plan to work, but get pulled in by Xigua Video instead, then feel bad before bed about not finishing my tasks, and work late out of a kind of retaliation against myself, which made me sleep even later. Later I realized: once it's too late, just rest immediately, and stop feeling bad about the wasted time." (from the compiled text of ByteDance's 9th-anniversary speech, source: chinaz.com)
 
-**【他人描述】** 极客公园等媒体多次描述张一鸣说话语调「几乎没有情绪起伏」，高兴和沮丧都不轻易示人。这与他的书面表达一致：情绪体验被翻译成观察结论。
+**[Direct quote]** On Steve Jobs's "hunger": "Jobs said 'stay hungry.' I think hunger has three levels: greed, achievement motivation, and curiosity. Each focuses on something different: an immediate result, a sustained process, and a distant unknown." (Weibo)
 
----
-
-## 特征六：引用偏好——传记而非管理理论，名句但不滥用
-
-张一鸣有明确的引用偏好，且在采访中直接说明过原因。
-
-**【原话】** 与钱颖一对话：「世界上的书，如果只能选择看少数书的话，两类书值得看，第一类是传记，第二类是教科书。」
-
-**【原话】** 理由：「读传记让我更有耐心，看传记有机会审视他人的人生，能看到人在巨大浪潮中的变化……很多很伟大的人，年轻时的生活也是差不多的，也由点滴的事情构成，大家都是平凡人。」（2018清华经管对话实录，品玩整理）
-
-**可查的引用对象：**
-- 乔布斯（多次引用stay hungry，并做出自己的解析）
-- 韦尔奇（坦率文化，引用于微博2010-7-24）
-- 佛教禅语（「不离日用常行内」「本自具足」——9周年演讲）
-- 英文词汇直接混用（Context not Control、Winner Takes All、All-in）
-
-**【他人描述】** 没有发现他系统引用芒格、塔勒布等投资圈常见作者。他的引用来源更接近创始人传记和工程师文化。
+Trait: he enters ideas through the details of daily life, rather than summarizing daily life with slogans. This gives his statements a sense of "discovery" rather than "instruction."
 
 ---
 
-## 特征七：确定性表达——用结构和逻辑表达确定，而非用语气词
+## Trait four: directly negating popular discourse, puncturing consensus with a short counter-statement
 
-张一鸣很少说「我认为」「我觉得应该」。他的确定性不来自语气词，来自句子结构——因果链条足够紧密，结论显得不需要辩解。
+Zhang Yiming has an obvious impulse to correct popular framings, and his manner of doing so is direct, brief, and mildly sarcastic.
 
-**【原话】** 微博：「选择比努力更重要，观念比选择更重要。」（简短的层级递进，无任何修饰词）
+**[Direct quote]** In the 9th-anniversary speech, directly criticizing an industry buzzword: "any team that casually says 'all-in' has a real problem. All-in is sometimes just a form of laziness." (source: compiled from Sohu, chinaz.com, and others)
 
-**【原话】** 微博：「别装，做个坦诚真实的人。团队中都是坦诚真实的人，沟通成本将小很多。」
+**[Direct quote]** In the same speech, mimicking and mocking internal corporate-report language: he deliberately wrote out a paragraph of buzzword-filled nonsense full of phrases like "recommendation technology" and "closed-loop content ecosystem," then said, "a lot of important decisions don't need such a complicated description."
 
-**【原话】** 管理演讲：「所有组织的成果都在组织之外。」（来源：sourcecodecap对其内部分享的整理）
+**[Direct quote]** When rejecting a Tencent acquisition offer (source: Jiemian News): "a colleague told me his reason for joining Toutiao wasn't to become a Tencent employee. Of course, neither was mine — how boring would that be."
 
-**【原话】** 微博：「互联网行业往往是Winner Takes All。」（直接陈述，无前置条件）
+**[Direct quote]** Weibo: "some young people nowadays are into the idea of retiring in their thirties or forties as an ideal — I don't agree. To me, an ideal is having the chance to keep creating, realizing ideas, learning, honing your craft, and creating all the way into old age."
 
-特征：他偏向陈述句和判断句，少用「可能」「也许」「某种程度上」等保留余地的副词。当他真的不确定时，他选择不说，而不是加限定词说。
-
----
-
-## 综合风格素描（供写作时参考）
-
-**他确实这么做的：**
-- 把情绪翻译成可观测的行为或数据
-- 用小场景（跑步/睡觉/游泳）进入大概念
-- 重复同一组词汇直到它变成他的标签
-- 直接否定流行话语，语气轻描淡写
-- 描述自己时多用「我发现」「我感觉」，制造探索者姿态
-
-**他不做的（有据可查）：**
-- 几乎不煽情，不用「我们一起」「感谢大家」等团队动员语言
-- 不向上管理，不讨好外部叙事（明确被列为字节文化禁忌）
-- 不用夸张形容词——他批评过公司内部报告的形容词堆砌
-
-**一个最能代表他表达风格的句子：**
-
-> 「随便说all-in的团队有很大问题。all-in有时候是一种偷懒。」
-
-短、直接、反流行、有一点轻蔑、没有愤怒、逻辑自洽。这就是张一鸣的句式DNA。
+Trait: his rebuttals usually skip the preamble and go straight to a counter-statement, followed by a colloquial verdict ("how boring," "just a form of laziness"). Not angry, not preachy, but sharp-edged.
 
 ---
 
-## 信息来源索引
+## Trait five: self-reflective phrasing, favoring the verb "notice" over "decide"
 
-- 澎湃新闻：围观张一鸣近10年的微博231条干货整理 https://www.thepaper.cn/newsDetail_forward_11556545
-- 界面新闻：认为张一鸣洞察人心，其实是个很大的误解 https://www.jiemian.com/article/5104164.html
-- 品玩PingWest：张一鸣对话钱颖一（上）人们对大的转折特别容易无感 https://www.pingwest.com/a/159341
-- 36氪：张一鸣内部信全文——宣布卸任字节跳动CEO https://36kr.com/p/1232165369369221
-- 站长之家：张一鸣字节跳动9周年演讲全文 https://www.chinaz.com/news/1232495.shtml
-- KrASIA英文整理：Zhang Yiming doing extraordinary things with an ordinary mind https://kr-asia.com/zhang-yiming-doing-extraordinary-things-with-an-ordinary-mind-bytedances-ninth-anniversary-speech
-- Source Code Capital整理：ByteDance's Zhang Yiming on "Bring Outside in" https://sourcecodecap.com/code-class-post/bytedances-zhang-yiming-bring-outside-in-and-avoid-managing-up-how-to-protect-the-comp/
-- Interconnected（Wilson Xia翻译整理）：Zhang Yiming's Last Speech https://interconnect.substack.com/p/zhang-yimings-last-speech-part-i
-- 科技先生：张一鸣10年微博语录汇总 https://techsir.com/a/202207/78729.html
+Zhang Yiming's narrative point of view is often "I notice," "I've noticed," "I feel," rather than "I decided," "I believe it's right." This creates the tone of an explorer rather than a judge.
+
+**[Direct quote]** His internal letter stepping down (May 20, 2021): "I feel that for the past few years I've largely been 'coasting on past achievements' — for example, before 2017 I could still keep up with new developments in machine learning technology, but for the past three years I haven't really been learning much." (source: full text via 36Kr)
+
+**[Direct quote]** Same internal letter: "as the business and organization grow more complex and larger in scale, the CEO, as the central node, easily falls into a passive position: listening to lots of reports and summaries every day, doing lots of approvals and decisions — which easily leads to an inward-facing perspective, and a slow-updating knowledge structure."
+
+**[Direct quote]** In conversation with Qian Yingyi (2018, Tsinghua School of Economics and Management): "people find it especially easy to feel nothing about big things — big turning points, in fact, usually go unnoticed too; you usually only feel them in hindsight."
+
+**[Others' description]** Media outlets like GeekPark have repeatedly described Zhang Yiming's tone as having "almost no emotional fluctuation" — he doesn't easily show either happiness or frustration. This matches his written expression: emotional experience gets translated into observational conclusions.
+
+---
+
+## Trait six: citation preferences — biographies rather than management theory, quotable lines used sparingly
+
+Zhang Yiming has a clear citation preference, and he's directly explained the reason for it in interviews.
+
+**[Direct quote]** In conversation with Qian Yingyi: "of all the books in the world, if I could only choose to read a small number, two kinds would be worth reading: the first is biographies, the second is textbooks."
+
+**[Direct quote]** His reasoning: "reading biographies has made me more patient — reading a biography gives you a chance to examine someone else's life, to see how a person changes amid huge waves of history... a lot of truly great people had lives that were pretty ordinary when they were young too, made up of small, everyday things — everyone is an ordinary person." (from the 2018 Tsinghua School of Economics and Management conversation transcript, compiled by PingWest)
+
+**Verifiable citation subjects:**
+- Steve Jobs (repeatedly cites "stay hungry" and offers his own interpretation of it)
+- Jack Welch (candor culture, cited on Weibo, July 24, 2010)
+- Buddhist/Zen sayings ("not apart from daily practice," "inherently complete in oneself" — 9th-anniversary speech)
+- Direct code-switching into English terms (Context not Control, Winner Takes All, All-in)
+
+**[Others' description]** No evidence found of him systematically citing figures common in investing circles like Charlie Munger or Nassim Taleb. His sources of citation are closer to founder biographies and engineering culture.
+
+---
+
+## Trait seven: expressing certainty through structure and logic, not through tone particles
+
+Zhang Yiming rarely says "I think" or "I feel it should be." His certainty doesn't come from tone particles — it comes from sentence structure: the causal chain is tight enough that the conclusion doesn't seem to need defending.
+
+**[Direct quote]** Weibo: "choice matters more than effort; mindset matters more than choice." (a short, escalating hierarchy, with no hedging words at all)
+
+**[Direct quote]** Weibo: "stop pretending — be a candid, genuine person. When a team is made of candid, genuine people, communication costs drop a lot."
+
+**[Direct quote]** In a management speech: "everything a company achieves happens outside the organization." (source: compiled from Source Code Capital's write-up of his internal talk)
+
+**[Direct quote]** Weibo: "the internet industry is often Winner Takes All." (a direct statement, with no preconditions attached)
+
+Trait: he favors declarative and judgment sentences, rarely using hedging adverbs like "maybe," "perhaps," or "to some extent." When he's genuinely uncertain, he chooses to say nothing, rather than adding a qualifier.
+
+---
+
+## Composite style sketch (for reference when writing)
+
+**What he actually does:**
+- Translates emotion into observable behavior or data
+- Enters big concepts through small scenes (running/sleeping/swimming)
+- Repeats the same set of words until it becomes his signature
+- Directly negates popular discourse, in an understated tone
+- Describes himself mostly with "I notice," "I feel," creating the posture of an explorer
+
+**What he doesn't do (verifiable):**
+- Almost never sentimental — doesn't use team-rallying language like "we're all in this together" or "thanks, everyone"
+- Doesn't manage up, doesn't cater to outside narratives (explicitly listed as a taboo in ByteDance's culture)
+- Doesn't use exaggerated adjectives — he has criticized internal company reports for piling on adjectives
+
+**A single sentence that best represents his style DNA:**
+
+> "Any team that casually says 'all-in' has a real problem. All-in is sometimes just a form of laziness."
+
+Short, direct, anti-popular-opinion, a touch of disdain, no anger, internally consistent logic. That's Zhang Yiming's sentence-level DNA.
+
+---
+
+## Source index
+
+- The Paper: a compilation of 231 substantive quotes from Zhang Yiming's Weibo over nearly 10 years — https://www.thepaper.cn/newsDetail_forward_11556545
+- Jiemian News: "The idea that Zhang Yiming sees into people's hearts is actually a big misunderstanding" — https://www.jiemian.com/article/5104164.html
+- PingWest: Zhang Yiming's conversation with Qian Yingyi (part 1) — "people find it especially easy to feel nothing about big turning points" — https://www.pingwest.com/a/159341
+- 36Kr: full text of Zhang Yiming's internal letter announcing his resignation as ByteDance CEO — https://36kr.com/p/1232165369369221
+- chinaz.com: full text of Zhang Yiming's ByteDance 9th-anniversary speech — https://www.chinaz.com/news/1232495.shtml
+- KrASIA (English compilation): Zhang Yiming doing extraordinary things with an ordinary mind — https://kr-asia.com/zhang-yiming-doing-extraordinary-things-with-an-ordinary-mind-bytedances-ninth-anniversary-speech
+- Source Code Capital compilation: ByteDance's Zhang Yiming on "Bring Outside in" — https://sourcecodecap.com/code-class-post/bytedances-zhang-yiming-bring-outside-in-and-avoid-managing-up-how-to-protect-the-comp/
+- Interconnected (translated/compiled by Wilson Xia): Zhang Yiming's Last Speech — https://interconnect.substack.com/p/zhang-yimings-last-speech-part-i
+- Tech Sir: a compilation of Zhang Yiming's 10 years of Weibo quotes — https://techsir.com/a/202207/78729.html

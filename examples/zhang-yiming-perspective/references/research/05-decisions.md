@@ -1,253 +1,253 @@
-# 张一鸣重大决策记录
+# Zhang Yiming Major Decision Record
 
-> 调研时间：2026-04-06
-> 信息源：晚点LatePost、36氪、界面新闻、极客公园、澎湃、财新、SCMP、Bloomberg、The Information
-> 禁用来源：知乎、微信公众号、百度百科
-
----
-
-## 一、产品立项决策
-
-### 1. 今日头条（2012年）
-
-**时间背景**：2012年，张一鸣29岁，带10人团队在北京锦秋家园一间民宅中启动。
-
-**决策逻辑**：
-- 张一鸣在此前的创业中总结失败规律：「所有失败都指向同一个问题——如何高效匹配人与信息」
-- 核心洞察：与其让用户主动搜索，不如让相关信息主动推送——这是效率跃迁
-- 决策方式：先用「内涵段子」「搞笑囧图」两个轻量产品做用户和算法验证，再推出头条（最小化验证原则）
-- 力排众议做算法推荐引擎：团队忧虑字节没有「算法基因」，张一鸣坚持推进，他读了《推荐系统实践》，自己往底层挖逻辑
-
-**结果**：今日头条成为移动互联网时代最大内容分发平台之一，2017年估值已超过200亿美元。
-
-**他自己的说法**：「2012年的时候，我四处在找一本书——《推荐系统实践》。我会继续往底层去挖，去找更底层的逻辑。」
+> Research date: 2026-04-06
+> Sources: LatePost, 36Kr, Jiemian News, GeekPark, The Paper, Caixin, SCMP, Bloomberg, The Information
+> Blacklisted sources: Zhihu, WeChat official accounts, Baidu Baike
 
 ---
 
-### 2. 抖音立项（2016年）
+## I. Product-launch decisions
 
-**时间背景**：2016年，今日头条正处于高速增长期，国内短视频市场（快手）已显现机会。
+### 1. Toutiao (2012)
 
-**决策逻辑**：
-- 来源于数据信号：做头条时发现用户对短视频内容偏好显著更高
-- 典型字节策略：不在现有产品上叠加功能，而是「专门起一个APP做短视频分发」，保持产品纯粹性
-- 2016年9月上线，定位15秒竖版短视频，针对年轻用户，叠加滤镜和音乐
+**Timing and background**: in 2012, at age 29, Zhang Yiming launched with a 10-person team out of a residential apartment in Jinqiu Jiayuan, Beijing.
 
-**结果**：抖音成为中国用户规模最大的短视频平台，2018年日活突破1.5亿，后续演化出TikTok。
+**Decision logic**:
+- From his previous ventures, Zhang Yiming distilled a pattern behind their failures: "all the failures pointed to the same problem — how to efficiently match people with information"
+- Core insight: rather than have users search proactively, push relevant information to them proactively — an efficiency leap
+- Method: first use two lightweight products, Neihan Duanzi and Gaoxiao Jiongtu (funny-pictures apps), to validate users and the algorithm, then launch Toutiao (a minimum-viable-validation principle)
+- Pushed through the algorithmic recommendation engine against internal doubts: the team worried ByteDance lacked "algorithm DNA," but Zhang Yiming pushed ahead, reading *Recommender Systems Handbook* himself and digging into the underlying logic on his own
 
----
+**Result**: Toutiao became one of the largest content-distribution platforms of the mobile-internet era, valued at over $20 billion by 2017.
 
-### 3. 飞书立项（2016-2017年）
-
-**时间背景**：2016年，字节员工规模快速扩张，内部协作工具体验差，无法满足字节「高密度人才」的工作方式。
-
-**决策逻辑**：
-- 谢欣主动发邮件给张一鸣，提出要做企业协作平台，团队只有10人
-- 张一鸣支持，但明确要求：飞书不能只是内部工具，**一开始就要以对外商业化为目标**
-- 核心判断：「真正好的内部产品，也能在市场上活下来。只做内部产品吸引不到最好的人才，只有去市场竞争才能让产品更好」
-- 2017年自研完成Lark（飞书前身），先内部使用，逐步向外
-
-**结果**：飞书2019年8月正式对外发布，成为字节2B战略的核心产品。与钉钉、企业微信竞争至今，3年ARR达3亿美元（2024年数据）。
-
-**值得注意的是**：飞书长期无法盈利，持续补贴获客，商业模式受到外界质疑。张一鸣担心的问题（规模化后能否持续）直至卸任前仍未解决。
+**In his own words**: "back in 2012, I was going everywhere looking for one book — *Recommender Systems Handbook*. I kept digging deeper, looking for a more fundamental logic."
 
 ---
 
-## 二、全球化战略决策
+### 2. Launching Douyin (2016)
 
-### 4. 早期出海决策（2014-2015年）
+**Timing and background**: in 2016, Toutiao was in a period of rapid growth, and opportunity in China's domestic short-video market (Kuaishou) had already become visible.
 
-**时间背景**：2014年，今日头条在国内快速增长，同期BAT均无明显海外战略。
+**Decision logic**:
+- Driven by a data signal: while building Toutiao, they noticed users showed a markedly stronger preference for short-video content
+- A classic ByteDance strategy: rather than bolt a feature onto an existing product, "start a dedicated app just for short-video distribution," to keep the product pure
+- Launched in September 2016, positioned around 15-second vertical short videos targeting young users, layered with filters and music
 
-**决策逻辑**：
-- 张一鸣在2014年参加极客公园组织的硅谷行，拜访Facebook、Google等科技公司，进一步坚定全球化判断
-- 核心论据（他原话）：「中国的互联网人口只占全球互联网人口的五分之一，如果不在全球配置资源，追求规模化效应的产品，五分之一，无法跟五分之四竞争，所以出海是必然的。」
-- 央视采访（2014年）：「我认为我们有机会成为手机用户获取信息的重要门户，不仅在中国，也在国外。」
-- 2015年定调策略：「在一个活跃竞争的行业不激进就是后退。」
-
-**结果**：2015年推出海外版TopBuzz，2017年成为字节两大P0战略之一（另一个是娱乐）。
+**Result**: Douyin became China's largest short-video platform by user base, crossing 150 million daily active users in 2018, and later evolved into TikTok.
 
 ---
 
-### 5. 收购Musical.ly（2017年）
+### 3. Launching Lark/Feishu (2016-2017)
 
-**时间背景**：2017年11月，字节以约10亿美元全资收购Musical.ly，这是字节当时最大一笔收购。
+**Timing and background**: in 2016, ByteDance's headcount was expanding fast, but the internal collaboration tools were a poor fit for ByteDance's "high-density talent" way of working.
 
-**决策逻辑**：
-- Musical.ly在北美积累了约6000万用户，尤其是Z世代用户——字节在海外建立同等规模需要大量时间和资金
-- Musical.ly联合创始人阳陆育提出三个条件：重新品牌形象、整合字节算法、至少1亿美元营销投入；张一鸣全部同意
-- Facebook当时出价更高（全现金），字节给的是现金+股票，但阳陆育被字节的算法技术吸引，选择了字节
-- 收购价格约10亿美元，在当时被外界认为偏贵（Musical.ly本身业务增长已放缓）
+**Decision logic**:
+- Xie Xin proactively emailed Zhang Yiming proposing an enterprise-collaboration platform, starting with a team of just 10
+- Zhang Yiming backed it, but with a clear requirement: Feishu couldn't just be an internal tool — **it had to target external commercialization from day one**
+- His core judgment: "a truly good internal product can also survive in the market. Only building an internal product won't attract the best talent — only competing in the market can make the product better"
+- Built Lark (Feishu's earlier name) in-house by 2017, used internally first, then rolled out gradually to the outside
 
-**结果**：2018年8月，Musical.ly与TikTok合并，用户和内容无缝迁移，形成TikTok全球版图。这笔「溢价」收购后来被证明是字节最关键的战略卡位。
+**Result**: Feishu officially launched externally in August 2019, becoming the core product of ByteDance's B2B strategy. It has competed with DingTalk and WeCom (Enterprise WeChat) ever since, reaching $300 million in ARR within 3 years (2024 figures).
 
-**后续麻烦**：该收购未向CFIUS申报，2019年美国启动调查，成为TikTok后续监管危机的直接导火索。
-
----
-
-### 6. TikTok快速扩张（2018-2020年）
-
-**时间背景**：Musical.ly并入后，TikTok成为字节全球化最重要的赌注。
-
-**决策逻辑**：
-- 字节对TikTok采用「烧钱换增长」的激进策略
-- 2018-2020年间，TikTok累计投入约100亿美元（营销增长约50亿、内容补贴约20亿、服务器带宽约15-20亿）
-- 市场路径选择：绕开北美（监管复杂），先集中攻打日本、韩国、东南亚、印度、巴西——「东亚是TikTok优势区域」
-
-**结果**：2020年TikTok成为全球下载量最高的应用，但也因快速扩张引发了美国政府的国家安全审查。
+**Worth noting**: Feishu has remained unprofitable for a long time, continuing to subsidize customer acquisition, and its business model has drawn outside skepticism. The question Zhang Yiming worried about — whether it could sustain itself at scale — remained unresolved even by the time he stepped down.
 
 ---
 
-## 三、危机决策
+## II. Globalization strategy decisions
 
-### 7. 内涵段子被关停（2018年4月）
+### 4. The early decision to go overseas (2014-2015)
 
-**时间背景**：2018年4月，国家广播电视总局以「导向不正、格调低俗」为由，责令永久关停「内涵段子」APP及相关公众号。
+**Timing and background**: in 2014, Toutiao was growing fast domestically, while none of the "BAT" giants (Baidu, Alibaba, Tencent) had a clear overseas strategy at the time.
 
-**决策方式**：
-- 张一鸣凌晨发公开信道歉，措辞直接：「产品走错了路，所有责任在我」
-- 没有辩解算法中立，直接承认：公司「过分强调技术的作用，没有采取足够措施补上平台监管、企业社会责任上欠下的功课」
-- 提出具体整改：审核队伍从6000人扩大到10000人；加强党建工作；成立整改委员会
+**Decision logic**:
+- In 2014, Zhang Yiming joined a Silicon Valley trip organized by GeekPark, visiting Facebook, Google, and other tech companies, which further solidified his conviction about globalization
+- His core argument (in his own words): "China's internet population is only one-fifth of the world's internet population. If you don't allocate resources globally, a product chasing scale effects — that one-fifth — can't compete against the other four-fifths. So going overseas is inevitable."
+- In a 2014 CCTV interview: "I think we have a chance to become an important gateway through which mobile users get information — not just in China, but abroad too."
+- His stated strategy in 2015: "in an actively competitive industry, not being aggressive is the same as falling behind."
 
-**决策特点**：反应极快（当晚道歉），态度彻底服从，没有公开表达异议——这与他对TikTok美国危机的应对形成鲜明对比（见下条）。
-
-**结果**：内涵段子永久关闭。字节此后在内容监管上加大投入，但这也标志着「算法没有价值观」这一早期立场的放弃。
-
----
-
-### 8. TikTok美国封禁危机（2020年7-9月）
-
-**时间背景**：2020年8月，特朗普签署行政令，要求ByteDance45天内出售TikTok美国业务，否则封禁。
-
-**决策逻辑**：
-- 张一鸣在内部信中表达了真实立场（原话）：「不认同强制出售的决定」；「美方的目的不是强制出售，而是全面封禁以及更多」
-- 同时发出两封信：一封给全员（保持冷静、追求长期），一封专门写给中国员工（「很久没专门给中国同事写信了」）——承认地缘政治夹缝中的两难处境
-- 危机期间引入迪士尼前高管凯文·梅耶尔担任TikTok CEO（向美国市场发出「本土化管理」信号），梅耶尔三个月后辞职
-- 对国内舆论的指责（「跪了」），张一鸣的态度：「要能接受一段时间的误解，不要在意短期的损誉，耐心做好正确的事」
-
-**决策结果**：此次危机最终因特朗普政府延迟执行，加上法院注入禁令而暂时解除。但危机预埋了TikTok后续长期受监管的伏笔。
-
-**与内涵段子危机对比**：
-- 国内监管压力 → 立即全面服从，没有辩解
-- 美国政治压力 → 公开表达不认同，诉诸法律，坚持不出售
-这种不对称说明了张一鸣的真实风险偏好：在可控环境中服从，在认为有原则性错误时选择抗争
+**Result**: launched the overseas version, TopBuzz, in 2015; by 2017 it had become one of ByteDance's two P0 (top-priority) strategies (the other being entertainment).
 
 ---
 
-## 四、「不寻常」决策（别人不会做但他做了的）
+### 5. Acquiring Musical.ly (2017)
 
-### 9. 进入游戏业务（2019年）
+**Timing and background**: in November 2017, ByteDance fully acquired Musical.ly for roughly $1 billion — the largest acquisition ByteDance had made at the time.
 
-**时间背景**：2019年，字节内容流量已达天花板，张一鸣寻找下一个增长极。
+**Decision logic**:
+- Musical.ly had built up roughly 60 million users in North America, especially Gen Z users — building an equivalent user base overseas from scratch would have taken ByteDance a huge amount of time and money
+- Musical.ly co-founder Alex Zhu (Yang Luyu) set three conditions: rebrand the product, integrate ByteDance's algorithm, and commit to at least $100 million in marketing spend; Zhang Yiming agreed to all three
+- Facebook had reportedly offered more (all cash), while ByteDance offered cash plus stock, but Zhu was drawn to ByteDance's algorithm technology and chose ByteDance
+- The roughly $1 billion price tag was seen by outside observers at the time as steep (Musical.ly's own business growth had already slowed)
 
-**决策逻辑**：
-- 字节本身没有游戏基因，纯靠「流量变现」逻辑切入
-- 激进收购策略：买入多家国内一流游戏工作室，聘请知名游戏制作人
-- 成立「朝夕光年」游戏品牌，5年累计投入超700亿元
+**Result**: in August 2018, Musical.ly merged into TikTok, with users and content migrated seamlessly, forming TikTok's global footprint. This "premium-priced" acquisition later proved to be ByteDance's single most critical strategic move.
 
-**结果**：爆款极少，且不具长期效应。2023年字节大规模砍游戏业务，并入其他部门，被外界称为「300亿买了个寂寞」。
-
-**这是一个失败的不寻常决策**。字节把流量变现逻辑套用到内容创作型业务，忽视了游戏需要深层创意基因而非仅靠分发能力的本质。
-
----
-
-### 10. 进入教育业务（2020年）
-
-**时间背景**：2020年，在线教育因疫情爆发式增长，字节大举进入。
-
-**决策逻辑**：
-- 2020年3月，张一鸣在八周年CEO公开信中宣布教育业务为字节战略重点
-- 2020年10月，成立「大力教育」独立品牌，三年内不考虑盈利
-- 字节的逻辑：有流量分发能力、有算法、有钱；教育是万亿市场
-
-**结果**：2021年「双减」政策落地，K12课外培训业务受到严格限制，字节教育业务被迫大撤退，2022年裁员超3000人，是字节最大规模的战略退出之一。
-
-**关于公开反思**：张一鸣没有找到公开承认教育业务决策错误的直接表述，公司以组织调整和裁员来处理，未作公开反思。**这是一个言行不一的案例**——事前信誓旦旦「三年不考虑盈利」，后来实际执行远比这快速退出。（注：政策变化是客观原因，但押注受政策限制行业本身是一个判断失误）
+**Aftermath/trouble**: the acquisition was never reported to CFIUS (the Committee on Foreign Investment in the United States), and in 2019 the US launched an investigation — the direct spark for TikTok's subsequent regulatory crisis.
 
 ---
 
-### 11. 做手机/硬件（2019年）
+### 6. TikTok's rapid expansion (2018-2020)
 
-**时间背景**：2019年，字节收购锤子科技部分资产，探索硬件路线。
+**Timing and background**: after absorbing Musical.ly, TikTok became ByteDance's single biggest bet in its globalization push.
 
-**决策逻辑**：
-- 据内部人士：做硬件是张一鸣自己的想法，「硬件肯定是要做的，不一定是手机，各种IoT智能终端都有可能」
-- 战略意图：拥有硬件入口，避免被操作系统层（安卓/iOS）卡脖子
+**Decision logic**:
+- ByteDance took an aggressive "spend to grow" strategy for TikTok
+- Between 2018 and 2020, TikTok's cumulative spend reached roughly $10 billion (roughly $5 billion on marketing/growth, roughly $2 billion on content subsidies, roughly $1.5-2 billion on servers/bandwidth)
+- Market-sequencing choice: bypass North America first (more complex regulation), concentrate initially on Japan, South Korea, Southeast Asia, India, and Brazil — "East Asia is TikTok's strong region"
 
-**结果**：没有推出正式手机产品，硬件战略在实质层面基本搁置。相比之下，字节在VR/AR方向（Pico）走得更远。
-
----
-
-### 12. 迁往新加坡（2022年后）
-
-**时间背景**：卸任CEO后，张一鸣将生活重心迁往新加坡。
-
-**决策逻辑**：
-- The Information确认张一鸣大部分时间居住在新加坡，2020年字节已将国际总部设于此（每月租金近400万人民币）
-- 背景：中国互联网监管收紧、TikTok地缘政治风险持续，新加坡是「政治中性」缓冲地
-- 张一鸣保留中国国籍，明确否认已申请新加坡国籍
-
-**意义**：这是一个个人层面的战略分散风险决策，与公司整体「去中国化叙事」的全球布局一致。
+**Result**: in 2020, TikTok became the world's most-downloaded app, but its rapid expansion also triggered a national-security review from the US government.
 
 ---
 
-## 五、卸任CEO决策（2021年5月）
+## III. Crisis decisions
 
-**时间背景**：2021年5月20日，张一鸣38岁，宣布卸任字节跳动CEO，由联合创始人梁汝波接任。
+### 7. The Neihan Duanzi shutdown (April 2018)
 
-**官方理由**（原话）：
-- 「过去几年一直在吃老本」——机器学习2017年前还能跟上技术前沿，最近三年技术讨论已跟不上
-- 对三个年度OKR（远景新战略、组织和管理、社会责任）「都不满意」
-- 计划「以十年为期，专注学习知识，系统思考，研究新事物，动手尝试和体验」
+**Timing and background**: in April 2018, the National Radio and Television Administration ordered the permanent shutdown of the Neihan Duanzi app and related accounts, citing "improper orientation and vulgar content."
 
-**外部分析（有据可查的外部背景）**：
-- 2021年初，中国对互联网平台的反垄断监管显著升温（阿里罚款182亿、滴滴被调查）
-- 字节在国内面临内容监管、数据安全、反垄断多重压力
-- TikTok海外危机持续，字节在中美双边压力中处境尴尬
-- 有分析（每经网）指出卸任时点恰在监管风暴前夕，具有「主动降低政治风险」的现实考量
+**Decision method**:
+- Zhang Yiming posted a public apology letter in the early hours of the morning, with direct wording: "the product went down the wrong path, and the responsibility is entirely mine"
+- He didn't argue for algorithmic neutrality — instead he directly admitted the company had "overemphasized the role of technology, and hadn't taken sufficient measures to make up for what it owed on platform oversight and corporate social responsibility"
+- He proposed concrete corrective measures: expanding the content-review team from 6,000 to 10,000 people; strengthening Party-building work; forming a rectification committee
 
-**继任者选择**：梁汝波是张一鸣大学同学，2009年起共同创业（九九房），2012年共同创办字节。这一选择确保了文化延续性，同时也意味着张一鸣对公司的实际影响力并未完全退出。
+**Decision characteristics**: an extremely fast response (an apology that same night), total compliance in attitude, no public expression of disagreement — a stark contrast with his response to the TikTok crisis in the US (see below).
 
-**言行一致性评估**：张一鸣公开说「不是因为不想赚钱」，但卸任后在新加坡过着低调生活，确实没有回归一线管理迹象。言行基本一致。
+**Result**: Neihan Duanzi was permanently shut down. ByteDance subsequently increased its investment in content oversight, but this also marked the abandonment of its earlier position that "the algorithm has no values."
 
 ---
 
-## 六、张一鸣的决策框架总结
+### 8. The TikTok US-ban crisis (July-September 2020)
 
-### 思维模式
-- **程序化决策**：总是把问题归结为概率分布，求最优解或近似最优解，「相信数据和自己的逻辑推演」
-- **延迟满足**：「如果一件事你觉得很好，不妨再往后延迟一下，这会让你提高标准，同时留了缓冲」
-- **外部视角**：主动收集与自己判断相悖的信息，抵制「向上管理」文化（他本人多次批评这个问题）
-- **长期主义**：「更拥抱不确定性，更注重长期，更注重全局」
+**Timing and background**: in August 2020, Trump signed an executive order requiring ByteDance to sell TikTok's US business within 45 days or face a ban.
 
-### 风险偏好（Risk Appetite）
-- 商业扩张方向：**极高风险偏好**——一旦判断方向对，愿意烧大钱（TikTok100亿美元营销、游戏700亿投入）
-- 政治/监管风险：**双轨制**——国内监管采取高度服从策略（内涵段子立即道歉），国际政治压力时选择抗争（TikTok封禁拒绝出售）
-- 人才决策：**高密度、高淘汰**，相信机制而非个人，「人才不是核心竞争力，机制才是」
+**Decision logic**:
+- In an internal letter, Zhang Yiming expressed his genuine position (in his own words): "I don't agree with the forced-sale decision"; "the US side's goal isn't a forced sale — it's a complete ban, and more."
+- He sent two letters at the same time: one to all staff (urging calm and a focus on the long term), and one written specifically for Chinese employees ("it's been a long time since I wrote specifically to my Chinese colleagues") — acknowledging the dilemma of being caught between geopolitical forces
+- During the crisis he brought in former Disney executive Kevin Mayer as TikTok CEO (signaling "localized management" to the US market); Mayer resigned three months later
+- In response to domestic accusations that ByteDance had "caved," Zhang Yiming's stance was: "we need to be able to accept a period of misunderstanding, not worry about short-term damage to our reputation, and patiently just do the right thing"
 
-### 不确定性下的决策方式
-- 先做小规模实验验证假设（内涵段子→今日头条；抖音→TikTok）
-- 相信「在活跃竞争的行业不激进就是后退」，宁可超前而非保守
-- 面对监管不确定性时，选择时间换空间（TikTok拉长法律程序，而非立刻出售）
+**Outcome**: the crisis was ultimately deferred, partly by delays from the Trump administration and partly by a court injunction. But the crisis planted the seed for TikTok's long-term regulatory troubles going forward.
 
-### 言行不一致的记录案例
-| 时间 | 言 | 行 | 评价 |
+**Comparison with the Neihan Duanzi crisis**:
+- Domestic regulatory pressure -> immediate, total compliance, no argument
+- US political pressure -> publicly expressed disagreement, resorted to legal action, refused to sell
+This asymmetry reveals Zhang Yiming's true risk appetite: comply within an environment he can control, but resist when he believes there's a matter of principle at stake
+
+---
+
+## IV. "Unusual" decisions (things others wouldn't have done, but he did)
+
+### 9. Entering the gaming business (2019)
+
+**Timing and background**: by 2019, ByteDance's content traffic had hit a ceiling, and Zhang Yiming was looking for the next growth engine.
+
+**Decision logic**:
+- ByteDance had no gaming DNA of its own, and entered purely through a "monetize the traffic" logic
+- An aggressive acquisition strategy: buying up several top domestic game studios, hiring well-known game producers
+- Founded the "Nuverse" gaming brand, with cumulative investment of over 70 billion yuan over 5 years
+
+**Result**: very few hits, and none with lasting impact. In 2023, ByteDance drastically cut its gaming business and folded it into other departments — outside commentators called it "30 billion yuan spent on nothing."
+
+**This was a failed unusual decision.** ByteDance applied its traffic-monetization logic to a content-creation-driven business, overlooking the fact that games require deep creative DNA, not just distribution capability.
+
+---
+
+### 10. Entering the education business (2020)
+
+**Timing and background**: in 2020, online education exploded due to the pandemic, and ByteDance entered aggressively.
+
+**Decision logic**:
+- In March 2020, Zhang Yiming announced education as a strategic priority for ByteDance in his 8th-anniversary CEO letter
+- In October 2020, ByteDance founded "Dali Education" as an independent brand, with no plan to turn a profit within three years
+- ByteDance's reasoning: it had distribution capability, algorithms, and money; education was a trillion-yuan market
+
+**Result**: with the "double reduction" policy landing in 2021, K-12 after-school tutoring was strictly restricted, forcing ByteDance's education business into a large-scale retreat — over 3,000 layoffs in 2022, one of ByteDance's biggest strategic exits ever.
+
+**On public reflection**: no record was found of Zhang Yiming directly admitting the education decision was wrong — the company handled it through reorganization and layoffs, without public reflection. **This is a case of words not matching actions** — he had solemnly promised "no plan to profit within three years," but the actual retreat happened far faster than that. (Note: the policy shift was an objective external cause, but betting on an industry that was itself vulnerable to policy restriction was a misjudgment.)
+
+---
+
+### 11. Building phones/hardware (2019)
+
+**Timing and background**: in 2019, ByteDance acquired some assets from Smartisan Technology, exploring a hardware path.
+
+**Decision logic**:
+- According to insiders, building hardware was Zhang Yiming's own idea: "we're definitely going to build hardware — it might not be a phone; it could be all kinds of IoT smart devices"
+- Strategic intent: owning a hardware entry point, avoiding being choked off at the operating-system layer (Android/iOS)
+
+**Result**: no formal phone product was ever launched, and the hardware strategy was essentially shelved in practice. By comparison, ByteDance went further in the VR/AR direction (Pico).
+
+---
+
+### 12. Relocating to Singapore (after 2022)
+
+**Timing and background**: after stepping down as CEO, Zhang Yiming shifted the center of his life to Singapore.
+
+**Decision logic**:
+- The Information confirmed Zhang Yiming spends most of his time living in Singapore; ByteDance had already set up its international headquarters there in 2020 (paying nearly 4 million yuan a month in rent)
+- Background: tightening Chinese internet regulation, and ongoing geopolitical risk around TikTok — Singapore is a "politically neutral" buffer
+- Zhang Yiming retains Chinese citizenship, and has explicitly denied applying for Singaporean citizenship
+
+**Significance**: this is a personal-level strategic risk-diversification decision, consistent with the company's broader "de-China-ization narrative" global positioning.
+
+---
+
+## V. The decision to step down as CEO (May 2021)
+
+**Timing and background**: on May 20, 2021, at age 38, Zhang Yiming announced he was stepping down as CEO of ByteDance, with co-founder Liang Rubo taking over.
+
+**Official reasons (in his own words)**:
+- "I've been coasting on past achievements for the past few years" — he could keep up with the frontier of machine learning before 2017, but in the last three years he'd fallen behind on technical discussions
+- He was "not satisfied" with any of the three annual OKRs (exploring a new long-term strategy, organization and management, social responsibility)
+- His plan: "on a ten-year horizon, focus on learning, systematic thinking, researching new things, hands-on experimentation and experience"
+
+**Outside analysis (verifiable outside context)**:
+- In early 2021, China's antitrust scrutiny of internet platforms escalated sharply (Alibaba fined 18.2 billion yuan, Didi placed under investigation)
+- ByteDance faced multiple domestic pressures at once — content oversight, data security, antitrust
+- TikTok's overseas crisis continued, leaving ByteDance in an awkward position caught between US and Chinese pressure
+- Some analysis (National Business Daily) pointed out that the timing of his resignation, right before a regulatory storm, carried a practical consideration of "proactively lowering political risk"
+
+**Choice of successor**: Liang Rubo was Zhang Yiming's college classmate, and they had co-founded a company together since 2009 (99fang.com), then co-founded ByteDance in 2012. This choice ensured cultural continuity, while also meaning Zhang Yiming's real influence over the company hadn't fully receded.
+
+**Assessment of consistency between words and actions**: Zhang Yiming stated publicly it "wasn't because I don't want to make money" — and after stepping down, he did live a low-key life in Singapore, with no sign of returning to front-line management. Broadly consistent.
+
+---
+
+## VI. Summary of Zhang Yiming's decision-making framework
+
+### Thinking pattern
+- **Algorithmic decision-making**: he consistently reduces problems to probability distributions and seeks an optimum or near-optimum solution, "trusting data and his own logical deduction"
+- **Delayed gratification**: "if something feels really good, try delaying it a bit further — this raises your standards while also giving you a buffer"
+- **An outside-in perspective**: he proactively gathers information that contradicts his own judgment, and resists "managing up" culture (he himself has repeatedly criticized this problem)
+- **Long-termism**: "embrace more uncertainty, focus more on the long term, focus more on the big picture"
+
+### Risk appetite
+- Business expansion: **extremely high risk appetite** — once he judges the direction is right, he's willing to burn large amounts of money ($10 billion in TikTok marketing, 70 billion yuan in gaming)
+- Political/regulatory risk: **a dual track** — full compliance domestically (immediate apology over Neihan Duanzi), but resistance under international political pressure (refusing to sell TikTok under the ban)
+- Talent decisions: **high density, high attrition**, trusting the system/mechanism over any individual — "talent isn't the core competitive advantage, the mechanism is"
+
+### How he decides under uncertainty
+- Run small-scale experiments to validate a hypothesis first (Neihan Duanzi -> Toutiao; Douyin -> TikTok)
+- Believes "in an actively competitive industry, not being aggressive is the same as falling behind" — he'd rather be ahead of the curve than conservative
+- Under regulatory uncertainty, trades time for space (dragging out TikTok's legal process rather than selling immediately)
+
+### Documented cases where words didn't match actions
+| Time | What he said | What he did | Assessment |
 |------|----|----|------|
-| 2020年 | 教育业务「三年不考虑盈利」 | 2022年大规模裁员退出 | 政策原因导致，但仍是误判押注 |
-| 长期 | 「算法没有价值观」 | 2018年内涵段子被关停后，公开放弃这一立场，承认「社会责任」 | 被动调整，并非主动认错 |
-| 2021年 | 卸任为「专注学习」 | 同期字节面临监管风暴，外部分析认为有政治风险规避成分 | 两种解读都有可能，无法证伪 |
+| 2020 | education business would have "no plan to profit within three years" | large-scale layoffs and retreat in 2022 | driven by policy, but still a misjudged bet |
+| Long-term | "the algorithm has no values" | after Neihan Duanzi's shutdown in 2018, he publicly abandoned this position, acknowledging "social responsibility" | a forced adjustment, not a proactive admission of fault |
+| 2021 | stepping down to "focus on learning" | ByteDance faced a regulatory storm at the same time; outside analysts believe there was an element of political-risk avoidance | both readings are plausible, and neither can be ruled out |
 
 ---
 
-## 七、信息来源索引
+## VII. Source index
 
-- 界面新闻：张一鸣首谈TikTok风波、Musical.ly合并报道、卸任CEO报道
-- 36氪：张一鸣卸任内部信全文、游戏业务报道、教育业务报道
-- 极客公园：字节全球化之路、飞书演进路径、TikTok击败特朗普
-- 澎湃新闻：张一鸣美国往事、早期全球化战略
-- 21世纪经济报道：TikTok强制出售原话
-- 虎嗅：张一鸣算法暗战
-- SCMP：新加坡居住报道、TikTok封禁报道
-- The Information：张一鸣新加坡居住（已确认）
-- Bloomberg：字节创始人财富与战略报道
-- 人民网/广电总局官方：内涵段子关停公告
+- Jiemian News: Zhang Yiming's first public comments on the TikTok saga, the Musical.ly merger report, coverage of his resignation as CEO
+- 36Kr: full text of Zhang Yiming's internal resignation letter, coverage of the gaming business, coverage of the education business
+- GeekPark: ByteDance's path to globalization, the evolution of Feishu, TikTok defeating Trump
+- The Paper: Zhang Yiming's history in the US, early globalization strategy
+- 21jingji.com: Zhang Yiming's exact quotes on the forced sale of TikTok
+- Huxiu: Zhang Yiming's hidden battle over algorithms
+- SCMP: coverage of his residence in Singapore, coverage of the TikTok ban
+- The Information: Zhang Yiming's residence in Singapore (confirmed)
+- Bloomberg: coverage of ByteDance's founder wealth and strategy
+- People's Daily Online / National Radio and Television Administration official notice: the Neihan Duanzi shutdown announcement

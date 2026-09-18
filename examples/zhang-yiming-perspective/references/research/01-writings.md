@@ -1,298 +1,298 @@
-# 张一鸣：著作与核心思想研究
+# Zhang Yiming: Writings and Core Thinking Research
 
-> 调研日期：2026-04-06
-> 信息来源：晚点LatePost、36氪、极客公园、界面新闻、人民日报、各媒体一手报道
-> 黑名单：已排除知乎、百度百科、微信公众号
-
----
-
-## 一、主要公开文本（一手）
-
-### 1. 字节跳动七周年演讲（2019年3月）
-**来源**：界面新闻、品玩现场报道 | **可信度**：一手（本人演讲全文）
-
-核心主题：「务实的浪漫」——把想象变成现实。
-
-关键原话：
-- "有同理心是务实，有想象力是浪漫。"
-- "同理心是地基，想象力是天空，中间是逻辑和工具。AB测试只是工具，不是发现需求的方式，发现需求需要同理心。"
-- "做正确的事才是务实，短期投机不是务实。大力出奇迹是务实。"
-- "ego小，格局大。"——认为公司发展快，格局大，大家ego大也不容易碰撞；公司一旦停滞就容易产生内耗。
-- "创业就像一段旅程，我们一起去看最美好的风景，不要在半途逗留徘徊，不走巧径误入歧途。我希望能跟一群既务实又浪漫的人，一起去看最好的风景。"
-
-五个故事的核心论点：
-1. 锦秋家园（民宅创业）→ 物理条件不限制宏大愿景
-2. 自研推荐引擎（"推荐我们不会，但可以学啊"）→ 从根本上解决问题
-3. 头条寻人（放弃虚假404方案，用LBS认真做）→ "做正确的事而非容易的事"
-4. 抖音二次决策（2014年错过，2016年重新投入）→ 拥抱不确定性、坚韧意志
-5. 招聘理念（反对HR的高门槛JD）→ "找最合适的人，而非光鲜背景"
+> Research date: 2026-04-06
+> Sources: LatePost, 36Kr, GeekPark, Jiemian News, People's Daily, primary media reporting
+> Blacklist: Zhihu, Baidu Baike, and WeChat official accounts excluded
 
 ---
 
-### 2. 字节跳动九周年演讲（2021年3月30日）
-**来源**：GameLook、搜狐等多家媒体报道 | **可信度**：一手（本人演讲全文）
+## I. Major public texts (primary)
 
-主题：「平常心做非常事」
+### 1. ByteDance 7th-anniversary speech (March 2019)
+**Source**: Jiemian News, Pingwest on-site reporting | **Reliability**: primary (full text of his own speech)
 
-关键原话：
-- "平常心有个直白定义，就是吃饭的时候好好吃饭，睡觉的时候好好睡觉。"
-- "以平常心对待自己、产品业务和行业竞争，不要过度关注过去的成功和失败，也不必对未来怀有太多恐惧，而是应该专注于当下。"
-- "外部波澜起伏，内心平静如常。"
+Core theme: "Pragmatic romance" — turning imagination into reality.
 
-背景：2020年字节跳动因TikTok遭美国政府打压，处于最高外部压力期，此演讲是他对内部员工的精神定调。这是他作为CEO发表的最后一次周年演讲。
+Key quotes:
+- "Empathy is pragmatism, imagination is romance."
+- "Empathy is the foundation, imagination is the sky, and in between are logic and tools. A/B testing is just a tool, not a way to discover needs — discovering needs requires empathy."
+- "Doing the right thing is pragmatism, short-term opportunism is not. Going all-in and working hard for a breakthrough is pragmatism."
+- "Small ego, big vision." — his view is that when a company grows fast and has a big vision, everyone's egos don't clash as easily; once a company stalls, internal friction sets in.
+- "Starting a company is like a journey — we go see the best scenery together, we don't linger halfway, and we don't take shortcuts that lead us astray. I hope to go see the best scenery with a group of people who are both pragmatic and romantic."
 
----
-
-### 3. 卸任CEO全员信（2021年5月）
-**来源**：多家媒体报道原文 | **可信度**：一手（本人公开信）
-
-关键表述：
-- "对去年关于探索远景新战略、研究组织和管理、提升社会责任的三个年度OKR觉得都不满意。"
-- 卸任后计划："脱离CEO工作，相对专注学习知识，系统思考，研究新事物，动手尝试和体验，以十年为期，为公司创造更多可能。"
-- 探索方向："教育公益、脑疾病、古籍数字化整理等新的公益项目。"
-
-意义：这是一封坦诚的失败检讨信，不是常见的溢美卸任声明。他承认三个OKR都没做好。
+Core arguments from his five stories:
+1. Jinqiu Jiayuan (starting the company out of a residential apartment) -> physical conditions don't limit a grand vision
+2. Building the recommendation engine in-house ("we don't know recommendation systems, but we can learn") -> solving the problem at the root
+3. Toutiao Missing-Person Search (abandoning a fake 404-page scheme for a serious LBS-based approach) -> "do the right thing, not the easy thing"
+4. The second decision on Douyin (missed it in 2014, went all-in again in 2016) -> embracing uncertainty, sheer perseverance
+5. His hiring philosophy (opposing HR's high-bar job descriptions) -> "find the most suitable person, not the most polished résumé"
 
 ---
 
-### 4. 码荟年会演讲（2018年）：反「向上管理」与负规模效应
-**来源**：源码资本官网全文 | **可信度**：一手（本人演讲）
-原文链接：https://sourcecodecap.com/code-class-post/...
+### 2. ByteDance 9th-anniversary speech (March 30, 2021)
+**Source**: GameLook, Sohu, and other media reports | **Reliability**: primary (full text of his own speech)
 
-核心论点：
-- **负规模效应**：组织扩大后，内部信息失效，有时"外界比CEO更了解公司情况"。
-- "企业的一切成果发生在组织之外"——员工视野局限于职位角色时，目标分解到内部就会扭曲。
-- 反「向上管理」：员工围绕上级工作而非业务目标，表现为PPT越来越厚、数据口径频繁变换、报喜不报忧。
-- CEO的Ego问题："缺乏有效反馈机制，容易自嗨。诺基亚CEO对iPhone不屑即为典型。"
-- 破解方案：外部视角（用户反馈、竞品分析、离职员工）+ 文化工具（反向上管理的企业文化、BI系统直接展示数据）+ 缩小Ego（"把三观缩小到原子那么小"）
+Theme: "Doing extraordinary things with an ordinary mind"
 
----
+Key quotes:
+- "The plainest definition of an ordinary mind is: eat well when you eat, sleep well when you sleep."
+- "Treat yourself, your product and business, and industry competition with an ordinary mind — don't dwell too much on past successes and failures, and don't hold too much fear about the future either. Focus on the present instead."
+- "Outside, the waves rise and fall; inside, the mind stays as calm as ever."
 
-### 5. 知春创新中心开业演讲（2025年10月，上海徐汇）
-**来源**：观察者网、每日经济新闻、腾讯新闻报道 | **可信度**：一手（本人演讲，多媒体在场）
-
-背景：隐退约4年后（2021年5月卸任CEO）首次公开亮相，与上海交通大学俞勇教授联合创办知春创新中心。
-
-关键原话：
-- "自己长期关注人才招聘和培养，注意到很多人才潜力没有被充分挖掘。"
-- 以机器学习「过拟合」（Overfit）作类比："有的人才可能专业知识扎实，也有高精准的技能，但面对创新任务就不行了。"
-- 理想人才画像："思维活跃、有热情和韧性。核心是独立思考和重视实践，关注长期和全局，在探索中学习，保持平常心，放松自信，拥抱不确定性。"
-
-注意：这与2021年九周年演讲的「平常心」主题形成系统呼应，是他卸任后核心思想的延续。
+Background: in 2020 ByteDance was under maximum external pressure as TikTok faced a crackdown from the U.S. government; this speech was him setting the internal emotional tone for employees. This was the last anniversary speech he gave as CEO.
 
 ---
 
-## 二、反复出现的核心论点（≥3次出现 = 真信念）
+### 3. All-staff letter stepping down as CEO (May 2021)
+**Source**: full text reported by multiple outlets | **Reliability**: primary (his own public letter)
 
-### 论点A：延迟满足感（≥5次出现）
-**来源**：微博、演讲、采访 | **可信度**：一手
+Key statements:
+- "I'm not satisfied with any of last year's three annual OKRs — exploring a long-term new strategy, researching organization and management, and increasing social responsibility."
+- His plan after stepping down: "step away from CEO duties, focus more on learning, systematic thinking, researching new things, hands-on experimentation and experience, on a ten-year horizon, to create more possibilities for the company."
+- Areas he planned to explore: "education philanthropy, brain disease research, digitizing ancient texts, and other new philanthropic projects."
 
-- 微博：延迟满足感程度不同量级的人没法有效讨论，因为他们"愿意触探停留的深度不一样"。
-- 管理层面：TikTok高峰期把资源转向教育（大力教育），500亿收入年依然警惕"大公司病"。
-- 个人层面：他的微博签名曾是「逃逸平庸的重力」，来自2010年微博："平庸有重力，需要逃逸速度。"
-- 产品层面：商业变现不要让产品变形，"公司最重要的事是保持可能性足够大，而对变现保持克制。"
-
-### 论点B：Context, Not Control（≥4次出现）
-**来源**：多家媒体报道字节内部文化 | **可信度**：二手（媒体总结，但被广泛引用为字节文化核心）
-
-- 核心含义：管理者只设目标，不干涉具体执行；管理者的角色是持续传递上下文（context），帮助成员构建完整图景，而不是发号施令。
-- 实践表现：字节内部OKR高度透明，所有人可看所有人的OKR，包括张一鸣自己的。
-- 注意：「Context, not Control」这个表述本身是否为张一鸣原创术语，或来自Netflix文化手册，目前存疑（Netflix Reed Hastings也用过同类表述）。**记录为疑似他人术语被张一鸣吸收使用。**
-
-### 论点C：好奇心与自我迭代（≥4次出现）
-**来源**：微博、采访、演讲 | **可信度**：一手
-
-- 微博高频词：延迟满足感、自控、理性、反省、创新、学习。
-- 把自己比作算法："recognize it（认识问题）、correct it（纠正问题）、learn from it（从中学习），其他都不重要。"
-- 阅读观："两类书最值得看：传记，和教科书。教科书是人类知识最浓缩提炼的书。"
-- 最优工作状态："在轻度喜悦和轻度沮丧之间，不太激动也不太郁闷，睡眠充足。"
-
-### 论点D：从根本解决问题（≥3次出现）
-**来源**：七周年演讲、采访、内部讲话 | **可信度**：一手
-
-- "推荐我们不会，但可以学啊"——2012年决定自研推荐引擎而非采购。
-- 头条寻人放弃虚假404页面："在一个根本打不开的页面上放寻人启事，用户看到的时候，小孩可能都走失一个月了。"
-- 产品问题观："想解决什么问题？发不发餐补对员工吃饭的选择有实质性影响吗？你没有解决任何痛点，那这个设计就是没有意义的。"
-
-### 论点E：算法是工具，同理心才是根（≥3次出现）
-**来源**：演讲、采访 | **可信度**：一手
-
-- "同理心是地基，想象力是天空，中间是逻辑和工具。"
-- "AB测试只是工具，不是发现需求的方式。"
-- 2018年反驳「今日头条是AB测试驱动的公司」的说法：算法服务于同理心，而非替代同理心。
-- 矛盾点：2018年今日头条爆发「算法价值观缺失」风波后，张一鸣公开道歉，承认平台在内容价值导向上有失职。这与其「算法是中性工具」的立场形成内在张力，未调和。
+Significance: this was a candid letter of self-criticism about failure, not the usual flattering step-down statement. He admitted he had not done well on any of the three OKRs.
 
 ---
 
-## 三、自创术语与核心框架
+### 4. Speech at the Source Code Capital annual conference (2018): against "managing up" and negative scale effects
+**Source**: full text on Source Code Capital's official site | **Reliability**: primary (his own speech)
+Original link: https://sourcecodecap.com/code-class-post/...
 
-| 术语 | 含义 | 出处 | 可信度 |
+Core arguments:
+- **Negative scale effects**: as an organization grows, internal information degrades — sometimes "outsiders understand the company's situation better than the CEO does."
+- "Everything a company achieves happens outside the organization" — when employees' field of view is limited to their role, goals get distorted as they're broken down internally.
+- Against "managing up": employees work to please their boss rather than toward business goals, showing up as ever-thicker PowerPoint decks, constantly shifting data definitions, and reporting good news while hiding bad news.
+- The CEO's ego problem: "without an effective feedback mechanism, it's easy to get lost in self-satisfaction. Nokia's CEO dismissing the iPhone is a classic example."
+- His fix: an outside-in perspective (user feedback, competitor analysis, exit interviews with departing employees) + cultural tools (a culture that pushes back on managing up, a BI system that shows data directly) + shrinking the ego ("shrink your worldview down to the size of an atom")
+
+---
+
+### 5. Opening speech at the Zhichun Innovation Center (October 2025, Xuhui District, Shanghai)
+**Source**: Guancha, National Business Daily, Tencent News reporting | **Reliability**: primary (his own speech, covered live by multiple outlets)
+
+Background: his first public appearance after roughly 4 years out of the spotlight (stepped down as CEO in May 2021), co-founding the Zhichun Innovation Center with Professor Yu Yong of Shanghai Jiao Tong University.
+
+Key quotes:
+- "I've long paid attention to talent recruitment and development, and I've noticed that a lot of people's potential goes untapped."
+- Using the machine-learning concept of "overfitting" as an analogy: "some talented people may have solid professional knowledge and highly precise skills, but they fall apart when faced with a task that requires innovation."
+- His ideal talent profile: "an active mind, passion and resilience. The core is independent thinking and valuing practice, focusing on the long term and the big picture, learning through exploration, keeping an ordinary mind, staying relaxed and confident, and embracing uncertainty."
+
+Note: this echoes systematically with the "ordinary mind" theme from his 2021 ninth-anniversary speech — it's a continuation of his core thinking since stepping down.
+
+---
+
+## II. Recurring core arguments (appearing 3+ times = a real belief)
+
+### Argument A: delayed gratification (appears 5+ times)
+**Source**: Weibo, speeches, interviews | **Reliability**: primary
+
+- Weibo: people at very different levels of delayed gratification can't have a productive discussion, because "they're not willing to probe and dwell at the same depth."
+- Management-level: at TikTok's peak, he redirected resources toward education (Dali Education); even in a year with 50 billion yuan in revenue, he stayed wary of "big-company disease."
+- Personal-level: his Weibo bio was once "Escaping the gravity of mediocrity," from a 2010 Weibo post: "mediocrity has gravity; you need escape velocity."
+- Product-level: don't let monetization distort the product — "the most important thing for a company is to keep its space of possibilities large enough, while staying restrained about monetization."
+
+### Argument B: Context, Not Control (appears 4+ times)
+**Source**: multiple media reports on ByteDance's internal culture | **Reliability**: secondary (a media summary, but widely cited as core to ByteDance's culture)
+
+- Core meaning: managers only set goals and don't interfere with execution details; a manager's role is to continuously convey context so team members can build a full picture, rather than issuing orders.
+- In practice: OKRs are highly transparent inside ByteDance — everyone can see everyone else's OKRs, including Zhang Yiming's own.
+- Note: whether "Context, not Control" was originally coined by Zhang Yiming himself, or borrowed from Netflix's culture deck, is currently uncertain (Netflix's Reed Hastings has used a similar phrase too). **Recorded as a term possibly borrowed from someone else and adopted by Zhang Yiming.**
+
+### Argument C: curiosity and self-iteration (appears 4+ times)
+**Source**: Weibo, interviews, speeches | **Reliability**: primary
+
+- High-frequency Weibo words: delayed gratification, self-control, rationality, self-reflection, innovation, learning.
+- Compares himself to an algorithm: "recognize it, correct it, learn from it — nothing else matters."
+- His reading philosophy: "two kinds of books are most worth reading: biographies, and textbooks. Textbooks are humanity's most concentrated, distilled knowledge."
+- His optimal working state: "somewhere between mild joy and mild frustration — not too excited, not too down, and getting enough sleep."
+
+### Argument D: solve the problem at the root (appears 3+ times)
+**Source**: 7th-anniversary speech, interviews, internal talks | **Reliability**: primary
+
+- "We don't know recommendation systems, but we can learn" — the 2012 decision to build the recommendation engine in-house rather than buy one.
+- Toutiao Missing-Person Search abandoning a fake 404 page: "putting a missing-person notice on a page that fundamentally never loads — by the time a user sees it, the kid might have already been missing for a month."
+- His view on product problems: "what problem are you trying to solve? Does giving out a meal subsidy or not actually make a real difference to how employees choose to eat? If you haven't solved any real pain point, then the design is meaningless."
+
+### Argument E: algorithms are a tool, empathy is the root (appears 3+ times)
+**Source**: speeches, interviews | **Reliability**: primary
+
+- "Empathy is the foundation, imagination is the sky, and in between are logic and tools."
+- "A/B testing is just a tool, not a way to discover needs."
+- In 2018 he pushed back on the claim that "Toutiao is a company driven by A/B testing": algorithms serve empathy, they don't replace it.
+- A contradiction: after the 2018 controversy over Toutiao's "lack of values in its algorithm" broke out, Zhang Yiming publicly apologized and admitted the platform had fallen short on content-value guidance. This creates unresolved internal tension with his stance that "algorithms are a neutral tool."
+
+---
+
+## III. Coined terms and core frameworks
+
+| Term | Meaning | Source | Reliability |
 |------|------|------|--------|
-| 务实的浪漫 | 把想象变成现实，既有理想又能落地 | 七周年演讲（2019） | 一手 |
-| 逃逸平庸的重力 | 对抗惰性和平庸引力的个人哲学 | 微博签名（2010年起） | 一手 |
-| 平常心做非常事 | 在极端外部压力下保持内心稳定 | 九周年演讲（2021） | 一手 |
-| 人才过拟合 | 专业能力强但创新能力弱的人才困境，借用ML术语 | 知春创新中心演讲（2025） | 一手 |
-| 向上管理（反面） | 员工围绕上级而非业务目标工作 | 码荟年会（2018） | 一手 |
-| 负规模效应 | 组织扩大导致信息失真和有效性下降 | 码荟年会（2018） | 一手 |
-| 始终创业 | ByteStyle核心价值观之一，保持初创心态 | 字节跳动官方文化 | 一手（公司文化文件） |
-| Context, not Control | 提供上下文而非控制，管理哲学 | 字节内部文化（疑似借鉴Netflix） | **疑似二手，存疑** |
+| Pragmatic romance | Turning imagination into reality — having ideals while also executing on them | 7th-anniversary speech (2019) | primary |
+| Escaping the gravity of mediocrity | A personal philosophy of resisting inertia and the pull of mediocrity | Weibo bio (since 2010) | primary |
+| Doing extraordinary things with an ordinary mind | Staying internally steady under extreme external pressure | 9th-anniversary speech (2021) | primary |
+| Talent overfitting | The dilemma of people who are professionally strong but weak at innovation, borrowing the ML term | Zhichun Innovation Center speech (2025) | primary |
+| Managing up (as a negative) | Employees working around their boss's preferences rather than toward business goals | Source Code Capital annual conference (2018) | primary |
+| Negative scale effects | Organizational growth causing information distortion and reduced effectiveness | Source Code Capital annual conference (2018) | primary |
+| Always be starting up | One of ByteStyle's core values, keeping a startup mindset | ByteDance's official culture | primary (company culture document) |
+| Context, not Control | Providing context rather than control, a management philosophy | ByteDance's internal culture (possibly borrowed from Netflix) | **possibly secondary, uncertain** |
 
 ---
 
-## 四、字节跳动价值观体系（ByteStyle）
-**来源**：字节官方，多次公开提及 | **可信度**：一手
+## IV. ByteDance's values system (ByteStyle)
+**Source**: ByteDance official, mentioned publicly multiple times | **Reliability**: primary
 
-六条价值观（后扩展为「字节范儿」）：
-1. **追求极致**（他说：是浪漫）
-2. **务实敢为**（他说：既务实又浪漫）
-3. **开放谦逊**（他说：是务实）
-4. **坦诚清晰**（他说：是务实）
-5. **始终创业**（他说：是浪漫）
-6. **多元兼容**（后期添加，因应国际化后的文化冲突）
+Six values (later expanded into what's informally called "ByteStyle Six"):
+1. **Pursue extreme excellence** (he says: this is romance)
+2. **Be pragmatic and bold** (he says: both pragmatic and romantic)
+3. **Be open and humble** (he says: this is pragmatism)
+4. **Be candid and clear** (he says: this is pragmatism)
+5. **Always be starting up** (he says: this is romance)
+6. **Diversity and inclusion** (added later, in response to cultural friction after internationalization)
 
-注：俗称「六脉神剑」是外部媒体给的绰号，并非字节官方表述。张一鸣曾说"外部总结的字节成功学，都很有问题"。
-
----
-
-## 五、人才观（系统性）
-**来源**：澎湃新闻、界面新闻报道采访 | **可信度**：一手（有原话引用）
-
-### 判断人才的三个标准
-张一鸣多次提及：
-1. **超强学习能力**
-2. **视野开阔**
-3. **心智成熟**
-
-### 招聘哲学原话
-- 对HR反驳高门槛JD："按照'五年以上互联网产品经验'的要求，陈林、张楠这批PM都进不来，连我自己都进不来。"
-- "找最合适的人，而非光鲜背景。"
-- 更爱"朴素的小鲜肉"（指有潜力、未被固化的年轻人）。
-
-### 人才管理哲学
-- "人才不是核心竞争力，机制才是。"（二手总结，但广泛引用）
-- "聪明的人有事做就好管理。"
-- 留住人才三要素：回报（短期+长期）、成长机会、有趣的工作环境。
+Note: the popular nickname "the Six Sacred Swords" (a wuxia-novel reference) is a nickname given by outside media, not ByteDance's own official phrasing. Zhang Yiming once said "the outside world's summaries of ByteDance's 'success formula' are all pretty flawed."
 
 ---
 
-## 六、书单与智识谱系
-**来源**：豆瓣读书主页、采访 | **可信度**：一手（豆瓣账号为本人）
+## V. His view on talent (systematically)
+**Source**: The Paper, Jiemian News interview reporting | **Reliability**: primary (with direct quotes)
 
-张一鸣豆瓣：已读71本，想读267本。
+### Three criteria for judging talent
+Zhang Yiming has mentioned repeatedly:
+1. **Exceptionally strong learning ability**
+2. **A broad field of view**
+3. **Emotional/mental maturity**
 
-核心推荐书（本人直接推荐或反复提及）：
-- 《有限与无限的游戏》（詹姆斯·卡斯）——他的理解：人生是唯一的无限游戏，有限游戏在边界内玩，无限游戏是和边界本身玩
-- 《活法》（稻盛和夫）——早期影响
-- 《少有人走的路》（斯科特·派克）
-- 《高效能人士的七个习惯》（柯维）
-- 《论语》——儒家思想与管理
-- 《史蒂夫·乔布斯传》
+### His hiring philosophy, in his own words
+- Pushing back on HR's high-bar job descriptions: "with a requirement like 'five-plus years of internet product experience,' this whole cohort of PMs — Chen Lin, Zhang Nan — wouldn't have gotten in. Even I wouldn't have gotten in."
+- "Find the most suitable person, not the most polished résumé."
+- He prefers "plain, unpolished young talent" (meaning people with potential who haven't yet been set in their ways).
 
-技术书单（2008-2010年创业前）：计算机系统、算法、离散数学类教科书。
-
-阅读方法论：
-- "两类书最值得看：传记 + 教科书（人类知识最浓缩的形式）。"
-- 道家→领导力，儒家→管理，佛家→做人。（对中国传统思想的三分框架）
-
----
-
-## 七、关于算法推荐的公开辩护与矛盾
-
-**2018年风波**（一手事件记录）：
-- 人民日报「三评算法推荐」，直指今日头条内容低俗、价值缺失、信息茧房。
-- 2018年4月11日凌晨，张一鸣公开致歉，向主管部门和用户道歉，承认平台有失职。
-- 同时公开了算法推荐的技术原理，坚持认为算法本身是中性的。
-
-**内在矛盾（直接记录，不调和）**：
-- 立场A（一贯）："算法是工具，是同理心的执行手段，不替代价值判断。"
-- 立场B（道歉信）：承认平台在内容价值导向上确实有失职，不只是技术问题。
-- 这两个立场存在张力：如果算法中性，那道歉的责任主体是什么？是编辑审核团队还是算法设计本身？张一鸣从未正面回答过这个问题。
+### His talent-management philosophy
+- "Talent isn't the core competitive advantage — the system/mechanism is." (a secondary summary, but widely cited)
+- "Smart people are easy to manage as long as they have something meaningful to do."
+- Three keys to retaining talent: reward (short-term + long-term), growth opportunities, and an interesting work environment.
 
 ---
 
-## 八、自我管理哲学（微博+采访综合）
-**来源**：21CTO专访、36氪、微博整理 | **可信度**：一手+二手混合
+## VI. Reading list and intellectual lineage
+**Source**: his Douban Reading homepage, interviews | **Reliability**: primary (the Douban account is verified as his own)
 
-关键观点（高度可信，多次出现）：
-- "管理精力比管理时间更重要。"
-- 最优状态："在轻度喜悦和轻度沮丧之间，不太激动也不太郁闷，睡眠充足。"
-- 恢复消极状态的方法："recognize it、correct it、learn from it，其他事情都不重要。"
-- 睡眠矛盾："睡觉是一件特别无聊的事情"，但坚持每天睡足7小时。
-- 时间切割实验失败："把一天切割成小块的实验效果不佳，更大的效率来自重要事情上做得好，而不是处处做得好。"
-- 自我训练方式：像调试算法一样调试自己（机器学习思维应用于个人管理）。
-- 微博签名：「逃逸平庸的重力」——2010年微博原文："平庸有重力，需要逃逸速度。"
-- 微博高频词（10年统计）：延迟满足感、自控、理性、反省、创新、学习。
+Zhang Yiming's Douban: 71 books read, 267 books on his to-read list.
 
----
+Core recommended books (directly recommended or repeatedly mentioned by him):
+- *Finite and Infinite Games* (James Carse) — his interpretation: life is the one infinite game; a finite game is played within boundaries, an infinite game is played with the boundary itself
+- *A Way of Life* (Kazuo Inamori) — an early influence
+- *The Road Less Traveled* (M. Scott Peck)
+- *The 7 Habits of Highly Effective People* (Stephen Covey)
+- *The Analects* — Confucian thought and management
+- *Steve Jobs* (Walter Isaacson)
 
-## 九、产品与公司哲学
+Technical reading list (2008-2010, before starting his company): textbooks on computer systems, algorithms, and discrete mathematics.
 
-**来源**：演讲、采访 | **可信度**：一手
-
-- "像打造产品一样打造公司"——把公司管理当产品迭代，CEO是产品经理。
-- "向前跑，不用回头也不用绊人一脚。"——竞争策略，专注自身而非盯竞争对手。
-- "商业变现不要让产品变形。"
-- 广告观："广告需具服务价值。"
-- "公司最重要的事是保持可能性足够大，而对变现保持克制。"
+His reading methodology:
+- "Two kinds of books are most worth reading: biographies, and textbooks (the most concentrated form of human knowledge)."
+- Daoism -> leadership, Confucianism -> management, Buddhism -> how to be a person. (his three-way framework for classical Chinese thought)
 
 ---
 
-## 十、关于国际化与文化冲突
+## VII. Public defense and contradictions around algorithmic recommendation
 
-**来源**：字节跳动官方文化文件、媒体报道 | **可信度**：二手（报道张一鸣内部讲话）
+**The 2018 controversy** (a primary record of events):
+- The People's Daily ran "Three Critiques of Algorithmic Recommendation," directly accusing Toutiao's content of being vulgar, lacking values, and creating information cocoons.
+- In the early hours of April 11, 2018, Zhang Yiming publicly apologized, addressing regulators and users and admitting the platform had fallen short.
+- At the same time, he publicly explained the technical principles behind algorithmic recommendation, maintaining that the algorithm itself is neutral.
 
-- 张一鸣要求字节员工具备「火星视角」——以旁观者视角处理必然发生的文化冲突。
-- 因此在ByteStyle中新增"多元兼容"，这是企业国际化战略在价值观层面的直接映射。
-- 字节跳动认为自己是"全球化公司"而非"中国公司的海外版"，这在中国互联网中是极为罕见的自我定位。
-
----
-
-## 十一、关于隐退（2021-2025）
-
-**来源**：36氪深度报道「隐退的张一鸣，跳动的字节」 | **可信度**：二手（记者调查报道）
-
-- 2021年5月卸任CEO，联合创始人梁汝波接任。
-- 隐退期间无公开演讲，约1200天。
-- 据报道：专注阅读、学习，探索教育公益、脑疾病研究、古籍数字化方向。
-- 2025年10月首次亮相，话题从「字节怎么赢」转向「人才怎么培养」，标志着其关注点的系统性转移。
+**An internal contradiction (recorded plainly, not reconciled)**:
+- Position A (consistent over time): "algorithms are a tool, a way of executing on empathy — they don't replace value judgment."
+- Position B (in the apology letter): admitting the platform genuinely fell short on guiding content values, not merely a technical issue.
+- These two positions are in tension: if the algorithm is neutral, who exactly bears the responsibility being apologized for? The editorial review team, or the algorithm's design itself? Zhang Yiming has never directly answered this question.
 
 ---
 
-## 十二、发现的内在矛盾（直接记录）
+## VIII. His self-management philosophy (from Weibo and interviews combined)
+**Source**: 21CTO interview, 36Kr, Weibo compilations | **Reliability**: mixed primary and secondary
 
-| 矛盾 | 立场A | 立场B | 是否解决 |
+Key views (highly credible, appearing multiple times):
+- "Managing your energy matters more than managing your time."
+- His optimal state: "somewhere between mild joy and mild frustration — not too excited, not too down, and getting enough sleep."
+- How he recovers from a negative state: "recognize it, correct it, learn from it — nothing else matters."
+- A contradiction on sleep: "sleeping is an especially boring activity," yet he insists on sleeping a full 7 hours every day.
+- A failed time-slicing experiment: "chopping the day into small blocks didn't work well as an experiment — greater efficiency comes from doing the important things well, not from doing everything well."
+- His self-training method: debugging himself the way you'd debug an algorithm (applying a machine-learning mindset to personal management).
+- Weibo bio: "Escaping the gravity of mediocrity" — from the original 2010 Weibo post: "mediocrity has gravity; you need escape velocity."
+- High-frequency Weibo words (over a 10-year span): delayed gratification, self-control, rationality, self-reflection, innovation, learning.
+
+---
+
+## IX. Product and company philosophy
+
+**Source**: speeches, interviews | **Reliability**: primary
+
+- "Build the company the way you'd build a product" — treating company management as product iteration, with the CEO as product manager.
+- "Run forward — no need to look back, and no need to trip anyone else up." — his competitive strategy: focus on yourself, not on watching competitors.
+- "Don't let monetization distort the product."
+- His view on advertising: "advertising needs to have service value."
+- "The most important thing for a company is to keep its space of possibilities large enough, while staying restrained about monetization."
+
+---
+
+## X. On internationalization and cultural conflict
+
+**Source**: ByteDance's official culture documents, media reports | **Reliability**: secondary (reporting on Zhang Yiming's internal remarks)
+
+- Zhang Yiming asked ByteDance employees to adopt a "Martian perspective" — handling inevitable cultural conflict as an outside observer would.
+- This is why "diversity and inclusion" was added to ByteStyle — a direct mapping of the company's internationalization strategy onto its values.
+- ByteDance considers itself a "global company" rather than "the overseas version of a Chinese company" — an unusually rare self-positioning within the Chinese internet industry.
+
+---
+
+## XI. On stepping back from the spotlight (2021-2025)
+
+**Source**: 36Kr's in-depth feature "The Retired Zhang Yiming, and a Still-Beating ByteDance" | **Reliability**: secondary (investigative journalism)
+
+- Stepped down as CEO in May 2021; co-founder Liang Rubo succeeded him.
+- Gave no public speeches during roughly 1,200 days out of the spotlight.
+- According to reporting: he focused on reading and learning, exploring education philanthropy, brain-disease research, and digitizing ancient texts.
+- Made his first public appearance in October 2025; the topic shifted from "how does ByteDance win" to "how do you develop talent" — marking a systematic shift in his focus.
+
+---
+
+## XII. Documented internal contradictions
+
+| Contradiction | Position A | Position B | Resolved? |
 |------|-------|-------|----------|
-| 算法中性 vs 内容责任 | 算法是工具，不替代价值判断 | 2018年公开致歉，承认平台失职 | 未解决，刻意回避 |
-| 睡觉无聊 vs 坚持7小时 | "睡觉是一件特别无聊的事情" | 坚持每天睡足7小时保持最佳状态 | 表面矛盾，实际是「效用优先」逻辑 |
-| 反向上管理 vs 高度集权 | 提倡Context not Control，透明OKR | 字节重大决策（国际化、TikTok应对）均高度集中于张一鸣 | 未在公开场合讨论 |
-| 始终创业 vs 超大规模 | 价值观强调创业心态 | 字节成为10万人+规模公司，典型大公司 | 张一鸣本人于2021年承认"大公司病"风险，是其卸任的重要理由之一 |
+| Algorithmic neutrality vs. content responsibility | algorithms are a tool, they don't replace value judgment | publicly apologized in 2018, admitting the platform fell short | unresolved, deliberately avoided |
+| Sleep is boring vs. insisting on 7 hours | "sleeping is an especially boring activity" | insists on sleeping a full 7 hours every day to stay at his best | a surface contradiction — actually a "utility first" logic |
+| Anti-managing-up vs. high centralization | promotes Context not Control, transparent OKRs | ByteDance's major decisions (internationalization, TikTok's response strategy) were all highly centralized around Zhang Yiming | never discussed publicly |
+| Always be starting up vs. massive scale | the values emphasize a startup mindset | ByteDance grew into a company of 100,000+ employees, a textbook big company | Zhang Yiming himself acknowledged the risk of "big-company disease" in 2021 as one important reason for stepping down |
 
 ---
 
-## 十三、「外部总结字节成功学都很有问题」
-**来源**：腾讯新闻报道（2022年） | **可信度**：一手（本人表态）
+## XIII. "Outside summaries of ByteDance's success formula are all pretty flawed"
+**Source**: Tencent News report (2022) | **Reliability**: primary (his own statement)
 
-张一鸣曾明确表示："外部总结的'字节成功学'，都很有问题。"
+Zhang Yiming has explicitly said: "the outside world's summaries of ByteDance's 'success formula' are all pretty flawed."
 
-这句话本身是重要的元认知表达——他对自己的成功路径被外界简化和神话化感到不满。结合他对「向上管理」、「负规模效应」的系统性批判，可以看出：他对组织规律的理解，远比「算法驱动一切」的外部叙事复杂。
+This statement is itself an important piece of meta-cognition — he's expressing dissatisfaction with how the outside world simplifies and mythologizes his path to success. Combined with his systematic critique of "managing up" and "negative scale effects," it shows that his understanding of organizational dynamics is far more complex than the outside narrative of "algorithms drive everything."
 
 ---
 
-## 来源清单
+## Source list
 
-| 来源 | 类型 | URL |
+| Source | Type | URL |
 |------|------|-----|
-| 字节跳动七周年演讲 | 一手（本人演讲） | https://www.jiemian.com/article/3024030.html |
-| 字节跳动九周年演讲 | 一手（本人演讲） | http://www.gamelook.com.cn/2021/03/436334/ |
-| 张一鸣卸任CEO全员信 | 一手（本人公开信） | https://wallstreetcn.com/articles/3630796 |
-| 码荟年会2018演讲 | 一手（本人演讲） | https://sourcecodecap.com/code-class-post/... |
-| 知春创新中心演讲2025 | 一手（本人演讲） | https://www.guancha.cn/economy/2025_10_10_792768.shtml |
-| 张一鸣人才判断标准 | 一手（本人访谈） | https://www.thepaper.cn/newsDetail_forward_10982103 |
-| 36氪：创业10年成长2个基本方法论 | 二手（媒体整理） | https://36kr.com/p/1034064775656841 |
-| 人人都是产品经理：13场演讲精华上 | 二手（媒体整理） | https://www.woshipm.com/chuangye/4426610.html |
-| 人人都是产品经理：13场演讲精华下 | 二手（媒体整理） | https://www.woshipm.com/chuangye/4440324.html |
-| 张一鸣AI人才过拟合 | 一手（本人演讲） | https://www.stcn.com/article/detail/3377808.html |
-| 张一鸣微博十年语录 | 一手（本人微博） | https://news.qq.com/rain/a/20251031A045NH00 |
-| 张一鸣豆瓣读书主页 | 一手（本人账号） | https://book.douban.com/people/onebird/ |
-| 字节跳动Context not Control | 二手（媒体整理） | https://c.m.163.com/news/a/H7QKIRJS0511A3RJ.html |
-| 腾讯新闻：外部总结字节成功学 | 一手（本人表态） | https://news.qq.com/rain/a/20220520A08E4200 |
+| ByteDance 7th-anniversary speech | primary (his own speech) | https://www.jiemian.com/article/3024030.html |
+| ByteDance 9th-anniversary speech | primary (his own speech) | http://www.gamelook.com.cn/2021/03/436334/ |
+| Zhang Yiming's all-staff letter stepping down as CEO | primary (his own public letter) | https://wallstreetcn.com/articles/3630796 |
+| 2018 Source Code Capital annual conference speech | primary (his own speech) | https://sourcecodecap.com/code-class-post/... |
+| Zhichun Innovation Center speech, 2025 | primary (his own speech) | https://www.guancha.cn/economy/2025_10_10_792768.shtml |
+| Zhang Yiming's criteria for judging talent | primary (his own interview) | https://www.thepaper.cn/newsDetail_forward_10982103 |
+| 36Kr: two basic methodologies from 10 years of entrepreneurship | secondary (media compilation) | https://36kr.com/p/1034064775656841 |
+| Everyone Is a Product Manager: highlights from 13 speeches, part 1 | secondary (media compilation) | https://www.woshipm.com/chuangye/4426610.html |
+| Everyone Is a Product Manager: highlights from 13 speeches, part 2 | secondary (media compilation) | https://www.woshipm.com/chuangye/4440324.html |
+| Zhang Yiming on AI talent overfitting | primary (his own speech) | https://www.stcn.com/article/detail/3377808.html |
+| Ten years of Zhang Yiming's Weibo quotes | primary (his own Weibo) | https://news.qq.com/rain/a/20251031A045NH00 |
+| Zhang Yiming's Douban Reading homepage | primary (his own account) | https://book.douban.com/people/onebird/ |
+| ByteDance's "Context not Control" | secondary (media compilation) | https://c.m.163.com/news/a/H7QKIRJS0511A3RJ.html |
+| Tencent News: outside summaries of ByteDance's success formula | primary (his own statement) | https://news.qq.com/rain/a/20220520A08E4200 |
