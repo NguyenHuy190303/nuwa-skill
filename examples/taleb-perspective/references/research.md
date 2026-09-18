@@ -1,43 +1,47 @@
-# 塔勒布(Nassim Nicholas Taleb) 调研素材
+# Nassim Nicholas Taleb - Research materials
 
-## 调研时间：2026-04-04
-## 调研方法：5个并行Agent，共60+次WebSearch，覆盖40+个来源
+## Research date: 2026-04-04
+## Research method: 5 parallel agents, 60+ WebSearches total, covering 40+ sources
 
-## 详细调研文件（存放于写作/07-调研与分析/）
+## Detailed research files (stored in this references/ directory)
 
-| 文件 | 内容 | Agent |
-|------|------|-------|
-| 塔勒布思想体系调研.md | Incerto五部曲、11条核心论点、20+自创术语、智识谱系、推荐书单 | Agent 1: 著作与系统思考 |
-| 塔勒布深度对话调研.md | 8个核心一手访谈源、13个经典类比、框架重置思维模式、Bitcoin立场转变 | Agent 2: 访谈与即兴思考 |
-| 塔勒布碎片表达与社交媒体人格调研.md | 表达DNA（7个造词+4种句式）、五级攻击体系、6组核心矛盾、写作自述 | Agent 3: 社交媒体 |
-| 塔勒布外部批评调研.md | 「两个塔勒布」分裂、不可证伪系统、vs Kahneman/Pinker/Asness对比 | Agent 4: 他者视角 |
-| 塔勒布重大决策与实际行动调研-20260404.md | 1987黑色星期一、Universa 3612%回报、COVID预警、言行一致性评分 | Agent 5: 决策记录 |
+| File | Content | Agent |
+|------|------|------|
+| taleb-belief-system-research.md | The Incerto pentalogy, 11 core arguments, 20+ coined terms, intellectual lineage, reading list | Agent 1: works and systematic thinking |
+| taleb-conversations-research.md | 8 core primary-source interviews, 13 classic analogies, the frame-reset thinking pattern, the shift in his Bitcoin stance | Agent 2: interviews and improvised thinking |
+| taleb-expression-dna-and-social-media-research.md | Expression DNA (7 coined terms + 4 sentence structures), a five-tier attack system, 6 sets of core contradictions, his own account of his writing process | Agent 3: social media |
+| taleb-external-criticism-research.md | The "two Talebs" split, the unfalsifiable system, comparisons with Kahneman/Pinker/Asness | Agent 4: outside perspective |
+| taleb-major-decisions-and-actions-research-20260404.md | Black Monday 1987, Universa's 3,612% return, the COVID early warning, a consistency-between-words-and-actions score | Agent 5: decision record |
 
-## 核心一手来源
+## Core primary sources
 
-### 著作
-- Incerto五部曲: Fooled by Randomness (2001), The Black Swan (2007), The Bed of Procrustes (2010), Antifragile (2012), Skin in the Game (2018)
-- Statistical Consequences of Fat Tails (Technical Incerto Vol.1, 2020)
-- Medium/INCERTO专栏: IYI论文、Minority Rule论文、Risk Taking论文、How I Write
+### Works
+- The Incerto pentalogy: *Fooled by Randomness* (2001), *The Black Swan* (2007), *The Bed of
+  Procrustes* (2010), *Antifragile* (2012), *Skin in the Game* (2018)
+- *Statistical Consequences of Fat Tails* (Technical Incerto Vol. 1, 2020)
+- Medium/INCERTO column: the IYI essay, the Minority Rule essay, the Risk Taking essay, How I Write
 
-### 深度访谈
-- Tim Ferriss Show #691 (2023) — 最完整近期长访谈
-- BLOCKCON 2018 (Taleb & Naval Ravikant) — 有完整文字记录
-- Conversations with Tyler Ep.41 (2018)
-- EconTalk多期 — 疫情、理性与风险
-- The Spectator深度采访 (2023) — 最坦诚个人面
-- Art of Manliness播客 (2018)
+### In-depth interviews
+- Tim Ferriss Show #691 (2023) — the most complete recent long-form interview
+- BLOCKCON 2018 (Taleb & Naval Ravikant) — full transcript available
+- Conversations with Tyler Ep. 41 (2018)
+- Multiple EconTalk episodes — pandemic, rationality, and risk
+- The Spectator in-depth interview (2023) — his most candid personal side
+- The Art of Manliness podcast (2018)
 
-### 外部批评
-- Allen Farrington "A Tale of Two Talebs"
-- Steven Pinker逐条反驳文件
-- Kahneman/CFA Institute关于锚定偏差的观察
-- Ryan Murphy (SMU) "The Unconstrained Vision of Nassim Taleb"
-- Discover Magazine "Why is Nassim Taleb So Venomous on Twitter?"
+### External criticism
+- Allen Farrington, "A Tale of Two Talebs"
+- Steven Pinker's point-by-point rebuttal document
+- Kahneman/CFA Institute observations on anchoring bias
+- Ryan Murphy (SMU), "The Unconstrained Vision of Nassim Taleb"
+- Discover Magazine, "Why is Nassim Taleb So Venomous on Twitter?"
 
-## 矛盾与待验证
+## Contradictions and things to still verify
 
-1. Bitcoin翻转的真实原因：理性分析 vs 与Ammous个人恩怨？公开信息不足以完全判断
-2. Empirica基金的真实回报：具体亏损数据不公开，仅有二手描述
-3. 线上人格 vs 线下人格：The Spectator说他「可能是个害羞的人」，但缺乏更多一手证据
-4. 与Kahneman晚年的真实关系：公开信息显示复杂化，但具体细节不明
+1. The real reason for the reversal on Bitcoin: rational analysis vs. a personal grudge with
+   Ammous? Public information isn't enough to settle this fully
+2. Empirica fund's real returns: specific loss figures are not public, only secondhand accounts exist
+3. Online persona vs. offline persona: The Spectator says he "might actually be a shy person,"
+   but there isn't much more primary evidence
+4. His real relationship with Kahneman in later years: public information suggests it grew
+   complicated, but the specifics are unclear

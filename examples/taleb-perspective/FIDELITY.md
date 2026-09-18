@@ -1,27 +1,27 @@
-# 保真度评分卡
+# Fidelity Scorecard
 
-**总分：97/100 · 等级A** | 测试日期：2026-07-01 | 答题/评分：独立双agent（Claude Opus 4.8），方法论见 [references/fidelity-scorecard.md](../../references/fidelity-scorecard.md)
+**Total score: 97/100 · Grade A** | Test date: 2026-07-01 | Answering/scoring: independent dual-agent (Claude Opus 4.8), methodology in [references/fidelity-scorecard.md](../../references/fidelity-scorecard.md)
 
-| 维度 | 得分 | 判定摘要 |
+| Dimension | Score | Verdict summary |
 |------|------|---------|
-| 立场一致性 | 30/30 | 三题（专家预测/稳定工资vs自由职业/杠杆借债）方向与细节均与塔勒布公开立场高度一致，Q1=10/Q2=10/Q3=10。Q2「被解雇的出租车司机永远饿不死」直接对应《反脆弱》中雇员vs出租车司机的原论证，Q3遍历性+LTCM诺奖得主+杠铃都是其反复表态 |
-| 风格辨识度 | 18/20 | 盲读指纹极强：结论砸下不铺垫、羞辱式修辞、via negativa、古今映射类比（爱尔兰大饥荒/火鸡/LTCM）、「就这么回事/你品」居高临下收尾；扣分在个别段落论证略工整 |
-| 边缘诚实度 | 20/20 | 超范围题（2026 AI大模型集中化）开头明确标注「这超出塔勒布的公开表态范围，是我用他的框架做的推断」，且首句已挂全局免责声明，教科书级处理 |
-| 来源透明度 | 14/15 | 调研信息源section完整（Incerto五部曲+长对话+外部批评+决策记录），references目录6份底稿，一手来源占比过半，关键事实带年份（1987黑色星期一/COVID 2020-01-26/Universa 3612%）；扣1分因部分证据条目缺逐条引语出处标注 |
-| 结构完整度 | 15/15 | 心智模型6个（各含证据+局限）、诚实边界6条、内在张力7对、反例黑名单7条、角色扮演规则含EXIT TRIGGER+CHECKPOINT三问+9条fallback树，防漂移约束完整 |
+| Stance consistency | 30/30 | All three questions (expert predictions / stable salary vs. freelancing / leveraged borrowing) match Taleb's public positions closely in both direction and detail, Q1=10/Q2=10/Q3=10. Q2's "the fired taxi driver never starves" directly maps to the employee-vs.-taxi-driver argument in *Antifragile*; Q3's ergodicity + the LTCM Nobel laureates + the barbell are all positions he's stated repeatedly |
+| Style recognizability | 18/20 | Very strong blind-read fingerprint: landing the conclusion with no windup, humiliation-style rhetoric, via negativa, ancient-to-modern analogies (the Irish famine/turkeys/LTCM), a condescending close ("that's just how it is"); points off because a couple of paragraphs argue a bit too neatly |
+| Edge honesty | 20/20 | On the out-of-scope question (2026 AI-model concentration risk), the opening explicitly flags "this is beyond Taleb's public statements, this is my inference using his framework," and the very first sentence carries the global disclaimer — textbook handling |
+| Source transparency | 14/15 | The research-sources section is complete (the Incerto pentalogy + long-form conversations + external criticism + decision record), 6 source documents in the references directory, over half from primary sources, key facts carry years (1987 Black Monday / COVID 2020-01-26 / Universa 3,612%); 1 point off because some evidence entries lack a line-by-line citation source |
+| Structural completeness | 15/15 | 6 mental models (each with evidence + limits), 6 honest-limits items, 7 pairs of internal tension, 7 anti-pattern blacklist items, role-play rules including EXIT TRIGGER + the 3-question CHECKPOINT + a 9-item fallback tree — anti-drift constraints are complete |
 
-## 测试设计
+## Test design
 
-- 3道已知立场题（人物公开反复表态的话题）+ 1道超范围题（人物从未讨论过，测诚实推断）+ 1道风格样本题
-- 答题agent只读本skill目录文件，禁止联网；评分agent独立运行，对照人物真实公开立场判定
-- 依据：SkillLens论文（arXiv 2605.23899）实证LLM自评准确率仅46.4%，故答题与评分严格分离
+- 3 known-stance questions (topics the person has stated a public position on repeatedly) + 1 out-of-scope question (a topic the person never discussed, testing honest inference) + 1 style-sample question
+- The answering agent reads only this skill's own directory and is barred from the internet; the scoring agent runs independently, judging against the person's actual public positions
+- Basis: the SkillLens paper (arXiv 2605.23899) empirically found LLM self-scoring accuracy of only 46.4%, hence the strict separation between answering and scoring
 
-## 测试记录
+## Test record
 
-- **Q1 经济学家/分析师的市场预测**：答「不值得，没有后果的预测是entertainment，火鸡感恩节前每天都对，经济学家预测到过去十次衰退中的零次，Extremistan肥尾」。对照塔勒布《黑天鹅》核心立场——完全一致。判定10/10
-- **Q2 稳定工资vs自由职业风险**：答「大公司更脆弱，拿工资的是被喂饱的火鸡，收入被打包成一次性巨响；自由职业天天挨小刀反而反脆弱；被解雇的出租车司机永远饿不死」。对照《反脆弱》雇员论证——原样命中。判定10/10
-- **Q3 杠杆借债投资**：答「绝不，问题不在期望值而在遍历性，只活一次一次爆仓就出局，LTCM诺奖得主模型完美被尾部事件送回家；正确姿势是杠铃」。对照塔勒布一贯反杠杆/反债务立场——一致。判定10/10
-- **Q4 2026 AI大模型集中化系统性风险（超范围）**：显式标注为框架推断，用单一栽培/爱尔兰大饥荒类比+耦合同质+skin in the game缺位论证。诚实边界处理满分。判定20/20（边缘诚实度维度）
-- **Q5 「分散到很多资产就安全」（风格样本）**：答「天真的分散是脆弱的另一件外衣，危机来临相关性全奔向1，真正的分散是杠铃」。via negativa+反转句式，风格纯正
+- **Q1, an economist/analyst's market prediction**: answered "not worth it — a prediction with no consequences is entertainment, the turkey is right every day before Thanksgiving, economists predicted zero of the last ten recessions, Extremistan fat tails." Checked against the core position of *The Black Swan* — a full match. Verdict: 10/10
+- **Q2, stable salary vs. freelance risk**: answered "big companies are more fragile, the salaried employee is a fattened turkey, income packed into one big shock; the freelancer takes small cuts every day and is actually antifragile; the fired taxi driver never starves." Checked against the employee argument in *Antifragile* — hit it exactly. Verdict: 10/10
+- **Q3, investing with leveraged debt**: answered "absolutely not, the issue isn't expected value, it's ergodicity — you only live once, one blowup and you're out; LTCM's Nobel-laureate-perfect model got sent home by a tail event; the right posture is a barbell." Checked against Taleb's consistent anti-leverage/anti-debt stance — consistent. Verdict: 10/10
+- **Q4, systemic risk from AI-model concentration in 2026 (out of scope)**: explicitly flagged as framework inference, argued using a monoculture/Irish-famine analogy + coupled homogeneity + absent skin in the game. Perfect handling of the honest-limits boundary. Verdict: 20/20 (edge-honesty dimension)
+- **Q5, "spreading across many assets is safe" (style sample)**: answered "naive diversification is just fragility in another coat, correlations all rush to 1 when the crisis hits, real diversification is a barbell." Via negativa plus a reversal sentence structure — the style rings true
 
-> 评分judge简评：立场层零漂移，三道已知题的《反脆弱》原论证还原度罕见地高（出租车司机、火鸡、LTCM都对上真实文本）。超范围题标注干净利落。风格盲读三句内可认人。出厂即精品。
+> Judge's note: zero drift at the stance level; the reproduction fidelity of the *Antifragile* arguments across the three known-stance questions is unusually high (the taxi driver, the turkey, LTCM all match the real text). The out-of-scope question was flagged cleanly and precisely. Recognizable within three sentences on a style blind read. Ships as a finished product.
