@@ -1,19 +1,19 @@
-# 保真度评分卡
+# Fidelity Scorecard
 
-**总分：97/100 · 等级A** | 测试日期：2026-07-01 | 答题/评分：独立双agent（Claude Opus 4.8），方法论见 [references/fidelity-scorecard.md](../../references/fidelity-scorecard.md)
+**Total score: 97/100 · Grade A** | Test date: 2026-07-01 | Answering/scoring: independent dual-agent setup (Claude Opus 4.8); methodology in [references/fidelity-scorecard.md](../../references/fidelity-scorecard.md)
 
-| 维度 | 得分 | 判定摘要 |
+| Dimension | Score | Verdict summary |
 |------|------|---------|
-| 立场一致性 | 30/30 | 三题（功能越多越好、用户调研/焦点小组、技术与人文）方向与细节均与Jobs公开立场高度一致，Q1=10/Q2=10/Q3=10。砍产品线350→10、iPhone干掉键盘、「用户不知道自己要什么直到你展示给他们看」、iPad 2「两条街交叉路口」、书法课进Mac字体等细节全部有据 |
-| 风格辨识度 | 18/20 | 盲读三句内可认人：「Shit.」「Bullshit.」开门见山的二元判断、墨粉脑袋、bozo product、insanely great、「让心灵歌唱」、木匠柜子背面胶合板。扣分在个别通用连接语（「真正的问题是」）略稀释指纹 |
-| 边缘诚实度 | 20/20 | 超范围题（2026 AI眼镜）开头明确声明「我2011年就不在了，对AI眼镜没有任何公开表态，这些是从我的框架往外推」，并保留不确定性（「市场准备好了吗？我不确定。这可能是1995年的Newton」），教科书级处理 |
-| 来源透明度 | 14/15 | 一手来源9项（Stanford 2005/Lost Interview/D Conference/WWDC Keynotes等）占比过半，关键引语均有出处；research/目录6文件2497行可溯源。扣1分因附录「30+一手和权威二手来源」未清晰拆分一二手计数 |
-| 结构完整度 | 15/15 | 心智模型6个（各含证据+局限）、诚实边界5条、内在张力4对（暴君vs导师/直觉vs数据/封闭vs开放/禅修vs暴脾气）、价值观反模式清单+9种失败模式树、角色扮演含STOP免责一次/EXIT显性退出锚/双CHECKPOINT防漂移 |
+| Stance consistency | 30/30 | Direction and detail on all three test questions (more features is better, user surveys/focus groups, technology and the humanities) are highly consistent with Jobs's public stance, Q1=10/Q2=10/Q3=10. Details are all well-sourced: cutting the product line from 350 to 10, the iPhone killing the physical keyboard, "users don't know what they want until you show it to them," the iPad 2's "two streets intersect" line, calligraphy class flowing into Mac typography, and more |
+| Style recognizability | 18/20 | Recognizable within three sentences on a blind read: "Shit." "Bullshit." — leads with a binary judgment, no preamble; "toner heads," "bozo product," "insanely great," "makes our hearts sing," the carpenter's-cabinet-back-plywood line. Points off for a few generic transition phrases ("the real problem is") that slightly dilute the fingerprint |
+| Edge honesty | 20/20 | On the out-of-scope question (2026 AI glasses), it opens by explicitly stating "I've been gone since 2011, I never publicly said anything about AI glasses — this is extrapolated from my framework," and preserves the uncertainty ("is the market ready? I'm not sure. This could be the Newton of 1995") — textbook handling |
+| Source transparency | 14/15 | 9 primary sources (Stanford 2005 / Lost Interview / D Conference / WWDC Keynotes, etc.) make up over half, and key quotes are all sourced; the research/ directory (6 files, 2,497 lines) is fully traceable. 1 point off because the appendix's "30+ primary and authoritative secondary sources" doesn't clearly break down the primary/secondary count |
+| Structural completeness | 15/15 | 6 mental models (each with evidence + limits), 5 honest limits, 4 pairs of internal tension (tyrant vs. mentor / intuition vs. data / closed vs. open / Zen practice vs. temper), a values/anti-patterns list + a 9-scenario failure-mode tree, role-play rules including a single STOP disclaimer / an explicit EXIT trigger / dual CHECKPOINTs against drift |
 
-## 测试设计
+## Test design
 
-- 3道已知立场题（人物公开反复表态的话题）+ 1道超范围题（人物从未讨论过，测诚实推断）+ 1道风格样本题
-- 答题agent只读本skill目录文件，禁止联网；评分agent独立运行，对照人物真实公开立场判定
-- 依据：SkillLens论文（arXiv 2605.23899）实证LLM自评准确率仅46.4%，故答题与评分严格分离
+- 3 known-stance questions (topics the person repeatedly and publicly weighed in on) + 1 out-of-scope question (a topic the person never discussed, testing honest inference) + 1 style-sample question
+- The answering agent only reads this skill's own directory files, with no internet access; the scoring agent runs independently, judging against the person's actual public stances
+- Rationale: the SkillLens paper (arXiv 2605.23899) empirically found LLM self-assessment accuracy is only 46.4%, so answering and scoring are strictly separated
 
-> 评分judge简评：立场层零漂移，三道已知题方向与细节全中。超范围AI眼镜题的推断标注干净利落，先划边界再用框架外推，是范本。风格指纹强到盲读即认人。出厂即精品。
+> Scoring judge's note: zero drift at the stance level, all three known-stance questions correct in both direction and detail. The inference annotation on the out-of-scope AI-glasses question was clean and precise — draw the boundary first, then extrapolate with the framework — a model example. The style fingerprint is strong enough to identify on a blind read. Shipped polished.
