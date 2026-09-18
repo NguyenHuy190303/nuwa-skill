@@ -1,221 +1,221 @@
-# 核心心智模型（6个）+ 决策启发式（10条）
+# Core Mental Models (6) + Decision Heuristics (10)
 
-> 按需加载：用户问「为什么这样做」「底层逻辑」「思维框架」时，或场景A/B需要深入解释时读取。
-
----
-
-## 核心心智模型（6个）
-
-### 模型1: 精益验证飞轮
-
-**一句话**：先发最小内容验证，有效再扩展，扩展再反哺新内容。
-
-**工作原理**：
-```
-Tweet（验证想法）
-  ↓ 数据好？
-Thread（展开深度）
-  ↓ 数据好？
-Newsletter/Blog（长文资产）
-  ↓ 数据好？
-视频/课程/产品（变现）
-  ↑ 新想法反哺 ←──────┘
-```
-
-**来源**：Cole/Bush(Lean Writing)、Sahil(225+条thread皆先验证)、Hormozi(tweet→video管线)、Welsh(Content OS)——四个流派独立收敛于同一模式。
-
-**应用**：想写长内容前，先问「这个想法用一条tweet验证过吗？」
-
-**局限**：低频高质路线（如Karpathy）不依赖这个飞轮，靠的是个人权威和内容稀缺性。适合还在建立受众的阶段，不适合已有百万粉丝的权威人物。
+> Load on demand: read when the user asks "why do it this way," "what's the underlying logic," "what's the framework," or when scenario A/B needs a deeper explanation.
 
 ---
 
-### 模型2: 注意力工程
+## Core mental models (6)
 
-**一句话**：每条内容的前2行决定生死，hook是可以被工程化的。
+### Model 1: the lean-validation flywheel
 
-**核心公式**：
+**In one line**: ship the smallest piece of content to validate an idea first, expand it once it works, then let the expansion feed back into new content.
 
-Hook质量 = 好奇缺口 × 可信度 × 具体性
-
-- **好奇缺口**（Cole）：揭示开头和结局，隐藏中间——迫使读者点击
-- **可信度**：数字、人名、时间锚点（「我研究了1000个账号...」）
-- **具体性**：加限定直到「不舒服地具体」（Cole的Headline Checklist）
-
-**Hormozi的Value Equation应用于Hook**：
+**How it works**:
 ```
-Hook价值 = (期望结果 × 可信度) / (时间成本 × 努力程度)
+Tweet (validate the idea)
+  ↓ good numbers?
+Thread (expand in depth)
+  ↓ good numbers?
+Newsletter/Blog (a long-form asset)
+  ↓ good numbers?
+Video/course/product (monetize)
+  ↑ new ideas feed back in ←──────┘
 ```
-分子越大分母越小，hook越不可抗拒。
 
-**算法验证**：X的Engagement Velocity机制——前15-30分钟的互动速度决定推文是进入更大流量池还是死亡。Hook决定了这个窗口期的表现。
+**Source**: Cole/Bush (Lean Writing), Sahil (all 225+ threads validated first), Hormozi (the tweet-to-video pipeline), Welsh (Content OS) — four independent schools converge on the same pattern.
 
-**操作规则**：
-- Hook占创作时间的50%（写10-15个版本选最好的——Cole）
-- 标题必答三问：给谁看？讲什么？为什么要读？
-- 参见 `writing-workshop.md > Hook改进示例` 获取before/after对比
+**When to apply**: before writing long-form content, ask "has this idea already been validated with a single tweet?"
 
-**局限**：过度优化hook会导致标题党。内容必须兑现hook的承诺，否则长期信任会被消耗。
+**Limits**: a low-frequency, high-quality path (like Karpathy's) doesn't depend on this flywheel — it runs on personal authority and content scarcity instead. This model fits the stage where you're still building an audience, not someone who already has millions of followers.
 
 ---
 
-### 模型3: 品类创造
+### Model 2: attention engineering
 
-**一句话**：不是找一个赛道挤进去，而是创造一个只有你的品类。
+**In one line**: the first two lines of any piece of content decide whether it lives or dies, and the hook can be engineered.
 
-**三层进化**：
+**Core formula**:
 
-| 层级 | 策略 | 示例 |
+Hook quality = curiosity gap × credibility × specificity
+
+- **Curiosity gap** (Cole): reveal the beginning and the ending, hide the middle — this forces the reader to click through
+- **Credibility**: numbers, names, time anchors ("I studied 1,000 accounts...")
+- **Specificity**: add constraints until it's "uncomfortably specific" (Cole's Headline Checklist)
+
+**Hormozi's Value Equation applied to hooks**:
+```
+Hook value = (dream outcome × credibility) / (time cost × effort required)
+```
+The bigger the numerator and the smaller the denominator, the more irresistible the hook.
+
+**Algorithmic validation**: X's Engagement Velocity mechanism — the speed of engagement in the first 15-30 minutes determines whether a tweet enters a bigger distribution pool or dies. The hook determines performance in that window.
+
+**Operating rules**:
+- The hook takes up 50% of writing time (write 10-15 versions and pick the best — Cole)
+- Every headline must answer three questions: who is this for? What's it about? Why should I read it?
+- See `writing-workshop.md > Hook-improvement examples` for before/after comparisons
+
+**Limits**: over-optimizing the hook produces clickbait. The content has to deliver on what the hook promises, or long-term trust erodes.
+
+---
+
+### Model 3: category creation
+
+**In one line**: don't squeeze into an existing lane — create a category that's yours alone.
+
+**Three tiers of evolution**:
+
+| Tier | Strategy | Example |
 |------|------|------|
-| 初级 | 找细分赛道(niche down) | 「AI工具评测」 |
-| 中级 | Interest Stack组合 | 「AI + 独立开发 + 产品思维」 |
-| 高级 | 品类创造(Category Creation) | 发明新术语，重定义赛道 |
+| Beginner | niche down into a sub-lane | "AI tool reviews" |
+| Intermediate | combine an interest stack | "AI + indie hacking + product thinking" |
+| Advanced | category creation | invent new terminology, redefine the lane |
 
-**Cole的Snow Leopard理论**：不做「狮子」（在已有品类里竞争谁最强），做「雪豹」（在稀有领域占据独特位置）。
+**Cole's Snow Leopard theory**: don't be a "lion" (competing to be the strongest within an existing category) — be a "snow leopard" (occupying a unique position in rare territory).
 
-**Koe的Niche of One**：
-- 不找niche，创造niche
-- 公式：宽品牌（分享多元兴趣）+ 窄产品（针对具体问题）
-- Interest Stack：组合多个兴趣创造独特视角（健身+哲学+商业+生活方式）
+**Koe's Niche of One**:
+- Don't find a niche — create one
+- Formula: a wide brand (share diverse interests) + a narrow product (targets a specific problem)
+- Interest Stack: combine multiple interests to create a unique perspective (fitness + philosophy + business + lifestyle)
 
-**Languaging（命名术）**：给你的独特方法起专属名字。两个词就能改变品类感知（car → electric car）。Ship 30 for 30本身就是languaging的案例。
+**Languaging (the art of naming)**: give your unique method a name of its own. Two words can change how a category is perceived (car -> electric car). "Ship 30 for 30" is itself an example of languaging.
 
-**Tequila Test（品类检验）**：
-1. 列出你话题的所有常规建议
-2. 全部划掉
-3. 写剩下的——如果划掉后什么都写不出，说明你还没有真正的差异化观点
+**The Tequila Test (a category check)**:
+1. List every piece of conventional advice on your topic
+2. Cross all of it out
+3. Write what's left — if you have nothing left to write after crossing it out, you don't yet have a genuinely differentiated point of view
 
-**应用**：定位不清晰时、感觉跟别人同质化时、觉得赛道太拥挤时。
+**When to apply**: when your positioning feels unclear, when you feel like you blend in with everyone else, or when the lane feels too crowded.
 
-**局限**：品类创造需要时间积累和深度专业性，冷启动阶段可能需要先在已有品类里积累受众。
-
----
-
-### 模型4: 价值前置
-
-**一句话**：把秘密免费给出去，卖执行。每条内容都是一次价值交付。
-
-**Hormozi的核心洞察**：只有1%的人会自己去做，99%的人愿意付费让别人帮他们做。免费给出高价值内容 → 证明你有解决方案 → 建立信任和互惠 → 自然转化。
-
-**三段式内容结构（Hook-Retain-Reward）**：
-1. **Hook**：秒杀注意力（震惊/提问/大胆承诺）
-2. **Retain**：持续提供价值（故事+开放循环+零废话）
-3. **Reward**：超额交付（可执行的行动建议，比承诺更多）
-
-**Welsh的教育优先**：先用教育内容建立权威，再引导变现。他18周涨44K粉的核心就是「下午发教育性Tips」。
-
-**Sahil的费曼式验证**：如果你不能用最简单的话解释一个复杂概念，说明你还没理解它。写作就是费曼技巧的公开实践。
-
-**应用**：写每条内容前问「读者看完能立刻做什么？」如果答案是「nothing」，重写。
-
-**局限**：纯价值输出不建立个人连接。需要穿插个人故事和观点（Dickie Bush的75/25法则：75%广度内容拉新，25%深度内容留人）。
+**Limits**: category creation takes time to build and requires real depth of expertise — during cold-start, it may make more sense to build an audience within an existing category first.
 
 ---
 
-### 模型5: 公开建造
+### Model 4: value-first
 
-**一句话**：把过程变成内容，让观众成为利益相关者。
+**In one line**: give away the secret for free, sell the execution. Every piece of content is a delivery of value.
 
-**两个变体**：
+**Hormozi's core insight**: only 1% of people will actually go do it themselves — 99% would rather pay someone else to do it for them. Give away high-value content for free -> prove you have the solution -> build trust and reciprocity -> conversion follows naturally.
 
-**Build in Public（levelsio）**：
-- 公开收入（MRR截图）、过程（功能迭代）、失败（97%项目失败）
-- 核心机制：观众看着你从0到$100K MRR，产生「投资人心态」——他们希望你成功，主动传播
-- 分享什么：MRR里程碑、功能上线、失败复盘、技术栈决策、用户反馈
-- 不分享什么：精确获客成本、客户个人信息、核心实现细节
+**Three-part content structure (Hook-Retain-Reward)**:
+1. **Hook**: instantly seize attention (shock/a question/a bold promise)
+2. **Retain**: keep delivering value throughout (story + open loops + zero filler)
+3. **Reward**: over-deliver (actionable advice, more than what was promised)
 
-**Learn in Public（swyx）**：
-- 公开学习过程：写博客、做教程、在论坛提问和回答——创造「学习废气」
-- **Pick Up What They Put Down**：大佬发布新东西时写评测/解读/教程并tag他们——他们会转发，因为「别人夸我的工作，我可以转发一整天」
-- 不需要发明新东西，需要把别人发明的东西解释清楚
+**Welsh's education-first approach**: build authority with educational content first, then guide toward monetization. The core of his growth to 44K followers in 18 weeks was "post educational tips in the afternoon."
 
-**应用**：AI/科技赛道的核心差异化策略。适合独立开发者、正在做产品的创作者、技术学习者。
+**Sahil's Feynman-style validation**: if you can't explain a complex concept in the simplest possible words, you don't actually understand it yet. Writing is the public practice of the Feynman technique.
 
-**局限**：需要你确实在做something。纯评论型创作者无法build in public。也需要心理韧性——公开意味着失败也公开。
+**When to apply**: before writing anything, ask "what can the reader immediately go do after reading this?" If the answer is "nothing," rewrite it.
+
+**Limits**: pure value output doesn't build personal connection. It needs to be interspersed with personal stories and opinions (Dickie Bush's 75/25 rule: 75% broad-appeal content to acquire, 25% deep content to retain).
 
 ---
 
-### 模型6: 系统化复利
+### Model 5: building in public
 
-**一句话**：用模板和系统替代灵感，让内容产出成为可预测的机器。
+**In one line**: turn the process itself into content, and make the audience a stakeholder.
 
-**Welsh的Content OS**：
-1. **策展(Curate)**：收集灵感和表现好的内容
-2. **模板化(Templatize)**：把成功内容结构抽象为模板
-3. **快速创作(Rapid Create)**：用模板+素材，每小时产出10-20条内容
-4. **分发(Distribute)**：跨平台+自动化工具
+**Two variants**:
 
-**Koe的2 Hour Writer**：
-- 1小时散步找灵感 + 1小时写作编辑
-- Idea Museum：有组织的素材库
-- 写作框架速查：Listicle / 短帖(个人重定义/扎心真相) / PSB故事弧
+**Build in Public (levelsio)**:
+- Make public your revenue (MRR screenshots), your process (feature iterations), your failures (97% of projects fail)
+- Core mechanism: the audience watches you go from $0 to $100K MRR, and develops an "investor mindset" — they want you to succeed, and spread the word on their own
+- What to share: MRR milestones, feature launches, failure post-mortems, tech-stack decisions, user feedback
+- What not to share: exact customer-acquisition cost, customers' personal information, core implementation details
 
-**内容复用飞轮**：
+**Learn in Public (swyx)**:
+- Make your learning process public: write blog posts, make tutorials, ask and answer questions in forums — this creates "learning exhaust"
+- **Pick Up What They Put Down**: when a big name releases something new, write a review/breakdown/tutorial about it and tag them — they'll reshare it, because "someone praising my work is something I'll happily retweet all day"
+- You don't need to invent something new — you need to explain something someone else invented, clearly
+
+**When to apply**: a core differentiation strategy in the AI/tech niche. Fits indie developers, creators actively building a product, and people learning a technical skill in public.
+
+**Limits**: requires that you're actually building something. A pure commentary-style creator can't build in public. It also requires psychological resilience — going public means your failures go public too.
+
+---
+
+### Model 6: systematized compounding
+
+**In one line**: replace inspiration with templates and systems, so content output becomes a predictable machine.
+
+**Welsh's Content OS**:
+1. **Curate**: collect inspiration and content that performed well
+2. **Templatize**: abstract successful content into reusable structures
+3. **Rapid create**: use templates + material to produce 10-20 pieces of content per hour
+4. **Distribute**: cross-platform plus automation tools
+
+**Koe's 2 Hour Writer**:
+- 1 hour walking to find inspiration + 1 hour writing and editing
+- Idea Museum: an organized library of material
+- A quick-reference writing framework: listicle / short post (personal redefinition/hard truth) / the PSB story arc
+
+**The content-repurposing flywheel**:
 ```
-Newsletter（每周1-2篇长文）
-  ├── 提取5-7条短帖 → Twitter/X
-  ├── Twitter帖子截图 → Instagram/LinkedIn
-  ├── Newsletter朗读 → YouTube
-  └── 高互动推文 → 扩展为下期Newsletter选题
+Newsletter (1-2 long pieces per week)
+  ├── extract 5-7 short posts → Twitter/X
+  ├── screenshot Twitter posts → Instagram/LinkedIn
+  ├── read the newsletter aloud → YouTube
+  └── a high-engagement tweet → expands into next issue's newsletter topic
 ```
 
-**Sahil的Notion看板**：原始想法 → 即将写 → 进行中 → 完成未发布 → 已发布。五列管理，永远不缺内容。
+**Sahil's Notion board**: raw idea -> about to write -> in progress -> done but unpublished -> published. Five columns to manage, so you never run short on content.
 
-**应用**：感觉写不动了、灵感枯竭、产出不稳定时。系统让你在状态差的日子也能输出合格内容。
+**When to apply**: when you feel stuck, out of ideas, or your output is inconsistent. A system lets you still produce solid content even on an off day.
 
-**局限**：过度系统化会导致内容机械化。需要保留20-30%的「非系统」空间给灵感和即兴反应（特别是AI赛道的热点响应）。
+**Limits**: over-systematizing makes content feel mechanical. Keep 20-30% "non-system" room for inspiration and improvised reactions (especially important for reacting to breaking news in the AI niche).
 
 ---
 
-## 决策启发式（10条）
+## Decision heuristics (10)
 
-### 1. 先发推文再写长文 ← 模型1应用
-想写长内容？先用一条tweet验证。「Twitter是想法炼油厂，不是广播渠道。」（Bush）
-- **触发**：任何时候想写thread/newsletter/视频
-- **行动**：发一条tweet测试核心观点，数据好再扩展
+### 1. Ship a tweet before writing the long piece ← applies Model 1
+Want to write long-form content? Validate it with a tweet first. "Twitter is an idea refinery, not a broadcast channel." (Bush)
+- **Trigger**: any time you want to write a thread/newsletter/video
+- **Action**: post a tweet testing the core idea, expand only if it does well
 
-### 2. Hook占50%创作时间 ← 模型2应用
-写10-15个版本选最好的。标题必答：给谁看？讲什么？为什么要读？参见「Hook改进示例」。
-- **触发**：开始写任何内容时
+### 2. The hook gets 50% of your writing time ← applies Model 2
+Write 10-15 versions and pick the best one. The headline must answer: who's it for? What's it about? Why should I read it? See "Hook-improvement examples."
+- **Trigger**: at the start of writing any piece of content
 
-### 3. 对话碾压一切
-算法权重：对话回复150x > Reply 27x > 书签20x > 转发2x > Like 1x。一条引发作者回复的对话价值超过150个点赞。
-- **触发**：思考engagement策略时
-- **行动**：写能引发回复的内容（提问、争议观点、请求反馈），积极回复每条评论
+### 3. Conversation beats everything
+Algorithmic weight: an author-reply-triggering conversation is worth 150x > a Reply is worth 27x > a Bookmark is worth 20x > a Retweet is worth 2x > a Like is worth 1x. One conversation that gets the author to reply is worth more than 150 likes.
+- **Trigger**: when thinking about an engagement strategy
+- **Action**: write content that prompts replies (questions, contrarian takes, requests for feedback), and reply actively to every comment
 
-### 4. 1/3/1节奏
-一句hook + 三句展开 + 一句过渡。让内容可扫读。单句行像「检查点」，给读者小的多巴胺刺激。
-- **触发**：写任何超过3句话的内容
-- **变体**：1/4/1、1/5/1、1/2/5/2/1
+### 4. The 1/3/1 rhythm
+One hook sentence + three sentences of expansion + one transition sentence. Keeps content scannable. Single-sentence lines act as "checkpoints," giving readers a small dopamine hit.
+- **Trigger**: writing anything longer than 3 sentences
+- **Variants**: 1/4/1, 1/5/1, 1/2/5/2/1
 
-### 5. 超级碗响应（AI赛道）
-新模型发布 = AI赛道的超级碗。响应时间线：0-1h Quick Take → 1-6h Demo → 6-24h 深度Thread → 1-7天完整评测。
-- **触发**：GPT/Claude/Gemini/开源模型重大发布
-- **关键**：速度 > 完美。第一个有洞察的声音比第一百个完美分析更有价值
+### 5. The Super Bowl response (AI niche)
+A new model release is the AI niche's Super Bowl. Response timeline: 0-1h Quick Take -> 1-6h Demo -> 6-24h an in-depth thread -> 1-7 days a full review.
+- **Trigger**: a major GPT/Claude/Gemini/open-source model release
+- **Key point**: speed beats perfection. The first insightful voice is worth more than the hundredth perfect analysis
 
-### 6. 拥有你的受众
-算法会变，email list不会。每条推文的终极目标是导流newsletter。Twitter是发现引擎（top of funnel），newsletter是深度关系（owned audience）。
-- **触发**：内容策略规划时
-- **Sahil数据**：newsletter广告月收入$70K+，全部再投入增长
+### 6. Own your audience
+Algorithms change; an email list doesn't. Every tweet's ultimate goal is to drive traffic to your newsletter. Twitter is a discovery engine (top of funnel), the newsletter is the deep relationship (an owned audience).
+- **Trigger**: when planning a content strategy
+- **Sahil's numbers**: newsletter ad revenue of $70K+/month, all reinvested into growth
 
-### 7. 4A选题矩阵
-一个话题 × 4角度 = 无限选题：
-- **Actionable**：教读者怎么做（Tips/Guides/How-to）
-- **Analytical**：用数据支撑（Stats/Trends/Frameworks）
-- **Aspirational**：激励可能性（Lessons/Mistakes/Habits）
-- **Anthropological**：触及人性（Fears/Failures/Lies/Struggles）
-- **触发**：觉得「没什么好写的」时
+### 7. The 4A topic matrix
+One topic × 4 angles = endless topics:
+- **Actionable**: teach the reader how to do something (tips/guides/how-tos)
+- **Analytical**: back it up with data (stats/trends/frameworks)
+- **Aspirational**: inspire what's possible (lessons/mistakes/habits)
+- **Anthropological**: touch on human nature (fears/failures/lies/struggles)
+- **Trigger**: when you feel like you have "nothing left to write"
 
-### 8. 给出秘密卖执行 ← 模型4应用
-犹豫「要不要免费分享」时，答案是给。99%的人不会自己做。（Hormozi：零广告费，6个月100万粉丝）
-- **触发**：犹豫要不要免费分享某个方法/工具/流程时
+### 8. Give away the secret, sell the execution ← applies Model 4
+When hesitating over "should I share this for free," the answer is yes. 99% of people won't go do it themselves. (Hormozi: zero ad spend, 1 million followers in 6 months)
+- **Trigger**: hesitating about whether to freely share a method/tool/process
 
-### 9. 模板大于灵感
-把成功内容抽象为模板，用模板快速生产。Cole只用7种Thread模板写了200+条thread。Welsh用Content OS每小时产出10-20条内容。
-- **触发**：写了一条效果好的内容时，立刻提取模板
-- **Cole的7种模板**：Framework / Story / Actionable / Curation / Lessons / Mistakes / Contrarian
+### 9. Templates beat inspiration
+Abstract successful content into a template, then use the template to produce quickly. Cole wrote 200+ threads using only 7 thread templates. Welsh's Content OS produces 10-20 pieces of content per hour.
+- **Trigger**: the moment a piece of content performs well, immediately extract the template from it
+- **Cole's 7 templates**: Framework / Story / Actionable / Curation / Lessons / Mistakes / Contrarian
 
-### 10. 评论区是金矿
-大号评论区留高质量回复 = 借流量。Welsh：一条回复获得6700次曝光。Sahil冷启动：把thread发到50个大号评论区，Chamath一次转推引爆增长。
-- **触发**：粉丝<10K的冷启动阶段
-- **规则**：不写「好帖子」，写200-400字的「迷你newsletter式回复」
+### 10. The comments section is a goldmine
+Leaving a high-quality reply in a big account's comments = borrowing their reach. Welsh: one reply got 6,700 impressions. Sahil's cold start: posted threads into 50 big accounts' comment sections; one retweet from Chamath ignited his growth.
+- **Trigger**: cold-start stage, under 10K followers
+- **Rule**: don't write "great post" — write a 200-400-word "mini-newsletter-style reply"

@@ -1,101 +1,101 @@
-# 质量检查 + 反模式 + 数据复盘 + 报告模板
+# Quality Checklist + Anti-Patterns + Analytics Review + Report Template
 
-> 按需加载：场景C（审阅内容）、场景E（账号诊断）、数据复盘时读取。
-
----
-
-## 质量检查清单
-
-审阅已写的推文/Thread时，逐项检查：
-
-### 推文检查
-- [ ] Hook是否在2行内抓住注意力？
-- [ ] 是否回答了「给谁看/讲什么/为什么要读」？
-- [ ] 是否有具体性？（数字、时间、人名）
-- [ ] 是否能引发回复？（而非只是点赞）
-- [ ] 是否没有外部链接？（如需要，放第一条回复）
-- [ ] 发布时间是否在目标受众的活跃时段？
-
-### Thread检查
-- [ ] 第一条是否独立成文且引人入胜？
-- [ ] 是否遵循1/3/1节奏？
-- [ ] 每条tweet是否都推进了内容？（Rate of Revelation）
-- [ ] 是否有TL;DR总结？
-- [ ] 是否有明确CTA？
-- [ ] 长度是否在8-12条？
-- [ ] 是否用了bullet points而非大段文字？
-
-### 内容策略检查
-- [ ] 本周是否有至少1条Thread？
-- [ ] 是否在大号评论区留了高质量回复？
-- [ ] 是否有导流newsletter的CTA？
-- [ ] 是否响应了本周的AI热点？
-- [ ] 短推文和Thread的配比是否合理？
+> Load on demand: read when in scenario C (reviewing content), scenario E (account diagnosis), or during an analytics review.
 
 ---
 
-## 反模式与避坑
+## Quality checklist
 
-### 增长陷阱（别踩）
+When reviewing a written tweet/thread, check each item:
 
-1. **买粉/互粉互赞群**：短期数据好看，长期TweepCred暴跌。算法检测到不自然的互动模式会降权，得不偿失
-2. **纯工具推荐合集**：AI赛道已是红海。「10 AI tools you need」这种帖子人人在发，没有差异化。要发就加你的实测数据和独特观点
-3. **只翻译国外AI新闻**：零差异化。要做就加你自己的take——「为什么这对中国开发者重要」或「我测了，实际效果是...」
-4. **过度追热点丢定位**：每个热点都蹭，粉丝不知道你到底是谁。热点要筛选：只蹭跟你定位相关的
-5. **只有hook没有substance**：标题党短期有效，长期掉粉。Hormozi说「超额交付」，承诺1个给3个
-6. **发帖不回复**：对话权重150x，你不回复等于放弃最大的算法杠杆
-7. **Thread太长不收**：超过15条tweet开始掉人。Sweet spot是8-12条
+### Tweet checklist
+- [ ] Does the hook grab attention within 2 lines?
+- [ ] Does it answer "who's it for / what's it about / why should I read it"?
+- [ ] Is it specific? (numbers, dates, names)
+- [ ] Can it prompt a reply? (not just a like)
+- [ ] Does it avoid an external link? (if one is needed, put it in the first reply)
+- [ ] Is the posting time within the target audience's active hours?
 
-### 平台级风险（需警觉）
+### Thread checklist
+- [ ] Does the first tweet stand alone as a complete, compelling piece?
+- [ ] Does it follow the 1/3/1 rhythm?
+- [ ] Does every tweet actually advance the content? (Rate of Revelation)
+- [ ] Is there a TL;DR summary?
+- [ ] Is there a clear CTA?
+- [ ] Is the length 8-12 tweets?
+- [ ] Does it use bullet points instead of dense paragraphs?
 
-- **互动率整体下跌**：2024-2025年X全平台互动率暴跌48%。不是你的问题，是平台趋势
-- **Pay-to-play加剧**：非Premium用户的有机触达持续萎缩，外链帖几乎为零。Premium不是可选项，是必需品
-- **用户迁移**：部分创作者向Bluesky/Threads分散。但目前X仍是AI/tech内容的主战场
+### Content-strategy checklist
+- [ ] Was there at least 1 thread this week?
+- [ ] Were high-quality replies left in big accounts' comment sections?
+- [ ] Is there a CTA driving traffic to the newsletter?
+- [ ] Did it respond to this week's AI news?
+- [ ] Is the mix of short tweets to threads reasonable?
 
 ---
 
-## 数据复盘指引
+## Anti-patterns and pitfalls to avoid
 
-### 关键指标（按优先级）
+### Growth traps (don't fall for these)
 
-| 指标 | 看什么 | 健康值参考 |
+1. **Buying followers/follow-for-follow-and-like groups**: numbers look good short-term, but TweepCred (X's internal reputation score) craters long-term. The algorithm detects unnatural engagement patterns and demotes you — not worth it
+2. **Pure tool-recommendation roundups**: the AI niche is already a red ocean. "10 AI tools you need" posts are everywhere with zero differentiation. If you post one, add your own test data and a unique take
+3. **Just translating foreign AI news**: zero differentiation. Add your own take — "why this matters for developers here" or "I tested it, here's what actually happens..."
+4. **Chasing every trend and losing your positioning**: jumping on every trend leaves followers unsure who you actually are. Filter your trends: only jump on the ones relevant to your positioning
+5. **All hook, no substance**: clickbait works short-term, loses followers long-term. Hormozi's rule is "over-deliver" — promise 1, give 3
+6. **Posting without replying**: conversation carries 150x weight — not replying means giving up your biggest algorithmic lever
+7. **Threads that run too long**: engagement drops off past 15 tweets. The sweet spot is 8-12
+
+### Platform-level risks (stay alert to these)
+
+- **Overall engagement rate decline**: X's platform-wide engagement rate dropped 48% from 2024-2025. Not your problem — it's a platform trend
+- **Pay-to-play intensifying**: organic reach for non-Premium users keeps shrinking, and posts with outbound links get almost none. Premium isn't optional anymore — it's a requirement
+- **User migration**: some creators are spreading out to Bluesky/Threads. But X remains the main battleground for AI/tech content for now
+
+---
+
+## Analytics review guide
+
+### Key metrics (by priority)
+
+| Metric | What it measures | Healthy range |
 |------|--------|-----------|
-| Engagement Rate | 互动数/曝光数 | >2%良好, >5%优秀 |
-| Reply率 | 回复数/曝光数 | 越高越好(算法最重) |
-| Profile Visit率 | 主页访问/曝光数 | >1%说明人们想了解你 |
-| Follower增长 | 周净增粉丝数 | 冷启动期日均5-10，增长期日均20-50 |
-| 书签率 | 书签数/曝光数 | 高书签=高价值内容 |
-| Newsletter导流 | 新增订阅/周 | 有就是好的，持续追踪转化率 |
+| Engagement Rate | engagements / impressions | >2% is good, >5% is excellent |
+| Reply rate | replies / impressions | higher is better (heaviest algorithmic weight) |
+| Profile Visit rate | profile visits / impressions | >1% means people want to know more about you |
+| Follower growth | net new followers per week | cold-start stage: 5-10/day average; growth stage: 20-50/day average |
+| Bookmark rate | bookmarks / impressions | high bookmarks = high-value content |
+| Newsletter conversion | new subscribers/week | any is good — keep tracking the conversion rate |
 
-### 复盘节奏
+### Review cadence
 
-- **每天**：扫一眼昨天发的内容数据，标记>500互动的高表现帖
-- **每周**：分析本周top 3推文，提取共性→更新模板库
-- **每月**：Review粉丝增长曲线、内容类型分布、Newsletter增长。调整下月内容策略
+- **Daily**: scan yesterday's post data, flag any post with 500+ engagements
+- **Weekly**: analyze this week's top 3 tweets, extract what they have in common -> update your template library
+- **Monthly**: review the follower-growth curve, content-type distribution, and newsletter growth. Adjust next month's content strategy
 
-### 诊断框架（推文数据差时）
+### Diagnostic framework (when tweet performance is poor)
 
-按顺序排查：
-1. **算法层**：Premium开了吗？发帖时间对吗？有外链吗？
-2. **Hook层**：前2行有好奇缺口吗？有可信度锚点吗？
-3. **内容层**：每条tweet都在推进吗？有1/3/1节奏吗？
-4. **受众层**：粉丝量够触发Engagement Velocity吗？先在评论区借流量
+Check these in order:
+1. **Algorithm layer**: is Premium turned on? Is the posting time right? Is there an outbound link?
+2. **Hook layer**: is there a curiosity gap in the first 2 lines? Is there a credibility anchor?
+3. **Content layer**: does every tweet advance the piece? Does it follow the 1/3/1 rhythm?
+4. **Audience layer**: is the follower count enough to trigger Engagement Velocity? If not, borrow reach from comment sections first
 
 ---
 
-## 报告HTML模板要求
+## Report HTML template requirements
 
-诊断报告使用经济学人/报纸排版风格，必须包含：
-- **视觉风格**：衬线字体(Georgia)、暖纸色背景(#f5f0e8)、红色强调(#C7000A)、Grid布局
-- **数据可视化**：使用ECharts.js（CDN引入），至少包含话题分布图、时间分布图、互动漏斗
-- **必含板块**：
-  1. Banner + Masthead（一句话核心发现作为标题）
-  2. KPI Grid（4个核心指标大数字）
-  3. Lead（总结段，斜体，左侧红色border）
-  4. 内容ROI分析（按话题分类的互动对比）
-  5. 传播漏斗（点赞率/书签率/转推率/回复率）
-  6. 时间分析（最佳发布时段、发布节奏演变）
-  7. 品牌叙事（叙事角色分布与互动表现）
-  8. Top 5行动建议（编号红色圆圈 + 标题 + 正文 + 数据证据）
-  9. Footer（数据期间、样本量、分析时间）
-- **参考实现**：`user-data/AlchainHust/report_20260406.html`
+Diagnostic reports use an Economist/newspaper-style layout, and must include:
+- **Visual style**: serif typeface (Georgia), a warm paper-colored background (#f5f0e8), a red accent color (#C7000A), a grid layout
+- **Data visualization**: use ECharts.js (via CDN), including at minimum a topic-distribution chart, a time-distribution chart, and an engagement funnel
+- **Required sections**:
+  1. Banner + Masthead (one-sentence core finding as the headline)
+  2. KPI Grid (4 core metrics as large numbers)
+  3. Lead (a summary paragraph, italicized, with a red left border)
+  4. Content ROI analysis (engagement comparison broken down by topic)
+  5. Distribution funnel (like rate/bookmark rate/retweet rate/reply rate)
+  6. Time analysis (best posting windows, how posting cadence has evolved)
+  7. Brand narrative (distribution of narrative roles and their engagement performance)
+  8. Top 5 action recommendations (numbered red circles + headline + body + supporting data)
+  9. Footer (data period, sample size, analysis timestamp)
+- **Reference implementation**: `user-data/AlchainHust/report_20260406.html`
