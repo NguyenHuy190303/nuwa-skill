@@ -1,423 +1,423 @@
-# 孙宇晨（Justin Sun）重大决策记录与关键行动
+# Sun Yuchen (Justin Sun) - Major Decision Record and Key Actions
 
-> 调研日期：2026-04-07（第二轮补充调研，整合WebSearch多轮验证）
-> 信息源：英文主流科技/财经/加密媒体（CNN, CNBC, Bloomberg, CoinDesk, TechCrunch, NPR, Washington Post, Fortune, Decrypt, The Block等）
-> 排除源：知乎、微信公众号、百度百科
-> 可信度标注：⭐⭐⭐ 多方交叉验证 | ⭐⭐ 单方报道但来源可靠 | ⭐ 传闻或争议信息
-
----
-
-## 一、人物背景速览
-
-- 1990年7月30日生于青海西宁，成长于广东
-- 北京大学历史系学士 → 宾夕法尼亚大学东亚研究硕士
-- 湖畔大学（马云创办）首届学员，唯一的90后，马云亲自邀请
-- 2014年创办陪我（Peiwo）语音社交App，用户超1000万（后于~2019年被中国政府下架，理由为「扰乱社会主义价值观」）
-- 曾任Ripple大中华区首席代表（约2年）
-- 2017年创立波场TRON，正式进入加密货币领域
-
-**来源**：[Wikipedia](https://en.wikipedia.org/wiki/Justin_Sun)、[SCMP](https://www.scmp.com/magazines/style/news-trends/article/3016486/why-jack-mas-protege-justin-sun-has-13-million-weibo)、[DailyCoin](https://dailycoin.com/story-of-justin-sun/) ⭐⭐⭐
+> Research date: 2026-04-07 (second-round supplementary research, integrating multiple WebSearch verification passes)
+> Sources: mainstream English-language tech/finance/crypto media (CNN, CNBC, Bloomberg, CoinDesk, TechCrunch, NPR, Washington Post, Fortune, Decrypt, The Block, etc.)
+> Excluded sources: Zhihu, WeChat public accounts, Baidu Baike
+> Reliability markers: ⭐⭐⭐ cross-verified by multiple parties | ⭐⭐ single-source but reliable outlet | ⭐ rumor or disputed information
 
 ---
 
-## 二、重大决策时间线（按时间排序）
+## I. Quick-reference personal background
 
-### 决策1：创立波场TRON + ICO（2017年8-9月）
+- Born July 30, 1990, in Xining, Qinghai; grew up in Guangdong
+- Bachelor's in History, Peking University → Master's in East Asian Studies, University of Pennsylvania
+- First-cohort student at Hupan University (founded by Jack Ma), the only one born in the '90s, personally invited by Jack Ma
+- Founded the Peiwo voice-social app in 2014, with over 10 million users (later pulled from app stores by the Chinese government around 2019, citing "disrupting socialist values")
+- Formerly chief representative for Greater China at Ripple (roughly 2 years)
+- Founded TRON in 2017, formally entering the cryptocurrency space
 
-**背景**：2017年ICO热潮，中国政府尚未禁止。孙宇晨从Ripple和Peiwo的经验中看到了去中心化互联网的叙事空间。
-
-**行动**：
-- 2017年8月发布TRON白皮书，9月完成ICO，募资约7000万美元
-- ICO时间恰好在中国政府禁令（2017年9月4日）之前完成
-- TRX代币2018年1月一度涨至约0.30美元，市值进入前十
-
-**白皮书抄袭争议（2018年1月）**：
-- IPFS/Filecoin创始人Juan Benet公开推特指出TRON白皮书英文版至少9页内容与Filecoin和IPFS白皮书高度相似
-- 剽窃检测公司给出>15%的相似度评分，整段文字、图表被直接复制
-- 社区对比还发现抄袭了Ethereum和BitTorrent的技术描述
-- 孙宇晨回应称：中文原版有完整引用，英文版是志愿者翻译时遗漏了引用
-- TRON随后从官网撤下原始白皮书，上传修改版本
-- 市值从120亿美元高点迅速下跌
-
-**实际结果**：尽管声誉受损，TRON项目存活并持续发展，TRX至2026年仍为市值前20的主流币种。
-
-**言行一致性**：❌ **不一致**。「翻译问题」的解释难以自洽——整段图表和技术描述的雷同不是翻译遗漏能解释的。但孙宇晨成功转移了注意力，项目未因此终结。
-
-**来源**：[BuzzFeed News](https://www.buzzfeednews.com/article/ryanmac/cryptocurrency-white-paper-plagiarism-tron-justin-sun)、[CCN](https://www.ccn.com/trons-whitepaper-appears-plagiarize-filecoin-ifps/)、[CoinCentral](https://coincentral.com/community-accuses-tron-plagiarizing-whitepaper/)、[Inverse](https://www.inverse.com/article/40050-tron-trx-cryptocurrency-plagiarism-scandal) ⭐⭐⭐
+**Sources**: [Wikipedia](https://en.wikipedia.org/wiki/Justin_Sun), [SCMP](https://www.scmp.com/magazines/style/news-trends/article/3016486/why-jack-mas-protege-justin-sun-has-13-million-weibo), [DailyCoin](https://dailycoin.com/story-of-justin-sun/) ⭐⭐⭐
 
 ---
 
-### 决策2：收购BitTorrent（2018年6月）
+## II. Timeline of major decisions (chronological)
 
-**背景**：TRON面临「空气币」质疑，需要实际产品和用户基数来增加可信度。BitTorrent是全球最大的P2P文件分享协议，拥有超过1亿月活用户。
+### Decision 1: Founding TRON + the ICO (August-September 2017)
 
-**行动**：
-- 2017年9月开始与BitTorrent接触，2018年1月签署意向书
-- 以约1.4亿美元现金完成收购（个人名义购买）
-- 后续在BitTorrent基础上发行BTT代币（TRC10标准），在币安Launchpad进行IEO，数分钟售罄
-- 推出BitTorrent File System (BTFS)和BitTorrent Speed
+**Background**: the 2017 ICO boom, before the Chinese government banned them. Sun Yuchen drew on his experience at Ripple and Peiwo to see an opening for a decentralized-internet narrative.
 
-**公开理由**：构建去中心化互联网，将BitTorrent的P2P架构与TRON区块链结合。
+**Actions**:
+- Published the TRON whitepaper in August 2017, completed the ICO in September, raising roughly $70 million
+- The ICO's timing landed just before the Chinese government's ban (September 4, 2017)
+- TRX briefly rose to about $0.30 in January 2018, entering the top-ten market caps
 
-**实际结果**：
-- 为TRON生态带来了真实的用户基数和技术基础设施
-- BTT代币为孙宇晨提供了新的融资/流动性工具
-- BitTorrent的实际产品创新有限，技术整合有限，更多作为叙事和发币平台
+**The whitepaper plagiarism controversy (January 2018)**:
+- IPFS/Filecoin founder Juan Benet publicly tweeted that at least 9 pages of TRON's English whitepaper closely resembled the Filecoin and IPFS whitepapers
+- A plagiarism-detection company scored the similarity at over 15%, with entire passages and diagrams copied directly
+- Community comparisons also found plagiarized technical descriptions from Ethereum and BitTorrent
+- Sun Yuchen's response: the original Chinese version had full citations, and the English version's volunteer translators had dropped the citations
+- TRON subsequently pulled the original whitepaper from its official site and uploaded a revised version
+- Market cap fell rapidly from a $12 billion peak
 
-**言行一致性**：⚠️ **部分一致**。收购本身是实质性行动，但「去中心化互联网」的愿景实现程度有限。BitTorrent更多成为发币平台而非技术革命载体。
+**Actual outcome**: despite the reputational damage, the TRON project survived and continued to grow — TRX remains a top-20 market-cap coin as of 2026.
 
-**来源**：[TechCrunch](https://techcrunch.com/2018/06/18/bittorrent-tron/)、[Variety](https://variety.com/2018/digital/news/bittorrent-acquisition-tron-justin-sun-1202841793/)、[The Next Web](https://thenextweb.com/hardfork/2018/07/24/justin-sun-acquires-bittorrent/)、[The Hacker News](https://thehackernews.com/2018/06/tron-cryptocurrency-bittorrent.html) ⭐⭐⭐
+**Consistency between words and actions**: ❌ **Inconsistent**. The "translation issue" explanation doesn't hold together — whole passages of identical diagrams and technical descriptions can't be explained by a translation omission. But Sun Yuchen successfully shifted attention, and the project didn't collapse because of it.
 
----
-
-### 决策3：456万美元拍下巴菲特午餐（2019年6月—2020年1月）
-
-**背景**：巴菲特是加密货币的著名批评者，曾称比特币为「老鼠药的平方」。
-
-**行动时间线**：
-1. **2019年6月3日**：以456.7888万美元赢得巴菲特慈善午餐拍卖，创历史最高纪录。高调在微博和Twitter宣布，称要向巴菲特介绍加密货币
-2. **2019年7月22日**：午餐原定7月25日在旧金山米其林三星餐厅Quince举行，孙宇晨以「肾结石」为由宣布推迟
-3. **争议爆发**：CoinDesk援引北京媒体报道称孙宇晨被中国政府控制，无法出境。中国媒体财新网报道其涉嫌非法集资、洗钱、涉黄。孙宇晨否认被边控，从北京发微博证明自由
-4. **2020年1月23日**：午餐最终在巴菲特的主场——奥马哈一家私人乡村俱乐部补办，改为晚餐
-5. 赴宴宾客包括：Litecoin创始人Charlie Lee、eToro CEO Yoni Assia、火币CFO Chris Lee、币安慈善基金会Helen Hai等
-6. 赠送巴菲特一部内含BTC和TRX的三星手机
-
-**巴菲特态度**：事后表示观点未变，仍然认为加密货币没有价值，但赞扬孙宇晨「很有才华」。
-
-**实际结果**：
-- 获得了巨大且持续的全球媒体曝光（从2019年6月到2020年2月，持续被报道半年以上）
-- 整个事件的PR价值远超456万美元的花费
-
-**言行一致性**：❌ **不一致**。「肾结石」推迟的理由被广泛质疑，时间节点与负面报道和监管传闻高度吻合。从最初的高调宣传到被迫低调补办，显示对事态发展缺乏预判。但从PR角度看，这个决策在注意力获取上是成功的。
-
-**来源**：[CNN](https://edition.cnn.com/2019/07/23/business/warren-buffett-lunch-justin-sun)、[CoinDesk](https://www.coindesk.com/markets/2020/02/06/trons-justin-sun-finally-gets-45m-dinner-with-warren-buffett)、[CNBC](https://www.cnbc.com/2019/07/25/normally-sedate-charity-lunch-with-warren-buffett-is-turning-into-bizarre-affair-this-year.html)、[SCMP](https://www.scmp.com/tech/blockchain/article/3049455/chinese-cryptocurrency-billionaire-justin-sun-finally-sits-down-eat)、[Fortune](https://fortune.com/2019/07/23/warren-buffett-lunch-tron-justin-sun-cryptocurrency/) ⭐⭐⭐
+**Sources**: [BuzzFeed News](https://www.buzzfeednews.com/article/ryanmac/cryptocurrency-white-paper-plagiarism-tron-justin-sun), [CCN](https://www.ccn.com/trons-whitepaper-appears-plagiarize-filecoin-ifps/), [CoinCentral](https://coincentral.com/community-accuses-tron-plagiarizing-whitepaper/), [Inverse](https://www.inverse.com/article/40050-tron-trx-cryptocurrency-plagiarism-scandal) ⭐⭐⭐
 
 ---
 
-### 决策4：收购/投资Poloniex交易所（2019年10月）
+### Decision 2: Acquiring BitTorrent (June 2018)
 
-**背景**：Poloniex成立于2014年，2018年被Circle以4亿美元收购。2019年Circle希望剥离Poloniex的国际业务。
+**Background**: TRON was facing accusations of being a "vaporware coin" and needed a real product and user base to build credibility. BitTorrent was the world's largest P2P file-sharing protocol, with over 100 million monthly active users.
 
-**行动**：
-- 参与亚洲投资财团收购Poloniex
-- **初期否认参与**，后在2019年11月12日Poloniex官方直播中承认
-- 宣布计划投入超过1亿美元发展，从美国市场转向全球市场
-- 将TRX上架Poloniex，推出多项空投活动
-- 收购后Poloniex从美国撤离，转为离岸交易所
+**Actions**:
+- Began engaging with BitTorrent in September 2017, signed a letter of intent in January 2018
+- Completed the acquisition for roughly $140 million in cash (purchased personally)
+- Subsequently launched the BTT token (TRC10 standard) built on BitTorrent, running an IEO on Binance Launchpad that sold out in minutes
+- Launched the BitTorrent File System (BTFS) and BitTorrent Speed
 
-**后续发展**：
-- 2023年11月，Poloniex遭受超过1亿美元的黑客攻击
-- 孙宇晨承诺全额赔偿受影响用户
+**Publicly stated rationale**: building a decentralized internet, combining BitTorrent's P2P architecture with the TRON blockchain.
 
-**言行一致性**：❌ **不一致**。先否认后承认参与收购，这种模式在孙宇晨身上反复出现（Poloniex、HTX）。收购交易所给了TRON生态一个重要的流动性入口和代币上架通道。
+**Actual outcome**:
+- Brought a genuine user base and technical infrastructure to the TRON ecosystem
+- The BTT token gave Sun Yuchen a new fundraising/liquidity tool
+- BitTorrent's actual product innovation was limited, technical integration was limited, and it functioned more as a narrative and token-launch platform
 
-**来源**：[CoinDesk](https://www.coindesk.com/markets/2019/11/12/despite-denials-tron-founder-confirms-investment-in-poloniex-crypto-exchange)、[CoinTelegraph](https://cointelegraph.com/news/tron-founder-justin-sun-admits-investment-in-crypto-exchange-poloniex)、[The Block](https://www.theblock.co/post/262563/justin-suns-crypto-exchange-poloniex-seemingly-hit-by-60-million-hack) ⭐⭐⭐
+**Consistency between words and actions**: ⚠️ **Partly consistent**. The acquisition itself was substantive action, but the "decentralized internet" vision was only realized to a limited degree. BitTorrent became more of a token-launch platform than a vehicle for technical revolution.
 
----
-
-### 决策5：Steem社区敌意收购事件（2020年2月—3月）
-
-**背景**：Steem是一条去中心化内容区块链。Steemit Inc.持有大量预挖的STEEM代币（ninja-mined stake），社区此前与Steemit达成默契这部分代币不用于治理投票。
-
-**行动时间线**：
-1. **2020年2月14日**：通过TRON基金会以约800万美元从创始人Ned Scott手中收购Steemit公司，获得约7000万STEEM代币（约占总供应量20%）
-2. **社区反击**：Steem的验证者（witnesses）通过软分叉（Soft Fork 22.2）冻结了孙宇晨持有的STEEM投票权，以保护社区治理
-3. **敌意收购**：孙宇晨联合Binance、Huobi、Poloniex三大交易所，**使用交易所托管的用户STEEM代币进行投票**，替换了Steem全部20名顶级选举代表（witnesses）
-4. **社区反扑**：社区重新组织选举，夺回11/20的witnesses控制权
-5. **币安和火币事后道歉**并撤回投票
-6. **最终分裂（2020年3月20日）**：Steem社区进行硬分叉，创建Hive区块链，排除了Steemit Inc.的代币，彻底脱离孙宇晨控制
-
-**核心争议**：交易所使用用户托管资产参与治理投票，这是对PoS治理机制的严重滥用，也是加密行业历史上最具争议的事件之一。
-
-**实际结果**：
-- 孙宇晨获得了Steemit平台，但失去了核心社区和开发者
-- Hive分叉后发展良好，Steem逐渐衰落
-- 事件成为区块链治理史上的经典案例（反面教材）
-- 暴露了PoS治理中交易所权力过大的系统性风险
-
-**言行一致性**：❌ **严重不一致**。孙宇晨自称支持去中心化，却使用中心化交易所的力量强行夺取去中心化社区的控制权。这是他所有决策中言行差距最大的案例。
-
-**来源**：[CoinDesk](https://www.coindesk.com/tech/2020/02/24/justin-sun-bought-steemit-steem-moved-to-limit-his-power)、[Decrypt](https://decrypt.co/38050/steem-steemit-tron-justin-sun-cryptocurrency-war)、[CryptoBriefing](https://cryptobriefing.com/tron-executes-hostile-takeover-steem-exchanges-collude/)、[CoinTelegraph](https://cointelegraph.com/news/justin-sun-accused-of-bribing-his-way-to-the-top-of-the-steem-hierarchy) ⭐⭐⭐（链上可验证）
+**Sources**: [TechCrunch](https://techcrunch.com/2018/06/18/bittorrent-tron/), [Variety](https://variety.com/2018/digital/news/bittorrent-acquisition-tron-justin-sun-1202841793/), [The Next Web](https://thenextweb.com/hardfork/2018/07/24/justin-sun-acquires-bittorrent/), [The Hacker News](https://thehackernews.com/2018/06/tron-cryptocurrency-bittorrent.html) ⭐⭐⭐
 
 ---
 
-### 决策6：Blue Origin太空座位竞拍（2021年6月竞拍 → 2025年8月实现）
+### Decision 3: Winning the Buffett lunch for $4.56 million (June 2019 - January 2020)
 
-**行动**：
-- 2021年6月以2800万美元拍下Blue Origin首次载人飞行New Shepard的一个座位
-- 因「日程冲突」未能参加2021年7月20日的历史性首飞
-- 2025年8月3日搭乘NS-34任务完成亚轨道太空飞行，全程约10分钟，穿越卡门线（100公里高度）
-- 同乘旅客包括印度裔美国房地产投资人、土耳其商人/摄影师、波多黎各气象学家等
+**Background**: Buffett was a well-known crypto critic, having once called Bitcoin "rat poison squared."
 
-**言行一致性**：✅ **一致**。承诺并最终完成。但首飞缺席的「日程冲突」理由存疑（2800万美元的座位因日程冲突放弃？）。
+**Action timeline**:
+1. **June 3, 2019**: won the Buffett charity lunch auction for $4,567,888, a record high. Announced it loudly on Weibo and Twitter, saying he would introduce Buffett to cryptocurrency
+2. **July 22, 2019**: the lunch, originally scheduled for July 25 at the three-Michelin-star restaurant Quince in San Francisco, was announced postponed by Sun Yuchen citing "kidney stones"
+3. **The controversy erupts**: CoinDesk cited Beijing media reports that Sun Yuchen was under Chinese government control and unable to leave the country. Chinese outlet Caixin reported he was suspected of illegal fundraising, money laundering, and involvement with pornography. Sun Yuchen denied being barred from exiting, posting from Beijing on Weibo to prove he was free
+4. **January 23, 2020**: the lunch was finally rescheduled — on Buffett's home turf, a private country club in Omaha — as a dinner instead
+5. Guests included Litecoin founder Charlie Lee, eToro CEO Yoni Assia, Huobi CFO Chris Lee, and Binance Charity's Helen Hai
+6. Gave Buffett a Samsung phone preloaded with BTC and TRX
 
-**来源**：[Space.com](https://www.space.com/space-exploration/private-spaceflight/blue-origin-launch-crypto-billionaire-justin-sun-launch-suborbital-space-ns-34)、[GeekWire](https://www.geekwire.com/2025/crypto-justin-sun-28m-blue-origin-space/) ⭐⭐⭐
+**Buffett's stance**: he later said his view hadn't changed and he still thought crypto had no value, but praised Sun Yuchen as "very talented."
 
----
+**Actual outcome**:
+- Got enormous, sustained global media exposure (continuously covered from June 2019 through February 2020, over half a year)
+- The PR value of the whole episode far exceeded the $4.56 million spent
 
-### 决策7：获取格林纳达外交官身份（2021年12月—2023年3月）
+**Consistency between words and actions**: ❌ **Inconsistent**. The "kidney stones" excuse was widely doubted, and its timing lined up closely with negative reporting and regulatory rumors. Going from loudly promoting it upfront to being forced into a quiet makeup event shows a lack of foresight about how events would unfold. But from a PR standpoint, this decision succeeded at capturing attention.
 
-**背景**：格林纳达是加勒比海岛国，人口约11万。
-
-**行动**：
-- 2021年12月被任命为格林纳达驻WTO（世界贸易组织）常驻代表/大使，常驻日内瓦
-- 获得外交官身份和外交豁免权，在国际场合以「His Excellency」（阁下）称号出席
-- 2022年6月格林纳达大选，执政党更替
-- 新政府未续约，任期于2023年3月31日结束
-- SEC 2023年3月起诉后，孙宇晨曾试图以外交豁免权为由抗辩
-- 据Protos独家报道，孙宇晨「虚假主张了外交豁免权」
-- 2024年美国法院拒绝了其外交豁免主张
-
-**关于任期的矛盾说法**：
-- 先在The Block上声称仍保持大使身份（附截图）
-- 随后又承认任期结束
-
-**决策逻辑**：为TRON的全球化运营提供政治保护层，在国际法层面获得一定保护。被广泛解读为「花钱买外交身份规避法律风险」。
-
-**言行一致性**：❌ **不一致**。先声称继续担任大使，后承认任期结束。试图利用外交豁免权规避SEC诉讼但失败。
-
-**来源**：[Fortune](https://fortune.com/crypto/2023/03/31/his-excellency-sec-lawsuit-justin-sun-grenada-diplomat-wto/)、[The Block（声称保留）](https://www.theblock.co/post/224253/justin-sun-claims-he-remains-wto-ambassador-for-grenada-shares-screenshots)、[The Block（承认结束）](https://www.theblock.co/post/224319/justin-sun-grenada-wto-ambassador)、[Protos](https://protos.com/scoop-justin-sun-falsely-claimed-diplomatic-immunity-in-lawsuit/)、[CoinDesk](https://www.coindesk.com/policy/2023/03/30/tron-founder-justin-sun-reportedly-lost-his-diplomatic-status/) ⭐⭐⭐
+**Sources**: [CNN](https://edition.cnn.com/2019/07/23/business/warren-buffett-lunch-justin-sun), [CoinDesk](https://www.coindesk.com/markets/2020/02/06/trons-justin-sun-finally-gets-45m-dinner-with-warren-buffett), [CNBC](https://www.cnbc.com/2019/07/25/normally-sedate-charity-lunch-with-warren-buffett-is-turning-into-bizarre-affair-this-year.html), [SCMP](https://www.scmp.com/tech/blockchain/article/3049455/chinese-cryptocurrency-billionaire-justin-sun-finally-sits-down-eat), [Fortune](https://fortune.com/2019/07/23/warren-buffett-lunch-tron-justin-sun-cryptocurrency/) ⭐⭐⭐
 
 ---
 
-### 决策8：发行USDD稳定币（2022年5月）
+### Decision 4: Acquiring/investing in the Poloniex exchange (October 2019)
 
-**背景**：2022年5月，算法稳定币UST（Terra/LUNA）即将崩盘（最终造成超400亿美元损失）。孙宇晨在UST崩溃前夕推出了USDD。
+**Background**: Poloniex was founded in 2014 and acquired by Circle for $400 million in 2018. In 2019, Circle wanted to divest Poloniex's international business.
 
-**行动**：
-- 2022年5月5日发布USDD，机制与Terra的UST高度相似——算法稳定币
-- 宣称USDD背后有TRON DAO Reserve提供超额抵押
-- CoinDesk直接称USDD是Terra算法稳定币的「克隆版」
-- 2025年1月推出USDD 2.0，改为全额加密资产储备支持
-- 2025年在以太坊原生发行USDD
+**Actions**:
+- Participated in an Asian investment consortium acquiring Poloniex
+- **Initially denied involvement**, then admitted it during Poloniex's official livestream on November 12, 2019
+- Announced plans to invest over $100 million in its development, shifting from the U.S. market to a global one
+- Listed TRX on Poloniex, ran multiple airdrop campaigns
+- After the acquisition, Poloniex exited the U.S. market and became an offshore exchange
 
-**核心争议**：
-- 在UST崩盘事件期间推出类似产品，被批评为不顾市场风险的机会主义
-- 储备透明度反复受到质疑
-- 2025年又悄悄将主要储备从BTC换为TRX
+**Later developments**:
+- In November 2023, Poloniex suffered a hack of over $100 million
+- Sun Yuchen promised to fully compensate affected users
 
-**实际结果**：USDD未发生脱锚事件，但市值远不及预期。从算法机制转向储备支持模式，实质上承认了算法稳定币路线的失败。
+**Consistency between words and actions**: ❌ **Inconsistent**. Denying involvement first, then admitting it — this pattern recurs repeatedly with Sun Yuchen (Poloniex, HTX). Acquiring the exchange gave the TRON ecosystem an important liquidity gateway and token-listing channel.
 
-**言行一致性**：⚠️ **部分一致**。产品确实上线并运行，但从「去中心化算法稳定币」转向「储备支持」等于否定了最初的技术路线。在Terra崩盘期间推出类似产品的时机选择暴露了机会主义倾向。
-
-**来源**：[Decrypt](https://decrypt.co/102114/justin-sun-terra-stablecoin-boasts-backing-bitcoin-tether-tron)、[CoinDesk](https://www.coindesk.com/markets/2022/05/04/revolution-promised-by-trons-justin-sun-looks-like-clone-of-terras-algorithmic-stablecoin)、[The Block](https://www.theblock.co/post/369855/usdd-the-justin-sun-backed-stablecoin-launches-natively-on-ethereum)、[CCN](https://www.ccn.com/news/crypto/justin-suns-usdd-trx-backing/) ⭐⭐⭐
+**Sources**: [CoinDesk](https://www.coindesk.com/markets/2019/11/12/despite-denials-tron-founder-confirms-investment-in-poloniex-crypto-exchange), [CoinTelegraph](https://cointelegraph.com/news/tron-founder-justin-sun-admits-investment-in-crypto-exchange-poloniex), [The Block](https://www.theblock.co/post/262563/justin-suns-crypto-exchange-poloniex-seemingly-hit-by-60-million-hack) ⭐⭐⭐
 
 ---
 
-### 决策9：控制火币/HTX（2022年10月至今）
+### Decision 5: The Steem community hostile takeover (February-March 2020)
 
-**背景**：火币（Huobi）是中国三大加密交易所之一，2022年面临流动性危机和市场份额下滑。
+**Background**: Steem is a decentralized content blockchain. Steemit Inc. held a large "ninja-mined" stake of pre-mined STEEM tokens, and the community had previously reached an understanding with Steemit that this stake wouldn't be used for governance votes.
 
-**行动**：
-- 2022年10月，香港About Capital Management收购火币，孙宇晨同时被任命为「全球顾问」
-- **孙宇晨否认是实际买家**，自称只是顾问
-- 公开行为显示他是事实上的控制人——主导所有重大业务决策和公开声明
-- 2023年9月将Huobi更名为HTX（被解读为Huobi Tron Exchange），坐实控制
-- 后续与前老板李林发生公开冲突：
-  - 孙宇晨声称李林隐瞒了尽职调查材料，留下3000万美元的资产负债表缺口
-  - 声称个人借出3000万美元填补缺口，尚未偿还
-  - 指控李林兄弟免费获取HT代币并套现
+**Action timeline**:
+1. **February 14, 2020**: acquired Steemit Inc. from founder Ned Scott for roughly $8 million through the TRON Foundation, gaining about 70 million STEEM tokens (about 20% of total supply)
+2. **Community pushback**: Steem's witnesses (validators) froze Sun Yuchen's STEEM voting power via a soft fork (Soft Fork 22.2) to protect community governance
+3. **The hostile takeover**: Sun Yuchen teamed up with Binance, Huobi, and Poloniex to **use exchange-custodied user STEEM tokens to vote**, replacing all 20 of Steem's top-elected witnesses
+4. **The community fights back**: the community reorganized elections and reclaimed 11 of the 20 witness seats
+5. **Binance and Huobi later apologized** and reversed their votes
+6. **The final split (March 20, 2020)**: the Steem community hard-forked to create the Hive blockchain, excluding Steemit Inc.'s tokens and cutting itself off entirely from Sun Yuchen's control
 
-**后续问题**：
-- HTX储备金透明度持续受到质疑（Protos报道称HTX在储备报告上「玩花样」）
-- HTX频繁遭遇安全事件和提现困难的投诉
+**Core controversy**: an exchange using user-custodied assets to participate in governance votes is a serious abuse of PoS governance mechanics, and one of the most controversial incidents in crypto-industry history.
 
-**言行一致性**：❌ **不一致**。否认是收购者但实际控制运营，是「先否认后承认」模式的又一次重演。
+**Actual outcome**:
+- Sun Yuchen gained the Steemit platform, but lost the core community and developers
+- Hive developed well after the fork, while Steem gradually declined
+- The incident became a textbook case (a negative example) in blockchain governance history
+- Exposed a systemic risk of excessive exchange power within PoS governance
 
-**来源**：[Wikipedia](https://en.wikipedia.org/wiki/Justin_Sun)、[Protos（储备问题）](https://protos.com/justin-sun-advised-htx-plays-games-with-its-reserves/)、[Protos（李林纠纷）](https://protos.com/justin-sun-keeps-fighting-with-huobi-founder-li-lin/)、[CoinDesk](https://www.coindesk.com/business/2023/05/16/justin-sun-accuses-huobi-founder-li-lins-brother-of-acquiring-ht-token-for-free-and-cashing-out/) ⭐⭐⭐
+**Consistency between words and actions**: ❌ **Severely inconsistent**. Sun Yuchen claims to support decentralization, yet used the power of centralized exchanges to forcibly seize control of a decentralized community. This is the case with the biggest gap between his words and actions among all his decisions.
 
----
-
-### 决策10：FTX崩盘时的「救援」操作（2022年11月）
-
-**背景**：2022年11月FTX崩盘，Binance宣布放弃收购。
-
-**行动**：
-- 孙宇晨推特宣布正在「组建解决方案」
-- 承诺可以投入「数十亿美元」救助FTX
-- 表示债务投资、股权投资、全面收购都在考虑范围内
-- 为FTX上的TRON系代币（TRX、BTT、JST、SUN、HT）设立1:1兑换信贷额度，允许用户将TRON系代币从FTX转出到外部钱包
-
-**实际结果**：
-- 1:1兑换通道确实开通，帮助了持有TRON系代币的FTX用户（这是实际行动）
-- 「数十亿救助」从未兑现
-- TRX在FTX上一度暴涨4000%（流动性枯竭下的异常波动）
-- 整体而言是一次成功的PR操作而非实质性全面救援
-
-**言行一致性**：❌ **部分不一致**。「数十亿救助」的承诺未兑现，但对TRON系代币持有者的1:1兑换是实际行动，展示了一定的危机应对能力。这次操作模式是：先用宏大承诺抢占头条，再用较小但实际的行动交付部分价值。
-
-**来源**：[CoinDesk](https://www.coindesk.com/business/2022/11/10/without-details-trons-justin-sun-says-hes-putting-together-solution-for-ftx)、[InvestorPlace](https://investorplace.com/2022/11/tron-founder-justin-sun-promises-to-bail-out-ftx-will-his-plan-really-work/)、[Benzinga](https://www.benzinga.com/markets/cryptocurrency/22/11/29680323/tron-founder-justin-sun-prepared-to-pump-billions-in-ftx)、[Forkast](https://forkast.news/headlines/debt-equity-investment-for-ftx-justin-sun/) ⭐⭐⭐
+**Sources**: [CoinDesk](https://www.coindesk.com/tech/2020/02/24/justin-sun-bought-steemit-steem-moved-to-limit-his-power), [Decrypt](https://decrypt.co/38050/steem-steemit-tron-justin-sun-cryptocurrency-war), [CryptoBriefing](https://cryptobriefing.com/tron-executes-hostile-takeover-steem-exchanges-collude/), [CoinTelegraph](https://cointelegraph.com/news/justin-sun-accused-of-bribing-his-way-to-the-top-of-the-steem-hierarchy) ⭐⭐⭐ (verifiable on-chain)
 
 ---
 
-### 决策11：SEC诉讼与应对策略（2023年3月—2026年3月）
+### Decision 6: The Blue Origin space-seat bid (won June 2021 → flew August 2025)
 
-**SEC指控内容（2023年3月22日）**：
-- 通过TRON基金会、BitTorrent基金会、Rainberry Inc.出售未注册证券（TRX和BTT）
-- 大规模洗盘交易（wash trading）操纵TRX市场——指使员工在其控制的账户之间执行**数十万笔对倒交易**
-- 付费让名人（Akon、Lindsay Lohan、Jake Paul等8位）推广TRX和BTT，但**未披露报酬**
-- 8位名人同意支付总计超过40万美元的和解金
+**Actions**:
+- Won a seat on Blue Origin's first crewed New Shepard flight for $28 million in June 2021
+- Missed the historic first flight on July 20, 2021, due to a "scheduling conflict"
+- Completed a suborbital spaceflight on the NS-34 mission on August 3, 2025, lasting about 10 minutes total, crossing the Kármán line (100 km altitude)
+- Fellow passengers included an Indian-American real-estate investor, a Turkish businessman/photographer, and a Puerto Rican meteorologist
 
-**孙宇晨的应对策略**：
-1. **外交豁免**：以格林纳达外交官身份主张豁免权（2024年被法院拒绝）
-2. **积极法律抗辩**
-3. **政治关系投资**：大量投资特朗普相关加密项目（WLFI、$TRUMP），总额超2.13亿美元
-4. **物理回避**：至今未出现在美国法庭，始终保持在美国境外活动
-5. **等待政治风向变化**
+**Consistency between words and actions**: ✅ **Consistent**. He promised it and eventually followed through. But the "scheduling conflict" excuse for missing the first flight is questionable — giving up a $28 million seat over a scheduling conflict?
 
-**最终结果（2026年3月5日）**：
-- SEC在特朗普政府上台后，撤回对孙宇晨个人及TRON基金会、BitTorrent基金会的**所有指控**
-- Rainberry Inc.（原BitTorrent Inc.）支付1000万美元和解
-- 孙宇晨和相关公司「不承认也不否认」任何不当行为
-- 民主党议员Elizabeth Warren等强烈批评，称SEC成了「特朗普的哈巴狗」（lap dog）
-- 众议院民主党议员致信SEC主席，指出这是「pay-to-play」（付费免罪）
-
-**言行一致性**：⚠️ **策略成功但方式高度争议**。SEC案件的解决与孙宇晨在特朗普加密项目中的大额投资时间线高度吻合。民主党众议员明确指出因果关系。无论是否有直接因果关系，这种观感是双刃剑。SEC执法主管在案件和解后不久突然离职，进一步加深了政治干预的观感。
-
-**来源**：[Bloomberg](https://www.bloomberg.com/news/articles/2026-03-05/sec-ends-case-against-crypto-billionaire-justin-sun)、[CoinDesk](https://www.coindesk.com/policy/2026/03/05/sec-justin-sun-reach-settlement-over-tron-lawsuit)、[SEC.gov](https://www.sec.gov/enforcement-litigation/litigation-releases/lr-25803)、[DL News](https://www.dlnews.com/articles/markets/democrats-torch-trump-after-lap-dog-sec-drops-justin-sun/)、[CoinCentral](https://coincentral.com/sec-settles-justin-sun-lawsuit-for-10-million-drops-tron-fraud-charges/)、[Invezz](https://invezz.com/news/2026/03/31/justin-sun-case-in-spotlight-as-sec-enforcement-chief-exits-abruptly/) ⭐⭐⭐
+**Sources**: [Space.com](https://www.space.com/space-exploration/private-spaceflight/blue-origin-launch-crypto-billionaire-justin-sun-launch-suborbital-space-ns-34), [GeekWire](https://www.geekwire.com/2025/crypto-justin-sun-28m-blue-origin-space/) ⭐⭐⭐
 
 ---
 
-### 决策12：蹭特朗普系列操作（2024年11月至今）
+### Decision 7: Obtaining Grenadian diplomatic status (December 2021 - March 2023)
 
-**行动时间线**：
+**Background**: Grenada is a Caribbean island nation with a population of about 110,000.
 
-| 时间 | 行动 | 金额 |
+**Actions**:
+- Appointed Grenada's permanent representative/ambassador to the WTO (World Trade Organization) in December 2021, based in Geneva
+- Gained diplomatic status and immunity, appearing at international events with the title "His Excellency"
+- Grenada's ruling party changed after the June 2022 election
+- The new government did not renew his appointment, which ended on March 31, 2023
+- After the SEC's March 2023 lawsuit, Sun Yuchen tried to invoke diplomatic immunity as a defense
+- According to a Protos exclusive, Sun Yuchen "falsely claimed diplomatic immunity"
+- A U.S. court rejected his diplomatic-immunity claim in 2024
+
+**Contradictory statements about his term**:
+- First claimed on The Block that he still held the ambassador role (with a screenshot attached)
+- Later admitted the term had ended
+
+**Decision logic**: providing a layer of political protection for TRON's global operations, gaining some level of protection under international law. Widely interpreted as "buying a diplomatic identity to sidestep legal risk."
+
+**Consistency between words and actions**: ❌ **Inconsistent**. First claimed to still be serving as ambassador, then admitted the term had ended. Attempted to use diplomatic immunity to sidestep the SEC lawsuit, but failed.
+
+**Sources**: [Fortune](https://fortune.com/crypto/2023/03/31/his-excellency-sec-lawsuit-justin-sun-grenada-diplomat-wto/), [The Block (claiming to remain)](https://www.theblock.co/post/224253/justin-sun-claims-he-remains-wto-ambassador-for-grenada-shares-screenshots), [The Block (admitting it ended)](https://www.theblock.co/post/224319/justin-sun-grenada-wto-ambassador), [Protos](https://protos.com/scoop-justin-sun-falsely-claimed-diplomatic-immunity-in-lawsuit/), [CoinDesk](https://www.coindesk.com/policy/2023/03/30/tron-founder-justin-sun-reportedly-lost-his-diplomatic-status/) ⭐⭐⭐
+
+---
+
+### Decision 8: Launching the USDD stablecoin (May 2022)
+
+**Background**: in May 2022, the algorithmic stablecoin UST (Terra/LUNA) was about to collapse (ultimately causing over $40 billion in losses). Sun Yuchen launched USDD right on the eve of the UST collapse.
+
+**Actions**:
+- Launched USDD on May 5, 2022, with a mechanism highly similar to Terra's UST — an algorithmic stablecoin
+- Claimed USDD was backed by over-collateralization from the TRON DAO Reserve
+- CoinDesk directly called USDD a "clone" of Terra's algorithmic stablecoin
+- Launched USDD 2.0 in January 2025, switching to full crypto-asset reserve backing
+- Launched USDD natively on Ethereum in 2025
+
+**Core controversy**:
+- Launching a similar product during the UST collapse was criticized as opportunistic and disregarding market risk
+- Reserve transparency was repeatedly questioned
+- Quietly swapped the primary reserve from BTC to TRX again in 2025
+
+**Actual outcome**: USDD never depegged, but its market cap fell far short of expectations. Shifting from an algorithmic mechanism to a reserve-backed model effectively admitted the failure of the original algorithmic-stablecoin approach.
+
+**Consistency between words and actions**: ⚠️ **Partly consistent**. The product did launch and does run, but shifting from "decentralized algorithmic stablecoin" to "reserve-backed" essentially disavowed the original technical roadmap. The timing choice — launching a similar product during the Terra collapse — exposed an opportunistic streak.
+
+**Sources**: [Decrypt](https://decrypt.co/102114/justin-sun-terra-stablecoin-boasts-backing-bitcoin-tether-tron), [CoinDesk](https://www.coindesk.com/markets/2022/05/04/revolution-promised-by-trons-justin-sun-looks-like-clone-of-terras-algorithmic-stablecoin), [The Block](https://www.theblock.co/post/369855/usdd-the-justin-sun-backed-stablecoin-launches-natively-on-ethereum), [CCN](https://www.ccn.com/news/crypto/justin-suns-usdd-trx-backing/) ⭐⭐⭐
+
+---
+
+### Decision 9: Controlling Huobi/HTX (October 2022-present)
+
+**Background**: Huobi was one of China's three largest crypto exchanges, facing a liquidity crisis and declining market share in 2022.
+
+**Actions**:
+- In October 2022, Hong Kong-based About Capital Management acquired Huobi, with Sun Yuchen simultaneously appointed "global advisor"
+- **Sun Yuchen denied being the actual buyer**, calling himself only an advisor
+- His public conduct shows he is the de facto controller — driving all major business decisions and public statements
+- Renamed Huobi to HTX in September 2023 (interpreted as "Huobi Tron Exchange"), cementing the perception of control
+- Later got into a public conflict with former owner Li Lin:
+  - Sun Yuchen claimed Li Lin concealed due-diligence materials, leaving a $30 million balance-sheet gap
+  - Claimed he personally lent $30 million to fill the gap, not yet repaid
+  - Accused Li Lin's brother of obtaining HT tokens for free and cashing them out
+
+**Subsequent issues**:
+- HTX's reserve transparency has continued to be questioned (Protos reported HTX "plays games" with its reserve reports)
+- HTX has frequently faced security incidents and complaints of withdrawal difficulties
+
+**Consistency between words and actions**: ❌ **Inconsistent**. Denying being the acquirer while actually controlling operations is yet another rerun of the "deny first, admit later" pattern.
+
+**Sources**: [Wikipedia](https://en.wikipedia.org/wiki/Justin_Sun), [Protos (reserve issues)](https://protos.com/justin-sun-advised-htx-plays-games-with-its-reserves/), [Protos (the Li Lin dispute)](https://protos.com/justin-sun-keeps-fighting-with-huobi-founder-li-lin/), [CoinDesk](https://www.coindesk.com/business/2023/05/16/justin-sun-accuses-huobi-founder-li-lins-brother-of-acquiring-ht-token-for-free-and-cashing-out/) ⭐⭐⭐
+
+---
+
+### Decision 10: The "rescue" move during the FTX collapse (November 2022)
+
+**Background**: FTX collapsed in November 2022, and Binance announced it was walking away from its planned acquisition.
+
+**Actions**:
+- Sun Yuchen tweeted that he was "putting together a solution"
+- Promised he could commit "billions of dollars" to bail out FTX
+- Said debt investment, equity investment, and a full acquisition were all on the table
+- Set up a 1:1 conversion credit line for TRON-family tokens on FTX (TRX, BTT, JST, SUN, HT), letting users withdraw those tokens from FTX to external wallets
+
+**Actual outcome**:
+- The 1:1 conversion channel did open and did help FTX users holding TRON-family tokens (this was a real action)
+- The "billions in rescue funding" never materialized
+- TRX briefly spiked 4000% on FTX (an anomalous move caused by evaporating liquidity)
+- Overall, this was a successful PR move rather than a substantive full-scale rescue
+
+**Consistency between words and actions**: ❌ **Partly inconsistent**. The "billions in rescue funding" promise was never fulfilled, but the 1:1 conversion for TRON-family token holders was a real action, demonstrating some crisis-response capability. The pattern here: seize the headlines first with a grand promise, then deliver partial but real value through a smaller, actual action.
+
+**Sources**: [CoinDesk](https://www.coindesk.com/business/2022/11/10/without-details-trons-justin-sun-says-hes-putting-together-solution-for-ftx), [InvestorPlace](https://investorplace.com/2022/11/tron-founder-justin-sun-promises-to-bail-out-ftx-will-his-plan-really-work/), [Benzinga](https://www.benzinga.com/markets/cryptocurrency/22/11/29680323/tron-founder-justin-sun-prepared-to-pump-billions-in-ftx), [Forkast](https://forkast.news/headlines/debt-equity-investment-for-ftx-justin-sun/) ⭐⭐⭐
+
+---
+
+### Decision 11: The SEC lawsuit and response strategy (March 2023-March 2026)
+
+**The SEC's allegations (March 22, 2023)**:
+- Selling unregistered securities (TRX and BTT) through the TRON Foundation, the BitTorrent Foundation, and Rainberry Inc.
+- Large-scale wash trading manipulating the TRX market — directing employees to execute **hundreds of thousands of matched trades** between accounts he controlled
+- Paying celebrities (Akon, Lindsay Lohan, Jake Paul, and 5 others — 8 in total) to promote TRX and BTT, without **disclosing the payment**
+- The 8 celebrities agreed to pay over $400,000 combined in settlements
+
+**Sun Yuchen's response strategy**:
+1. **Diplomatic immunity**: asserted immunity via his Grenadian diplomatic status (rejected by the court in 2024)
+2. **Aggressive legal defense**
+3. **Investing in political relationships**: invested heavily in Trump-related crypto projects (WLFI, $TRUMP), totaling over $213 million
+4. **Physical avoidance**: has never appeared in a U.S. courtroom, always remaining active outside the U.S.
+5. **Waiting for the political winds to shift**
+
+**Final outcome (March 5, 2026)**:
+- After the Trump administration took over, the SEC dropped **all charges** against Sun Yuchen personally, the TRON Foundation, and the BitTorrent Foundation
+- Rainberry Inc. (formerly BitTorrent Inc.) paid a $10 million settlement
+- Sun Yuchen and the related companies "neither admitted nor denied" any wrongdoing
+- Democratic lawmakers including Elizabeth Warren strongly criticized this, calling the SEC "Trump's lap dog"
+- House Democrats wrote to the SEC chair, calling it "pay-to-play"
+
+**Consistency between words and actions**: ⚠️ **A successful strategy, but through a highly controversial method**. The timeline of the SEC case's resolution lines up closely with Sun Yuchen's large investments in Trump-related crypto projects. Democratic House members explicitly pointed to a causal relationship. Whether or not there's a direct causal link, the optics are a double-edged sword. The SEC's enforcement chief abruptly departed shortly after the settlement, further deepening the perception of political interference.
+
+**Sources**: [Bloomberg](https://www.bloomberg.com/news/articles/2026-03-05/sec-ends-case-against-crypto-billionaire-justin-sun), [CoinDesk](https://www.coindesk.com/policy/2026/03/05/sec-justin-sun-reach-settlement-over-tron-lawsuit), [SEC.gov](https://www.sec.gov/enforcement-litigation/litigation-releases/lr-25803), [DL News](https://www.dlnews.com/articles/markets/democrats-torch-trump-after-lap-dog-sec-drops-justin-sun/), [CoinCentral](https://coincentral.com/sec-settles-justin-sun-lawsuit-for-10-million-drops-tron-fraud-charges/), [Invezz](https://invezz.com/news/2026/03/31/justin-sun-case-in-spotlight-as-sec-enforcement-chief-exits-abruptly/) ⭐⭐⭐
+
+---
+
+### Decision 12: The series of Trump-related moves (November 2024-present)
+
+**Action timeline**:
+
+| Time | Action | Amount |
 |------|------|------|
-| 2024年11月 | 投资World Liberty Financial (WLFI) | 3000万美元 |
-| 2024年11月26日 | 被任命为WLFI顾问 | — |
-| 2025年1月 | 追加WLFI投资 | 至7500万美元 |
-| 2025年5月 | 成为$TRUMP代币最大持有者 | 约1850万美元 |
-| 2025年5月22日 | 参加特朗普$TRUMP晚宴（Trump National Golf Club, Virginia），获赠Golden Tourbillon手表（零售价10万美元） | 约2000万美元入场成本 |
-| 2025年9月 | WLFI冻结孙宇晨地址，涉及5.95亿枚WLFI代币（约1.07亿美元） | — |
+| November 2024 | Invested in World Liberty Financial (WLFI) | $30 million |
+| November 26, 2024 | Appointed WLFI advisor | — |
+| January 2025 | Increased WLFI investment | to $75 million |
+| May 2025 | Became the largest holder of the $TRUMP token | roughly $18.5 million |
+| May 22, 2025 | Attended the $TRUMP dinner (Trump National Golf Club, Virginia), received a Golden Tourbillon watch (retail price $100,000) | roughly $20 million entry cost |
+| September 2025 | WLFI froze Sun Yuchen's address, involving 595 million WLFI tokens (roughly $107 million) | — |
 
-**总投入**：超过2.13亿美元投向特朗普相关加密项目。
+**Total invested**: over $213 million into Trump-related crypto projects.
 
-**$TRUMP晚宴细节**：
-- 220名$TRUMP最大持有者的私人晚宴
-- 投资者共花费约1.48亿美元购买$TRUMP代币以获得席位
-- 前25名持有者花费超过1.11亿美元
-- 孙宇晨作为#1持有者获得Golden Tourbillon手表和白宫参观
-- 晚宴外有抗议者举着「America is not for sale」标语
+**Details of the $TRUMP dinner**:
+- A private dinner for the 220 largest $TRUMP holders
+- Investors together spent roughly $148 million buying $TRUMP tokens to secure a seat
+- The top 25 holders spent over $111 million
+- Sun Yuchen, as the #1 holder, received the Golden Tourbillon watch and a White House tour
+- Protesters outside the dinner held signs reading "America is not for sale"
 
-**WLFI冻结事件（2025年9月）**：
-- WLFI在发现孙宇晨在代币价格下跌时转移代币后，冻结了其地址
-- 被冻结的5.95亿枚解锁WLFI代币价值约1.07亿美元
-- 孙宇晨公开请求解冻，声称「不会卖」
-- 据报道，被冻结的代币自9月以来已浮亏约6000万美元
+**The WLFI freeze incident (September 2025)**:
+- WLFI froze Sun Yuchen's address after discovering he had moved tokens as their price fell
+- The 595 million frozen, unlocked WLFI tokens were worth roughly $107 million
+- Sun Yuchen publicly requested they be unfrozen, saying he "would not sell"
+- Reportedly, the frozen tokens have shown a roughly $60 million paper loss since September
 
-**争议**：
-- 民主党议员以国家安全为由质疑孙宇晨的中国背景（在中央党校研究项目、国家媒体发表文章）
-- 被指为「pay-to-play」——用投资换取SEC案件和解
-- 特朗普家族自己的加密项目反过来冻结了最大投资者，关系并不稳固
+**Controversy**:
+- Democratic lawmakers questioned Sun Yuchen's Chinese background on national-security grounds (a research program at the Central Party School, articles published in state media)
+- Accused of "pay-to-play" — trading investment for a favorable SEC settlement
+- The Trump family's own crypto project turned around and froze its largest investor — showing the relationship wasn't stable
 
-**言行一致性**：⚠️ **复杂**。从纯商业角度看，投资政治关系带来了SEC案件和解的实际回报。但2.13亿美元的投入被WLFI反噬（冻结地址、浮亏6000万），说明这种依附式关系存在根本性风险。
+**Consistency between words and actions**: ⚠️ **Complex**. From a purely commercial standpoint, investing in political relationships delivered a real payoff in the form of the SEC settlement. But the $213 million invested got hit back by WLFI (a frozen address, a $60 million paper loss), showing this kind of dependent relationship carries fundamental risk.
 
-**来源**：[Washington Post](https://www.washingtonpost.com/world/2025/05/23/trump-crypto-dinner-justin-sun/)、[CNBC](https://www.cnbc.com/2025/05/20/justin-sun-trump-dinner.html)、[Fortune（冻结）](https://fortune.com/crypto/2025/09/05/justin-sun-donald-trump-world-liberty-financial-blacklisted-crypto-address-wlfi/)、[Axios](https://www.axios.com/2025/09/05/trump-justin-sun-world-liberty-financial)、[CNN](https://www.cnn.com/2025/05/23/politics/trump-crypto-meme-coin-dinner)、[The Block](https://www.theblock.co/post/383577/justin-suns-locked-world-liberty-tokens) ⭐⭐⭐
-
----
-
-### 决策13：天价买香蕉艺术品（2024年11月）
-
-**行动**：
-- 2024年11月20日在纽约苏富比拍卖会上以624万美元拍下意大利艺术家Maurizio Cattelan的概念艺术作品「Comedian」——一根用胶带贴在墙上的香蕉（使用加密货币支付）
-- 此作品2019年首次展出时售价12万美元，孙宇晨以50倍价格买入
-- 买家实际获得的不是香蕉本身，而是一份真品证书——授权持有者在墙上复制展示这件作品
-- 2024年11月29日在香港半岛酒店新闻发布会上公开吃掉了这根香蕉
-- 制造了全球性话题，从NPR到NBC到CNBC到Fox Business全面覆盖
-- 引发出卖香蕉的纽约水果摊贩Shah Alam的故事（香蕉原价25美分）
-
-**后续争议**：孙宇晨团队要求CoinDesk删除一篇关于此次购买的文章，理由是文章「语气」不当（提及其SEC诉讼和对媒体的法律威胁）。CoinDesk未删除。据Artnet报道证实了这一施压行为。
-
-**言行一致性**：✅ **一致**（在他的行为模式内）。这是一次教科书级的注意力经济操作。但压制媒体报道的行为与其公开倡导的「去中心化」精神矛盾。
-
-**来源**：[NPR](https://www.npr.org/2024/11/29/nx-s1-5210800/6-million-banana-art-piece-eaten)、[CNBC](https://www.cnbc.com/2024/11/21/crypto-investor-justin-sun-banana-comedian-sotheby-auction.html)、[NBC News](https://www.nbcnews.com/news/us-news/man-spent-62-million-banana-duct-taped-wall-says-going-eat-rcna181172)、[Slate](https://slate.com/technology/2024/12/justin-sun-banana-art-crypto-billionaire-criminal-comedian-maurizio-cattelan.html)、[Artnet（施压CoinDesk）](https://news.artnet.com/art-world/justin-sun-maurizio-cattelan-banana-coindesk-article-2594561) ⭐⭐⭐
+**Sources**: [Washington Post](https://www.washingtonpost.com/world/2025/05/23/trump-crypto-dinner-justin-sun/), [CNBC](https://www.cnbc.com/2025/05/20/justin-sun-trump-dinner.html), [Fortune (the freeze)](https://fortune.com/crypto/2025/09/05/justin-sun-donald-trump-world-liberty-financial-blacklisted-crypto-address-wlfi/), [Axios](https://www.axios.com/2025/09/05/trump-justin-sun-world-liberty-financial), [CNN](https://www.cnn.com/2025/05/23/politics/trump-crypto-meme-coin-dinner), [The Block](https://www.theblock.co/post/383577/justin-suns-locked-world-liberty-tokens) ⭐⭐⭐
 
 ---
 
-## 三、发币操作汇总
+### Decision 13: Buying an outrageously priced banana artwork (November 2024)
 
-| 代币 | 时间 | 类型 | 机制 | 现状（2026） |
+**Actions**:
+- On November 20, 2024, won Italian artist Maurizio Cattelan's conceptual artwork "Comedian" — a banana taped to a wall — for $6.24 million at a Sotheby's auction in New York (paid in cryptocurrency)
+- The piece first sold for $120,000 when exhibited in 2019 — Sun Yuchen paid 50x that price
+- What the buyer actually received wasn't the banana itself, but a certificate of authenticity — authorizing the holder to replicate and display the piece on a wall
+- Publicly ate the banana at a press conference at the Peninsula Hotel Hong Kong on November 29, 2024
+- Generated a global talking point, covered everywhere from NPR to NBC to CNBC to Fox Business
+- Led to a story about the New York fruit vendor, Shah Alam, who sold the original banana (the banana itself cost 25 cents)
+
+**Later controversy**: Sun Yuchen's team asked CoinDesk to delete an article about the purchase, citing an inappropriate "tone" (it mentioned his SEC lawsuit and legal threats against media). CoinDesk did not delete it. Artnet's reporting confirmed this pressure campaign.
+
+**Consistency between words and actions**: ✅ **Consistent** (within his own behavioral pattern). This was a textbook attention-economy operation. But suppressing media coverage contradicts the "decentralization" spirit he publicly advocates.
+
+**Sources**: [NPR](https://www.npr.org/2024/11/29/nx-s1-5210800/6-million-banana-art-piece-eaten), [CNBC](https://www.cnbc.com/2024/11/21/crypto-investor-justin-sun-banana-comedian-sotheby-auction.html), [NBC News](https://www.nbcnews.com/news/us-news/man-spent-62-million-banana-duct-taped-wall-says-going-eat-rcna181172), [Slate](https://slate.com/technology/2024/12/justin-sun-banana-art-crypto-billionaire-criminal-comedian-maurizio-cattelan.html), [Artnet (pressuring CoinDesk)](https://news.artnet.com/art-world/justin-sun-maurizio-cattelan-banana-coindesk-article-2594561) ⭐⭐⭐
+
+---
+
+## III. Roundup of token-launch operations
+
+| Token | Time | Type | Mechanism | Status (2026) |
 |------|------|------|------|-------------|
-| **TRX** | 2017年9月 | 公链原生代币 | ICO募集~7000万美元 | 存活，市值前20 |
-| **BTT** | 2019年1月 | BitTorrent代币 | TRC10标准，基于收购的BitTorrent生态，币安Launchpad IEO | 存活但远低于高点 |
-| **JST** | ~2020年 | DeFi治理代币 | TRON生态DeFi项目JUST | 低迷 |
-| **SUN** | 2020年9月 | DeFi挖矿代币 | 模仿YFI的治理挖矿 | 热度短暂后低迷 |
-| **WIN** | 2019年 | 预言机代币 | WINkLink | 低迷 |
-| **USDD** | 2022年5月 | 算法稳定币→储备稳定币 | 初期类似UST，后转储备支持（2025年USDD 2.0） | 运行中，市值有限 |
-| **HT** | 控制（非创建） | 交易所代币 | 通过控制HTX获得 | 与HTX绑定 |
+| **TRX** | September 2017 | native chain token | ICO raised ~$70 million | survives, top-20 market cap |
+| **BTT** | January 2019 | BitTorrent token | TRC10 standard, based on the acquired BitTorrent ecosystem, Binance Launchpad IEO | survives but far below its peak |
+| **JST** | ~2020 | DeFi governance token | for TRON ecosystem DeFi project JUST | depressed |
+| **SUN** | September 2020 | DeFi mining token | modeled on YFI's governance mining | brief heat, then depressed |
+| **WIN** | 2019 | oracle token | WINkLink | depressed |
+| **USDD** | May 2022 | algorithmic stablecoin → reserve-backed stablecoin | initially similar to UST, later shifted to reserve backing (USDD 2.0 in 2025) | operating, limited market cap |
+| **HT** | controlled (not created) | exchange token | obtained through controlling HTX | tied to HTX |
 
-**发币模式特征**：
-1. 每次重大收购或生态扩展后都伴随新代币发行
-2. 通常对标当时热点（SUN对标YFI，USDD对标UST）
-3. 通过TRON生态和个人流量初期拉升
-4. 通过自己控制的交易所（HTX、Poloniex）维持流动性
-5. 代币化是核心商业模式——将任何资产/社区/概念转化为可交易的代币
-6. 长期大多跑输市场（除TRX外）
-
----
-
-## 四、决策模式总结
-
-### 模式1：「先否认，后承认」
-反复出现于Poloniex收购（先否认参与，后承认）、HTX收购（否认是实际买家）、格林纳达大使任期（先说还在任，后承认结束）。孙宇晨倾向于先否认参与/控制，在证据确凿或对自己有利时再承认。
-
-### 模式2：注意力经济为核心驱动力
-从巴菲特午餐（456万）、天价香蕉（624万）、Blue Origin座位（2800万）、$TRUMP晚宴（~2000万），到FTX崩盘时的救援声明——本质上是一个注意力套利者。他理解媒体运作机制，愿意支付高额溢价购买注意力，然后将注意力转化为加密资产的价格支撑。
-
-### 模式3：「收购+发币」闭环
-BitTorrent → BTT | Poloniex → 流动性入口 | HTX → HT/交易量 | Steemit → 试图代币化（失败）。模式是：收购有用户基数的产品 → 在其基础上发行代币 → 通过自己控制的交易所维持流动性。
-
-### 模式4：「危机中抢占叙事」
-FTX崩盘时的「救援」操作、Terra崩盘后推USDD、巴菲特午餐推迟时的全球媒体轰炸——善于在行业危机中抢占叙事位置，用宏大承诺抢头条，用较小的实际行动部分交付。
-
-### 模式5：政治关系投资
-格林纳达外交官（2021） → SEC诉讼防护层 → 特朗普加密项目大额投资（2024-2025） → SEC案件和解（2026）。这是一条清晰的政治资本积累路径。每一步都有明确的法律/监管风险对冲意图。
-
-### 模式6：去中心化理念与中心化行为的持续矛盾
-公开倡导去中心化互联网，但实际行为是：控制交易所（HTX、Poloniex）、利用交易所力量夺取社区控制权（Steem）、压制媒体批评（CoinDesk事件）、通过政治关系影响监管。这是孙宇晨最核心的言行不一致。
-
-### 模式7：媒体控制意识
-- 2023年向加密媒体发送撤稿要求（涉及恐怖主义融资报道）
-- 2024年要求CoinDesk删除香蕉购买文章
-- 据citationneeded.news报道，孙宇晨对Bloomberg也发起了法律行动以控制叙事
-- 与「去中心化」和「言论自由」的公开倡导形成鲜明矛盾
+**Characteristics of his token-launch pattern**:
+1. Every major acquisition or ecosystem expansion is accompanied by a new token launch
+2. Usually benchmarked against whatever's trending at the time (SUN against YFI, USDD against UST)
+3. Initially boosted through the TRON ecosystem and his personal traffic
+4. Liquidity maintained through exchanges he himself controls (HTX, Poloniex)
+5. Tokenization is the core business model — turning any asset/community/concept into a tradeable token
+6. Most underperform the market long-term (except TRX)
 
 ---
 
-## 五、言行一致性总表
+## IV. Summary of decision patterns
 
-| # | 决策 | 言行一致性 | 说明 |
+### Pattern 1: "Deny first, admit later"
+Recurs across the Poloniex acquisition (denied involvement first, then admitted it), the HTX acquisition (denied being the actual buyer), and his Grenadian ambassadorship (first said he was still serving, then admitted it ended). Sun Yuchen tends to deny involvement/control first, only admitting it once the evidence is clear or once it becomes favorable to him.
+
+### Pattern 2: the attention economy as the core driver
+From the Buffett lunch ($4.56M), the outrageous banana ($6.24M), the Blue Origin seat ($28M), the $TRUMP dinner (~$20M), to the "rescue" announcement during the FTX collapse — at his core he's an attention arbitrageur. He understands how media works, is willing to pay a steep premium to buy attention, and then converts that attention into price support for his crypto assets.
+
+### Pattern 3: the "acquire + launch a token" closed loop
+BitTorrent → BTT | Poloniex → a liquidity gateway | HTX → HT/trading volume | Steemit → an attempted tokenization (failed). The pattern: acquire a product with an existing user base → launch a token on top of it → maintain liquidity through exchanges he himself controls.
+
+### Pattern 4: "seizing the narrative during a crisis"
+The "rescue" move during the FTX collapse, launching USDD after the Terra collapse, the global media blitz when the Buffett lunch was delayed — he's skilled at seizing the narrative during industry crises, grabbing headlines with a grand promise, then partially delivering through a smaller real action.
+
+### Pattern 5: investing in political relationships
+The Grenadian ambassadorship (2021) → a protective layer against the SEC lawsuit → heavy investment in Trump crypto projects (2024-2025) → the SEC settlement (2026). This is a clear path of accumulating political capital. Every step has a clear intent to hedge legal/regulatory risk.
+
+### Pattern 6: the persistent contradiction between decentralization rhetoric and centralized behavior
+Publicly advocates for a decentralized internet, but his actual behavior is: controlling exchanges (HTX, Poloniex), using exchange power to seize community control (Steem), suppressing media criticism (the CoinDesk incident), and influencing regulation through political relationships. This is Sun Yuchen's single most central inconsistency between words and actions.
+
+### Pattern 7: awareness of media control
+- Sent takedown requests to crypto media in 2023 (regarding terrorism-financing reporting)
+- Demanded CoinDesk delete the banana-purchase article in 2024
+- According to citationneeded.news, Sun Yuchen also took legal action against Bloomberg to control the narrative
+- This stands in stark contradiction to his public advocacy for "decentralization" and "free speech"
+
+---
+
+## V. Master table of consistency between words and actions
+
+| # | Decision | Consistency | Notes |
 |---|------|-----------|------|
-| 1 | TRON ICO + 白皮书 | ❌ 不一致 | 「翻译问题」无法解释整段抄袭 |
-| 2 | 收购BitTorrent | ⚠️ 部分一致 | 有实际行动，但技术愿景实现有限 |
-| 3 | 巴菲特午餐 | ❌ 不一致 | 推迟理由被广泛质疑 |
-| 4 | 收购Poloniex | ❌ 不一致 | 先否认后承认 |
-| 5 | Steem敌意收购 | ❌ 严重不一致 | 去中心化倡导者用中心化手段夺权，言行差距最大 |
-| 6 | Blue Origin太空 | ✅ 一致 | 承诺并最终完成（虽延迟4年） |
-| 7 | 格林纳达外交官 | ❌ 不一致 | 多次矛盾说法 + 试图滥用外交豁免 |
-| 8 | 发行USDD | ⚠️ 部分一致 | 产品运行但技术路线被迫转向 |
-| 9 | 控制HTX | ❌ 不一致 | 否认是实际控制人 |
-| 10 | FTX「救援」 | ⚠️ 部分不一致 | 宏大承诺未兑现，但有部分实际行动 |
-| 11 | SEC应对 | ⚠️ 策略成功但高度争议 | 政治投资→案件和解，因果关系引发pay-to-play质疑 |
-| 12 | 蹭特朗普 | ⚠️ 复杂 | 商业理性但被WLFI反噬（冻结+浮亏6000万） |
-| 13 | 买香蕉 | ✅ 一致 | PR操作坦诚（但压制报道矛盾） |
+| 1 | The TRON ICO + whitepaper | ❌ Inconsistent | "Translation issue" can't explain whole-passage plagiarism |
+| 2 | Acquiring BitTorrent | ⚠️ Partly consistent | Real action taken, but the technical vision was only partly realized |
+| 3 | The Buffett lunch | ❌ Inconsistent | The delay excuse was widely doubted |
+| 4 | Acquiring Poloniex | ❌ Inconsistent | Denied it, then admitted it |
+| 5 | The Steem hostile takeover | ❌ Severely inconsistent | A decentralization advocate seizing power via centralized means — the biggest gap between words and actions |
+| 6 | The Blue Origin spaceflight | ✅ Consistent | Promised and eventually delivered (though 4 years late) |
+| 7 | The Grenadian ambassadorship | ❌ Inconsistent | Repeatedly contradictory statements + attempted to abuse diplomatic immunity |
+| 8 | Launching USDD | ⚠️ Partly consistent | The product runs, but the technical roadmap was forced to pivot |
+| 9 | Controlling HTX | ❌ Inconsistent | Denied being the actual controller |
+| 10 | The FTX "rescue" | ⚠️ Partly inconsistent | The grand promise went unfulfilled, but some real action was taken |
+| 11 | The SEC response | ⚠️ A successful strategy, but highly controversial | Political investment → case settlement, the causal link raised pay-to-play concerns |
+| 12 | The Trump-related moves | ⚠️ Complex | Commercially rational, but hit back by WLFI (frozen + $60M paper loss) |
+| 13 | Buying the banana | ✅ Consistent | Candid PR operation (though suppressing coverage of it is contradictory) |
 
-**总体评估**：在13个主要决策中——
-- ✅ 完全一致：2个（Blue Origin、香蕉）
-- ⚠️ 部分一致/复杂：5个（BitTorrent、USDD、FTX、SEC、特朗普）
-- ❌ 明确不一致：6个（白皮书、巴菲特午餐、Poloniex、Steem、格林纳达、HTX）
+**Overall assessment**: across 13 major decisions —
+- ✅ Fully consistent: 2 (Blue Origin, the banana)
+- ⚠️ Partly consistent/complex: 5 (BitTorrent, USDD, FTX, the SEC, Trump)
+- ❌ Clearly inconsistent: 6 (the whitepaper, the Buffett lunch, Poloniex, Steem, Grenada, HTX)
 
-核心矛盾：他是一个**高度中心化运营**的人，却反复宣称**去中心化理念**；他善于做出**宏大承诺**来获取注意力，但**兑现率偏低**。
+Core contradiction: he is someone who operates in a **highly centralized** way, yet repeatedly proclaims a belief in **decentralization**; he's skilled at making **grand promises** to capture attention, but his **follow-through rate is low**.
 
-不过从纯商业/生存结果来看，他的多数决策在财务上是成功的——TRON生态在2026年仍然是市值前列的公链项目，而他个人也成功化解了SEC诉讼。
+That said, from a purely commercial/survival standpoint, most of his decisions have been financially successful — the TRON ecosystem remains one of the top-ranked public-chain projects by market cap in 2026, and he personally succeeded in resolving the SEC lawsuit.
 
 ---
 
-## 六、信息源汇总
+## VI. Source roundup
 
-### 一手/权威来源
-- [SEC.gov 诉讼文件](https://www.sec.gov/enforcement-litigation/litigation-releases/lr-25803)
+### Primary/authoritative sources
+- [SEC.gov litigation filings](https://www.sec.gov/enforcement-litigation/litigation-releases/lr-25803)
 - [Bloomberg - SEC Ends Case](https://www.bloomberg.com/news/articles/2026-03-05/sec-ends-case-against-crypto-billionaire-justin-sun)
 - [Washington Post - Trump Dinner](https://www.washingtonpost.com/world/2025/05/23/trump-crypto-dinner-justin-sun/)
 - [CNN - Buffett Lunch](https://edition.cnn.com/2019/07/23/business/warren-buffett-lunch-justin-sun)
@@ -425,21 +425,21 @@ FTX崩盘时的「救援」操作、Terra崩盘后推USDD、巴菲特午餐推�
 - [TechCrunch - BitTorrent Acquisition](https://techcrunch.com/2018/06/18/bittorrent-tron/)
 - [Space.com - Blue Origin](https://www.space.com/space-exploration/private-spaceflight/blue-origin-launch-crypto-billionaire-justin-sun-launch-suborbital-space-ns-34)
 
-### 加密专业媒体
-- [CoinDesk](https://www.coindesk.com) - 多篇深度报道
-- [The Block](https://www.theblock.co) - WLFI冻结、格林纳达等
-- [Decrypt](https://decrypt.co) - Steem事件、USDD等
-- [CryptoBriefing](https://cryptobriefing.com) - Steem收购
-- [Protos](https://protos.com) - HTX储备、外交豁免独家报道
-- [CoinTelegraph](https://cointelegraph.com) - Steem贿赂指控
+### Crypto-specialist media
+- [CoinDesk](https://www.coindesk.com) - multiple in-depth reports
+- [The Block](https://www.theblock.co) - the WLFI freeze, Grenada, etc.
+- [Decrypt](https://decrypt.co) - the Steem incident, USDD, etc.
+- [CryptoBriefing](https://cryptobriefing.com) - the Steem takeover
+- [Protos](https://protos.com) - HTX reserves, the diplomatic-immunity exclusive
+- [CoinTelegraph](https://cointelegraph.com) - the Steem bribery allegations
 
-### 综合媒体
-- [CNBC](https://www.cnbc.com) - 巴菲特午餐、$TRUMP晚宴
-- [Fortune](https://fortune.com) - 格林纳达、WLFI冻结
-- [Axios](https://www.axios.com) - WLFI关系破裂
-- [Slate](https://slate.com) - 香蕉购买深度分析
-- [BuzzFeed News](https://www.buzzfeednews.com) - 白皮书抄袭调查
+### General media
+- [CNBC](https://www.cnbc.com) - the Buffett lunch, the $TRUMP dinner
+- [Fortune](https://fortune.com) - Grenada, the WLFI freeze
+- [Axios](https://www.axios.com) - the WLFI relationship breakdown
+- [Slate](https://slate.com) - an in-depth analysis of the banana purchase
+- [BuzzFeed News](https://www.buzzfeednews.com) - the whitepaper plagiarism investigation
 
-### 学术/政府来源
-- [众议院民主党致SEC信函](https://casten.house.gov/imo/media/doc/letter_to_sec_on_justin_sun_september_2025.pdf)
-- [众议院金融服务委员会致SEC信函](https://democrats-financialservices.house.gov/uploadedfiles/01.14.2026_ltr_sec_rfcryptoe.pdf)
+### Academic/government sources
+- [A letter from House Democrats to the SEC](https://casten.house.gov/imo/media/doc/letter_to_sec_on_justin_sun_september_2025.pdf)
+- [A letter from the House Financial Services Committee to the SEC](https://democrats-financialservices.house.gov/uploadedfiles/01.14.2026_ltr_sec_rfcryptoe.pdf)

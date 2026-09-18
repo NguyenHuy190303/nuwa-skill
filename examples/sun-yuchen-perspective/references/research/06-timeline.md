@@ -1,132 +1,132 @@
-# 孙宇晨（Justin Sun）完整时间线
+# Sun Yuchen (Justin Sun) - Full Timeline
 
-## 一、成长与教育（1990-2014）
+## I. Upbringing and education (1990-2014)
 
-**1990年7月30日** — 出生于中国青海省西宁市。4岁时随家人迁居广东惠州。据媒体报道，少年时期家庭变故（母亲改嫁海外、父子关系紧张），一度沉迷游戏、逃课，成绩跌至三本线以下。
+**July 30, 1990** — born in Xining, Qinghai Province, China. Moved with his family to Huizhou, Guangdong at age 4. According to media reports, family upheaval during his teenage years (his mother remarried and moved overseas, a strained father-son relationship) led him to become absorbed in games and skip school for a while, with his grades falling below the level needed for a third-tier university.
 
-**2007年** — 研究历年获奖文章套路后参加「新概念作文大赛」，获一等奖。这成为他进入北大的关键跳板。
+**2007** — after studying the patterns of past award-winning entries, entered the "New Concept" essay competition and won first prize. This became the key stepping stone to his admission to Peking University.
 
-**2007-2008年** — 利用青海户籍身份参加高考（被外界称为「高考移民」），总分650分，距北大录取线差3分，但凭借新概念一等奖+自主招生加分，被**北京大学历史系**录取。（来源：中新网、搜狐教育、新浪教育）
+**2007-2008** — took the college entrance exam under Qinghai residency (which outside observers called "exam-migration"), scoring 650, three points short of Peking University's admission line — but was admitted to **Peking University's History Department** through the combination of his New Concept first prize and an independent-admissions bonus. (Sources: China News Service, Sohu Education, Sina Education)
 
-**2008-2011年** — 北大历史系本科。据其自述，通过频繁与教授互动、提前送审论文等方式，最终以全系绩点第一的成绩毕业。2011年成为《亚洲周刊》封面人物。
+**2008-2011** — undergraduate at Peking University's History Department. By his own account, through frequent interaction with professors and submitting his thesis for review ahead of schedule, he graduated with the highest GPA in his department. Appeared on the cover of *Yazhou Zhoukan* (Asiaweek) in 2011.
 
-**2011-2013年** — 赴**宾夕法尼亚大学**攻读东亚研究硕士（Master of Arts）。在宾大期间接触比特币并开始投资加密货币。
+**2011-2013** — went to the **University of Pennsylvania** for a Master of Arts in East Asian Studies. Encountered Bitcoin and started investing in cryptocurrency while at Penn.
 
-**2013年** — 加入**Ripple Labs**，担任大中华区首席代表和顾问。这是他进入区块链行业的起点。
+**2013** — joined **Ripple Labs**, serving as chief representative and advisor for Greater China. This was his entry point into the blockchain industry.
 
-**2014年** — 被世界经济论坛（达沃斯）评选为「全球杰出青年」（Global Shaper）。同年回国创办**锐波科技**（Ripple的中文关联项目），从事跨境银行清结算业务。
+**2014** — named a "Global Shaper" by the World Economic Forum (Davos). That same year, returned to China to found **Ripple China** (a Chinese-affiliated project of Ripple), doing cross-border bank clearing and settlement.
 
-## 二、早期创业与「马云门徒」（2015-2016）
+## II. Early entrepreneurship and the "Jack Ma's disciple" persona (2015-2016)
 
-**2015年初** — 锐波科技获得信中利资本领投、IDG资本等跟投的**千万美元级A轮融资**。
+**Early 2015** — Ripple China raised a **tens-of-millions-of-dollars Series A round**, led by CDH Investments with IDG Capital and others participating.
 
-**2015年** — 入选马云创办的**湖畔大学**首批学员，且是唯一的90后学员。这一身份后来被广泛用于营销叙事，成为「马云门徒」标签的来源。同年入选**福布斯中国30位30岁以下创业者**。
+**2015** — selected for the first cohort of Jack Ma's **Hupan University**, the only student born in the '90s in that cohort. This status was later widely used in marketing narratives, becoming the source of the "Jack Ma's disciple" label. Also named to Forbes China's 30 Under 30 that same year.
 
-**2015年** — 推出**「陪我」App**，主打陌生人即时语音社交，以星座匹配和付费通话为特色。该产品后来并未取得大规模成功。
+**2015** — launched the **Peiwo app**, an instant voice-chat app for strangers, featuring astrology-based matching and paid calls. The product never achieved large-scale success.
 
-## 三、波场TRON与ICO（2017）
+## III. TRON and the ICO (2017)
 
-**2017年7月** — 创立**波场TRON**基金会，定位为去中心化内容分发平台。
+**July 2017** — founded the **TRON Foundation**, positioned as a decentralized content-distribution platform.
 
-**2017年9月** — TRON进行**ICO（首次代币发行）**，发行TRX代币，募资约**7000万美元**。据The Verge报道，孙宇晨在中国政府宣布ICO禁令前数天抢先完成了代币销售，且他当时已知悉禁令即将到来。（来源：The Verge、Wikipedia）
+**September 2017** — TRON conducted its **ICO (initial coin offering)**, issuing the TRX token and raising roughly **$70 million**. According to The Verge, Sun Yuchen completed the token sale just days before the Chinese government announced its ICO ban, and had already known the ban was coming. (Sources: The Verge, Wikipedia)
 
-**2017年末** — TRX代币价格暴涨，一度进入市值前十。白皮书被指大量抄袭以太坊和IPFS等项目的内容（后孙宇晨称是「翻译问题」）。
+**Late 2017** — TRX's price surged, briefly entering the top-ten market caps. The whitepaper was accused of extensively plagiarizing Ethereum, IPFS, and other projects (Sun Yuchen later called it a "translation issue").
 
-## 四、BitTorrent收购与主网上线（2018）
+## IV. The BitTorrent acquisition and mainnet launch (2018)
 
-**2018年1月** — 签署收购BitTorrent的意向书，谈判据称早在2017年9月就已开始。
+**January 2018** — signed a letter of intent to acquire BitTorrent, with negotiations reportedly having started as early as September 2017.
 
-**2018年5月** — TRON主网上线，从以太坊迁移到独立区块链。
+**May 2018** — the TRON mainnet launched, migrating from Ethereum to an independent blockchain.
 
-**2018年6月** — 以**1.4亿美元**完成对**BitTorrent, Inc.**（后更名为Rainberry Inc.）的收购。BitTorrent创始人Bram Cohen随后离职，另立加密货币项目Chia。（来源：Variety、Finance Magnates）
+**June 2018** — completed the acquisition of **BitTorrent, Inc.** (later renamed Rainberry Inc.) for **$140 million**. BitTorrent founder Bram Cohen subsequently left to start another crypto project, Chia. (Sources: Variety, Finance Magnates)
 
-**2018年7月** — TRON基金会正式宣布BitTorrent收购交割完成。
+**July 2018** — the TRON Foundation formally announced the completion of the BitTorrent acquisition.
 
-## 五、巴菲特午餐事件（2019）
+## V. The Buffett lunch incident (2019)
 
-**2019年6月** — 以破纪录的**456.7万美元**拍下沃伦·巴菲特慈善午餐。高调在Twitter上倒计时宣传，邀请了莱特币创始人Charlie Lee等多位加密行业人士。（来源：Fortune、CNBC）
+**June 2019** — won Warren Buffett's charity lunch for a record **$4.567 million**. Promoted it loudly with a countdown on Twitter, and invited several crypto-industry figures including Litecoin founder Charlie Lee. (Sources: Fortune, CNBC)
 
-**2019年7月22日** — 突然宣布因「肾结石」取消午餐。
+**July 22, 2019** — suddenly announced the lunch was canceled, citing "kidney stones."
 
-**2019年7月23-25日** — 事态急转直下。CoinDesk援引国内媒体报道称孙宇晨「被限制出境」。随后孙宇晨发布道歉声明，承认过度炒作、行为不成熟。（来源：Washington Post、Bloomberg、CNN）
+**July 23-25, 2019** — the situation took a sharp turn. CoinDesk, citing domestic media reports, said Sun Yuchen was "barred from leaving the country." Sun Yuchen subsequently issued an apology statement admitting to over-hyping the situation and immature behavior. (Sources: Washington Post, Bloomberg, CNN)
 
-**2020年1月23日** — 午餐最终在内布拉斯加州奥马哈以晚餐形式举行。出席嘉宾包括Charlie Lee、eToro CEO Yoni Assia等人。巴菲特后来表示「加密货币没有价值」，但对孙宇晨本人没有恶评。（来源：CoinDesk、CNBC）
+**January 23, 2020** — the lunch finally took place in Omaha, Nebraska, as a dinner. Attendees included Charlie Lee and eToro CEO Yoni Assia. Buffett later said "crypto has no value," but had nothing negative to say about Sun Yuchen personally. (Sources: CoinDesk, CNBC)
 
-## 六、Steem/Steemit接管争议（2020）
+## VI. The Steem/Steemit takeover controversy (2020)
 
-**2020年2月** — TRON基金会以约**800万美元**从Steemit创始人Ned Scott手中收购Steemit，并获得约**7000万枚STEEM代币**（约占总供应量20%）。
+**February 2020** — the TRON Foundation acquired Steemit from founder Ned Scott for roughly **$8 million**, gaining about **70 million STEEM tokens** (about 20% of total supply).
 
-**2020年2月24日** — Steem社区验证节点执行软分叉，冻结Steemit的代币投票权。
+**February 24, 2020** — Steem's community validator nodes executed a soft fork, freezing Steemit's token voting power.
 
-**2020年3月初** — 孙宇晨联合**币安、火币、Poloniex**三大交易所，使用用户存放在交易所的STEEM代币进行投票，一举替换了全部20个顶级见证人节点，完成「敌意接管」。（来源：CoinDesk、Decrypt、CoinTelegraph）
+**Early March 2020** — Sun Yuchen teamed up with the three exchanges **Binance, Huobi, and Poloniex**, using user-deposited STEEM tokens held on those exchanges to vote, replacing all 20 top witness nodes in one move, completing the "hostile takeover." (Sources: CoinDesk, Decrypt, CoinTelegraph)
 
-**2020年3月20日** — Steem社区硬分叉创建**Hive**区块链，大部分原社区成员迁移。
+**March 20, 2020** — the Steem community hard-forked to create the **Hive** blockchain, with most of the original community migrating over.
 
-## 七、交易所帝国与DeFi/NFT（2019-2022）
+## VII. The exchange empire and DeFi/NFT (2019-2022)
 
-**2019年** — 收购加密货币交易所**Poloniex**控股权。
+**2019** — acquired a controlling stake in the crypto exchange **Poloniex**.
 
-**2021年** — 被格莱纳达政府任命为**驻WTO大使兼常驻代表**，获「His Excellency」头衔。
+**2021** — appointed by the Grenadian government as **ambassador and permanent representative to the WTO**, gaining the "His Excellency" title.
 
-**2021年** — 推出TRON生态DeFi项目：JustLend、SUN.io等。推出算法稳定币**USDD**。
+**2021** — launched TRON ecosystem DeFi projects: JustLend, SUN.io, and others. Launched the algorithmic stablecoin **USDD**.
 
-**2021年10月** — 参与Animoca Brands的**6500万美元融资轮**。
+**October 2021** — participated in Animoca Brands' **$65 million funding round**.
 
-**2022年** — 通过About Capital Management收购**火币（Huobi）**交易所（后更名为HTX），估值约**30亿美元**。初始头衔为「全球顾问」，实际为控制人。（来源：Bloomberg、TechCrunch）
+**2022** — acquired **Huobi** (later renamed HTX) through About Capital Management, valued at roughly **$3 billion**. Initially titled "global advisor," while actually serving as the controller. (Sources: Bloomberg, TechCrunch)
 
-## 八、SEC起诉与外交身份丧失（2023）
+## VIII. The SEC lawsuit and loss of diplomatic status (2023)
 
-**2023年3月** — 美国SEC在纽约南区联邦法院起诉孙宇晨，指控：
-- TRX和BTT代币属于未注册证券
-- 通过洗售交易操纵TRX市场，虚增交易量**3100万美元**
-- 雇佣名人推广代币未披露付费关系
-（来源：SEC官方文件、Fortune、CoinDesk）
+**March 2023** — the U.S. SEC sued Sun Yuchen in the Southern District of New York federal court, alleging:
+- TRX and BTT tokens were unregistered securities
+- Manipulated the TRX market via wash trading, inflating trading volume by **$31 million**
+- Hired celebrities to promote his tokens without disclosing the paid relationship
+(Sources: SEC official filings, Fortune, CoinDesk)
 
-**2023年3月31日** — 格莱纳达政府终止孙宇晨的WTO大使职务。（来源：Fortune Crypto、Protos）
+**March 31, 2023** — the Grenadian government terminated Sun Yuchen's role as WTO ambassador. (Sources: Fortune Crypto, Protos)
 
-**2023年11月** — Poloniex交易所遭黑客攻击，损失超**1.25亿美元**。（来源：Decrypt、SiliconANGLE）
+**November 2023** — the Poloniex exchange was hacked, losing over **$125 million**. (Sources: Decrypt, SiliconANGLE)
 
-## 九、艺术品收藏与特朗普关系（2024-2025）
+## IX. Art collecting and the Trump relationship (2024-2025)
 
-**2024年11月** — 以**620万美元**在苏富比拍下「Comedian」（香蕉艺术品），随后当众吃掉。（来源：Sportskeeda、Slate、Cryptonomist）
+**November 2024** — won "Comedian" (the banana artwork) at Sotheby's for **$6.2 million**, then publicly ate it. (Sources: Sportskeeda, Slate, Cryptonomist)
 
-**2024年11月-2025年1月** — 向特朗普家族的**World Liberty Financial (WLFI)** 投资共计约**7500万美元**，成为最大单一投资者。（来源：Fortune Crypto、CoinDesk）
+**November 2024-January 2025** — invested a total of roughly **$75 million** into the Trump family's **World Liberty Financial (WLFI)**, becoming its largest single investor. (Sources: Fortune Crypto, CoinDesk)
 
-**2025年4-5月** — 大量买入**$TRUMP** memecoin，持仓约**1860万美元**，成为排行榜第一。
+**April-May 2025** — bought heavily into the **$TRUMP** meme coin, holding roughly **$18.6 million**, becoming #1 on the holder leaderboard.
 
-**2025年5月22日** — 出席特朗普为顶级$TRUMP持有者举办的晚宴。据报道获赠一块金表。（来源：CNBC、CNN、Washington Post）
+**May 22, 2025** — attended the dinner Trump hosted for top $TRUMP holders. Reportedly received a gold watch as a gift. (Sources: CNBC, CNN, Washington Post)
 
-**2025年9月** — WLFI冻结孙宇晨转移至HTX的900万美元WLFI代币。国会议员致信SEC要求调查。（来源：Fortune、Axios）
+**September 2025** — WLFI froze $9 million worth of WLFI tokens Sun Yuchen had moved to HTX. Members of Congress wrote to the SEC demanding an investigation. (Sources: Fortune, Axios)
 
-## 十、SEC和解与最新动态（2026）
+## X. The SEC settlement and latest developments (2026)
 
-**2026年3月5日** — SEC与孙宇晨达成**1000万美元和解**，不承认任何不当行为。被广泛解读为特朗普政府下SEC对加密行业执法态度的显著转向。（来源：US News、CoinDesk、Politico Pro）
+**March 5, 2026** — the SEC reached a **$10 million settlement** with Sun Yuchen, with no admission of any wrongdoing. Widely interpreted as a significant shift in the SEC's crypto-industry enforcement posture under the Trump administration. (Sources: US News, CoinDesk, Politico Pro)
 
-**截至2026年4月** — TRON区块链累计用户超**3.73亿**，总交易数超130亿笔，链上USDT供应量超**850亿美元**，是全球最大的USDT流通网络。孙宇晨个人净资产估计在**50亿-125亿美元**之间。（来源：Arkham Intelligence、CoinCodex、MEXC）
+**As of April 2026** — TRON's blockchain has accumulated over **373 million** users, with over 13 billion total transactions, and on-chain USDT supply exceeding **$85 billion**, making it the world's largest USDT circulation network. Sun Yuchen's personal net worth is estimated at between **$5 billion and $12.5 billion**. (Sources: Arkham Intelligence, CoinCodex, MEXC)
 
 ---
 
-## 关键争议标签汇总
+## Roundup of key controversy tags
 
-| 争议 | 时间 | 核心问题 |
+| Controversy | Time | Core issue |
 |------|------|----------|
-| 白皮书抄袭 | 2017 | TRON白皮书被指抄袭以太坊/IPFS |
-| ICO抢跑 | 2017 | 知悉禁令即将出台仍抢先完成ICO |
-| 巴菲特午餐闹剧 | 2019 | 高调宣传后突然取消，涉嫌被限制出境 |
-| Steem敌意接管 | 2020 | 联合交易所动用用户资产投票夺权 |
-| SEC起诉 | 2023 | 未注册证券发行+洗售交易操纵市场 |
-| 外交豁免争议 | 2023 | 试图以格莱纳达大使身份规避美国法律 |
-| 特朗普关系 | 2024-2025 | 巨额投资被质疑为「付费买接近权」 |
+| Whitepaper plagiarism | 2017 | the TRON whitepaper was accused of plagiarizing Ethereum/IPFS |
+| ICO front-running | 2017 | completed the ICO ahead of a known impending ban |
+| The Buffett-lunch farce | 2019 | loud promotion followed by a sudden cancellation, allegedly due to an exit ban |
+| The Steem hostile takeover | 2020 | teaming with exchanges to use user assets to vote and seize control |
+| The SEC lawsuit | 2023 | unregistered securities offerings + wash trading to manipulate the market |
+| The diplomatic-immunity controversy | 2023 | attempting to use his Grenadian ambassadorship to sidestep U.S. law |
+| The Trump relationship | 2024-2025 | huge investments questioned as "buying access" |
 
 ---
 
-## 关键转折点分析
+## Analysis of key turning points
 
-1. **2017年ICO**：从传统创业者转型为加密货币玩家，完成原始资本积累
-2. **2019年巴菲特午餐**：从加密圈名人升级为全球话题人物，但也暴露了其争议本质
-3. **2020年Steem事件**：暴露了「去中心化布道者」的中心化本质
-4. **2023年SEC起诉**：面临最严重的法律挑战，迫使其转向政治关系投资
-5. **2024-2025年蹭特朗普**：从法律风险中突围的关键策略转型
+1. **The 2017 ICO**: transformed from a conventional entrepreneur into a crypto player, completing primary capital accumulation
+2. **The 2019 Buffett lunch**: escalated from a crypto-world celebrity into a global talking-point figure, but also exposed his controversial nature
+3. **The 2020 Steem incident**: exposed the centralized reality underneath the "decentralization evangelist" persona
+4. **The 2023 SEC lawsuit**: faced his most serious legal challenge, forcing a pivot toward investing in political relationships
+5. **The 2024-2025 Trump-related moves**: the key strategic pivot that helped him break out of legal risk
 
 ---
 
@@ -134,7 +134,7 @@
 
 - [Justin Sun - Wikipedia](https://en.wikipedia.org/wiki/Justin_Sun)
 - [Protos: A career timeline of Justin Sun](https://protos.com/justin-sun-timeline-crypto-annoying-over-marketer/)
-- [中新网: 差生高三大逆转](https://www.chinanews.com.cn/edu/2011/01-31/2823727.shtml)
+- [China News Service: a struggling student's senior-year turnaround](https://www.chinanews.com.cn/edu/2011/01-31/2823727.shtml)
 - [Fortune: Warren Buffett Lunch](https://fortune.com/2019/07/23/warren-buffett-lunch-tron-justin-sun-cryptocurrency/)
 - [Washington Post: Justin Sun eats humble pie](https://www.washingtonpost.com/world/instead-of-lunch-with-warren-buffett-chinese-entrepreneur-eats-humble-pie/2019/07/25/)
 - [CoinDesk: Justin Sun Bought Steemit](https://www.coindesk.com/tech/2020/02/24/justin-sun-bought-steemit-steem-moved-to-limit-his-power/)
@@ -146,4 +146,4 @@
 - [CoinDesk: SEC, Justin Sun reach settlement](https://www.coindesk.com/policy/2026/03/05/sec-justin-sun-reach-settlement-over-tron-lawsuit)
 - [US News: Justin Sun Settles SEC Fraud Case for $10 Million](https://money.usnews.com/investing/news/articles/2026-03-05/)
 - [Arkham Intelligence: Justin Sun Net Worth 2026](https://info.arkm.com/research/justin-sun-net-worth-2026)
-- [36氪: 孙宇晨和被称为骗子的90后创业者](https://36kr.com/p/1723814707201)
+- [36Kr: Justin Sun and the '90s-born entrepreneur called a scammer](https://36kr.com/p/1723814707201)
