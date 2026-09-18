@@ -1,113 +1,113 @@
-# MrBeast (Jimmy Donaldson) 完整时间线
+# MrBeast (Jimmy Donaldson) Full Timeline
 
-> 从出生到2026年4月，覆盖个人成长、内容创作、商业帝国和争议事件。
-> 调研时间：2026-04-04
-
----
-
-## 第一阶段：出生与童年（1998-2011）
-
-| 时间 | 事件 | 类型 | 对内容方法论的影响 |
-|------|------|------|------------------|
-| 1998年5月7日 | 出生于堪萨斯州威奇托（Wichita, Kansas），在北卡罗来纳州格林维尔（Greenville, NC）长大 | 个人 | 小城镇背景塑造了他「普通人做不普通事」的叙事基调 |
-| 童年 | 父母长期工作/服役，由保姆照看，频繁搬家 | 个人 | 形成高度自主的性格，习惯独自钻研 |
-| 2007年 | 父母离婚 | 个人 | 家庭变故增强了他对「自己掌控命运」的执念 |
-| 青少年时期 | 确诊克罗恩病（Crohn's Disease），被迫退出棒球队 | 个人 | 失去体育出路后，全部精力转向YouTube |
-
-## 第二阶段：学徒期（2012-2016）
-
-| 时间 | 事件 | 类型 | 对内容方法论的影响 |
-|------|------|------|------------------|
-| 2012年2月 | 13岁，以「MrBeast6000」频道名上传第一个视频（Xbox随机生成的gamertag） | 内容 | 起步极早，积累了大量试错经验 |
-| 2012-2014 | 制作Minecraft/COD游戏视频、估算YouTuber财富、YouTube创作技巧 | 内容 | 从观众视角研究「什么让人点击」，形成数据驱动思维 |
-| 2015-2016 | 「Worst Intros on YouTube」系列走红，频道涨到约3万订阅 | 内容 | 发现「吐槽/盘点」类内容的流量密码，但认识到这不是终极形态 |
-| 2016年 | 从格林维尔基督教学院（Greenville Christian Academy）毕业 | 个人 | — |
-| 2016年底 | 辍学追求全职YouTube事业，母亲反对并要求他搬出家门 | 个人 | **关键转折点**：破釜沉舟的决定。他后来反复强调「全力投入」的重要性 |
-| 2012-2016（贯穿） | 花4年时间研究YouTube算法、观看数千个视频、分析什么有效什么无效 | 方法论 | 这是他「1万小时」的刻意练习期。他后来说：「我在别人打游戏的时候研究YouTube」 |
-
-## 第三阶段：病毒式突破（2017）
-
-| 时间 | 事件 | 类型 | 对内容方法论的影响 |
-|------|------|------|------------------|
-| 2017年1月 | 发布「Counting to 100,000」视频，耗时40小时录制，目前超3300万播放 | 内容/里程碑 | **第一个病毒视频**。验证了「极端挑战 + 简单概念」的公式 |
-| 2017年上半年 | 系列极端挑战：用100个扩音器打碎玻璃、看油漆干1小时、水下24小时（因健康问题失败） | 内容 | 确立「不断升级」的内容策略：每个视频都要比上一个更疯狂 |
-| 2017年6月 | 获得第一个品牌赞助（数字收藏品App Quidd），将全部$10,000赞助费送给一个流浪汉 | 商业/慈善 | **方法论分水岭**：发现「送钱」视频既有流量又有正面形象，将慈善融入内容DNA |
-
-## 第四阶段：大预算时代与慈善品牌化（2018-2019）
-
-| 时间 | 事件 | 类型 | 对内容方法论的影响 |
-|------|------|------|------------------|
-| 2018年 | 累计送出超过100万美元，获得「YouTube最大慈善家」称号 | 慈善/品牌 | 「慈善即内容」模式跑通，形成独特的品牌护城河 |
-| 2018年 | 频道突破1000万订阅 | 里程碑 | 证明「花钱做内容→赚更多钱→花更多钱做更大内容」的飞轮可行 |
-| 2019年 | 开始举办大型比赛，奖金规模持续升级 | 内容 | 从「个人挑战」转向「多人竞赛」，观众参与感和悬念感大幅增强 |
-| 2019年10月 | 发起#TeamTrees活动，联合Mark Rober等创作者，筹集2000万美元种植2000万棵树 | 慈善/影响力 | **证明YouTuber可以动员真实世界的大规模行动**。Elon Musk等名人参与，跨界影响力爆发 |
-
-## 第五阶段：爆发与商业帝国（2020-2022）
-
-| 时间 | 事件 | 类型 | 对内容方法论的影响 |
-|------|------|------|------------------|
-| 2020年6月 | 推出「Finger on the App」挑战，与艺术团体MSCHF合作，130万人参加 | 内容/产品 | 将内容延伸到App产品，验证了「内容即产品」的跨界能力 |
-| 2020年12月 | 创办MrBeast Burger，通过合作厨房（ghost kitchen）模式运营外卖汉堡品牌 | 商业 | 首次大规模商业化尝试，利用创作者品牌做实体消费品 |
-| 2021年 | MrBeast Burger收入突破1亿美元 | 商业/里程碑 | 证明YouTube品牌可以转化为实体商业规模 |
-| 2021年10月 | 发起#TeamSeas活动，筹集3000万美元清理3000万磅海洋垃圾（最终清理3400万磅） | 慈善 | 延续#TeamTrees模式，慈善活动成为年度IP |
-| 2021年11月 | 制作真人版鱿鱼游戏（$456,000 Squid Game In Real Life），成为当时YouTube最热视频之一 | 内容 | 证明「借势热门IP + 真实高额奖金」的超级内容公式 |
-| 2022年1月 | 创办零食品牌Feastables，推出MrBeast巧克力棒 | 商业 | 从餐饮转向包装食品，开始建立真正的消费品帝国 |
-| 2022年初 | Feastables上市数月内销售额突破1000万美元 | 商业/里程碑 | — |
-| 2022年7月28日 | 主频道突破1亿订阅，成为第五个达到该里程碑的YouTube频道 | 里程碑 | — |
-| 2022年9月 | MrBeast Burger首家实体餐厅在新泽西American Dream商场开业 | 商业 | — |
-| 2022年11月17日 | 超越PewDiePie，获吉尼斯「YouTube男性个人频道最多订阅」记录（1.12亿） | 里程碑 | **历史性时刻**：终结了PewDiePie近十年的统治，标志着YouTube新时代 |
-
-## 第六阶段：争议与转型（2023-2024）
-
-| 时间 | 事件 | 类型 | 对内容方法论的影响 |
-|------|------|------|------------------|
-| 2023年7月 | 起诉MrBeast Burger合作方Virtual Dining Concepts，指控其牺牲品质盲目扩张 | 商业/法律 | 暴露了快速授权商业模式的品控风险 |
-| 2023年11月 | 在非洲建造100口水井，为约50万人提供清洁饮水 | 慈善 | Beast Philanthropy规模化运作，慈善从「视频素材」升级为「系统性项目」 |
-| 2023年 | 签约Amazon Prime Video制作真人秀Beast Games | 商业/内容 | **从YouTube走向传统媒体**，标志着创作者经济的里程碑式跨界 |
-| 2024年7月 | Ava Kris Tyson（前核心团队成员）被指控与未成年人不当互动，7月23日退出频道 | 争议 | MrBeast迅速切割，但引发外界对其团队管理的质疑 |
-| 2024年8月 | 前员工指控Ava Kris Tyson性侵犯（Tyson否认所有指控） | 争议 | — |
-| 2024年9月 | 5名Beast Games参赛者提起集体诉讼，指控节目存在虐待、性骚扰和欠薪 | 争议/法律 | 大制作的法律风险浮现，真人秀模式面临「YouTuber vs 专业制作」的标准冲突 |
-| 2024年11月1日 | Quinn Emanuel律师事务所调查结论：针对Beast Games的指控「毫无根据」 | 法律 | — |
-| 2024年 | Forbes评选MrBeast为2024年收入最高的YouTube创作者（第一名） | 商业/里程碑 | — |
-| 2024年12月19日 | Beast Games第一季在Amazon Prime Video首播，共10集周更 | 内容/里程碑 | 首播25天内获5000万观众，成为Prime Video最大非剧本类节目 |
-
-## 最新动态（2025-2026）
-
-| 时间 | 事件 | 类型 | 对内容方法论的影响 |
-|------|------|------|------------------|
-| 2025年4月25日 | 与乌拉圭YouTuber Fede Vigevani合办网红篮球赛，Neymar、Curry、Serena Williams客串，视频标题「Beat Neymar, Win $500,000」 | 内容 | 跨语言、跨文化的超级内容合作，全球化策略加速 |
-| 2025年5月 | Beast Games被续订第二季和第三季 | 商业 | Amazon对创作者驱动的真人秀长期下注 |
-| 2025年6月1日 | 成为首个突破4亿订阅的YouTuber | 里程碑 | YouTube频道增长仍在加速，而非放缓 |
-| 2025年 | 宣布与James Patterson合作惊悚小说，HarperCollins 2026年出版 | 商业/跨界 | 品牌从视频/食品延伸到出版业 |
-| 2025年8月 | 发起Team Water活动，联合3000名创作者为200万人提供清洁水源（覆盖马拉维、厄瓜多尔、尼泊尔等地） | 慈善 | 慈善活动从个人项目升级为创作者联盟模式 |
-| 2025年8月 | 非洲100口水井被质疑已废弃，MrBeast公开回应并证明全部仍在运作 | 争议/慈善 | 面对批评时的透明回应策略 |
-| 2025年9月 | Fortune报道Beast Industries估值达50亿美元 | 商业/里程碑 | 从「YouTube频道」到「50亿美元的娱乐公司」 |
-| 2025年 | 参与沙特利雅得季（Riyadh Season 2025）活动 | 商业/国际 | 中东市场布局，全球化商业版图扩张 |
-| 2025年底-2026年初 | MrBeast公开承认近期部分视频「不如预期」，宣布进入「ultra grind mode」，承诺2026年将制作「有生以来最好的内容」 | 内容/策略 | **罕见的公开自我批评**，表明他始终以内容质量为核心标准，不满足于现状 |
-| 2026年1月 | Beast Industries以52亿美元估值完成2亿美元融资（Bitmine领投，Alpha Wave Global支持） | 商业/融资 | 正式成为准独角兽级别的娱乐帝国 |
-| 2026年1月7日 | Beast Games第二季在Amazon Prime Video首播，主题为「Strong vs. Smart」，200名参赛者争夺500万美元大奖 | 内容 | S2设置在格林维尔「Beast City」，创下最大竞技真人秀单一场景吉尼斯纪录 |
-| 2026年1月 | MrBeast称自己「纸面身价26亿美元」但实际手头没什么钱，结婚都向母亲借钱 | 个人/商业 | 体现「把每一分钱都投回内容和公司」的极端reinvestment策略 |
-| 2026年2月 | Beast Industries收购青少年金融科技App Step | 商业/收购 | 从内容/食品帝国扩展到金融科技，目标是青少年生态闭环 |
-| 2026年2月 | Beast Games S2 E4与CBS《Survivor》联动，Jeff Probst客串主持 | 内容/跨界 | 打通YouTube与传统电视的壁垒，跨媒体IP运营 |
-| 2026年2月 | 员工Artem Kaptur因利用MrBeast非公开信息在Kalshi进行内幕交易被罚款和禁赛两年 | 争议 | 团队管理风险持续，组织规模化的代价 |
-| 2026年2月25日 | Beast Games S2完结，Tyler Lucas赢得$5,105,000大奖 | 内容 | — |
-| 2026年4月 | 主频道总订阅超4.74亿，全渠道月播放量超50亿次 | 里程碑 | 仍然是YouTube历史上订阅最多的频道，且差距在拉大 |
-| 2026年4月 | Fortune估计净资产约26亿美元 | 商业 | — |
+> From birth to April 2026, covering personal growth, content creation, his business empire, and controversies.
+> Research date: 2026-04-04
 
 ---
 
-## 关键数据快照（截至2026年4月）
+## Phase one: birth and childhood (1998-2011)
 
-| 指标 | 数值 |
+| Time | Event | Type | Impact on content methodology |
+|------|------|------|------------------|
+| May 7, 1998 | Born in Wichita, Kansas; raised in Greenville, NC | Personal | A small-town background shaped his "an ordinary person doing extraordinary things" narrative |
+| Childhood | Parents worked/served long hours, raised largely by a nanny, moved frequently | Personal | Formed a highly self-reliant personality, used to figuring things out alone |
+| 2007 | Parents divorced | Personal | The family upheaval deepened his fixation on "controlling his own fate" |
+| Teens | Diagnosed with Crohn's Disease, forced to quit baseball | Personal | Once the sports path closed, all his energy shifted to YouTube |
+
+## Phase two: apprenticeship (2012-2016)
+
+| Time | Event | Type | Impact on content methodology |
+|------|------|------|------------------|
+| February 2012 | At 13, uploaded his first video under the channel name "MrBeast6000" (a randomly generated Xbox gamertag) | Content | Started extremely early, accumulating a huge amount of trial-and-error experience |
+| 2012-2014 | Made Minecraft/COD gaming videos, estimated other YouTubers' wealth, YouTube-creation tips | Content | Studied "what makes people click" from a viewer's perspective, forming a data-driven mindset |
+| 2015-2016 | The "Worst Intros on YouTube" series took off, growing the channel to roughly 30,000 subscribers | Content | Discovered the traffic pattern of "roast/roundup" content, but recognized it wasn't the final form |
+| 2016 | Graduated from Greenville Christian Academy | Personal | — |
+| Late 2016 | Dropped out to pursue YouTube full-time; his mother opposed it and required him to move out | Personal | **A key turning point**: an all-in decision with no way back. He would later repeatedly stress the importance of "going all in" |
+| 2012-2016 (throughout) | Spent 4 years studying the YouTube algorithm, watching thousands of videos, analyzing what worked and what didn't | Methodology | This was his "10,000 hours" of deliberate practice. He later said: "I was studying YouTube while everyone else was playing games" |
+
+## Phase three: the viral breakthrough (2017)
+
+| Time | Event | Type | Impact on content methodology |
+|------|------|------|------------------|
+| January 2017 | Released "Counting to 100,000," a video that took 40 hours to record, now with over 33 million views | Content/milestone | **His first viral video**. Validated the formula of "extreme challenge + a simple concept" |
+| First half of 2017 | A run of extreme challenges: breaking glass with 100 megaphones, watching paint dry for an hour, 24 hours underwater (failed due to health issues) | Content | Established the "constant escalation" content strategy: every video had to be crazier than the last |
+| June 2017 | Landed his first brand sponsorship (the digital-collectibles app Quidd), gave the full $10,000 sponsorship fee to a homeless man | Business/philanthropy | **A methodological watershed**: discovered that "giving away money" videos delivered both traffic and a positive image, fusing philanthropy into his content DNA |
+
+## Phase four: the big-budget era and philanthropy branding (2018-2019)
+
+| Time | Event | Type | Impact on content methodology |
+|------|------|------|------------------|
+| 2018 | Gave away over $1 million cumulatively, earned the title of "YouTube's biggest philanthropist" | Philanthropy/brand | The "philanthropy as content" model proved out, forming a distinctive brand moat |
+| 2018 | Channel passed 10 million subscribers | Milestone | Proved the flywheel of "spend money on content -> earn more money -> spend more on bigger content" was viable |
+| 2019 | Started running large-scale competitions, with prize sizes continuously escalating | Content | Shifted from "solo challenges" to "multi-person competitions," greatly boosting viewer engagement and suspense |
+| October 2019 | Launched the #TeamTrees campaign with Mark Rober and other creators, raising $20 million to plant 20 million trees | Philanthropy/influence | **Proved a YouTuber could mobilize real-world action at scale**. Celebrities like Elon Musk got involved, sparking cross-domain influence |
+
+## Phase five: explosive growth and a business empire (2020-2022)
+
+| Time | Event | Type | Impact on content methodology |
+|------|------|------|------------------|
+| June 2020 | Launched the "Finger on the App" challenge with the art collective MSCHF, drawing 1.3 million participants | Content/product | Extended content into an app product, validating a "content as product" crossover ability |
+| December 2020 | Founded MrBeast Burger, running a delivery-only burger brand via a ghost-kitchen model | Business | His first large-scale commercial venture, using a creator brand to build a physical consumer product |
+| 2021 | MrBeast Burger revenue topped $100 million | Business/milestone | Proved a YouTube brand could scale into a real physical business |
+| October 2021 | Launched the #TeamSeas campaign, raising $30 million to clean up 30 million pounds of ocean trash (ultimately cleaned up 34 million pounds) | Philanthropy | Continued the #TeamTrees model, turning philanthropic campaigns into an annual IP |
+| November 2021 | Produced a real-life version of Squid Game ($456,000 Squid Game In Real Life), becoming one of YouTube's biggest videos at the time | Content | Proved the super-content formula of "riding a hit IP + real, large cash prizes" |
+| January 2022 | Founded the snack brand Feastables, launching MrBeast chocolate bars | Business | Pivoted from food service to packaged goods, starting to build a real consumer-products empire |
+| Early 2022 | Feastables' sales topped $10 million within months of launch | Business/milestone | — |
+| July 28, 2022 | His main channel passed 100 million subscribers, becoming the fifth YouTube channel to hit that milestone | Milestone | — |
+| September 2022 | The first MrBeast Burger physical restaurant opened at the American Dream mall in New Jersey | Business | — |
+| November 17, 2022 | Surpassed PewDiePie, earning the Guinness record for "most subscribed individual YouTube channel" (112 million) | Milestone | **A historic moment**: ended PewDiePie's nearly decade-long reign, marking a new era for YouTube |
+
+## Phase six: controversy and transformation (2023-2024)
+
+| Time | Event | Type | Impact on content methodology |
+|------|------|------|------------------|
+| July 2023 | Sued MrBeast Burger partner Virtual Dining Concepts, alleging it sacrificed quality for blind expansion | Business/legal | Exposed the quality-control risk of a rapid-licensing business model |
+| November 2023 | Built 100 water wells in Africa, providing clean drinking water to roughly 500,000 people | Philanthropy | Beast Philanthropy scaled up into a systematic operation, upgrading from "video material" to a "systemic program" |
+| 2023 | Signed with Amazon Prime Video to produce the reality show Beast Games | Business/content | **Moved from YouTube into traditional media**, marking a milestone crossover for the creator economy |
+| July 2024 | Ava Kris Tyson (a core former team member) was accused of inappropriate interactions with a minor, and stepped away from the channel on July 23 | Controversy | MrBeast cut ties quickly, but it raised outside questions about his team management |
+| August 2024 | A former employee accused Ava Kris Tyson of sexual assault (Tyson denied all allegations) | Controversy | — |
+| September 2024 | 5 Beast Games contestants filed a class-action lawsuit alleging abuse, sexual harassment, and unpaid wages on the show | Controversy/legal | Legal risk from large-scale productions surfaced; the reality-show model ran into a standards clash between "YouTuber" and "professional production" | 
+| November 1, 2024 | The Quinn Emanuel law firm's investigation concluded the allegations regarding Beast Games were "baseless" | Legal | — |
+| 2024 | Forbes named MrBeast the highest-earning YouTube creator of 2024 (#1) | Business/milestone | — |
+| December 19, 2024 | Beast Games Season 1 premiered on Amazon Prime Video, 10 episodes released weekly | Content/milestone | Drew 50 million viewers within 25 days of premiering, becoming Prime Video's biggest unscripted show |
+
+## Latest developments (2025-2026)
+
+| Time | Event | Type | Impact on content methodology |
+|------|------|------|------------------|
+| April 25, 2025 | Co-hosted an influencer basketball game with Uruguayan YouTuber Fede Vigevani, with Neymar, Curry, and Serena Williams making cameos, titled "Beat Neymar, Win $500,000" | Content | Cross-language, cross-cultural super-content collaboration, accelerating his globalization strategy |
+| May 2025 | Beast Games renewed for a second and third season | Business | Amazon making a long-term bet on creator-driven reality TV |
+| June 1, 2025 | Became the first YouTuber to pass 400 million subscribers | Milestone | The channel's growth is still accelerating rather than slowing |
+| 2025 | Announced a thriller novel collaboration with James Patterson, to be published by HarperCollins in 2026 | Business/crossover | Extended the brand from video/food into publishing |
+| August 2025 | Launched the Team Water campaign, joining 3,000 creators to provide clean water to 2 million people (covering Malawi, Ecuador, Nepal, and more) | Philanthropy | Philanthropy scaled up from a solo project to a creator-coalition model |
+| August 2025 | The 100 wells built in Africa were alleged to have fallen into disuse; MrBeast responded publicly and demonstrated they were all still operating | Controversy/philanthropy | A transparent-response strategy in the face of criticism |
+| September 2025 | Fortune reported Beast Industries' valuation had reached $5 billion | Business/milestone | The shift from "YouTube channel" to "a $5 billion entertainment company" |
+| 2025 | Participated in Saudi Arabia's Riyadh Season 2025 events | Business/international | Establishing a foothold in the Middle East market, expanding a global business footprint |
+| Late 2025-early 2026 | MrBeast publicly admitted some recent videos had "underperformed expectations," announced entering "ultra grind mode," and promised 2026 would produce "the best content of his life" | Content/strategy | **A rare public self-criticism**, showing he still treats content quality as his core standard and refuses to be complacent |
+| January 2026 | Beast Industries closed a $200 million funding round at a $5.2 billion valuation (led by Bitmine, backed by Alpha Wave Global) | Business/funding | Officially became a near-unicorn-scale entertainment empire |
+| January 7, 2026 | Beast Games Season 2 premiered on Amazon Prime Video, themed "Strong vs. Smart," with 200 contestants competing for a $5 million grand prize | Content | Season 2 was set in "Beast City" in Greenville, setting the Guinness record for the largest single-set competitive reality show |
+| January 2026 | MrBeast said he was "worth $2.6 billion on paper" but had little actual cash on hand, and even borrowed money from his mother for his wedding | Personal/business | Reflects an extreme reinvestment strategy of "putting every dollar back into content and the company" |
+| February 2026 | Beast Industries acquired the teen fintech app Step | Business/acquisition | Expanded from a content/food empire into fintech, aiming for a closed teen ecosystem |
+| February 2026 | Beast Games S2 Episode 4 crossed over with CBS's *Survivor*, with Jeff Probst making a guest-hosting appearance | Content/crossover | Broke down the wall between YouTube and traditional TV, running the IP across media |
+| February 2026 | Employee Artem Kaptur was fined and banned for two years for insider trading on Kalshi using non-public MrBeast information | Controversy | Ongoing team-management risk, the cost of organizational scale |
+| February 25, 2026 | Beast Games S2 concluded, with Tyler Lucas winning the $5,105,000 grand prize | Content | — |
+| April 2026 | Main channel subscribers surpassed 474 million, with over 5 billion monthly views across all channels | Milestone | Still the most-subscribed channel in YouTube history, and the gap is widening |
+| April 2026 | Fortune estimated his net worth at roughly $2.6 billion | Business | — |
+
+---
+
+## Key data snapshot (as of April 2026)
+
+| Metric | Value |
 |------|------|
-| YouTube主频道订阅 | 4.74亿+ |
-| 全渠道月播放量 | 50亿+ |
-| Beast Industries估值 | 52亿美元 |
-| 个人净资产（Fortune估计） | 约26亿美元 |
-| Feastables | 全球主要零售商有售 |
-| Beast Games | Amazon Prime Video（已续订S3） |
-| Beast Philanthropy | 独立运营的慈善机构 |
-| 员工规模 | 数百人（多个子公司） |
+| YouTube main channel subscribers | 474 million+ |
+| Monthly views across all channels | 5 billion+ |
+| Beast Industries valuation | $5.2 billion |
+| Personal net worth (Fortune estimate) | roughly $2.6 billion |
+| Feastables | sold at major retailers worldwide |
+| Beast Games | Amazon Prime Video (renewed through S3) |
+| Beast Philanthropy | an independently operated charity |
+| Employee headcount | several hundred (across multiple subsidiaries) |
 
 ---
 

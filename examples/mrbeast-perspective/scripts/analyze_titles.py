@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
 """
-analyze_titles.py - 分析YouTube频道视频标题模式
+analyze_titles.py - Analyze title patterns across a YouTube channel's videos
 
-分析维度：
-  - 标题长度分布
-  - 数字使用频率与类型
-  - 高频词汇（去除停用词）
-  - 标题公式分类（挑战型/数字型/悬念型/对比型/情感型）
-  - 标点符号与大写模式
+Analysis dimensions:
+  - Title length distribution
+  - Frequency and type of number usage
+  - High-frequency words (stop words removed)
+  - Title-formula classification (challenge/number/suspense/contrast/emotional)
+  - Punctuation and capitalization patterns
 
-用法:
+Usage:
   python analyze_titles.py titles.txt
   python analyze_titles.py titles.txt -o report.md
   python analyze_titles.py titles.txt --top 30
 
-输入格式: 纯文本文件，每行一个标题
-输出格式: Markdown分析报告
+Input format: a plain-text file, one title per line
+Output format: a Markdown analysis report
 """
 
 import argparse
@@ -24,7 +24,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-# 英文停用词（轻量级，不依赖nltk）
+# English stop words (lightweight, no nltk dependency)
 STOP_WORDS = {
     "i", "me", "my", "we", "our", "you", "your", "he", "him", "his", "she",
     "her", "it", "its", "they", "them", "their", "a", "an", "the", "and",
@@ -41,33 +41,33 @@ STOP_WORDS = {
     "went", "make", "made", "like", "even", "still", "back", "us",
 }
 
-# 标题公式分类的关键词/模式
+# Keywords/patterns for title-formula classification
 TITLE_PATTERNS = {
-    "挑战型": [
+    "challenge": [
         r"\b(challenge|survive|last|endure|spent|living|tried|attempt)\b",
         r"\b(\d+)\s*(hours?|days?|minutes?)\b",
         r"\bi\s+(survived|built|made|ate|bought|opened|spent)\b",
     ],
-    "数字型": [
+    "number": [
         r"^\$[\d,]+",
         r"\$[\d,]+\s+vs\.?\s+\$[\d,]+",
         r"\b\d{2,}\b",
         r"\b(100|1000|10000|million|billion)\b",
     ],
-    "悬念型": [
+    "suspense": [
         r"\.\.\.",
         r"\?$",
         r"\b(mystery|secret|hidden|never|impossible|insane|unbelievable)\b",
         r"\b(what happens|you won't believe|no one|nobody)\b",
     ],
-    "对比型": [
+    "contrast": [
         r"\bvs\.?\b",
         r"\bversus\b",
         r"\$[\d,]+\s+vs\.?\s+\$[\d,]+",
         r"\b(cheap|expensive|worst|best|biggest|smallest)\b.*\bvs\.?\b",
         r"\b(world'?s?\s+(largest|smallest|most|least|biggest|cheapest))\b",
     ],
-    "情感型": [
+    "emotional": [
         r"\b(emotional|crying|tears|heartwarming|giving|donated|surprise)\b",
         r"!{2,}",
         r"\b(amazing|incredible|insane|crazy|epic|extreme)\b",
@@ -76,10 +76,10 @@ TITLE_PATTERNS = {
 
 
 def load_titles(filepath: str) -> list[str]:
-    """从文本文件加载标题，每行一个"""
+    """Load titles from a text file, one per line"""
     path = Path(filepath)
     if not path.exists():
-        print(f"[ERROR] 文件不存在: {filepath}", file=sys.stderr)
+        print(f"[ERROR] File not found: {filepath}", file=sys.stderr)
         sys.exit(1)
     titles = [
         line.strip()
@@ -87,13 +87,13 @@ def load_titles(filepath: str) -> list[str]:
         if line.strip()
     ]
     if not titles:
-        print(f"[ERROR] 文件为空: {filepath}", file=sys.stderr)
+        print(f"[ERROR] File is empty: {filepath}", file=sys.stderr)
         sys.exit(1)
     return titles
 
 
 def analyze_length(titles: list[str]) -> dict:
-    """分析标题长度分布"""
+    """Analyze title length distribution"""
     lengths = [len(t) for t in titles]
     word_counts = [len(t.split()) for t in titles]
     return {
@@ -114,7 +114,7 @@ def analyze_length(titles: list[str]) -> dict:
 
 
 def analyze_numbers(titles: list[str]) -> dict:
-    """分析数字使用情况"""
+    """Analyze number usage"""
     has_number = [t for t in titles if re.search(r"\d", t)]
     has_dollar = [t for t in titles if "$" in t]
     numbers_found = []
@@ -128,7 +128,7 @@ def analyze_numbers(titles: list[str]) -> dict:
 
 
 def analyze_words(titles: list[str], top_n: int = 20) -> list[tuple[str, int]]:
-    """提取高频词汇（去除停用词）"""
+    """Extract high-frequency words (stop words removed)"""
     words = []
     for t in titles:
         tokens = re.findall(r"[a-zA-Z]+", t.lower())
@@ -137,14 +137,14 @@ def analyze_words(titles: list[str], top_n: int = 20) -> list[tuple[str, int]]:
 
 
 def classify_titles(titles: list[str]) -> dict[str, list[str]]:
-    """按标题公式分类"""
+    """Classify titles by formula type"""
     results = {cat: [] for cat in TITLE_PATTERNS}
     for t in titles:
         for cat, patterns in TITLE_PATTERNS.items():
             if any(re.search(p, t, re.IGNORECASE) for p in patterns):
                 results[cat].append(t)
-                break  # 每个标题只归入第一个匹配的类别
-    results["其他"] = [
+                break  # each title is assigned to only the first category it matches
+    results["other"] = [
         t for t in titles
         if not any(t in v for v in results.values())
     ]
@@ -152,7 +152,7 @@ def classify_titles(titles: list[str]) -> dict[str, list[str]]:
 
 
 def analyze_punctuation(titles: list[str]) -> dict:
-    """分析标点和大写模式"""
+    """Analyze punctuation and capitalization patterns"""
     return {
         "ends_exclamation": sum(1 for t in titles if t.endswith("!")),
         "ends_question": sum(1 for t in titles if t.endswith("?")),
@@ -163,7 +163,7 @@ def analyze_punctuation(titles: list[str]) -> dict:
 
 
 def generate_report(titles: list[str], top_n: int) -> str:
-    """生成Markdown分析报告"""
+    """Generate a Markdown analysis report"""
     total = len(titles)
     length_stats = analyze_length(titles)
     number_stats = analyze_numbers(titles)
@@ -172,91 +172,91 @@ def generate_report(titles: list[str], top_n: int) -> str:
     punct_stats = analyze_punctuation(titles)
 
     lines = []
-    lines.append(f"# YouTube标题分析报告\n")
-    lines.append(f"共分析 **{total}** 个标题\n")
+    lines.append(f"# YouTube Title Analysis Report\n")
+    lines.append(f"Analyzed **{total}** titles\n")
 
-    # 长度分布
-    lines.append("## 1. 标题长度分布\n")
-    lines.append("| 指标 | 字符数 | 词数 |")
+    # Length distribution
+    lines.append("## 1. Title length distribution\n")
+    lines.append("| Metric | Characters | Words |")
     lines.append("|------|--------|------|")
-    lines.append(f"| 平均 | {length_stats['char_avg']:.1f} | {length_stats['word_avg']:.1f} |")
-    lines.append(f"| 最短 | {length_stats['char_min']} | {length_stats['word_min']} |")
-    lines.append(f"| 最长 | {length_stats['char_max']} | {length_stats['word_max']} |")
-    lines.append(f"| 中位数 | {length_stats['char_median']} | - |")
+    lines.append(f"| Average | {length_stats['char_avg']:.1f} | {length_stats['word_avg']:.1f} |")
+    lines.append(f"| Shortest | {length_stats['char_min']} | {length_stats['word_min']} |")
+    lines.append(f"| Longest | {length_stats['char_max']} | {length_stats['word_max']} |")
+    lines.append(f"| Median | {length_stats['char_median']} | - |")
     lines.append("")
     b = length_stats["brackets"]
-    lines.append(f"- 30字符以内: {b[0]} ({b[0]/total*100:.1f}%)")
-    lines.append(f"- 31-50字符: {b[1]} ({b[1]/total*100:.1f}%)")
-    lines.append(f"- 51-70字符: {b[2]} ({b[2]/total*100:.1f}%)")
-    lines.append(f"- 70字符以上: {b[3]} ({b[3]/total*100:.1f}%)")
+    lines.append(f"- Under 30 characters: {b[0]} ({b[0]/total*100:.1f}%)")
+    lines.append(f"- 31-50 characters: {b[1]} ({b[1]/total*100:.1f}%)")
+    lines.append(f"- 51-70 characters: {b[2]} ({b[2]/total*100:.1f}%)")
+    lines.append(f"- Over 70 characters: {b[3]} ({b[3]/total*100:.1f}%)")
     lines.append("")
 
-    # 数字使用
-    lines.append("## 2. 数字使用\n")
-    lines.append(f"- 含数字的标题: {number_stats['with_number_pct']:.1f}%")
-    lines.append(f"- 含$金额的标题: {number_stats['with_dollar_pct']:.1f}%")
+    # Number usage
+    lines.append("## 2. Number usage\n")
+    lines.append(f"- Titles containing a number: {number_stats['with_number_pct']:.1f}%")
+    lines.append(f"- Titles containing a $ amount: {number_stats['with_dollar_pct']:.1f}%")
     if number_stats["common_numbers"]:
-        lines.append("\n常见数字:")
+        lines.append("\nCommon numbers:")
         for num, count in number_stats["common_numbers"]:
-            lines.append(f"  - {num:,}: 出现 {count} 次")
+            lines.append(f"  - {num:,}: appears {count} times")
     lines.append("")
 
-    # 高频词汇
-    lines.append(f"## 3. 高频词汇 (Top {top_n})\n")
-    lines.append("| 排名 | 词汇 | 出现次数 |")
+    # High-frequency words
+    lines.append(f"## 3. High-frequency words (Top {top_n})\n")
+    lines.append("| Rank | Word | Count |")
     lines.append("|------|------|----------|")
     for i, (word, count) in enumerate(top_words, 1):
         lines.append(f"| {i} | {word} | {count} |")
     lines.append("")
 
-    # 标题公式分类
-    lines.append("## 4. 标题公式分类\n")
-    lines.append("| 类型 | 数量 | 占比 | 示例 |")
+    # Title-formula classification
+    lines.append("## 4. Title-formula classification\n")
+    lines.append("| Type | Count | Share | Example |")
     lines.append("|------|------|------|------|")
-    for cat in ["挑战型", "数字型", "悬念型", "对比型", "情感型", "其他"]:
+    for cat in ["challenge", "number", "suspense", "contrast", "emotional", "other"]:
         items = categories.get(cat, [])
         pct = len(items) / total * 100 if total else 0
         example = items[0][:50] + "..." if items and len(items[0]) > 50 else (items[0] if items else "-")
         lines.append(f"| {cat} | {len(items)} | {pct:.1f}% | {example} |")
     lines.append("")
 
-    # 标点与格式
-    lines.append("## 5. 标点与格式特征\n")
-    lines.append(f"- 感叹号结尾: {punct_stats['ends_exclamation']} ({punct_stats['ends_exclamation']/total*100:.1f}%)")
-    lines.append(f"- 问号结尾: {punct_stats['ends_question']} ({punct_stats['ends_question']/total*100:.1f}%)")
-    lines.append(f"- 省略号结尾: {punct_stats['ends_ellipsis']} ({punct_stats['ends_ellipsis']/total*100:.1f}%)")
-    lines.append(f"- 含全大写词: {punct_stats['has_all_caps_word']} ({punct_stats['has_all_caps_word']/total*100:.1f}%)")
+    # Punctuation and formatting
+    lines.append("## 5. Punctuation and formatting traits\n")
+    lines.append(f"- Ends with an exclamation mark: {punct_stats['ends_exclamation']} ({punct_stats['ends_exclamation']/total*100:.1f}%)")
+    lines.append(f"- Ends with a question mark: {punct_stats['ends_question']} ({punct_stats['ends_question']/total*100:.1f}%)")
+    lines.append(f"- Ends with an ellipsis: {punct_stats['ends_ellipsis']} ({punct_stats['ends_ellipsis']/total*100:.1f}%)")
+    lines.append(f"- Contains an all-caps word: {punct_stats['has_all_caps_word']} ({punct_stats['has_all_caps_word']/total*100:.1f}%)")
     lines.append("")
 
-    # 洞察
-    lines.append("## 6. 关键洞察\n")
-    # 自动生成一些洞察
+    # Insights
+    lines.append("## 6. Key insights\n")
+    # Auto-generate a few insights
     if number_stats["with_number_pct"] > 60:
-        lines.append("- **数字驱动**: 超过60%的标题使用数字，数字是核心吸引力元素")
+        lines.append("- **Number-driven**: over 60% of titles use a number, making numbers a core hook")
     if number_stats["with_dollar_pct"] > 30:
-        lines.append("- **金钱叙事**: 大量使用$金额，制造价值感和规模感")
+        lines.append("- **Money narrative**: heavy use of $ amounts, creating a sense of value and scale")
     dominant_cat = max(
-        [(cat, len(items)) for cat, items in categories.items() if cat != "其他"],
+        [(cat, len(items)) for cat, items in categories.items() if cat != "other"],
         key=lambda x: x[1],
     )
-    lines.append(f"- **主导公式**: 「{dominant_cat[0]}」是使用最多的标题类型 ({dominant_cat[1]}/{total})")
+    lines.append(f"- **Dominant formula**: \"{dominant_cat[0]}\" is the most-used title type ({dominant_cat[1]}/{total})")
     if length_stats["char_avg"] < 50:
-        lines.append("- **简洁风格**: 平均标题长度不到50字符，倾向短标题")
+        lines.append("- **Concise style**: average title length is under 50 characters, leaning toward short titles")
     else:
-        lines.append("- **详细风格**: 平均标题超过50字符，倾向描述性标题")
+        lines.append("- **Detailed style**: average title is over 50 characters, leaning toward descriptive titles")
 
     return "\n".join(lines)
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="分析YouTube频道视频标题模式",
+        description="Analyze title patterns across a YouTube channel's videos",
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="示例:\n  python analyze_titles.py mrbeast_titles.txt\n  python analyze_titles.py titles.txt -o report.md --top 30",
+        epilog="Examples:\n  python analyze_titles.py mrbeast_titles.txt\n  python analyze_titles.py titles.txt -o report.md --top 30",
     )
-    parser.add_argument("input", help="标题文本文件（每行一个标题）")
-    parser.add_argument("-o", "--output", help="输出报告文件路径（默认打印到终端）")
-    parser.add_argument("--top", type=int, default=20, help="显示的高频词数量（默认20）")
+    parser.add_argument("input", help="a text file of titles (one per line)")
+    parser.add_argument("-o", "--output", help="output report file path (defaults to printing to the terminal)")
+    parser.add_argument("--top", type=int, default=20, help="number of high-frequency words to show (default 20)")
     args = parser.parse_args()
 
     titles = load_titles(args.input)
@@ -264,7 +264,7 @@ def main():
 
     if args.output:
         Path(args.output).write_text(report, encoding="utf-8")
-        print(f"[OK] 报告已保存到: {args.output}")
+        print(f"[OK] Report saved to: {args.output}")
     else:
         print(report)
 
