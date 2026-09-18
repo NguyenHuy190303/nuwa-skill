@@ -1,558 +1,558 @@
-# Paul Graham 著作与系统性长文调研
+# Paul Graham - Research on His Works and Systematic Long-Form Writing
 
-> 调研日期：2026-04-05
-> 调研人：Claude（辅助花叔）
-> 一手来源：paulgraham.com essays + Wikipedia + 权威科技媒体
-> 信息源黑名单：已排除知乎、微信公众号、百度百科
-
----
-
-## 一、人物背景
-
-**Paul Graham**（1964年11月13日—），英裔美国计算机科学家、作家、散文家、企业家和投资人。
-
-### 关键履历
-- **出生**：英国Dorset郡Weymouth，4岁随家人迁至美国Pittsburgh
-- **教育**：Cornell大学BA（1986）→ Harvard大学CS硕士+博士 → RISD（Rhode Island School of Design）和佛罗伦萨美术学院学习绘画
-- **Viaweb**（1995-1998）：与Robert Morris共同创办，用Common Lisp编写的在线商店构建软件。1998年被Yahoo以4960万美元收购，成为Yahoo Store
-- **Y Combinator**（2005—）：与Trevor Blackwell、Jessica Livingston、Robert Morris共同创立。已投资1300+家创业公司（Reddit、Dropbox、Airbnb、Stripe等）
-- **Arc语言**：2001年宣布开发新Lisp方言Arc，2008年发布
-- **著作**：《On Lisp》、《ANSI Common Lisp》、《Hackers & Painters》
-- **Essays**：1998-2026年在paulgraham.com发布200+篇essay，每4-8周一篇
-
-> 来源：[Wikipedia](https://en.wikipedia.org/wiki/Paul_Graham_(programmer))、[paulgraham.com/bio.html](https://paulgraham.com/bio.html) | 一手+可信
+> Research date: 2026-04-05
+> Researcher: Claude (assisting Huashu)
+> Primary sources: paulgraham.com essays + Wikipedia + authoritative tech media
+> Source blacklist: excluded Zhihu, WeChat public accounts, Baidu Baike
 
 ---
 
-## 二、核心著作：《Hackers & Painters》
+## I. Background
 
-**出版**：2004年，O'Reilly Media
-**URL**：https://paulgraham.com/hp.html
+**Paul Graham** (November 13, 1964-), a British-American computer scientist, writer, essayist, entrepreneur, and investor.
 
-### 核心论点
+### Key biography
+- **Born**: Weymouth, Dorset, England; moved with his family to Pittsburgh, USA at age 4
+- **Education**: BA from Cornell (1986) → CS Master's + PhD from Harvard → studied painting at RISD (Rhode Island School of Design) and the Accademia di Belle Arti in Florence
+- **Viaweb** (1995-1998): co-founded with Robert Morris, online-store-building software written in Common Lisp. Acquired by Yahoo in 1998 for $49.6 million, becoming Yahoo Store
+- **Y Combinator** (2005-): co-founded with Trevor Blackwell, Jessica Livingston, and Robert Morris. Has funded 1,300+ startups (Reddit, Dropbox, Airbnb, Stripe, etc.)
+- **The Arc language**: announced development of a new Lisp dialect, Arc, in 2001, released in 2008
+- **Books**: *On Lisp*, *ANSI Common Lisp*, *Hackers & Painters*
+- **Essays**: 200+ essays published on paulgraham.com from 1998-2026, roughly one every 4-8 weeks
 
-1. **编程是创作而非科学**：黑客（程序员）和画家都是makers。Graham认为"computer science"这个词有问题——它不是真正的科学，而是一堆因历史偶然被扔在一起的领域
-2. **通过实践学习**：画画主要靠动手学——编程也一样。大多数黑客不是在大学课程里学会编程的，而是13岁时自己写程序学的
-3. **编程语言应该是铅笔而非钢笔**：语言应该有可塑性（malleable），用来思考程序，而不只是表达已经想好的程序
-4. **迭代式开发**：绘画从草图开始逐步细化——编程也应该如此。有时原始计划会被证明是错的
-5. **同理心是核心能力**：黑客必须像画家一样有同理心，能从用户角度看问题，才能做出伟大的工作
-
-> 来源：[paulgraham.com/hp.html](https://paulgraham.com/hp.html)、[Goodreads](https://www.goodreads.com/book/show/41793.Hackers_Painters)、[Medium分析](https://medium.com/@edisipka/my-notes-on-paul-grahams-hackers-and-painters-why-programming-is-actually-art-9a4829117554) | 一手+二手
-
----
-
-## 三、写作方法论 Essays（6篇核心）
-
-### 3.1 The Age of the Essay（2004）
-**URL**：https://paulgraham.com/essay.html
-
-- Essay不应该是「证明一个论点」，而应该是**探索**（exploration）
-- 学校教的写作方式（五段式论证）扭曲了essay的本质
-- Essay的词源"essai"来自法语，意思是"尝试"——蒙田发明了这种体裁
-- 好essay是思考的过程，不是思考的结果
-
-> 来源：一手 | 可信度：★★★★★
-
-### 3.2 Writing, Briefly（2005）
-**URL**：https://paulgraham.com/writing44.html
-
-Graham的编码化写作规则：
-- 先尽可能快地写一个烂版本1，然后反复重写
-- 如果卡住了，就告诉别人你打算写什么，然后把你说的话写下来
-- 预期80%的essay想法会在你开始写之后才出现
-- 从第一句话开始写
-- 大声朗读essay，找出别扭的短语和无聊的段落
-
-> 来源：一手 | 可信度：★★★★★
-
-### 3.3 Write Like You Talk（2015）
-**URL**：https://paulgraham.com/talk.html
-
-- 写作和口语之间应该有interconnection
-- 建议：读你的文章时大声朗读，把所有不像对话的部分改掉
-- 遵循这个方法就"已经超过95%的写作者"
-
-> 来源：一手 | 可信度：★★★★★
-
-### 3.4 Write Simply（2021）
-**URL**：https://paulgraham.com/simply.html
-
-- "我尽量用普通的词写作……这种写法更容易读，越容易读，读者就越深入地参与"
-- 简单的语言、简单的词汇、简单的句子——但不降低思想的深度
-- 简单写作是一种*选择*，不是能力不足
-
-> 来源：一手 | 可信度：★★★★★
-
-### 3.5 How to Write Usefully（2020）
-**URL**：https://paulgraham.com/useful.html
-
-- 有用写作的公式 = **重要性 × 新颖性 × 正确性 × 力度**
-- 四个变量中，新颖性最容易被忽视
-- 写作不只是传递信息，而是要让人改变对某件事的看法
-
-> 来源：一手 | 可信度：★★★★★
-
-### 3.6 Putting Ideas into Words（2022）
-**URL**：https://paulgraham.com/words.html
-
-- **核心论点**：写作就是思考（Writing is thinking）
-- 把想法写出来的过程会迫使你更清晰地思考
-- 很多人以为自己在写作前就想清楚了，其实没有——写作过程本身产生新的理解
-- 这个论点与2024年"Writes and Write-Nots"形成呼应
-
-> 来源：一手 | 可信度：★★★★★
-
-### 写作方法论的统一内核
-
-Graham的写作哲学可以归结为：
-1. **写作 = 思考**（反复出现≥5次）
-2. **简单 > 复杂**（反复出现≥4次）
-3. **口语化 > 书面化**（反复出现≥3次）
-4. **迭代式写作**：先写烂稿 → 反复修改（反复出现≥3次）
-5. **探索 > 论证**（反复出现≥3次）
+> Sources: [Wikipedia](https://en.wikipedia.org/wiki/Paul_Graham_(programmer)), [paulgraham.com/bio.html](https://paulgraham.com/bio.html) | primary + reliable
 
 ---
 
-## 四、创业 Essays（核心篇目）
+## II. Core work: *Hackers & Painters*
 
-### 4.1 How to Start a Startup（2005）
-**URL**：https://paulgraham.com/start.html
+**Published**: 2004, O'Reilly Media
+**URL**: https://paulgraham.com/hp.html
 
-成功创业的三件事：
-1. 从好人开始（good people）
-2. 做客户真正想要的东西
-3. 尽可能少花钱
+### Core arguments
 
-其他关键论点：
-- 联合创始人之于创业 = 地段之于房地产
-- 快速发布——"你没有真正开始工作，直到你发布了"
-- 让少数人真正高兴 > 让很多人一般高兴
+1. **Programming is a creative act, not a science**: hackers (programmers) and painters are both makers. Graham thinks the term "computer science" itself is a misnomer — it isn't really a science, but a grab-bag of fields thrown together by historical accident
+2. **Learning through practice**: painting is learned mainly by doing — so is programming. Most hackers didn't learn to program in a university course, but by writing programs on their own at 13
+3. **A programming language should be a pencil, not a pen**: a language should be malleable, used for thinking about a program, not just for expressing a program you've already fully worked out
+4. **Iterative development**: painting goes from a sketch to gradual refinement — programming should too. Sometimes the original plan turns out to be wrong
+5. **Empathy is a core skill**: hackers need empathy just like painters, the ability to see things from the user's point of view, in order to do great work
 
-> 来源：一手 | 可信度：★★★★★
-
-### 4.2 Do Things that Don't Scale（2013）
-**URL**：https://paulgraham.com/ds.html
-
-- **核心论点**：早期创始人应该拥抱手工的、劳动密集型的努力，即使这些做法无法规模化
-- 最常见的不可规模化行为：手动招募用户
-- "如果你能找到一个有问题需要解决的人，你能手动解决它，那就去做——这比拥有一个自动化但没人需要的东西要好得多"
-- 10个客户 + 每周10%增长 → 指数增长会处理好基数问题
-
-> 来源：一手 | 可信度：★★★★★
-
-### 4.3 Startup = Growth（2012）
-**URL**：https://paulgraham.com/growth.html
-
-- **创业公司的定义不是年轻或小，而是增长**
-- YC期间好的增长率：每周5-7%，10%算极好
-- 1000美元/月 + 1%周增长 → 4年后7900美元/月
-- 1000美元/月 + 5%周增长 → 4年后2500万美元/月
-- 小百分比的复利效应产生完全不同的结果
-
-> 来源：一手 | 可信度：★★★★★
-
-### 4.4 Default Alive or Default Dead?（2015）
-**URL**：https://paulgraham.com/aord.html
-
-- 创始人应该知道自己的公司是"默认存活"还是"默认死亡"
-- 计算需要四个指标：当前支出、当前收入、当前增长率、手头现金
-- 默认存活的公司有更大的谈判杠杆
-- **招人太快是融资后创业公司的头号杀手**
-- "Fatal pinch"：默认死亡 + 增长慢 + 没时间修复
-
-> 来源：一手 | 可信度：★★★★★
-
-### 4.5 Frighteningly Ambitious Startup Ideas（2012）
-**URL**：https://paulgraham.com/ambitious.html
-
-- 最雄心勃勃的创业想法之所以frightening，是因为它们真的很难
-- 列举了几个"frighteningly ambitious"的方向
-
-> 来源：一手 | 可信度：★★★★★
-
-### 4.6 Schlep Blindness（2012）
-**URL**：https://paulgraham.com/schlep.html
-
-- "Schlep blindness"：人们看不到伟大的创业想法，因为这些想法涉及schleps——来自意第绪语的词，指乏味、不愉快的任务
-- 很多最好的创业机会被忽视，因为人们本能地回避"脏活"
-- Stripe的Collison兄弟就是schlep blindness的反例——他们愿意做支付这个没人想碰的领域
-
-> 来源：一手 + [LinkedIn讨论](https://www.linkedin.com/posts/the-startup-archive_alexandr-wang-on-why-paul-grahams-schlep-activity-7369036483380314112-nd2v) | 可信度：★★★★★
-
-### 4.7 How to Get Startup Ideas（2012）
-**URL**：https://paulgraham.com/startupideas.html
-
-- 最好的创业想法有三个共同点：创始人自己想要、自己能做、很少人意识到值得做
-- "成功的方法不是成为创业专家，而是成为你的用户和问题的专家"
-
-> 来源：一手 | 可信度：★★★★★
-
-### 4.8 Founder Mode（2024年9月）
-**URL**：https://paulgraham.com/foundermode.html
-
-- 受Airbnb联合创始人Brian Chesky在YC活动上的演讲启发
-- **两种公司管理模式**：Founder Mode（创始人模式）vs Manager Mode（职业经理人模式）
-- 硅谷传统智慧是"公司做大了就该切换到manager mode"——Graham认为这是错的
-- Chesky发现"招人然后放手"的模式对Airbnb是灾难性的
-- Chesky研究了乔布斯管理苹果的方式，转向了创始人模式，效果大幅改善
-- 创始人应该深入了解产品细节，像CPO一样
-- **这篇essay是2024年最viral的PG文章**，引发了整个科技圈的讨论
-
-> 来源：一手 + [Fortune](https://fortune.com/2024/09/01/paul-graham-founder-mode-silicon-valley-conventional-wisdom-manager-mode/)、[Wikipedia](https://en.wikipedia.org/wiki/Founder_mode) | 可信度：★★★★★
+> Sources: [paulgraham.com/hp.html](https://paulgraham.com/hp.html), [Goodreads](https://www.goodreads.com/book/show/41793.Hackers_Painters), [Medium analysis](https://medium.com/@edisipka/my-notes-on-paul-grahams-hackers-and-painters-why-programming-is-actually-art-9a4829117554) | primary + secondary
 
 ---
 
-## 五、人生哲学与认知 Essays
+## III. Writing-methodology essays (6 core pieces)
 
-### 5.1 How to Do Great Work（2023）
-**URL**：https://paulgraham.com/greatwork.html
+### 3.1 The Age of the Essay (2004)
+**URL**: https://paulgraham.com/essay.html
 
-四步框架：
-1. 选择你有兴趣和天赋的领域
-2. 学到知识的前沿
-3. 发现别人忽略的gaps、patterns和anomalies
-4. 探索最有前景的gaps
+- An essay shouldn't be about "proving a thesis" — it should be an **exploration**
+- The writing style school teaches (the five-paragraph argument) distorts what an essay really is
+- The word "essay" comes from the French "essai," meaning "to try" — Montaigne invented the form
+- A good essay is the process of thinking, not the result of it
 
-关键论点：
-- **好奇心是做出伟大工作的关键**——它会帮你选择领域、到达前沿、发现gap、驱动探索
-- 伟大工作的因素（数学意义上的因子）：能力、兴趣、努力、运气
-- "每天写一页听起来不多，但如果每天都写，一年就是一本书"——一致性的累积效应
-- 做伟大的工作 = 做重要的事情做得足够好，以至于你扩展了人们对可能性的认知
-- 追随真正的兴趣而非声望
+> Source: primary | Reliability: ★★★★★
 
-> 来源：一手 | 可信度：★★★★★
+### 3.2 Writing, Briefly (2005)
+**URL**: https://paulgraham.com/writing44.html
 
-### 5.2 Superlinear Returns（2023）
-**URL**：https://paulgraham.com/superlinear.html
+Graham's codified writing rules:
+- Write a bad version 1 as fast as possible, then rewrite repeatedly
+- If you get stuck, tell someone what you're planning to write, then write down what you just said
+- Expect 80% of an essay's ideas to appear only after you start writing
+- Start writing from the first sentence
+- Read the essay out loud to find awkward phrases and boring paragraphs
 
-- **超线性回报**：投入翻倍，产出可能四倍甚至更多
-- 两个驱动因素：**指数增长（复利）** 和 **阈值效应（赢家通吃）**
-- 科学领域有最高的超线性回报——因为它结合了学习、阈值和新发现
-- 利用超线性回报最明显的方式：做极好的工作——在曲线远端，边际努力是bargain，竞争也更少
-- **永远在学习**——如果你没在学习，你可能不在通往超线性回报的路上
+> Source: primary | Reliability: ★★★★★
 
-> 来源：一手 | 可信度：★★★★★
+### 3.3 Write Like You Talk (2015)
+**URL**: https://paulgraham.com/talk.html
 
-### 5.3 Life is Short（2016）
-**URL**：https://paulgraham.com/vb.html
+- There should be an interconnection between writing and speech
+- Advice: read your writing out loud, and change anything that doesn't sound like conversation
+- Following this method already puts you "ahead of 95% of writers"
 
-三条核心行动指南：
-1. **无情地修剪bullshit**：不必要的会议、无意义的争论、官僚主义、装腔作势
-2. **不要等待**：不要等着才去爬那座山、写那本书、去看你妈妈
-3. **品味你拥有的时间**
+> Source: primary | Reliability: ★★★★★
 
-个人化触点：
-- "我母亲去世后，我希望我花了更多时间陪她。我活得好像她会永远在那里。"
-- Bullshit进入生活的两种方式：被迫接受 or 被欺骗接受
+### 3.4 Write Simply (2021)
+**URL**: https://paulgraham.com/simply.html
 
-> 来源：一手 | 可信度：★★★★★
+- "I try to write using ordinary words... this kind of writing is easier to read, and the easier it is to read, the more deeply readers engage with it"
+- Simple language, simple words, simple sentences — without reducing the depth of the ideas
+- Writing simply is a *choice*, not a lack of ability
 
-### 5.4 The Bus Ticket Theory of Genius（2019）
-**URL**：https://paulgraham.com/genius.html
+> Source: primary | Reliability: ★★★★★
 
-- 天才的配方 = **对重要事物的无私痴迷**（a disinterested obsession with something that matters）
-- "Disinterested"是最重要的特征——不是为了打动别人或致富，而是为了事情本身
-- 通向新想法的路径往往看起来不promising——如果看起来promising，别人早已探索了
-- 判断标准：你在创造而非消费、你感兴趣的事情很难、这个困难对你比对别人更容易
+### 3.5 How to Write Usefully (2020)
+**URL**: https://paulgraham.com/useful.html
 
-> 来源：一手 | 可信度：★★★★★
+- The formula for useful writing = **importance × novelty × correctness × strength**
+- Of the four variables, novelty is the one most easily overlooked
+- Writing isn't just about transmitting information — it's about changing how people see something
 
-### 5.5 Keep Your Identity Small（2009）
-**URL**：https://paulgraham.com/identity.html
+> Source: primary | Reliability: ★★★★★
 
-- "你给自己贴的标签越多，它们让你越蠢"
-- 当某个话题成为你身份的一部分，你就无法理性思考它了
-- 宗教和政治之所以引发最激烈的争论，不是因为它们本身特殊，而是因为人们把它们纳入了身份认同
+### 3.6 Putting Ideas into Words (2022)
+**URL**: https://paulgraham.com/words.html
 
-> 来源：一手 | 可信度：★★★★★
+- **Core argument**: writing is thinking
+- The process of putting an idea into words forces you to think more clearly
+- Many people think they'd already figured it out before writing — they hadn't. The writing process itself generates new understanding
+- This argument echoes forward into 2024's "Writes and Write-Nots"
 
-### 5.6 What You Can't Say（2004）
-**URL**：https://paulgraham.com/say.html
+> Source: primary | Reliability: ★★★★★
 
-- 每个时代都有人们认为是对的但其实很荒谬的信仰——我们这个时代不太可能是第一个全都对的时代
-- **测试**：你有没有在同伴面前不敢说的观点？如果没有——这不太可能是巧合，更可能是你只是在想别人告诉你的东西
-- 识别隐藏禁忌的方法：看人们因为说什么而惹麻烦、识别用来噤声的标签、跨文化和跨时代比较
+### The unifying core of the writing methodology
 
-> 来源：一手 | 可信度：★★★★★
-
-### 5.7 How to Think for Yourself（2020）
-**URL**：https://paulgraham.com/think.html
-
-独立思维的三个组成部分：
-1. 对真理的苛求（fastidiousness about truth）
-2. 抵抗被告知该怎么想
-3. 好奇心
-
-"如果你的答案表明你相信的一切都是你应该相信的——这很可能不是巧合"
-
-> 来源：一手 | 可信度：★★★★★
-
-### 5.8 The Four Quadrants of Conformism（2020）
-**URL**：https://paulgraham.com/conformism.html
-
-四种人：
-1. **主动从众者**（aggressively conventional-minded）
-2. **被动从众者**（passively conventional-minded）
-3. **被动独立者**（passively independent-minded）
-4. **主动独立者**（aggressively independent-minded）
-
-> 来源：一手 | 可信度：★★★★★
-
-### 5.9 What You'll Wish You'd Known（2005）
-**URL**：https://paulgraham.com/hs.html
-
-- 给高中生的未发表毕业演讲
-- 不要恐慌于"人生目标"——大多数成功的人都是在过程中发现的
-- **"Stay upwind"（停在上风处）**：像滑翔机一样，在每个阶段做最有趣且给你未来最多选项的事
-- 好奇心从不撒谎——它比你自己更清楚什么值得关注
-
-> 来源：一手 | 可信度：★★★★★
-
-### 5.10 Maker's Schedule, Manager's Schedule（2009）
-**URL**：https://paulgraham.com/makersschedule.html
-
-- **两种时间表**：经理的时间表（以小时为单位切割）vs 创作者的时间表（至少半天为单位）
-- 对创作者来说，一个会议就能毁掉整个下午——因为它把时间切成两块，每块都太小做不了难事
-- 权力通常在经理手中，他们会让所有人以自己的频率共振
-- Graham的解决方案：把所有会议集中在工作日末尾（office hours）
-
-> 来源：一手 | 可信度：★★★★★
-
-### 5.11 Mean People Fail（2014）
-**URL**：https://paulgraham.com/mean.html
-
-- 在Graham认识的最成功的人中，几乎没有刻薄的人
-- 刻薄让你变蠢——你在战斗中永远做不出最好的工作
-- 刻薄的创始人吸引不到最好的人才
-- 做伟大的事情需要benevolence精神驱动
-- 历史上大多数成功是零和博弈，刻薄可能是优势——但创业不是
-
-**争议/矛盾**：批评者指出Jobs、Zuckerberg、Bezos等成功创始人都有刻薄的一面。Graham的论点可能过于理想化。
-
-> 来源：一手 + [Inc.反驳](https://www.inc.com/jeff-bercovici/paul-graham-mean-people-fail.html) | 可信度：★★★★☆（存在争议）
-
-### 5.12 The Submarine（2005）
-**URL**：https://paulgraham.com/submarine.html
-
-- PR公司"像一艘巨大的、安静的潜艇潜伏在新闻之下"
-- 非政治/犯罪/灾难类新闻中，超过一半可能来自PR
-- PR公司同时把同一个故事喂给多个出版物——读者以为是趋势，其实是人造的
-- 顶级记者的弱点是虚荣心（vanity）而非懒惰
-
-> 来源：一手 | 可信度：★★★★★
+Graham's writing philosophy can be boiled down to:
+1. **Writing = thinking** (recurs ≥5 times)
+2. **Simple > complex** (recurs ≥4 times)
+3. **Spoken > written register** (recurs ≥3 times)
+4. **Iterative writing**: write a bad draft first → revise repeatedly (recurs ≥3 times)
+5. **Exploration > argumentation** (recurs ≥3 times)
 
 ---
 
-## 六、技术/编程 Essays
+## IV. Startup essays (core pieces)
 
-### 6.1 Beating the Averages（2003）
-**URL**：https://paulgraham.com/avg.html
+### 4.1 How to Start a Startup (2005)
+**URL**: https://paulgraham.com/start.html
 
-- **Blub悖论**：假想一个Blub程序员——他往下看，觉得低级语言缺功能；他往上看，却看不出自己在往上看，只看到"奇怪的语言加了一堆没用的东西"
-- "唯一能看清所有语言间能力差异的程序员，是那些理解最强大语言的人"
-- Viaweb用Lisp写软件是关键竞争优势——比竞争对手更快做出功能
+Three things a startup needs to succeed:
+1. Start with good people
+2. Build what customers actually want
+3. Spend as little money as possible
 
-> 来源：一手 | 可信度：★★★★★
+Other key arguments:
+- Co-founders are to a startup what location is to real estate
+- Launch fast — "you haven't really started working until you've launched"
+- Making a few people really happy beats making a lot of people mildly happy
+
+> Source: primary | Reliability: ★★★★★
+
+### 4.2 Do Things that Don't Scale (2013)
+**URL**: https://paulgraham.com/ds.html
+
+- **Core argument**: early founders should embrace manual, labor-intensive effort, even if it doesn't scale
+- The most common unscalable behavior: manually recruiting users
+- "If you can find someone with a problem that needs solving, and you can solve it manually, do that — that's much better than having something automated that nobody needs"
+- 10 customers + 10% weekly growth → exponential growth will take care of the base-number problem
+
+> Source: primary | Reliability: ★★★★★
+
+### 4.3 Startup = Growth (2012)
+**URL**: https://paulgraham.com/growth.html
+
+- **A startup isn't defined by being young or small — it's defined by growth**
+- A good growth rate during YC: 5-7% a week; 10% is exceptional
+- $1,000/month + 1% weekly growth → $7,900/month after 4 years
+- $1,000/month + 5% weekly growth → $25 million/month after 4 years
+- Small percentage differences, compounded, produce completely different outcomes
+
+> Source: primary | Reliability: ★★★★★
+
+### 4.4 Default Alive or Default Dead? (2015)
+**URL**: https://paulgraham.com/aord.html
+
+- Founders should know whether their company is "default alive" or "default dead"
+- Calculating this needs four numbers: current spend, current revenue, current growth rate, cash on hand
+- A default-alive company has greater negotiating leverage
+- **Hiring too fast is the number-one killer of post-funding startups**
+- The "fatal pinch": default dead + slow growth + no time to fix it
+
+> Source: primary | Reliability: ★★★★★
+
+### 4.5 Frighteningly Ambitious Startup Ideas (2012)
+**URL**: https://paulgraham.com/ambitious.html
+
+- The most ambitious startup ideas are frightening precisely because they're genuinely hard
+- Lists several "frighteningly ambitious" directions
+
+> Source: primary | Reliability: ★★★★★
+
+### 4.6 Schlep Blindness (2012)
+**URL**: https://paulgraham.com/schlep.html
+
+- "Schlep blindness": people fail to see great startup ideas because they involve schleps — a Yiddish word for a tedious, unpleasant task
+- Many of the best startup opportunities are overlooked because people instinctively avoid "dirty work"
+- Stripe's Collison brothers are a counterexample to schlep blindness — they were willing to tackle payments, a space nobody wanted to touch
+
+> Sources: primary + [LinkedIn discussion](https://www.linkedin.com/posts/the-startup-archive_alexandr-wang-on-why-paul-grahams-schlep-activity-7369036483380314112-nd2v) | Reliability: ★★★★★
+
+### 4.7 How to Get Startup Ideas (2012)
+**URL**: https://paulgraham.com/startupideas.html
+
+- The best startup ideas share three traits: the founders themselves want it, they can build it, and few people realize it's worth doing
+- "The way to succeed isn't to become an expert on startups, but to become an expert on your users and their problem"
+
+> Source: primary | Reliability: ★★★★★
+
+### 4.8 Founder Mode (September 2024)
+**URL**: https://paulgraham.com/foundermode.html
+
+- Inspired by a talk Airbnb co-founder Brian Chesky gave at a YC event
+- **Two modes of running a company**: Founder Mode vs. Manager Mode
+- Conventional Silicon Valley wisdom is "once a company gets big, it should switch to manager mode" — Graham argues this is wrong
+- Chesky found that "hire good people and get out of their way" was a disaster for Airbnb
+- Chesky studied how Jobs ran Apple, switched to founder mode, and results improved dramatically
+- Founders should be deeply involved in product detail, like a CPO
+- **This is PG's most viral essay of 2024**, sparking discussion across the whole tech industry
+
+> Sources: primary + [Fortune](https://fortune.com/2024/09/01/paul-graham-founder-mode-silicon-valley-conventional-wisdom-manager-mode/), [Wikipedia](https://en.wikipedia.org/wiki/Founder_mode) | Reliability: ★★★★★
 
 ---
 
-## 七、最新 Essays（2024-2025+）
+## V. Life-philosophy and cognition essays
 
-### 7.1 Writes and Write-Nots（2024/2025）
-**URL**：https://paulgraham.com/writes.html
+### 5.1 How to Do Great Work (2023)
+**URL**: https://paulgraham.com/greatwork.html
 
-- 预测AI时代会产生"writes"和"write-nots"的分裂
-- "不是好写手、一般写手和不会写的人——只有好写手和不会写的人"
-- **写作即思考**——跳过写作技能的人也跳过了清晰思考的学习
-- 类比：工业化前大多数人的工作让他们身体强壮，现在你想强壮就得健身。写作也一样。"仍然会有聪明人，但只有那些选择聪明的人"
-- **"一个分为writes和write-nots的世界比听起来更危险——它将是thinks和think-nots的世界"**
+A four-step framework:
+1. Choose a field you're interested in and have an aptitude for
+2. Learn as much as you can about it, up to the frontier
+3. Notice gaps, patterns, and anomalies others have overlooked
+4. Explore the most promising gaps
 
-> 来源：一手 + [Medium分析](https://medium.com/blog/a-world-divided-into-writes-and-write-nots-is-more-dangerous-than-it-sounds-218cbb18ed89) | 可信度：★★★★★
+Key arguments:
+- **Curiosity is the key to doing great work** — it helps you choose a field, reach the frontier, spot gaps, and drives exploration
+- The factors (in the mathematical sense) behind great work: ability, interest, effort, luck
+- "Writing a page a day doesn't sound like much, but if you do it every day, that's a book a year" — the compounding effect of consistency
+- Doing great work = doing something important well enough that you expand people's sense of what's possible
+- Follow genuine interest, not prestige
 
-### 7.2 Founder Mode（2024年9月）
-见第四节4.8
+> Source: primary | Reliability: ★★★★★
 
-### 7.3 The Right Kind of Stubborn（2024年9月）
-**URL**：https://paulgraham.com/persistence.html（推测URL）
-- 区分有价值的坚持和盲目固执
+### 5.2 Superlinear Returns (2023)
+**URL**: https://paulgraham.com/superlinear.html
 
-### 7.4 When to Do What You Love（2024年10月）
-- 探讨何时以及如何追随热情
+- **Superlinear returns**: doubling your input can quadruple your output, or more
+- Two driving factors: **exponential growth (compounding)** and **threshold effects (winner-take-all)**
+- Science has the highest superlinear returns of any field — because it combines learning, thresholds, and new discoveries
+- The clearest way to exploit superlinear returns: do exceptional work — far out on the curve, marginal effort is a bargain, and there's less competition
+- **Always be learning** — if you're not learning, you're probably not on the path to superlinear returns
 
-### 7.5 How to Start Google（2024年3月）
-- 给高中生的续篇，与"What You'll Wish You'd Known"形成对照
+> Source: primary | Reliability: ★★★★★
 
-### 7.6 The Best Essay（2024年3月）
-**URL**：https://paulgraham.com/best.html
+### 5.3 Life is Short (2016)
+**URL**: https://paulgraham.com/vb.html
 
-### 7.7 关于AI的态度（2025年8月）
-- Graham表示"我见过的最令人印象深刻的两家公司不是做AI的"
-- "教训不是AI不重要（它非常重要），而是创始人比idea更重要"
-- AI是"大量重要的、几乎完成的拼图中缺失的那一块"
-- 不要把所有人类技能外包给机器——清晰写作、批判性思考、创造性解决问题仍然关键
+Three core pieces of action advice:
+1. **Ruthlessly prune bullshit**: unnecessary meetings, pointless arguments, bureaucracy, posturing
+2. **Don't wait**: don't put off climbing that mountain, writing that book, visiting your mother
+3. **Savor the time you have**
 
-> 来源：[CNBC](https://www.cnbc.com/2025/08/18/yc-co-founder-paul-graham-not-every-new-company-needs-to-be-about-ai.html) | 可信度：★★★★★
+Personal touches:
+- "After my mother died, I wished I'd spent more time with her. I lived as if she would always be there."
+- Two ways bullshit gets into your life: forced acceptance, or being tricked into accepting it
+
+> Source: primary | Reliability: ★★★★★
+
+### 5.4 The Bus Ticket Theory of Genius (2019)
+**URL**: https://paulgraham.com/genius.html
+
+- The recipe for genius = a disinterested obsession with something that matters
+- "Disinterested" is the most important trait — not doing it to impress others or get rich, but for the thing itself
+- The path to new ideas usually looks unpromising — if it looked promising, someone would have already explored it
+- Test: you're creating rather than consuming, the thing you're interested in is hard, and that difficulty is easier for you than for others
+
+> Source: primary | Reliability: ★★★★★
+
+### 5.5 Keep Your Identity Small (2009)
+**URL**: https://paulgraham.com/identity.html
+
+- "The more labels you attach to yourself, the dumber they make you"
+- Once a topic becomes part of your identity, you can no longer think rationally about it
+- Religion and politics spark the fiercest arguments not because they're inherently special, but because people fold them into their identity
+
+> Source: primary | Reliability: ★★★★★
+
+### 5.6 What You Can't Say (2004)
+**URL**: https://paulgraham.com/say.html
+
+- Every era has beliefs people think are true but are actually absurd — our era is unlikely to be the first one to get everything right
+- **Test**: is there an opinion you're afraid to voice in front of your peers? If not — that's unlikely to be a coincidence, and more likely means you're just thinking what you've been told
+- Ways to identify hidden taboos: watch what people get in trouble for saying, identify the labels used to silence people, compare across cultures and eras
+
+> Source: primary | Reliability: ★★★★★
+
+### 5.7 How to Think for Yourself (2020)
+**URL**: https://paulgraham.com/think.html
+
+Three components of independent thought:
+1. Fastidiousness about truth
+2. Resistance to being told what to think
+3. Curiosity
+
+"If your answers suggest that everything you believe is exactly what you should believe — that's probably not a coincidence"
+
+> Source: primary | Reliability: ★★★★★
+
+### 5.8 The Four Quadrants of Conformism (2020)
+**URL**: https://paulgraham.com/conformism.html
+
+Four types of people:
+1. **Aggressively conventional-minded**
+2. **Passively conventional-minded**
+3. **Passively independent-minded**
+4. **Aggressively independent-minded**
+
+> Source: primary | Reliability: ★★★★★
+
+### 5.9 What You'll Wish You'd Known (2005)
+**URL**: https://paulgraham.com/hs.html
+
+- An unpublished graduation speech for high schoolers
+- Don't panic about "your life's purpose" — most successful people found it along the way
+- **"Stay upwind"**: like a glider, at every stage do the most interesting thing that keeps the most future options open
+- Curiosity never lies — it knows better than you do what's worth paying attention to
+
+> Source: primary | Reliability: ★★★★★
+
+### 5.10 Maker's Schedule, Manager's Schedule (2009)
+**URL**: https://paulgraham.com/makersschedule.html
+
+- **Two kinds of schedule**: the manager's schedule (cut into hour-long units) vs. the maker's schedule (units of at least half a day)
+- For a maker, a single meeting can wreck an entire afternoon — because it cuts time into two pieces, each too small to do hard work in
+- Power usually sits with managers, who make everyone else resonate at their frequency
+- Graham's solution: cluster all meetings at the end of the workday (office hours)
+
+> Source: primary | Reliability: ★★★★★
+
+### 5.11 Mean People Fail (2014)
+**URL**: https://paulgraham.com/mean.html
+
+- Among the most successful people Graham knows, almost none are mean
+- Meanness makes you stupid — you can never do your best work while fighting
+- Mean founders can't attract the best talent
+- Doing great things requires benevolence as the driving spirit
+- Historically, most success has come from zero-sum games, where meanness can be an advantage — but startups aren't zero-sum
+
+**Controversy/contradiction**: critics point out that successful founders like Jobs, Zuckerberg, and Bezos all had a mean streak. Graham's argument may be overly idealistic.
+
+> Sources: primary + [Inc. rebuttal](https://www.inc.com/jeff-bercovici/paul-graham-mean-people-fail.html) | Reliability: ★★★★☆ (contested)
+
+### 5.12 The Submarine (2005)
+**URL**: https://paulgraham.com/submarine.html
+
+- PR firms are "like a giant, silent submarine lurking beneath the news"
+- Outside of political/crime/disaster news, more than half of stories may originate from PR
+- PR firms feed the same story to multiple outlets simultaneously — readers think it's a trend, but it's manufactured
+- The weakness of top journalists is vanity, not laziness
+
+> Source: primary | Reliability: ★★★★★
 
 ---
 
-## 八、反复出现的核心论点（≥3次标注）
+## VI. Technical/programming essays
 
-以下是在Graham的200+篇essay中反复出现的核心信念，按出现频率排列：
+### 6.1 Beating the Averages (2003)
+**URL**: https://paulgraham.com/avg.html
 
-### Tier 1：出现≥10次的真信念
+- **The Blub Paradox**: imagine a Blub programmer — looking down the power continuum, he thinks lower-level languages are missing features; looking up, he can't tell he's looking up, and just sees "strange languages with a bunch of useless stuff bolted on"
+- "The only programmers who can see the full difference in power between languages are the ones who understand the most powerful ones"
+- Writing Viaweb in Lisp was a key competitive advantage — it let them ship features faster than competitors
 
-| # | 核心论点 | 出现频次 | 代表性essays |
+> Source: primary | Reliability: ★★★★★
+
+---
+
+## VII. Most recent essays (2024-2025+)
+
+### 7.1 Writes and Write-Nots (2024/2025)
+**URL**: https://paulgraham.com/writes.html
+
+- Predicts the AI era will produce a split between "writes" and "write-nots"
+- "Not good writers, ordinary writers, and non-writers — just good writers and non-writers"
+- **Writing is thinking** — people who skip learning to write also skip learning to think clearly
+- Analogy: before industrialization, most people's jobs kept them physically strong; now if you want to be strong you have to work out. Writing is the same. "There will still be smart people, but only among those who choose to be smart"
+- **"A world divided into writes and write-nots is more dangerous than it sounds — it will be a world of thinks and think-nots"**
+
+> Sources: primary + [Medium analysis](https://medium.com/blog/a-world-divided-into-writes-and-write-nots-is-more-dangerous-than-it-sounds-218cbb18ed89) | Reliability: ★★★★★
+
+### 7.2 Founder Mode (September 2024)
+See Section IV, 4.8
+
+### 7.3 The Right Kind of Stubborn (September 2024)
+**URL**: https://paulgraham.com/persistence.html (inferred URL)
+- Distinguishes valuable persistence from blind stubbornness
+
+### 7.4 When to Do What You Love (October 2024)
+- Explores when and how to follow your passion
+
+### 7.5 How to Start Google (March 2024)
+- A follow-up for high schoolers, a companion piece to "What You'll Wish You'd Known"
+
+### 7.6 The Best Essay (March 2024)
+**URL**: https://paulgraham.com/best.html
+
+### 7.7 On AI (August 2025)
+- Graham said "the two most impressive companies I've seen are not AI companies"
+- "The lesson isn't that AI doesn't matter (it matters enormously), it's that founders matter more than ideas"
+- AI is "the missing piece in a lot of important, nearly-finished puzzles"
+- Don't outsource every human skill to machines — clear writing, critical thinking, and creative problem-solving still matter
+
+> Source: [CNBC](https://www.cnbc.com/2025/08/18/yc-co-founder-paul-graham-not-every-new-company-needs-to-be-about-ai.html) | Reliability: ★★★★★
+
+---
+
+## VIII. Recurring core arguments (flagged ≥3 occurrences)
+
+The following are core beliefs that recur throughout Graham's 200+ essays, ranked by frequency:
+
+### Tier 1: real beliefs appearing ≥10 times
+
+| # | Core argument | Frequency | Representative essays |
 |---|---------|---------|-------------|
-| 1 | **好奇心是一切的引擎** | ≥15次 | How to Do Great Work, Bus Ticket Theory, What You'll Wish, How to Think for Yourself, How to Get Startup Ideas |
-| 2 | **写作 = 思考**（writing is thinking） | ≥10次 | Putting Ideas into Words, Writes and Write-Nots, Age of the Essay, Writing Briefly, How to Write Usefully |
-| 3 | **做用户真正想要的东西** | ≥10次 | How to Start a Startup, Do Things that Don't Scale, How to Get Startup Ideas, Startups in 13 Sentences |
-| 4 | **独立思考 > 从众** | ≥10次 | What You Can't Say, How to Think for Yourself, Four Quadrants, Keep Your Identity Small |
+| 1 | **Curiosity is the engine of everything** | ≥15 | How to Do Great Work, Bus Ticket Theory, What You'll Wish, How to Think for Yourself, How to Get Startup Ideas |
+| 2 | **Writing = thinking** | ≥10 | Putting Ideas into Words, Writes and Write-Nots, Age of the Essay, Writing Briefly, How to Write Usefully |
+| 3 | **Build what users actually want** | ≥10 | How to Start a Startup, Do Things that Don't Scale, How to Get Startup Ideas, Startups in 13 Sentences |
+| 4 | **Independent thinking > conformity** | ≥10 | What You Can't Say, How to Think for Yourself, Four Quadrants, Keep Your Identity Small |
 
-### Tier 2：出现≥5次的真信念
+### Tier 2: real beliefs appearing ≥5 times
 
-| # | 核心论点 | 出现频次 | 代表性essays |
+| # | Core argument | Frequency | Representative essays |
 |---|---------|---------|-------------|
-| 5 | **增长定义创业公司** | ≥7次 | Startup = Growth, Do Things that Don't Scale, Default Alive |
-| 6 | **简单 > 复杂**（写作、设计、思考皆然） | ≥7次 | Write Simply, Write Like You Talk, Taste for Makers |
-| 7 | **迭代式方法 > 一步到位计划** | ≥6次 | Hackers & Painters, Writing Briefly, Do Things that Don't Scale |
-| 8 | **创始人 > idea** | ≥6次 | Founder Mode, How to Start a Startup, 2025 AI remarks |
-| 9 | **超线性回报/复利思维** | ≥5次 | Superlinear Returns, Startup = Growth, How to Do Great Work |
-| 10 | **少花钱/精益运营** | ≥5次 | Default Alive, Ramen Profitable, How to Start a Startup |
+| 5 | **Growth defines a startup** | ≥7 | Startup = Growth, Do Things that Don't Scale, Default Alive |
+| 6 | **Simple > complex** (true of writing, design, thinking alike) | ≥7 | Write Simply, Write Like You Talk, Taste for Makers |
+| 7 | **Iterative method > a one-shot plan** | ≥6 | Hackers & Painters, Writing Briefly, Do Things that Don't Scale |
+| 8 | **Founders > ideas** | ≥6 | Founder Mode, How to Start a Startup, 2025 AI remarks |
+| 9 | **Superlinear returns / compounding thinking** | ≥5 | Superlinear Returns, Startup = Growth, How to Do Great Work |
+| 10 | **Spend little / run lean** | ≥5 | Default Alive, Ramen Profitable, How to Start a Startup |
 
-### Tier 3：出现≥3次的真信念
+### Tier 3: real beliefs appearing ≥3 times
 
-| # | 核心论点 | 出现频次 | 代表性essays |
+| # | Core argument | Frequency | Representative essays |
 |---|---------|---------|-------------|
-| 11 | **品味（taste）很重要** | ≥4次 | Taste for Makers, Hackers & Painters, How to Do Great Work |
-| 12 | **Benevolence胜过meanness** | ≥3次 | Mean People Fail, How to Do Great Work, 相关startup essays |
-| 13 | **不要等待/人生短暂** | ≥3次 | Life is Short, What You'll Wish, How to Do Great Work |
-| 14 | **Lisp是强大的秘密武器** | ≥3次 | Beating the Averages, Hackers & Painters, Viaweb相关 |
-| 15 | **Stay upwind（保持选项开放）** | ≥3次 | What You'll Wish, How to Do Great Work, 相关建议essays |
-| 16 | **学校教育的缺陷** | ≥3次 | Age of the Essay, What You'll Wish, Why Nerds Are Unpopular |
+| 11 | **Taste matters** | ≥4 | Taste for Makers, Hackers & Painters, How to Do Great Work |
+| 12 | **Benevolence beats meanness** | ≥3 | Mean People Fail, How to Do Great Work, related startup essays |
+| 13 | **Don't wait / life is short** | ≥3 | Life is Short, What You'll Wish, How to Do Great Work |
+| 14 | **Lisp is a powerful secret weapon** | ≥3 | Beating the Averages, Hackers & Painters, Viaweb-related |
+| 15 | **Stay upwind (keep options open)** | ≥3 | What You'll Wish, How to Do Great Work, related advice essays |
+| 16 | **The flaws of formal schooling** | ≥3 | Age of the Essay, What You'll Wish, Why Nerds Are Unpopular |
 
 ---
 
-## 九、自创术语与概念
+## IX. Coined terms and concepts
 
-| 术语 | 含义 | 首次出现 | URL |
-|------|------|---------|-----|
-| **Ramen Profitable** | 创业公司收入刚好覆盖创始人生活费（吃拉面的水平） | 2009 | paulgraham.com/ramenprofitable.html |
-| **Do Things that Don't Scale** | 早期创业应该拥抱手工、不可规模化的做法 | 2013 | paulgraham.com/ds.html |
-| **Schlep Blindness** | 人们看不到涉及脏活的好机会（schlep=意第绪语"乏味任务"） | 2012 | paulgraham.com/schlep.html |
-| **Blub Paradox** | 程序员无法认识到比自己更强大的语言的优势 | 2003 | paulgraham.com/avg.html |
-| **Relentlessly Resourceful** | 好创始人的一词定义——不只是坚持，还要创造性地解决问题 | 2009 | paulgraham.com/relres.html |
-| **Founder Mode** | 创始人直接深入参与公司运营的管理方式（vs Manager Mode） | 2024 | paulgraham.com/foundermode.html |
-| **Default Alive / Default Dead** | 创业公司在不融资情况下能否盈利的状态判断 | 2015 | paulgraham.com/aord.html |
-| **Frighteningly Ambitious** | 最好的创业想法会让人害怕（因为太大了） | 2012 | paulgraham.com/ambitious.html |
-| **The Fatal Pinch** | 默认死亡 + 增长慢 + 没时间修复的致命三角 | 2015 | paulgraham.com/aord.html |
-| **Maker's Schedule / Manager's Schedule** | 创作者需要大块不间断时间 vs 经理以小时为单位 | 2009 | paulgraham.com/makersschedule.html |
-| **Earnestness** | 出于正确原因做事 + 尽最大努力——PG认为这是创始人最重要的品质之一 | 多次 | 散见于多篇essay |
-| **Stay Upwind** | 像滑翔机一样保持在上风——做最有趣且保持选项开放的事 | 2005 | paulgraham.com/hs.html |
-| **Writes and Write-Nots** | AI时代会写的人和不会写的人的分裂 | 2024 | paulgraham.com/writes.html |
-| **Thinks and Think-Nots** | Writes and Write-Nots的推论——思考能力也会分化 | 2024 | paulgraham.com/writes.html |
+| Term | Meaning | First appeared | URL |
+|------|---------|---------|-----|
+| **Ramen Profitable** | when a startup's revenue just barely covers the founders' living expenses (ramen-noodle level) | 2009 | paulgraham.com/ramenprofitable.html |
+| **Do Things that Don't Scale** | early-stage startups should embrace manual, unscalable methods | 2013 | paulgraham.com/ds.html |
+| **Schlep Blindness** | people fail to see good opportunities that involve dirty work (schlep = Yiddish for "tedious task") | 2012 | paulgraham.com/schlep.html |
+| **Blub Paradox** | programmers can't recognize the advantages of a language more powerful than their own | 2003 | paulgraham.com/avg.html |
+| **Relentlessly Resourceful** | Graham's one-phrase definition of a good founder — not just persistent, but creatively solving problems | 2009 | paulgraham.com/relres.html |
+| **Founder Mode** | a management style where the founder stays deeply involved in company operations (vs. Manager Mode) | 2024 | paulgraham.com/foundermode.html |
+| **Default Alive / Default Dead** | whether a startup would be profitable without raising more money | 2015 | paulgraham.com/aord.html |
+| **Frighteningly Ambitious** | the best startup ideas are frightening because they're huge | 2012 | paulgraham.com/ambitious.html |
+| **The Fatal Pinch** | the deadly triangle of default dead + slow growth + no time to fix it | 2015 | paulgraham.com/aord.html |
+| **Maker's Schedule / Manager's Schedule** | creators need large uninterrupted blocks of time vs. managers working in hourly units | 2009 | paulgraham.com/makersschedule.html |
+| **Earnestness** | doing things for the right reasons + giving your best effort — PG considers this one of the most important founder qualities | multiple | scattered across many essays |
+| **Stay Upwind** | like a glider, staying upwind — doing the most interesting thing while keeping options open | 2005 | paulgraham.com/hs.html |
+| **Writes and Write-Nots** | the split in the AI era between people who write and people who don't | 2024 | paulgraham.com/writes.html |
+| **Thinks and Think-Nots** | the corollary of Writes and Write-Nots — thinking ability will split too | 2024 | paulgraham.com/writes.html |
 
 ---
 
-## 十、推荐书单（揭示智识谱系）
+## X. Recommended reading list (reveals his intellectual lineage)
 
-Paul Graham在paulgraham.com/books.html和社交媒体上推荐了100+本书。以下是有明确推荐语的关键书目：
+Paul Graham has recommended 100+ books on paulgraham.com/books.html and social media. Below are the key titles with explicit commentary:
 
-### 创业/商业类
-| 书名 | 作者 | PG评价 |
+### Startups/business
+| Book | Author | PG's comment |
 |------|------|--------|
-| **Founders at Work** | Jessica Livingston | "可能是创业者能读的最有价值的一本书" |
-| **How to Win Friends and Influence People** | Dale Carnegie | "对做生意的人至关重要" |
-| Sebastian Mallaby的VC著作 | Sebastian Mallaby | "如果你想了解VC如何运作……这就是要读的书" |
+| **Founders at Work** | Jessica Livingston | "possibly the most valuable book an entrepreneur can read" |
+| **How to Win Friends and Influence People** | Dale Carnegie | "essential for people in business" |
+| Sebastian Mallaby's VC book | Sebastian Mallaby | "if you want to understand how VC works... this is the book to read" |
 
-### 科学/历史类
-| 书名 | 作者 | PG评价 |
+### Science/history
+| Book | Author | PG's comment |
 |------|------|--------|
-| **From Galileo to Newton** | Rupert Hall | "我读过的最好的科学史书之一" |
-| **History of Medieval Europe** | R.H.C. Davis | "如果只读一本中世纪史，可能是最好的选择" |
-| **Apollo's Arrow** | Nicholas Christakis | "广阔的历史全景和每页都有有趣洞察" |
+| **From Galileo to Newton** | Rupert Hall | "one of the best history-of-science books I've read" |
+| **History of Medieval Europe** | R.H.C. Davis | "if you're only going to read one book on medieval history, this is probably the best choice" |
+| **Apollo's Arrow** | Nicholas Christakis | "a broad historical panorama with interesting insight on every page" |
 
-### 文学/科幻类
-| 书名 | 作者 | PG评价 |
+### Literature/sci-fi
+| Book | Author | PG's comment |
 |------|------|--------|
-| **The Moon is a Harsh Mistress** | Robert Heinlein | "这类书曾经完全占据我的大脑" |
-| **Foundation** | Isaac Asimov | 同上 |
-| **I Want to Be a Mathematician** | Paul Halmos | 推荐阅读 |
+| **The Moon is a Harsh Mistress** | Robert Heinlein | "books like this once completely occupied my mind" |
+| **Foundation** | Isaac Asimov | same as above |
+| **I Want to Be a Mathematician** | Paul Halmos | recommended reading |
 
-### 智识谱系推断
+### Inferred intellectual lineage
 
-从推荐书单和essay引用来看，Graham的思想谱系包括：
-- **蒙田**（essay体裁的发明者，Graham多次致敬）
-- **Paul Buchheit**（Gmail发明者，YC合伙人，多次引用）
-- **Richard Feynman**（简单解释复杂事物的精神）
-- **Peter Thiel**（逆向思考，虽Graham与Thiel有很多不同）
-- **Jessica Livingston**（PG妻子，YC联合创始人，影响创业观）
-- **Robert Morris**（长期合伙人，技术判断力的来源）
+Based on his reading recommendations and essay citations, Graham's intellectual lineage includes:
+- **Montaigne** (inventor of the essay form, whom Graham repeatedly pays tribute to)
+- **Paul Buchheit** (inventor of Gmail, a YC partner, cited frequently)
+- **Richard Feynman** (the spirit of explaining complicated things simply)
+- **Peter Thiel** (contrarian thinking, though Graham and Thiel differ on much)
+- **Jessica Livingston** (PG's wife, YC co-founder, shaped his views on startups)
+- **Robert Morris** (a longtime partner, a source of his technical judgment)
 
-> 来源：[paulgraham.com/books.html](https://www.paulgraham.com/books.html)、[kevinrooke.com](https://www.kevinrooke.com/book-recommendations/paul-graham)、[readthistwice.com](https://www.readthistwice.com/person/paul-graham) | 一手+二手
-
----
-
-## 十一、写作风格DNA分析
-
-基于对Graham写作的二手分析和一手essay阅读：
-
-### 句法特征
-- 偏好**短句、短词**，但表达sophisticated ideas
-- ~70%的essays包含"example"——抽象想法通常在一两句内跟上精选的例子
-- 大量使用第二人称"you"，直接对读者说话
-- 几乎不用行话（jargon），用最普通的词表达不普通的想法
-
-### 结构特征
-- 不用五段式结构，而是**essay式自由探索**
-- 通常从一个观察或问题开始，逐步展开
-- 经常用"incidentally"、"in fact"、"it turns out"转折
-- 结尾往往是开放式的，不做总结性收束
-
-### 修辞手法
-- **类比和比喻**是最常用的工具（"编程像绘画"、"创业像滑翔机"、"思想像moral fashions"）
-- 反问句（"如果你所有的信仰都是你应该相信的，这可能是巧合吗？"）
-- 列举（经常在essay中间放一个关键清单）
-- 自我纠正（"I may be wrong, but..."、"There may be exceptions..."）
-
-### 思维特征
-- **从特殊到一般**：先讲一个具体故事/案例，再提炼出通用原则
-- **逆向思考**：经常先问"什么是错的？"再推导出"什么是对的？"
-- **跨领域类比**：绘画→编程→创业→写作之间频繁跳转
-- **不确定的诚实**：承认自己不确定、可能犯错，这在essays中反复出现
-
-> 来源：[Ellen Fishbein分析](https://ellenrhymes.com/paul-graham)、[Quora讨论](https://www.quora.com/What-makes-Paul-Grahams-essays-so-good)、[Billy Oppenheimer](https://billyoppenheimer.com/paul-graham-essays/) | 二手+部分一手
+> Sources: [paulgraham.com/books.html](https://www.paulgraham.com/books.html), [kevinrooke.com](https://www.kevinrooke.com/book-recommendations/paul-graham), [readthistwice.com](https://www.readthistwice.com/person/paul-graham) | primary + secondary
 
 ---
 
-## 十二、矛盾与争议记录
+## XI. Writing-style DNA analysis
 
-### 矛盾1：Mean People Fail vs 现实
-- **PG立场**：刻薄的人在创业领域会失败
-- **反例**：Jobs、Zuckerberg、Bezos等被广泛认为有刻薄的一面但极其成功
-- **可能的调和**：PG可能指的是纯粹的刻薄（无能力的），而非"demanding"
+Based on secondary analysis of Graham's writing plus direct reading of his essays:
 
-### 矛盾2：Founder Mode vs 之前的建议
-- **PG 2024**：创始人应该深入参与运营细节
-- **PG之前**：多篇essay建议创始人focus on最重要的事、delegation
-- **可能的解释**：PG的thinking在进化，Founder Mode是对之前delegation建议的修正
+### Syntactic traits
+- Favors **short sentences, short words**, but expresses sophisticated ideas
+- ~70% of essays include "for example" — an abstract idea is usually followed within a sentence or two by a chosen example
+- Heavy use of second person "you," addressing the reader directly
+- Almost never uses jargon, expresses uncommon ideas in the most ordinary words
 
-### 矛盾3：经济不平等观点的争议
-- PG曾写essay为经济不平等辩护，认为这是创新的副产品
-- 引发Quartz等媒体的批评文章
-- 这一立场与他的一些"benevolence"相关论点存在tension
+### Structural traits
+- Never uses a five-paragraph structure, instead **free-form essay exploration**
+- Usually starts from an observation or question, and unfolds gradually
+- Frequently uses "incidentally," "in fact," "it turns out" as transitions
+- Endings are usually open-ended, without a summarizing wrap-up
 
-### 矛盾4：AI乐观 vs AI担忧
-- **乐观面**：AI是"大量拼图中缺失的那一块"，是重要的技术
-- **担忧面**：AI会导致"writes and write-nots"/"thinks and think-nots"的分裂
-- 两者不完全矛盾，但反映了Graham对AI的复杂态度
+### Rhetorical devices
+- **Analogy and metaphor** are his most-used tools ("programming is like painting," "startups are like a glider," "ideas are like moral fashions")
+- Rhetorical questions ("if everything you believe is exactly what you should believe, could that be a coincidence?")
+- Enumeration (often drops a key list into the middle of an essay)
+- Self-correction ("I may be wrong, but...", "There may be exceptions...")
 
-> 来源：多个二手来源综合 | 标注为存在争议
+### Cognitive traits
+- **From the specific to the general**: tells a concrete story/case first, then distills a general principle
+- **Contrarian reasoning**: often asks "what's wrong?" first, then derives "what's right?"
+- **Cross-domain analogy**: jumps frequently between painting → programming → startups → writing
+- **Honesty about uncertainty**: acknowledging he's unsure or might be wrong recurs throughout his essays
+
+> Sources: [Ellen Fishbein's analysis](https://ellenrhymes.com/paul-graham), [Quora discussion](https://www.quora.com/What-makes-Paul-Grahams-essays-so-good), [Billy Oppenheimer](https://billyoppenheimer.com/paul-graham-essays/) | secondary + some primary
 
 ---
 
-## 十三、完整Essay索引（部分，按主题分类）
+## XII. Record of contradictions and controversy
 
-### 写作类
+### Contradiction 1: Mean People Fail vs. reality
+- **PG's stance**: mean people fail in the startup world
+- **Counterexamples**: Jobs, Zuckerberg, Bezos, and others are widely seen as having a mean streak while being wildly successful
+- **Possible reconciliation**: PG may mean pure, incompetent meanness, as distinct from "demanding"
+
+### Contradiction 2: Founder Mode vs. his earlier advice
+- **PG in 2024**: founders should be deeply involved in operational detail
+- **PG previously**: multiple essays advising founders to focus on the most important things and delegate
+- **Possible explanation**: PG's thinking evolved, and Founder Mode is a correction to his earlier delegation advice
+
+### Contradiction 3: controversy over his views on economic inequality
+- PG once wrote an essay defending economic inequality as a byproduct of innovation
+- This drew critical pieces from outlets like Quartz
+- This stance sits in tension with some of his own benevolence-related arguments
+
+### Contradiction 4: AI optimism vs. AI concern
+- **Optimistic side**: AI is "the missing piece in a lot of puzzles," an important technology
+- **Concerned side**: AI will cause a split into "writes and write-nots" / "thinks and think-nots"
+- The two aren't fully contradictory, but they reflect Graham's complicated attitude toward AI
+
+> Source: synthesized from multiple secondary sources | flagged as contested
+
+---
+
+## XIII. Full essay index (partial, organized by topic)
+
+### Writing
 | Essay | Year | URL |
 |-------|------|-----|
 | The Age of the Essay | 2004 | paulgraham.com/essay.html |
@@ -566,7 +566,7 @@ Paul Graham在paulgraham.com/books.html和社交媒体上推荐了100+本书。�
 | Writes and Write-Nots | 2024 | paulgraham.com/writes.html |
 | The Best Essay | 2024 | paulgraham.com/best.html |
 
-### 创业类
+### Startups
 | Essay | Year | URL |
 |-------|------|-----|
 | How to Start a Startup | 2005 | paulgraham.com/start.html |
@@ -584,7 +584,7 @@ Paul Graham在paulgraham.com/books.html和社交媒体上推荐了100+本书。�
 | Founder Mode | 2024 | paulgraham.com/foundermode.html |
 | How to Start Google | 2024 | — |
 
-### 人生/认知类
+### Life/cognition
 | Essay | Year | URL |
 |-------|------|-----|
 | How to Do Great Work | 2023 | paulgraham.com/greatwork.html |
@@ -601,7 +601,7 @@ Paul Graham在paulgraham.com/books.html和社交媒体上推荐了100+本书。�
 | When to Do What You Love | 2024 | — |
 | The Right Kind of Stubborn | 2024 | — |
 
-### 技术/编程类
+### Technical/programming
 | Essay | Year | URL |
 |-------|------|-----|
 | Beating the Averages | 2003 | paulgraham.com/avg.html |
@@ -609,7 +609,7 @@ Paul Graham在paulgraham.com/books.html和社交媒体上推荐了100+本书。�
 | Taste for Makers | — | — |
 | Why Nerds Are Unpopular | — | — |
 
-### 媒体/社会类
+### Media/society
 | Essay | Year | URL |
 |-------|------|-----|
 | The Submarine | 2005 | paulgraham.com/submarine.html |
@@ -617,29 +617,29 @@ Paul Graham在paulgraham.com/books.html和社交媒体上推荐了100+本书。�
 
 ---
 
-## 十四、调研总结
+## XIV. Research summary
 
-### 关键发现
+### Key findings
 
-1. **Paul Graham是当代最有影响力的essay写作者之一**，200+篇essay涵盖创业、写作、编程、人生哲学四大领域
+1. **Paul Graham is one of the most influential essayists of our time**, with 200+ essays covering four major domains: startups, writing, programming, and life philosophy
 
-2. **他的思想高度一致且相互关联**：好奇心→独立思考→写作即思考→做出伟大的工作→超线性回报——形成一个完整的intellectual system
+2. **His thinking is highly consistent and interconnected**: curiosity → independent thinking → writing as thinking → doing great work → superlinear returns — forming a complete intellectual system
 
-3. **他的写作风格是他方法论的最好证明**：用最简单的词表达最深刻的想法，从一手经验（Viaweb、YC）提炼通用原则
+3. **His writing style is the best proof of his own methodology**: using the simplest words to express the deepest ideas, distilling general principles from first-hand experience (Viaweb, YC)
 
-4. **2024年最有影响力的两篇**：Founder Mode（重新定义公司管理）和Writes and Write-Nots（预判AI对人类思考能力的影响）
+4. **His two most influential 2024 essays**: Founder Mode (redefining how companies should be run) and Writes and Write-Nots (anticipating AI's effect on human thinking ability)
 
-5. **他自创了一系列已进入硅谷日常词汇的术语**：ramen profitable、schlep blindness、do things that don't scale、founder mode、Blub paradox等
+5. **He coined a set of terms that have entered everyday Silicon Valley vocabulary**: ramen profitable, schlep blindness, do things that don't scale, founder mode, the Blub paradox, and others
 
-6. **他的核心矛盾**在于理想主义（mean people fail、benevolence驱动）与现实之间的tension——但他通常承认自己可能是错的
+6. **His core contradiction** lies in the tension between idealism (mean people fail, benevolence-driven) and reality — but he generally acknowledges he might be wrong
 
-### 调研局限
+### Research limitations
 
-- 未能直接访问paulgraham.com完整文本（只能通过搜索获取摘要和引用）
-- 2025-2026年的essay信息较少，可能有遗漏
-- 书单信息来自二手整理，可能不完整
-- 部分essay的具体年份需要进一步确认
+- Could not directly access the full text of paulgraham.com (only summaries and citations obtainable through search)
+- Less information available on 2025-2026 essays, some may be missing
+- Reading-list information comes from secondary compilations, may be incomplete
+- The exact year of some essays needs further confirmation
 
 ---
 
-*调研完成。此文档可作为构建Paul Graham perspective skill的基础素材。*
+*Research complete. This document can serve as the base material for building the Paul Graham perspective skill.*
